@@ -1,0 +1,168 @@
+/*
+  Dino pixel-art (box-shadow technique, 8px grid):
+  col:  0 1 2 3 4 5 6 7
+  row0: . . . . # # # .   head top
+  row1: . . . # # # # #   head + jaw
+  row2: . . . # . # # #   eye gap at col4
+  row3: . . . # # # # .   neck
+  row4: . . # # # # # #   body top
+  row5: # # # # # # # #   full body / tail
+  row6: . . # . . # . .   legs
+  row7: . . # # . # # .   feet
+  Anchor = col4,row0 → left:32px top:0 inside wrapper
+*/
+.dinoWrapper {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  overflow: visible;
+}
+
+.dinoPixel {
+  position: absolute;
+  left: 32px;
+  top: 0;
+  width: 8px;
+  height: 8px;
+  background: #535353;
+  box-shadow: 8px 0, 16px 0, -8px 8px, 0 8px, 8px 8px, 16px 8px, 24px 8px,
+    -8px 16px, 8px 16px, 16px 16px, 24px 16px, -8px 24px, 0 24px, 8px 24px,
+    16px 24px, -16px 32px, -8px 32px, 0 32px, 8px 32px, 16px 32px, 24px 32px,
+    -32px 40px, -24px 40px, -16px 40px, -8px 40px, 0 40px, 8px 40px, 16px 40px,
+    24px 40px, -16px 48px, 8px 48px, -16px 56px, -8px 56px, 8px 56px, 16px 56px;
+}
+
+.dinoEye {
+  position: absolute;
+  left: 32px;
+  top: 16px;
+  width: 8px;
+  height: 8px;
+  background: white;
+}
+
+.dinoDead .dinoEye {
+  background: transparent;
+}
+
+.dinoX {
+  position: absolute;
+  left: 26px;
+  top: 10px;
+  font-family: "Press Start 2P", monospace;
+  font-size: 10px;
+  color: #535353;
+  line-height: 1;
+}
+
+.scene {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 1rem;
+  width: 100%;
+  max-width: 340px;
+}
+
+.ground {
+  width: 100%;
+  height: 2px;
+  background: #535353;
+  margin-top: 4px;
+}
+
+/* ── Card ── */
+.card {
+  background: #f7f7f7;
+  border: 2px solid #535353;
+  box-shadow: 4px 4px 0 #535353;
+  color: #535353;
+  font-family: "Press Start 2P", monospace;
+  image-rendering: pixelated;
+  padding-top: 1rem;
+}
+
+.scoreBar {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.55rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.8rem;
+  padding: 0 0.2rem;
+}
+
+.name {
+  font-size: 0.65rem;
+  line-height: 1.6;
+  margin-bottom: 0.8rem;
+}
+
+.title {
+  line-height: 1.8;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  margin: 0.4rem;
+}
+
+.press {
+  font-size: 0.45rem;
+  letter-spacing: 1px;
+  color: #888;
+  animation: blink 1.2s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* ── Joke page ── */
+.jokePage {
+  background: #f7f7f7;
+  color: #535353;
+  font-family: "Press Start 2P", monospace;
+}
+
+.sceneDead {
+  margin: 0.5rem 0;
+}
+
+.jokeBox {
+  background: #fff;
+  border: 2px solid #535353;
+  box-shadow: 4px 4px 0 #535353;
+  padding: 1.5rem 2rem;
+  max-width: 480px;
+  width: 90%;
+  text-align: center;
+}
+
+.jokeSetup {
+  font-size: 2rem;
+  line-height: 2;
+  margin-bottom: 1rem;
+}
+
+.jokePunchline {
+  font-size: 1.8rem;
+  line-height: 2;
+  border-top: 2px solid #535353;
+  padding-top: 0.8rem;
+}
+
+.backBtn {
+  background: #535353;
+  color: #f7f7f7;
+  border: none;
+  padding: 0.8rem 1.8rem;
+  font-family: "Press Start 2P", monospace;
+  font-size: 0.65rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: background 0.1s;
+}
+
+.backBtn:hover {
+  background: #333;
+}
