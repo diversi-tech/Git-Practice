@@ -7,7 +7,7 @@ export default function HomePage() {
   return (
     <div className="home-page">
       <header className="home-header">
-        <img src="/diversitech-logo.png" alt="Diversitech" className="home-logo" />
+        <img src={`${import.meta.env.BASE_URL}diversitech-logo.png`} alt="Diversitech" className="home-logo" />
         <h1>PRACTICUM - 2026</h1>
         <div className="home-header-btns">
           <button className="instructions-btn" onClick={() => navigate("/instructions")}>
