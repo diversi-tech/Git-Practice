@@ -29,9 +29,12 @@ body {
 }
 
 .home-logo {
-  height: 64px;
+  height: 128px;
+  padding: 6px;
   width: auto;
   margin-bottom: 1rem;
+  background-color: whitesmoke;
+  border-radius: 50%;
   filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
 }
 
@@ -194,12 +197,26 @@ body {
   flex-wrap: wrap;
 }
 
-.branch-main    { background: #e8f5e9; border-right: 4px solid #2e7d32; }
-.branch-team    { background: #e3f2fd; border-right: 4px solid #1565c0; }
-.branch-subteam { background: #fce4ec; border-right: 4px solid #ad1457; }
-.branch-student { background: #fff3e0; border-right: 4px solid #e65100; }
+.branch-main {
+  background: #e8f5e9;
+  border-right: 4px solid #2e7d32;
+}
+.branch-team {
+  background: #e3f2fd;
+  border-right: 4px solid #1565c0;
+}
+.branch-subteam {
+  background: #fce4ec;
+  border-right: 4px solid #ad1457;
+}
+.branch-student {
+  background: #fff3e0;
+  border-right: 4px solid #e65100;
+}
 
-.branch-icon { font-size: 1.2rem; }
+.branch-icon {
+  font-size: 1.2rem;
+}
 
 .branch-level code {
   font-size: 0.85rem;
@@ -248,7 +265,9 @@ body {
   line-height: 1.7;
 }
 
-.instructions-steps li { color: #222; }
+.instructions-steps li {
+  color: #222;
+}
 
 .instructions-steps pre {
   margin-top: 0.5rem;
@@ -294,7 +313,10 @@ body {
   direction: ltr;
 }
 
-.file-item span { font-size: 0.88rem; color: #555; }
+.file-item span {
+  font-size: 0.88rem;
+  color: #555;
+}
 
 .merge-steps {
   padding-right: 1.2rem;
@@ -330,7 +352,10 @@ body {
   gap: 1.2rem;
 }
 
-.bg-header { text-align: center; color: #fff; }
+.bg-header {
+  text-align: center;
+  color: #fff;
+}
 
 .bg-header h1 {
   font-size: clamp(1.5rem, 4vw, 2.2rem);
@@ -360,10 +385,21 @@ body {
   min-width: 80px;
 }
 
-.bg-stat--merged  { background: rgba(76, 175, 80, 0.3); }
-.bg-stat--pending { background: rgba(255, 152, 0, 0.3); }
-.bg-stat-num   { display: block; font-size: 1.6rem; font-weight: 700; }
-.bg-stat-label { font-size: 0.78rem; opacity: 0.85; }
+.bg-stat--merged {
+  background: rgba(76, 175, 80, 0.3);
+}
+.bg-stat--pending {
+  background: rgba(255, 152, 0, 0.3);
+}
+.bg-stat-num {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.bg-stat-label {
+  font-size: 0.78rem;
+  opacity: 0.85;
+}
 
 /* Legend */
 .bg-legend {
@@ -399,7 +435,7 @@ body {
 }
 
 .bg-node-wrap::before {
-  content: '';
+  content: "";
   position: absolute;
   right: 0.55rem;
   top: 1.4rem;
@@ -408,7 +444,9 @@ body {
   background: #ddd;
 }
 
-.bg-node-wrap--last::before { display: none; }
+.bg-node-wrap--last::before {
+  display: none;
+}
 
 /* Individual node row */
 .bg-node {
@@ -424,7 +462,7 @@ body {
 
 /* horizontal stub to the vertical line */
 .bg-node::before {
-  content: '';
+  content: "";
   position: absolute;
   right: -1.2rem;
   top: 50%;
@@ -433,10 +471,19 @@ body {
   background: #ddd;
 }
 
-.bg-node--root::before    { display: none; }
-.bg-node:hover            { background: #f5f5f5; }
-.bg-node--root            { background: #f3e5f5; border-right: 4px solid #7b1fa2; }
-.bg-node--current         { background: #fff9c4 !important; }
+.bg-node--root::before {
+  display: none;
+}
+.bg-node:hover {
+  background: #f5f5f5;
+}
+.bg-node--root {
+  background: #f3e5f5;
+  border-right: 4px solid #7b1fa2;
+}
+.bg-node--current {
+  background: #fff9c4 !important;
+}
 
 /* Children block */
 .bg-children {
@@ -453,9 +500,16 @@ body {
   flex-shrink: 0;
 }
 
-.bg-dot--root    { background: #7b1fa2; box-shadow: 0 0 0 3px rgba(123, 31, 162, 0.2); }
-.bg-dot--merged  { background: #4caf50; }
-.bg-dot--pending { background: #ff9800; }
+.bg-dot--root {
+  background: #7b1fa2;
+  box-shadow: 0 0 0 3px rgba(123, 31, 162, 0.2);
+}
+.bg-dot--merged {
+  background: #4caf50;
+}
+.bg-dot--pending {
+  background: #ff9800;
+}
 
 /* Node info */
 .bg-info {
@@ -510,9 +564,21 @@ body {
   white-space: nowrap;
 }
 
-.bg-badge--merged  { background: #e8f5e9; color: #2e7d32; border: 1px solid #a5d6a7; }
-.bg-badge--pending { background: #fff3e0; color: #e65100; border: 1px solid #ffcc80; }
-.bg-badge--current { background: #fff176; color: #f57f17; border: 1px solid #f9a825; }
+.bg-badge--merged {
+  background: #e8f5e9;
+  color: #2e7d32;
+  border: 1px solid #a5d6a7;
+}
+.bg-badge--pending {
+  background: #fff3e0;
+  color: #e65100;
+  border: 1px solid #ffcc80;
+}
+.bg-badge--current {
+  background: #fff176;
+  color: #f57f17;
+  border: 1px solid #f9a825;
+}
 
 /* Empty / footer */
 .bg-empty {

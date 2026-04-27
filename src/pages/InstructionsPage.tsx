@@ -27,19 +27,19 @@ export default function InstructionsPage() {
             <div className="branch-connector">↑ merge</div>
             <div className="branch-level branch-team">
               <span className="branch-icon">👥</span>
-              <code>team/[שם-צוות]</code>
-              <span className="branch-desc">בראנץ' צוות — 15 בנות</span>
+              <code>[שם-צוות]</code>
+              <span className="branch-desc">בראנץ' צוות</span>
             </div>
             <div className="branch-connector">↑ merge</div>
             <div className="branch-level branch-subteam">
               <span className="branch-icon">🤝</span>
-              <code>team/[שם-צוות]/sub/[שם-תת-צוות]</code>
-              <span className="branch-desc">בראנץ' תת-צוות — 3 בנות</span>
+              <code>[שם-צוות]/[שם-תת-צוות]</code>
+              <span className="branch-desc">בראנץ' תת-צוות</span>
             </div>
             <div className="branch-connector">↑ merge</div>
             <div className="branch-level branch-student">
               <span className="branch-icon">🙋</span>
-              <code>team/[שם-צוות]/sub/[שם-תת-צוות]/[שם-שלי]</code>
+              <code>[שם-צוות]/[שם-תת-צוות]/[שם-שלי]</code>
               <span className="branch-desc">הבראנץ' האישי שלך</span>
             </div>
           </div>
@@ -54,7 +54,7 @@ export default function InstructionsPage() {
           <ol className="instructions-steps">
             <li>
               <strong>צרי בראנץ' אישי</strong> מהבראנץ' של התת-צוות שלך:
-              <pre>{`git checkout team/[שם-צוות]/sub/[שם-תת-צוות]\ngit pull\ngit checkout -b team/[שם-צוות]/sub/[שם-תת-צוות]/[שם-שלי]`}</pre>
+              <pre>{`git checkout [שם-צוות]/[שם-תת-צוות]\ngit pull\ngit checkout -b [שם-צוות]/[שם-תת-צוות]/[שם-שלי]`}</pre>
             </li>
             <li>
               <strong>צרי תיקייה אישית</strong> בנתיב:

@@ -14,7 +14,8 @@ export default function ChaniChanzinJokePage({ onBack }: PageProps) {
       </div>
       <div className={styles.jokeBox}>
         <p className={styles.jokeSetup}>לאן הולכים התנין והתנינה?</p>
-        <p className={styles.jokePunchline}>לבקר תנינים! 🐊</p>
+        <p className={styles.jokePunchline}>לבקר ת׳נינים!</p>
+        <p >🐊🐊🐊</p>
       </div>
       <button className={styles.backBtn} onClick={onBack}>
         ↺&nbsp;back

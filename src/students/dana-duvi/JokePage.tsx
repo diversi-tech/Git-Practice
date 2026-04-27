@@ -9,7 +9,7 @@ export default function DanaDuviJokePage({ onBack }: PageProps) {
       </div>
       <div className={styles.jokeCard}>
         <h2>למה הדוב לא משתמש במחשב?</h2>
-        <p>כי הוא מפחד מה-mouse! 🐭</p>
+        <p>כי הוא מפחד מהעכבר! 🐭</p>
       </div>
       <button className={styles.backBtn} onClick={onBack}>
         → חזרה
