@@ -3,6 +3,9 @@ import { Student } from "../types";
 import DanaDuviCard from "./dana-duvi/Card";
 import DanaDuviJokePage from "./dana-duvi/JokePage";
 
+import shiraGidiCard from "./shira-gidi/Card";
+import shiraGidiJokePage from "./shira-gidi/JokePage";
+
 import ChaniChanzinCard from "./chani-chanzin/Card";
 import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
 
@@ -17,6 +20,13 @@ const students: Student[] = [
     CardComponent: DanaDuviCard,
     JokePageComponent: DanaDuviJokePage,
   },
+  {
+  id: "shira-gidi",
+  name: "שירה גידי",
+  jokeTitle: "בדיחה",
+  CardComponent: shiraGidiCard,
+  JokePageComponent: shiraGidiJokePage,
+},
   {
     id: "chani-chanzin",
     name: "חני חנזין",
