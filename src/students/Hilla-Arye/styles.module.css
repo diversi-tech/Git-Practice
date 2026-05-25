@@ -1,0 +1,22 @@
+.card {
+  background-color: #1e1e2e;
+  color: #cdd6f4;
+  border-radius: 12px;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.name {
+  font-size: 0.9rem;
+  color: #a6adc8;
+}
+
+.jokePage {
+  padding: 2rem;
+  text-align: center;
+}
