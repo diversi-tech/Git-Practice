@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { CardProps } from "../../types";
 
 export default function ayalaKleinCard({ student, onClick }: CardProps) {

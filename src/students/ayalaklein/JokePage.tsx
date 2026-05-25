@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { PageProps } from "../../types";
 
 export default function ayalaKleinJokePage({ onBack }: PageProps) {
