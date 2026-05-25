@@ -6,6 +6,9 @@ import DanaDuviJokePage from "./dana-duvi/JokePage";
 import ChaniChanzinCard from "./chani-chanzin/Card";
 import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
 
+// ייבוא עמוד הבדיחה החדש שלך
+import AyalaKleinJokePage2 from "./ayalaklein/JokePage2";
+
 // ⚠️ סדר הרשימה חייב להיות לפי סדר האלף-בית העברי לפי שם המשפחה.
 // כל תלמידה מוסיפה את עצמה במקום הנכון ידנית.
 // אסור להשתמש בפונקציית-sort! 
@@ -16,6 +19,13 @@ const students: Student[] = [
     jokeTitle: "הדוב הפחדן",
     CardComponent: DanaDuviCard,
     JokePageComponent: DanaDuviJokePage,
+  },
+  {
+    id: "ayala-klein",
+    name: "אילה קליין",
+    jokeTitle: "למה מתכנתים לא ישנים?",
+    CardComponent: DanaDuviCard, // משתמשים בכרטיס קיים כברירת מחדל מאחר והמטלה התמקדה בדף הבדיחה
+    JokePageComponent: AyalaKleinJokePage2,
   },
   {
     id: "chani-chanzin",
