@@ -2,6 +2,7 @@
 import type { BranchData } from "../types";
 
 const data: BranchData = {
+<<<<<<< HEAD
   "generatedAt": "2026-04-26T22:06:42.722Z",
   "currentBranch": "",
   "mainBranch": "master",
@@ -167,6 +168,12 @@ const data: BranchData = {
       "isCurrent": false
     },
   ]
+=======
+  "generatedAt": "2026-05-25T10:41:08.101Z",
+  "currentBranch": "",
+  "mainBranch": "main",
+  "branches": []
+>>>>>>> 8737237 (add: tova joke)
 };
 
 export default data;
