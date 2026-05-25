@@ -8,8 +8,8 @@ import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
 
 import TovaCard from "./tovi/Card";
 import TovaJokePage from "./tovi/JokePage";
+import TovaJokePage2 from "./tovi/JokePage2";
 
- 
 const students: Student[] = [
   {
     id: "dana-duvi",
@@ -26,11 +26,18 @@ const students: Student[] = [
     JokePageComponent: ChaniChanzinJokePage,
   },
   {
-    id: "tova",
+    id: "tovi",
     name: "טובה",
     jokeTitle: "למה האופניים נפלו?",
     CardComponent: TovaCard,
     JokePageComponent: TovaJokePage,
+  },
+  {
+    id: "tovi-2",
+    name: "טובה",
+    jokeTitle: "Why did the scarecrow win an award?",
+    CardComponent: TovaCard,
+    JokePageComponent: TovaJokePage2,
   },
 ];
 

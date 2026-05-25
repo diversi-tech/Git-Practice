@@ -2,8 +2,8 @@
 import type { BranchData } from "../types";
 
 const data: BranchData = {
-  "generatedAt": "2026-05-25T11:55:46.948Z",
-  "currentBranch": "vcomm/vcomm-1/tovi",
+  "generatedAt": "2026-05-25T12:00:06.058Z",
+  "currentBranch": "vcomm/vcomm-1/tovi-joke2",
   "mainBranch": "master",
   "branches": [
     {
@@ -275,6 +275,14 @@ const data: BranchData = {
       "parentBranch": null,
       "shortHash": "0c152dc",
       "lastCommitMessage": "add: tova joke",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "vcomm/vcomm-1/tovi-joke2",
+      "parentBranch": "vcomm/vcomm-1/tovi",
+      "shortHash": "e529cd7",
+      "lastCommitMessage": "add: tova joke 2",
       "isMergedIntoParent": false,
       "isCurrent": true
     },
