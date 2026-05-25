@@ -9,10 +9,10 @@ import HadarJokePage from "./hadar-jerafi/JokePage";
 import HadarCard from "./hadar-jerafi/Card";
 
 
-// ⚠️ סדר הרשימה חייב להיות לפי סדר האלף-בית העברי לפי שם המשפחה.
-// כל תלמידה מוסיפה את עצמה במקום הנכון ידנית.
-// אסור להשתמש בפונקציית-sort! 
-const students: Student[] = [
+import ayalaKleinCard from "./shani/Card";
+import ayalaKleinJokePage from "./shani/JokePage";
+
+export const students: Student[] = [
   {
     id: "dana-duvi",
     name: "דנה דובי",
@@ -28,6 +28,12 @@ const students: Student[] = [
     JokePageComponent: ChaniChanzinJokePage,
   },
   {
+    id: "ayalaklein",
+    name: "שני דרבקין",
+    jokeTitle: "בדיחת באגים",
+    CardComponent: ayalaKleinCard,
+    JokePageComponent: ayalaKleinJokePage,
+  },
   id: "hadar",
   name: "הדר ג'ראפי",
   jokeTitle: "הבדיחה המשעשעת שלי",
