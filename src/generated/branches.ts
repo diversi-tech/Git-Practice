@@ -2,12 +2,28 @@
 import type { BranchData } from "../types";
 
 const data: BranchData = {
-  "generatedAt": "2026-04-26T22:06:42.722Z",
-  "currentBranch": "",
+  "generatedAt": "2026-05-25T09:22:04.397Z",
+  "currentBranch": "maayan-vecomm-1-vecomm",
   "mainBranch": "master",
   "branches": [
     {
+      "name": "maayan-vecomm-1-vecomm",
+      "parentBranch": "master",
+      "shortHash": "5a45e43",
+      "lastCommitMessage": "add: maayan joke",
+      "isMergedIntoParent": false,
+      "isCurrent": true
+    },
+    {
       "name": "master",
+      "parentBranch": null,
+      "shortHash": "0c10217",
+      "lastCommitMessage": "fix: instructions branch names",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "stars",
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
@@ -15,157 +31,29 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
-      "name": "diamond",
-      "parentBranch": "master",
-      "shortHash": "234",
-      "lastCommitMessage": "diamond",
+      "name": "stars-green",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
       "isMergedIntoParent": false,
       "isCurrent": false
     },
     {
-      "name": "red",
-      "parentBranch": "diamond",
-      "shortHash": "23444",
-      "lastCommitMessage": "moshe",
+      "name": "stars-green-bat-sheva-bloch",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
       "isMergedIntoParent": false,
       "isCurrent": false
     },
     {
-      "name": "miri",
-      "parentBranch": "red",
-      "shortHash": "23444",
-      "lastCommitMessage": "miri",
+      "name": "vecomm-1-vecomm",
+      "parentBranch": null,
+      "shortHash": "0c10217",
+      "lastCommitMessage": "fix: instructions branch names",
       "isMergedIntoParent": false,
       "isCurrent": false
-    },
-    {
-      "name": "roch",
-      "parentBranch": "red",
-      "shortHash": "23444",
-      "lastCommitMessage": "roch ",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "roch",
-      "parentBranch": "red",
-      "shortHash": "23444",
-      "lastCommitMessage": "roch ",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "avi nos",
-      "parentBranch": "red",
-      "shortHash": "23444",
-      "lastCommitMessage": "roch ",
-      "isMergedIntoParent": true,
-      "isCurrent": false
-    },
-    {
-      "name": "shia cjss  s",
-      "parentBranch": "red",
-      "shortHash": "23444",
-      "lastCommitMessage": "roch ",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "blue",
-      "parentBranch": "diamond",
-      "shortHash": "23444",
-      "lastCommitMessage": "moshe",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "red",
-      "parentBranch": "diamond",
-      "shortHash": "23444",
-      "lastCommitMessage": "moshe",
-      "isMergedIntoParent": false,
-      "isCurrent": true
-    },
-    {
-      "name": "star",
-      "parentBranch": "master",
-      "shortHash": "23454",
-      "lastCommitMessage": "yos",
-      "isMergedIntoParent": true,
-      "isCurrent": false
-    },
-    {
-      "name": "green",
-      "parentBranch": "star",
-      "shortHash": "23454",
-      "lastCommitMessage": "green",
-      "isMergedIntoParent": true,
-      "isCurrent": false
-    },
-    {
-      "name": "tut",
-      "parentBranch": "green",
-      "shortHash": "23454",
-      "lastCommitMessage": "green",
-      "isMergedIntoParent": true,
-      "isCurrent": false
-    },
-    {
-      "name": "brach",
-      "parentBranch": "green",
-      "shortHash": "23454",
-      "lastCommitMessage": "green",
-      "isMergedIntoParent": true,
-      "isCurrent": false
-    },
-    {
-      "name": "yochi",
-      "parentBranch": "green",
-      "shortHash": "23454",
-      "lastCommitMessage": "green",
-      "isMergedIntoParent": true,
-      "isCurrent": false
-    },
-    {
-      "name": "sjn cjknd",
-      "parentBranch": "green",
-      "shortHash": "23454",
-      "lastCommitMessage": "green",
-      "isMergedIntoParent": true,
-      "isCurrent": false
-    },
-    {
-      "name": "yellow",
-      "parentBranch": "star",
-      "shortHash": "23454",
-      "lastCommitMessage": "yellow fkgnlfg df",
-      "isMergedIntoParent": true,
-      "isCurrent": false
-    },
-    {
-      "name": "hjdf df",
-      "parentBranch": "yellow",
-      "shortHash": "23454",
-      "lastCommitMessage": "yellow fkgnlfg df",
-      "isMergedIntoParent": true,
-      "isCurrent": false
-    },
-    {
-      "name": "gfkj dfkn",
-      "parentBranch": "yellow",
-      "shortHash": "23454",
-      "lastCommitMessage": "yellow fkgnlfg df",
-      "isMergedIntoParent": true,
-      "isCurrent": false
-    },
-    {
-      "name": "fldngk  df",
-      "parentBranch": "yellow",
-      "shortHash": "23454",
-      "lastCommitMessage": "yellow fkgnlfg df",
-      "isMergedIntoParent": true,
-      "isCurrent": false
-    },
+    }
   ]
 };
 
