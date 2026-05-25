@@ -1,34 +1,27 @@
-/* הגדרות כלליות לדף - הרקע הסגול-כחול */
 .pageBackground {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(135deg, #7e57c2, #5c6bc0); /* רקע מדורג יפה */
-  direction: rtl; /* יישור לימין בשביל העברית */
+  background: linear-gradient(135deg, #7e57c2, #5c6bc0);
+  direction: rtl;
 }
 
-/* העיצוב של "הכרטיס" הלבן עצמו */
 .jokeCard {
-  background: white; /* רקע לבן נקי */
-  padding: 3rem 2rem; /* מרווחים פנימיים גדולים */
-  border-radius: 20px; /* פינות מעוגלות מאוד */
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* צל גדול ורך - הקסם! */
+  background: white;
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   width: 90%;
   max-width: 500px;
   text-align: center;
-  
-  /* אנימציית כניסה קטנה כשהדף נטען */
-  animation: fadeInDown 0.6s ease;
 }
 
-/* האימוג'י הגדול למעלה */
 .bigEmoji {
   font-size: 4rem;
   margin-bottom: 1rem;
 }
 
-/* עיצוב השאלה והתשובה */
 .jokeQuestion {
   font-size: 2rem;
   font-weight: bold;
@@ -42,38 +35,23 @@
   margin-bottom: 2rem;
 }
 
-/* עיצוב כפתור החזרה (בדיוק כמו אצל דנה!) */
 .backButton {
-  background-color: #fca326; /* כתום חזק */
+  background-color: #fca326;
   color: white;
   border: none;
   padding: 12px 30px;
-  border-radius: 50px; /* מעוגל לחלוטין */
+  border-radius: 50px;
   font-size: 1.1rem;
   font-weight: bold;
   cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 8px; /* מרווח בין הטקסט לחץ */
-  margin: 0 auto; /* מרכוז */
-  
-  /* אנימציה כשעוברים עם העכבר */
+  gap: 8px;
+  margin: 0 auto;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .backButton:hover {
-  background-color: #e98a1a; /* כתום כהה יותר ב-Hover */
-  transform: scale(1.05); /* הכפתור גדל מעט */
-}
-
-/* אנימציית ה-fadeInDown */
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  background-color: #e98a1a;
+  transform: scale(1.05);
 }
