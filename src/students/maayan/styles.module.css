@@ -1,0 +1,162 @@
+/* --- כרטיס הבדיחה הראשי --- */
+
+.card {
+  background: #111; /* רקע שחור עמוק */
+  border-radius: 20px;
+  padding: 1.8rem;
+  border: 2px solid #0ff; /* מסגרת ניאון טורקיז */
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.4), inset 0 0 10px rgba(0, 255, 255, 0.2);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* אפקט קפיצי */
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before { /* פלאש ניאון ברקע */
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(0, 255, 255, 0.2) 0%, rgba(17, 17, 17, 0) 70%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px) rotate(2deg); /* קפיצה וסיבוב פאנקי */
+  box-shadow: 0 15px 35px rgba(0, 255, 255, 0.7), inset 0 0 20px rgba(0, 255, 255, 0.4);
+  border-color: #ff00ff; /* שינוי מסגרת לניאון מג'נטה */
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.avatar {
+  font-size: 3.5rem;
+  margin-bottom: 0.8rem;
+  filter: drop-shadow(0 0 8px rgba(0, 255, 255, 0.7));
+  transition: all 0.3s ease;
+}
+
+.card:hover .avatar {
+  transform: scale(1.2) rotate(-10deg);
+  filter: drop-shadow(0 0 15px rgba(255, 0, 255, 1));
+}
+
+.title {
+  font-size: 1.6rem;
+  color: #fff; /* לבן נקי */
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.name {
+  font-size: 1rem;
+  color: #888; /* אפור בינוני */
+  margin-bottom: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.badge {
+  display: inline-block;
+  background: #ff00ff; /* מג'נטה ניאון */
+  color: #fff;
+  border-radius: 6px; /* פינות חדות יותר */
+  padding: 0.4rem 1.2rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 0 10px rgba(255, 0, 255, 0.6);
+  transform: rotate(-3deg); /* זווית פאנקי */
+}
+
+/* --- דף הבדיחה המלא --- */
+
+.jokePage {
+  background: #111; /* רקע שחור עמוק */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  font-family: 'Poppins', sans-serif; /* פונט הייטקי */
+}
+
+.jokeHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.bigEmoji {
+  font-size: 6rem;
+  filter: drop-shadow(0 0 15px rgba(0, 255, 255, 0.7));
+  animation: vibe 1.5s infinite linear; /* אנימציה רועדת */
+}
+
+.jokeCard {
+  background: rgba(255, 255, 255, 0.05); /* רקע שקוף למחצה */
+  border-radius: 24px;
+  padding: 3rem 2.5rem;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  margin-bottom: 2.5rem;
+  backdrop-filter: blur(5px); /* אפקט זכוכית */
+}
+
+.jokeCard h2 {
+  font-size: 1.4rem;
+  color: #0ff; /* טורקיז ניאון */
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+}
+
+.jokeCard p {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  font-weight: 600;
+  color: #fff; /* לבן נקי */
+  margin: 0;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+.backBtn {
+  background: #0ff; /* טורקיז ניאון */
+  color: #111; /* שחור */
+  border: none;
+  border-radius: 12px;
+  padding: 1rem 3rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 5px 15px rgba(0, 255, 255, 0.4);
+}
+
+.backBtn:hover {
+  background: #ff00ff; /* מג'נטה ניאון */
+  color: #fff;
+  box-shadow: 0 8px 25px rgba(255, 0, 255, 0.7);
+  transform: translateY(-3px) scale(1.05);
+}
+
+/* אנימציות */
+@keyframes vibe {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  25% { transform: translateY(-3px) rotate(-1deg); }
+  75% { transform: translateY(3px) rotate(1deg); }
+}
