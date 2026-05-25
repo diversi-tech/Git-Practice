@@ -1,0 +1,82 @@
+.card {
+  background: linear-gradient(135deg, #f0f4ff 0%, #e3e8ff 100%);
+  padding: 16px;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.1);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.2);
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin: 0 0 8px 0;
+}
+
+.name {
+  font-size: 0.9rem;
+  color: #9ca3af;
+  margin: 0;
+}
+
+.jokePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0f4ff 0%, #e3e8ff 100%);
+  padding: 2rem;
+}
+
+.jokeBox {
+  background: white;
+  border-radius: 16px;
+  padding: 2.5rem;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.15);
+}
+
+.jokeSetup {
+  font-size: 1.3rem;
+  color: #374151;
+  margin: 0 0 1rem 0;
+  font-weight: 500;
+}
+
+.jokePunchline {
+  font-size: 1.4rem;
+  color: #1f2937;
+  margin: 0;
+  font-weight: bold;
+}
+
+.backBtn {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 2rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.backBtn:hover {
+  background: #4338ca;
+  transform: translateY(-2px);
+}
+
+.backBtn:active {
+  transform: translateY(0);
+}
