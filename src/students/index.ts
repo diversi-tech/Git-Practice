@@ -7,6 +7,8 @@ import DanaDuviJokePage from "./dana-duvi/JokePage";
 
 import ChaniChanzinCard from "./chani-chanzin/Card";
 import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
+import RachelWeinbergerJokePage from "./rachel-weinberger/JokePage";
+import RachelWeinbergerCard from "./rachel-weinberger/Card";
 
 
 
@@ -29,6 +31,7 @@ const students: Student[] = [
     CardComponent: ChaniChanzinCard,
     JokePageComponent: ChaniChanzinJokePage,
   },
+ 
   {
     id:"yehudit",
     name: "יהודית",
@@ -37,6 +40,15 @@ const students: Student[] = [
     JokePageComponent: yehuditJokePage,
   },
   
+
+
+    {
+    id: "rachel-weinberger",
+    name: "רחלי וינברגר",
+    jokeTitle: "כפית אחת יותר מדי",
+    CardComponent: RachelWeinbergerCard,
+    JokePageComponent: RachelWeinbergerJokePage,
+  },
 
 ];
 
