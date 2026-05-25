@@ -1,0 +1,115 @@
+/* ===================================================
+   1. עיצוב הכרטיס בדף הבית (התמונה הכחולה/שקופה ששלחת)
+   =================================================== */
+
+.card {
+  background: #ffffff !important; /* מחזיר את הצבע הלבן הנקי לכרטיס */
+  padding: 2.5rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06); /* צל עדין ומודרני */
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* אפקט ריחוף מגניב כשעוברים עם העכבר על הכרטיס בדף הבית */
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* עיצוב הטקסטים בתוך הכרטיס בדף הבית */
+.title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+}
+
+.name {
+  font-size: 1.1rem;
+  color: #718096;
+  font-weight: 500;
+}
+
+
+/* ===================================================
+   2. עיצוב הדף הפנימי של הבדיחה המפורטת
+   =================================================== */
+
+/* הרקע הסגול-כחול המדורג של הדף הפנימי */
+.pageBackground {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  direction: rtl;
+  padding: 20px;
+}
+
+/* הכרטיס הלבן המרכזי בדף הפנימי */
+.jokeCard {
+  background: #ffffff;
+  padding: 3.5rem 2.5rem;
+  border-radius: 24px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 480px;
+  text-align: center;
+}
+
+/* אימוג'י עוגיה גדול */
+.bigEmoji {
+  font-size: 4.5rem;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+}
+
+/* השאלה הראשית */
+.jokeQuestion {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #2d3748;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+/* התשובה */
+.jokeAnswer {
+  font-size: 1.3rem;
+  color: #718096;
+  margin-bottom: 2.5rem;
+  font-weight: 500;
+}
+
+/* כפתור החזרה הכתום והמעוגל */
+.backButton {
+  background: linear-gradient(135deg, #fca326 0%, #ef8700 100%);
+  color: white !important;
+  text-decoration: none !important;
+  padding: 14px 36px;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 0 auto;
+  box-shadow: 0 4px 15px rgba(252, 163, 38, 0.4);
+  transition: all 0.25s ease;
+}
+
+.backButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(252, 163, 38, 0.6);
+  filter: brightness(1.05);
+}
+
+.backButton:active {
+  transform: translateY(0);
+}
