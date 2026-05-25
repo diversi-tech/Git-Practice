@@ -1,5 +1,6 @@
 import { Student } from "../types";
-
+import ChedvaflishmanCard from "./chedva-fl/Card";
+import ChedvaflishmanJokePage from "./chedva-fl/JokePage";
 import DanaDuviCard from "./dana-duvi/Card";
 import DanaDuviJokePage from "./dana-duvi/JokePage";
 
@@ -23,6 +24,13 @@ const students: Student[] = [
     jokeTitle: "התנין והתנינה",
     CardComponent: ChaniChanzinCard,
     JokePageComponent: ChaniChanzinJokePage,
+  },
+  {
+    id: "chedvaglishman",
+    name: "חדוה פליישמן",
+    jokeTitle: "😊😊חחח",
+    CardComponent: ChedvaflishmanCard,
+    JokePageComponent: ChedvaflishmanJokePage,
   },
 ];
 
