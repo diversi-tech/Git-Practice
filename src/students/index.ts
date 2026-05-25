@@ -7,6 +7,9 @@ import ChaniChanzinCard from "./chani-chanzin/Card";
 import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
 import RachelPanetCard from "./RachelPanet/Card";
 import RachelPanetJokePage from "./RachelPanet/JokePage";
+import EsterLewinJokePage from "./ester-lewin/JokerPage";
+import EsterLewinCard from "./ester-lewin/Card";
+
 
 // ⚠️ סדר הרשימה חייב להיות לפי סדר האלף-בית העברי לפי שם המשפחה.
 // כל תלמידה מוסיפה את עצמה במקום הנכון ידנית.
@@ -25,14 +28,21 @@ const students: Student[] = [
     jokeTitle: "התנין והתנינה",
     CardComponent: ChaniChanzinCard,
     JokePageComponent: ChaniChanzinJokePage,
-  },
-    {
+  },    {
     id: "Rachel-Panet",
     name: "רחלי פנט",
     jokeTitle: "האצבע השבורה",
     CardComponent: RachelPanetCard,
     JokePageComponent: RachelPanetJokePage,
   },
+  {
+  id: "ester-lewin",
+  name: "אסתר לוין",
+  jokeTitle: "הכובע והקוד",
+  CardComponent: EsterLewinCard,
+  JokePageComponent: EsterLewinJokePage,
+},
+  
 ];
 
 export default students;
