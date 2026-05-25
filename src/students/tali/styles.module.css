@@ -1,0 +1,76 @@
+.card {
+  background: linear-gradient(135deg, #f9f6ff 0%, #d3c1ff 100%);
+  border: 3px solid #8b63ff;
+  box-shadow: 0 8px 24px rgba(139, 99, 255, 0.25);
+  border-radius: 24px;
+  padding: 1.5rem 1.4rem;
+  text-align: center;
+}
+
+.icon {
+  font-size: 3rem;
+  margin-bottom: 0.8rem;
+}
+
+.title {
+  font-size: 1.4rem;
+  color: #4d2b87;
+  margin-bottom: 0.35rem;
+}
+
+.name {
+  font-size: 1rem;
+  color: #63529f;
+  margin-bottom: 0.9rem;
+}
+
+.hint {
+  font-size: 0.85rem;
+  color: #4f3a7d;
+}
+
+.jokePage {
+  background: linear-gradient(160deg, #fff8fb 0%, #e7ddff 100%);
+  min-height: 100%;
+}
+
+.jokeBox {
+  background: #ffffff;
+  border: 2px solid #8b63ff;
+  border-radius: 24px;
+  padding: 2rem 2.2rem;
+  max-width: 520px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(139, 99, 255, 0.18);
+  margin: 2rem auto;
+}
+
+.setup {
+  font-size: 1.6rem;
+  color: #3e2375;
+  margin-bottom: 1rem;
+}
+
+.punchline {
+  font-size: 1.3rem;
+  line-height: 1.7;
+  color: #5f4697;
+}
+
+.backBtn {
+  background: #8b63ff;
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 0.85rem 1.8rem;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.backBtn:hover {
+  transform: translateY(-1px);
+  background: #6446c4;
+}
