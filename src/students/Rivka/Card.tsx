@@ -1,5 +1,5 @@
 import styles from "./styles.module.css";
-import { CardProps } from "../../../types";
+import { CardProps } from "../../types";
 
 export default function RivkaCard({ student, onClick }: CardProps) {
   return (

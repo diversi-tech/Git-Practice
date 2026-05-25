@@ -1,5 +1,5 @@
 import styles from "./styles.module.css";
-import { PageProps } from "../../../types";
+import { PageProps } from "../../types";
 
 export default function RivkaJokePage({ onBack }: PageProps) {
   return (

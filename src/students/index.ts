@@ -1,7 +1,7 @@
 import { Student } from "../types";
 
-import RivkaCard from "./rivka-barashi/Card";
-import RivkaJokePage from "./rivka-barashi/JokePage";
+import RivkaCard from "./Rivka/Card";
+import RivkaJokePage from "./Rivka/JokePage";
 
 import DanaDuviCard from "./dana-duvi/Card";
 import DanaDuviJokePage from "./dana-duvi/JokePage";
