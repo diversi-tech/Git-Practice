@@ -1,3 +1,45 @@
+/* ===================================================
+   1. עיצוב הכרטיס בדף הבית (התמונה הכחולה/שקופה ששלחת)
+   =================================================== */
+
+.card {
+  background: #ffffff !important; /* מחזיר את הצבע הלבן הנקי לכרטיס */
+  padding: 2.5rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06); /* צל עדין ומודרני */
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* אפקט ריחוף מגניב כשעוברים עם העכבר על הכרטיס בדף הבית */
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* עיצוב הטקסטים בתוך הכרטיס בדף הבית */
+.title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+}
+
+.name {
+  font-size: 1.1rem;
+  color: #718096;
+  font-weight: 500;
+}
+
+
+/* ===================================================
+   2. עיצוב הדף הפנימי של הבדיחה המפורטת
+   =================================================== */
+
 /* הרקע הסגול-כחול המדורג של הדף הפנימי */
 .pageBackground {
   display: flex;
@@ -9,7 +51,7 @@
   padding: 20px;
 }
 
-/* הכרטיס הלבן המרכזי - נקי, מודרני וצף */
+/* הכרטיס הלבן המרכזי בדף הפנימי */
 .jokeCard {
   background: #ffffff;
   padding: 3.5rem 2.5rem;
@@ -18,7 +60,6 @@
   width: 100%;
   max-width: 480px;
   text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.8);
 }
 
 /* אימוג'י עוגיה גדול */
@@ -28,7 +69,7 @@
   display: inline-block;
 }
 
-/* השאלה הראשי */
+/* השאלה הראשית */
 .jokeQuestion {
   font-size: 2.2rem;
   font-weight: 800;
@@ -48,14 +89,13 @@
 /* כפתור החזרה הכתום והמעוגל */
 .backButton {
   background: linear-gradient(135deg, #fca326 0%, #ef8700 100%);
-  color: white;
-  border: none;
+  color: white !important;
+  text-decoration: none !important;
   padding: 14px 36px;
   border-radius: 50px;
   font-size: 1.1rem;
   font-weight: 700;
-  cursor: pointer;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
@@ -64,7 +104,6 @@
   transition: all 0.25s ease;
 }
 
-/* אפקט מטורף כשעוברים עם העכבר על הכפתור */
 .backButton:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(252, 163, 38, 0.6);
