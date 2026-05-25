@@ -1,12 +1,30 @@
-import styles from "./styles.module.css";
-import { PageProps } from "../../types";
+import styles from './styles.module.css';
 
-export default function TamarJokePage({ onBack }: PageProps) {
+export const JokePage = () => {
   return (
-    <div className={`joke-page ${styles.jokePage}`}>
-      <h1 className={styles.question}>איך מתכנתת עושה דיאטה?</h1>
-      <p className={styles.answer}>היא פשוט מוחקת את ה-Cookies מהדפדפן! 🍪</p>
-      <button className={styles.backButton} onClick={onBack}>← חזרה</button>
+    <div className={styles.pageBackground}> {/* זה הרקע הכחול הגדול */}
+      
+      {/* תחילת הכרטיס הלבן המגניב */}
+      <div className={styles.jokeCard}>
+        
+        <div className={styles.bigEmoji}>🍪</div>
+
+        <h1 className={styles.jokeQuestion}>
+          איך מתכנתת עושה דיאטה?
+        </h1>
+        
+        <p className={styles.jokeAnswer}>
+          היא פשוט מוחקת את ה-Cookies מהדפדפן! 🍪
+        </p>
+
+        {/* פה יהיה כפתור החזרה המעוצב */}
+        <button className={styles.backButton}>
+          חזרה <span>←</span>
+        </button>
+
+      </div>
+      {/* סוף הכרטיס */}
+
     </div>
   );
-}
+};
