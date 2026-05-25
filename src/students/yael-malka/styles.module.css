@@ -1,0 +1,179 @@
+.card {
+  position: relative;
+  padding: 18px 20px;
+  border-radius: 18px;
+
+  background: linear-gradient(145deg, #ffffff, #f3f6ff);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+/* אפקט זוהר עדין בפינה */
+.card::before {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  top: -50px;
+  right: -50px;
+  background: radial-gradient(circle, #6c63ff33, transparent 70%);
+  z-index: 0;
+}
+
+/* אפקט קו זוהר בתחתית */
+.card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #6c63ff, #00d4ff, #6c63ff);
+  opacity: 0.7;
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1f2233;
+  z-index: 1;
+  margin: 0;
+}
+
+.name {
+  font-size: 16px;
+  color: #6b7280;
+  z-index: 1;
+  margin: 0;
+}
+
+/* אפקט כניסה */
+.card {
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.jokePage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 24px;
+
+  background: radial-gradient(circle at top, #7c5cff22, transparent 40%),
+              radial-gradient(circle at bottom, #00d4ff22, transparent 40%),
+              #0f172a;
+
+  font-family: system-ui, sans-serif;
+}
+
+/* כרטיס מרכזי */
+.jokePage > p {
+  max-width: 520px;
+}
+
+/* כרטיס תוכן */
+.jokePage {
+  gap: 16px;
+}
+
+/* הופך את התוכן לכרטיס יפה */
+.jokePage {
+  text-align: center;
+}
+
+/* ניצור "כרטיס פנימי" בעזרת pseudo wrapper */
+.jokePage::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+/* נעטוף את התוכן עצמו */
+.jokePage p:nth-of-type(2) {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  padding: 20px;
+  border-radius: 18px;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  color: #e5e7eb;
+  line-height: 1.7;
+
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+
+  animation: pop 0.4s ease;
+}
+
+/* כותרת */
+.jokePage p:first-of-type {
+  font-size: 18px;
+  color: #a5b4fc;
+  margin-bottom: 10px;
+}
+
+/* כפתור */
+.jokePage button {
+  margin-top: 20px;
+
+  padding: 10px 18px;
+  border-radius: 12px;
+
+  border: none;
+  cursor: pointer;
+
+  background: linear-gradient(90deg, #7c5cff, #00d4ff);
+  color: white;
+
+  font-weight: 600;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.jokePage button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(124, 92, 255, 0.3);
+}
+
+/* אנימציה */
+@keyframes pop {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
