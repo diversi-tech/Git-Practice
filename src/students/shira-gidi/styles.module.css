@@ -1,0 +1,145 @@
+/* ==================== כרטיסיית בדיחה (Card) ==================== */
+.card {
+  background: linear-gradient(145deg, #1e1e2e, #181825); /* אפקט עומק קל */
+  border: 2px solid #313244;
+  border-radius: 16px;
+  padding: 24px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  
+  /* מרכוז מלא של התוכן בתוך הכרטיס */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 14px;
+  max-width: 350px;
+}
+
+/* אפקט ריחוף דינמי */
+.card:hover {
+  transform: translateY(-6px);
+  border-color: #a6e3a1; /* הופך לירוק קוד בריחוף */
+  box-shadow: 0 12px 24px rgba(166, 227, 161, 0.15);
+}
+
+/* הוספת אלמנט עיצובי - נקודות של חלון מערכת (כמו מקבוק) בחלק העליון */
+.card::before {
+  content: "● ● ●";
+  color: #45475a;
+  font-size: 8px;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 10px;
+  left: 14px;
+}
+
+/* כותרת הבדיחה בכרטיס */
+.title {
+  color: #cdd6f4;
+  font-size: 1.4rem;
+  margin: 0;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+/* שם הסטודנט בכרטיס - מיושר למרכז ומעוצב כאייקון/תגית */
+.name {
+  color: #89b4fa; /* כחול הייטק */
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.95rem;
+  margin: 0;
+  background: rgba(137, 180, 250, 0.1);
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid rgba(137, 180, 250, 0.2);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* הוספת אייקון אוטומטי לפני השם באמצעות CSS */
+.name::before {
+  content: "👩‍💻";
+  font-size: 1rem;
+}
+
+
+/* ==================== עמוד בדיחה מלאה (Joke Page) ==================== */
+.jokePage {
+  background: #11111b;
+  border: 2px dashed #74c7ec; /* מסגרת מקווקווקת בסגנון עיצובי */
+  border-radius: 24px;
+  padding: 40px;
+  
+  /* מרכוז מלא של העמוד והטקסט */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+  max-width: 500px;
+  margin: 40px auto;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  position: relative;
+}
+
+/* כותרת סוג הבדיחה - הוספת אייקון מנורה */
+.jokePage p:first-of-type {
+  color: #fab387; 
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin: 0 0 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.jokePage p:first-of-type::before {
+  content: "💡";
+  font-size: 1.2rem;
+}
+
+/* תוכן הבדיחה עצמה - ממורכז ובולט */
+.jokePage p:nth-of-type(2) {
+  color: #ffffff;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  margin: 20px 0 30px 0;
+  font-weight: 600;
+  max-width: 90%;
+}
+
+/* כפתור חזרה אינטראקטיבי */
+.jokePage button {
+  background: #313244;
+  color: #cdd6f4;
+  border: 1px solid #45475a;
+  padding: 12px 28px;
+  font-size: 1rem;
+  border-radius: 50px; /* קצוות עגולים לחלוטין למראה מודרני */
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* אפקט ריחוף ולחיצה על הכפתור */
+.jokePage button:hover {
+  background: #74c7ec; /* צבע תואם למסגרת */
+  color: #11111b;
+  transform: scale(1.05);
+}
+
+.jokePage button:active {
+  transform: scale(0.98);
+}

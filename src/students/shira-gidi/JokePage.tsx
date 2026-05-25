@@ -4,8 +4,8 @@ import { PageProps } from "../../types";
 export default function shiraGidiJokePage({ onBack }: PageProps) {
   return (
     <div className={`joke-page ${styles.jokePage}`}>
-      <p>כותרת הבדיחה</p>
-      <p>תשובת הבדיחה</p>
+      <p>בדיחת מתכנתים</p>
+      <p>"למה מחשבים לא הולכים לים? כי הם מפחדים מהגלישה!"</p>
       <button onClick={onBack}>← חזרה</button>
     </div>
   );

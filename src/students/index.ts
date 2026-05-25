@@ -23,7 +23,7 @@ const students: Student[] = [
   {
   id: "shira-gidi",
   name: "שירה גידי",
-  jokeTitle: "בדיחה",
+  jokeTitle: "בדיחת מתכנתים",
   CardComponent: shiraGidiCard,
   JokePageComponent: shiraGidiJokePage,
 },
