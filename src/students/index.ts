@@ -26,7 +26,7 @@ export const students: Student[] = [
   },
   {
     id: "ayalaklein",
-    name: "אילה קליין",
+    name: "שני דרבקין",
     jokeTitle: "בדיחת באגים",
     CardComponent: ayalaKleinCard,
     JokePageComponent: ayalaKleinJokePage,
