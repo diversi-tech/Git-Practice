@@ -33,7 +33,6 @@ const students: Student[] = [
   CardComponent: TamarZwiebelCard,
   JokePageComponent: TamarZwiebelJokePage,
 },
-
 ];
 
 export default students;
