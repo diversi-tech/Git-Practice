@@ -5,15 +5,36 @@ import DanaDuviJokePage from "./dana-duvi/JokePage";
 
 import ChaniChanzinCard from "./chani-chanzin/Card";
 import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
+
 import EtiMunkCard from "./Eti-Munk/Card";
 import EtiMunkJokePage from "./Eti-Munk/JokePage";
 import ChanaMoshayevJokePage from "./chanaMoshayev/JokePage";
 import chanaMoshayevCard from "./chanaMoshayev/Card";
 
+import MaayanCard from "./Maayan-Babahanov/Card";
+import MaayanJokePage from "./Maayan-Babahanov/JokePage";
+
+import zehaviJokePage from "./zehavi-gerlitz/JokePage";
+import zehaviCard from "./zehavi-gerlitz/card";
+
 // ⚠️ סדר הרשימה חייב להיות לפי סדר האלף-בית העברי לפי שם המשפחה.
 // כל תלמידה מוסיפה את עצמה במקום הנכון ידנית.
-// אסור להשתמש בפונקציית-sort! 
+// אסור להשתמש בפונקציית-sort!
 const students: Student[] = [
+  {
+    id: "Maayan-Babahanov",
+    name: "מעיין בבחנוב",
+    jokeTitle: "שיעור מחשבים 💻",
+    CardComponent: MaayanCard,
+    JokePageComponent: MaayanJokePage,
+  },
+  {
+    id: "zehavi-gerlitz",
+    name: "זהבי גרליץ",
+    jokeTitle: "כעכים או כאחים?",
+    CardComponent: zehaviCard,
+    JokePageComponent: zehaviJokePage,
+  },
   {
     id: "dana-duvi",
     name: "דנה דובי",
