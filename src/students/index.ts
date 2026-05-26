@@ -5,8 +5,12 @@ import DanaDuviJokePage from "./dana-duvi/JokePage";
 
 import ChaniChanzinCard from "./chani-chanzin/Card";
 import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
-import saraRafalowitzCard from "./saraRafalowitz/Card";
-import saraRafalowitzJokePage from "./saraRafalowitz/JokePage";
+
+import SaraRafalowitzCard from "./saraRafalowitz/Card";
+import SaraRafalowitzJokePage from "./saraRafalowitz/JokePage";
+
+import MaayanCard from "./Maayan-shoukron/MaayanCard";
+import MaayanJokePage from "./Maayan-shoukron/MaayanJokePage";
 
 // ⚠️ סדר הרשימה חייב להיות לפי סדר האלף-בית העברי לפי שם המשפחה.
 // כל תלמידה מוסיפה את עצמה במקום הנכון ידנית.
@@ -30,8 +34,15 @@ const students: Student[] = [
     id: "sara-rafalowitz",
     name: "שרה רפאלוביץ'",
     jokeTitle: "השניצל והחומוס",
-    CardComponent: saraRafalowitzCard,
-    JokePageComponent: saraRafalowitzJokePage,
+    CardComponent: SaraRafalowitzCard,
+    JokePageComponent: SaraRafalowitzJokePage,
+  },
+  {
+    id: "maayan-shoukron",
+    name: "מעיין שוקרון",
+    jokeTitle: "החלב הצוחק",
+    CardComponent: MaayanCard,
+    JokePageComponent: MaayanJokePage,
   },
 ];
 
