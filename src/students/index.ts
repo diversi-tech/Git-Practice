@@ -1,4 +1,6 @@
 import { Student } from "../types";
+import TamarZwiebelCard from "./Tamar-Zwiebel/Card";
+import TamarZwiebelJokePage from "./Tamar-Zwiebel/JokePage";
 
 import DanaDuviCard from "./dana-duvi/Card";
 import DanaDuviJokePage from "./dana-duvi/JokePage";
@@ -24,6 +26,13 @@ const students: Student[] = [
     CardComponent: ChaniChanzinCard,
     JokePageComponent: ChaniChanzinJokePage,
   },
+  {
+  id: "Tamar_zwiebel",
+  name: "תמר צויבל",
+  jokeTitle: "לא באחריותי! 🛑",
+  CardComponent: TamarZwiebelCard,
+  JokePageComponent: TamarZwiebelJokePage,
+},
 ];
 
 export default students;
