@@ -20,13 +20,13 @@ import TamarJokePage from "./tamar-lev/JokePage";
 // כל תלמידה מוסיפה את עצמה במקום הנכון ידנית.
 // אסור להשתמש בפונקציית-sort!
 const students: Student[] = [
-{
-  id: "bracha-pappenheim",
-  name: "ברכה פפנהיים",
-  jokeTitle: "שלום וברכה!",
-  CardComponent: BrachaCard,
-  JokePageComponent: brachaJokePage,
-},
+  {
+    id: "bracha-pappenheim",
+    name: "ברכה פפנהיים",
+    jokeTitle: "שלום וברכה!",
+    CardComponent: BrachaCard,
+    JokePageComponent: brachaJokePage,
+  },
   {
     id: "dana-duvi",
     name: "דנה דובי",
@@ -35,12 +35,12 @@ const students: Student[] = [
     JokePageComponent: DanaDuviJokePage,
   },
   {
-  id: "Yael-Shoham",
-  name: "יעל שהם",
-  jokeTitle: "הילד המדבר",
-  CardComponent: YaelCard,
-  JokePageComponent: YaelJokePage,
-},
+    id: "Yael-Shoham",
+    name: "יעל שהם",
+    jokeTitle: "הילד המדבר",
+    CardComponent: YaelCard,
+    JokePageComponent: YaelJokePage,
+  },
   {
     id: "chani-chanzin",
     name: "חני חנזין",
@@ -48,9 +48,6 @@ const students: Student[] = [
     CardComponent: ChaniChanzinCard,
     JokePageComponent: ChaniChanzinJokePage,
   },
-<<<<<<< HEAD
-
-=======
   {
     id: "Tamar-Lev",
     name: "תמר לב",
@@ -58,13 +55,14 @@ const students: Student[] = [
     CardComponent: TamarCard,
     JokePageComponent: TamarJokePage,
   },
+  {
     id: "ayala-oshri",
     name: "אילה עושרי",
     jokeTitle: "לולאה אינסופית",
     CardComponent: AyalaOshriCard,
     JokePageComponent: AyalaOshriJokePage,
   }
->>>>>>> 7d08bf688bc08b0abf0f88124cba529e54da77b7
+
 ];
 
 export default students;
