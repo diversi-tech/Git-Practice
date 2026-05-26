@@ -32,12 +32,31 @@ function getCurrentBranch() {
   return exec('git rev-parse --abbrev-ref HEAD');
 }
 
+function resolveRef(branch) {
+  const localRef = `refs/heads/${branch}`;
+  const remoteRef = `refs/remotes/origin/${branch}`;
+
+  if (exec(`git rev-parse --verify --quiet ${localRef}`)) {
+    return localRef;
+  }
+
+  if (exec(`git rev-parse --verify --quiet ${remoteRef}`)) {
+    return remoteRef;
+  }
+
+  return "";
+}
+
 function getTip(branch) {
-  return exec(`git rev-parse ${branch}`);
+  const ref = resolveRef(branch);
+  return ref ? exec(`git rev-parse ${ref}`) : "";
 }
 
 function getMergeBase(a, b) {
-  return exec(`git merge-base ${a} ${b}`);
+  const aRef = resolveRef(a);
+  const bRef = resolveRef(b);
+  if (!aRef || !bRef) return "";
+  return exec(`git merge-base ${aRef} ${bRef}`);
 }
 
 function getCommitTimestamp(hash) {
@@ -46,11 +65,13 @@ function getCommitTimestamp(hash) {
 }
 
 function getShortHash(branch) {
-  return exec(`git rev-parse --short ${branch}`);
+  const ref = resolveRef(branch);
+  return ref ? exec(`git rev-parse --short ${ref}`) : "";
 }
 
 function getLastCommitMessage(branch) {
-  return exec(`git log -1 --format=%s ${branch}`);
+  const ref = resolveRef(branch);
+  return ref ? exec(`git log -1 --format=%s ${ref}`) : "";
 }
 
 // ── Parent detection ─────────────────────────────────────────
