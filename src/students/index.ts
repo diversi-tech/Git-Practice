@@ -40,6 +40,13 @@ const students: Student[] = [
     CardComponent: SariYagelnikCard,
     JokePageComponent: SariYagelnikJokePage,
   },
+  {
+    id: "Sari-Yagelnik",
+    name: "שרי יגלניק",
+    jokeTitle: "העז והדוב",
+    CardComponent: SariYagelnikCard,
+    JokePageComponent: SariYagelnikJokePage,
+  },
 ];
 
 export default students;
