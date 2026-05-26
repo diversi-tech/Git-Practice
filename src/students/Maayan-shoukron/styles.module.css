@@ -1,0 +1,142 @@
+.jokePage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #ffe6f0, #e6f7ff);
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+/* הטקסט של הבדיחה */
+.jokePage p {
+  background: white;
+  padding: 15px 20px;
+  margin: 10px 0;
+
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+
+  font-size: 20px;
+  color: #333;
+
+  max-width: 300px;
+}
+
+/* הכפתור */
+.jokePage button {
+  margin-top: 20px;
+  padding: 10px 18px;
+
+  border: none;
+  border-radius: 999px;
+
+  background: #ff6fae;
+  color: white;
+
+  font-size: 16px;
+  cursor: pointer;
+
+  box-shadow: 0 6px 15px rgba(255, 111, 174, 0.3);
+  transition: all 0.2s ease;
+}
+
+.jokePage button:hover {
+  transform: scale(1.05);
+  background: #ff4f9a;
+}
+
+.jokePage button:active {
+  transform: scale(0.98);
+}
+.bubble {
+  position: relative;
+  background: white;
+  padding: 16px 20px;
+  margin: 10px 0;
+
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+
+  max-width: 320px;
+  text-align: center;
+  font-size: 20px;
+  color: #333;
+}
+
+/* הזנב של הבועה */
+.bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 0;
+  height: 0;
+
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid white;
+}
+.card {
+  width: 260px;
+  height: 160px;
+
+  background: linear-gradient(135deg, #ffffff, #f7f7ff);
+  border-radius: 20px;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+  position: relative;
+
+  padding: 15px;
+  text-align: center;
+}
+
+/* אפקט hover חמוד */
+.card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.18);
+}
+
+/* כותרת הבדיחה */
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+
+  margin-bottom: 10px;
+}
+
+/* שם התלמיד */
+.name {
+  font-size: 16px;
+  color: #666;
+
+  background: #ffe6f0;
+  padding: 5px 12px;
+  border-radius: 999px;
+}
+
+/* קישוט קטן בפינה */
+.card::before {
+  content: "😂";
+  position: absolute;
+  top: 10px;
+  right: 12px;
+
+  font-size: 18px;
+  opacity: 0.6;
+}

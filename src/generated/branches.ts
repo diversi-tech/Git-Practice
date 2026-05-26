@@ -4,6 +4,8 @@ import type { BranchData } from "../types";
 const data: BranchData = {
   "generatedAt": "2026-05-26T10:19:24.778Z",
   "currentBranch": "master",
+  "generatedAt": "2026-05-26T09:14:09.358Z",
+  "currentBranch": "mayanSJoke",
   "mainBranch": "master",
   "branches": [
     {
@@ -80,6 +82,31 @@ const data: BranchData = {
     },
     {
       "name": "Vcomm_1",
+      "name": "Eti-Orenbach",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "Hilla_Arye",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "Hilla_Arye_2",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "Maayan-Bukrits",
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
@@ -88,6 +115,7 @@ const data: BranchData = {
     },
     {
       "name": "Vcomm_2",
+      "name": "RivkaBarashi",
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
@@ -95,6 +123,52 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+      "name": "Vcomm_3",
+      "name": "Shira-Shemesh",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "Vcomm_3_noaNew",
+      "name": "ShiraShemesh2",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "ayala-joke2",
+      "name": "Vcomm",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "hadar-gerafi",
+      "name": "Vcomm_1",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "hadas-karasenti",
+      "name": "Vcomm_2",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "johnny-update-3",
       "name": "Vcomm_3",
       "parentBranch": null,
       "shortHash": "",
@@ -268,6 +342,14 @@ const data: BranchData = {
       "shortHash": "0c10217",
       "lastCommitMessage": "fix: instructions branch names",
       "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "mayanSJoke",
+      "parentBranch": null,
+      "shortHash": "0c10217",
+      "lastCommitMessage": "fix: instructions branch names",
+      "isMergedIntoParent": false,
       "isCurrent": true
     },
     {
@@ -384,6 +466,106 @@ const data: BranchData = {
     },
     {
       "name": "sola_sola2-Tamar",
+      "isCurrent": false
+    },
+    {
+      "name": "shani2",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "sola_sola2_gili",
+      "name": "shiraGidi",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "sola_sola2_hadas",
+      "name": "sola",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "sola_sola2_tamarD",
+      "name": "sola3",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "sola_sola2_yehudit",
+      "name": "sola4",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "sola_sola3_Efrat_Madmon",
+      "name": "sola_sola1",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "sola_sola3_saralevin",
+      "name": "sola_sola1_carmi",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "sola_sola3_yaeli",
+      "name": "sola_sola1_malka",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "stars",
+      "name": "sola_sola1_sari",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "sola_sola1_shifraZ",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "sola_sola2",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "sola_sola2-Tamar",
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
@@ -399,47 +581,7 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
-      "name": "sola_sola2_hadas",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "sola_sola2_tamarD",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
       "name": "sola_sola2_yehudit",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "sola_sola3_Efrat_Madmon",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "sola_sola3_saralevin",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "sola_sola3_yaeli",
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
