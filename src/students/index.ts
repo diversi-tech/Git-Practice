@@ -28,7 +28,7 @@ const students: Student[] = [
   },
   {
   id: "Shifra-Zaafrani",
-  name: "Shifra Zaafrani",
+  name: "שפרה זעפרני",
   jokeTitle: "האיש הקבצן",
   CardComponent: ShifraZaafraniCard,
   JokePageComponent: ShifraZaafraniJokePage,
