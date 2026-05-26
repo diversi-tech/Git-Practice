@@ -5,6 +5,8 @@ import DanaDuviJokePage from "./dana-duvi/JokePage";
 
 import ChaniChanzinCard from "./chani-chanzin/Card";
 import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
+import saraRafalowitzCard from "./saraRafalowitz/Card";
+import saraRafalowitzJokePage from "./saraRafalowitz/JokePage";
 
 import AyalaSamsonCard from "./ayala-samson/Card";
 import AyalaSamsonJokePage from "./ayala-samson/JokePage";
@@ -28,11 +30,18 @@ const students: Student[] = [
     JokePageComponent: ChaniChanzinJokePage,
   },
   {
+
     id: "ayala-samson",
     name: "איילה סאמסון",
     jokeTitle: "החתול המתכנת",
     CardComponent: AyalaSamsonCard,
     JokePageComponent: AyalaSamsonJokePage,
+
+    id: "sara-rafalowitz",
+    name: "שרה רפאלוביץ'",
+    jokeTitle: "השניצל והחומוס",
+    CardComponent: saraRafalowitzCard,
+    JokePageComponent: saraRafalowitzJokePage,
   },
 ];
 
