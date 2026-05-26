@@ -28,7 +28,7 @@ const students: Student[] = [
     JokePageComponent: ChaniChanzinJokePage,
   },
   {
-    id: "Efrat MAdmon",
+    id: "Efrat-MAdmon",
     name: "אפרת מדמון",
     jokeTitle: "עשרה שקלים",
     CardComponent: EfratMadmonCard,
