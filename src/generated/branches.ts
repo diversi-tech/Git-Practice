@@ -2,368 +2,104 @@
 import type { BranchData } from "../types";
 
 const data: BranchData = {
-  "generatedAt": "2026-05-26T09:22:40.749Z",
-  "currentBranch": "sola_sola1_shifraZ",
+  "generatedAt": "2026-04-26T22:06:42.722Z",
+  "currentBranch": "",
   "mainBranch": "master",
   "branches": [
     {
-      "name": "Eti-NewJoke",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "Eti-Orenbach",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "Hilla_Arye",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "Hilla_Arye_2",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "Maayan-Bukrits",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "RivkaBarashi",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "Shira-Shemesh",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "ShiraShemesh2",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "Vcomm",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "Vcomm_1",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "Vcomm_2",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "Vcomm_3",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "Vcomm_3_noaNew",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "ayala-joke2",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "hadar-gerafi",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "hadas-karasenti",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "kiter-2-RachelWeinberger",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "kitera",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "kiteria-1",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "kiteria-1-chedvaf",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "kiteria-1-efrat",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "kiteria-2",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "kiteria-2-yehudit",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "kiteria-3",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "kiteria-3-Ayelet",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "kiteria-3-ester",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "kiteria-3_RachelPanet",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "kiteria_chedva",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "maayan-vecomm-1-vecomm",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "maayan2",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
       "name": "master",
       "parentBranch": null,
-      "shortHash": "0c10217",
-      "lastCommitMessage": "fix: instructions branch names",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "noa_gabay",
-      "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
       "isMergedIntoParent": false,
       "isCurrent": false
     },
     {
-      "name": "shani",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "shani2",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "shiraGidi",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "sola",
-      "parentBranch": null,
-      "shortHash": "0c10217",
-      "lastCommitMessage": "fix: instructions branch names",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "sola_sola1",
-      "parentBranch": null,
-      "shortHash": "0c10217",
-      "lastCommitMessage": "fix: instructions branch names",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "sola_sola1_malka",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "sola_sola1_sari",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "sola_sola1_shifraZ",
+      "name": "diamond",
       "parentBranch": "master",
-      "shortHash": "d940bec",
-      "lastCommitMessage": "add: Shifra joke",
+      "shortHash": "234",
+      "lastCommitMessage": "diamond",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "red",
+      "parentBranch": "diamond",
+      "shortHash": "23444",
+      "lastCommitMessage": "moshe",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "miri",
+      "parentBranch": "red",
+      "shortHash": "23444",
+      "lastCommitMessage": "miri",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "roch",
+      "parentBranch": "red",
+      "shortHash": "23444",
+      "lastCommitMessage": "roch ",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "roch",
+      "parentBranch": "red",
+      "shortHash": "23444",
+      "lastCommitMessage": "roch ",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "avi nos",
+      "parentBranch": "red",
+      "shortHash": "23444",
+      "lastCommitMessage": "roch ",
+      "isMergedIntoParent": true,
+      "isCurrent": false
+    },
+    {
+      "name": "shia cjss  s",
+      "parentBranch": "red",
+      "shortHash": "23444",
+      "lastCommitMessage": "roch ",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "blue",
+      "parentBranch": "diamond",
+      "shortHash": "23444",
+      "lastCommitMessage": "moshe",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "red",
+      "parentBranch": "diamond",
+      "shortHash": "23444",
+      "lastCommitMessage": "moshe",
       "isMergedIntoParent": false,
       "isCurrent": true
     },
     {
-      "name": "sola_sola2",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
+      "name": "star",
+      "parentBranch": "master",
+      "shortHash": "23454",
+      "lastCommitMessage": "yos",
+      "isMergedIntoParent": true,
       "isCurrent": false
     },
     {
-      "name": "stars",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "stars-green",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "stars-green-bat-sheva-bloch",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "stars-green-jonny-update-miryam-dahari",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
+      "name": "green",
+      "parentBranch": "star",
+      "shortHash": "23454",
+      "lastCommitMessage": "green",
+      "isMergedIntoParent": true,
       "isCurrent": false
     },
     {
