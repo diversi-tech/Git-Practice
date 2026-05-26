@@ -1,0 +1,113 @@
+/* עיצוב כרטיסיית הבדיחה - קו נקי, מודרני וחורפי */
+.card {
+  background: linear-gradient(135deg, #f0fdf4 0%, #e0f2fe 100%); /* מעבר צבעים עדין בין ירוק-באג בהיר לכחול חורף */
+  border: 2px solid #bae6fd;
+  border-radius: 16px;
+  padding: 28px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(186, 230, 253, 0.2);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 160px;
+  direction: rtl;
+  position: relative;
+  overflow: hidden;
+}
+
+/* אפקט הריחוף (Hover) של הכרטיסייה */
+.card:hover {
+  transform: translateY(-6px);
+  border-color: #3b82f6;
+  box-shadow: 0 12px 24px rgba(59, 130, 246, 0.15);
+}
+
+/* עיצוב כותרת הבדיחה - סגנון מונוספייס של מתכנתים */
+.title {
+  font-family: 'Courier New', Courier, monospace; /* פונט של קוד */
+  font-size: 1.4rem;
+  color: #0f172a;
+  margin: 0 0 12px 0;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  line-height: 1.3;
+}
+
+/* הוספת סימני קוד עדינים לפני כותרת הבדיחה */
+.title::before {
+  content: "</> ";
+  color: #3b82f6;
+  font-weight: bold;
+}
+
+/* עיצוב שם התלמידה בתחתית הכרטיסייה */
+.name {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin: 0;
+  align-self: flex-end;
+  background-color: #ffffff;
+  padding: 4px 12px;
+  border-radius: 20px;
+  border: 1px solid #e2e8f0;
+  font-weight: 500;
+}
+
+/* ======================================= */
+
+/* עיצוב עמוד תצוגת הבדיחה המלאה */
+.jokePage {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 24px;
+  padding: 48px;
+  max-width: 650px;
+  margin: 50px auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  text-align: center;
+  direction: rtl;
+}
+
+/* כותרת הבדיחה בעמוד המלא */
+.jokePage h2 {
+  color: #2563eb;
+  font-size: 2.2rem;
+  margin-bottom: 32px;
+  font-weight: 800;
+}
+
+/* הטקסט של הבדיחה (שאלה ותשובה) */
+.jokePage p {
+  font-size: 1.3rem;
+  color: #334155;
+  line-height: 1.8;
+  margin: 20px 0;
+}
+
+/* הדגשה קלה של השאלה */
+.jokePage p:first-of-type {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+/* עיצוב כפתור החזרה */
+.jokePage button {
+  background-color: #f1f5f9;
+  color: #475569;
+  border: none;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 40px;
+}
+
+/* אפקט ריחוף לכפתור */
+.jokePage button:hover {
+  background-color: #e2e8f0;
+  color: #0f172a;
+  transform: translateX(4px); /* זז קצת ימינה עם החץ */
+}
