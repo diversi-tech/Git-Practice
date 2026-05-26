@@ -33,6 +33,5 @@ export default function yaeliJokePage({ onBack }: PageProps) {
 
       <button className={styles.backButton} onClick={onBack}>← חזרה לתפריט הבדיחות</button>
     </div>
-    
   );
 }
