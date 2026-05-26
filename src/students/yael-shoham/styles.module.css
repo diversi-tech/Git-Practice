@@ -1,0 +1,85 @@
+/* עיצוב כללי לעמוד הבדיחה */
+.jokePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  padding: 20px;
+  text-align: center;
+  font-family: system-ui, -apple-system, sans-serif;
+  direction: rtl; /* תמיכה בעברית מימין לשמאל */
+}
+
+/* עיצוב הטקסט של הבדיחה */
+.jokePage p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #333333;
+  max-width: 500px;
+  margin: 10px 0;
+}
+
+/* עיצוב שורת המחץ או השאלה (הפסקה הראשונה) */
+.jokePage p:first-of-type {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #4f46e5; /* צבע סגול חגיגי */
+  margin-bottom: 15px;
+}
+
+/* עיצוב כפתור החזרה */
+.jokePage button {
+  margin-top: 25px;
+  padding: 10px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #4f46e5;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  box-shadow: 0 4px 6px -1px rgba(79, 70, 229, 0.2);
+}
+
+.jokePage button:hover {
+  background-color: #4338ca;
+}
+
+.jokePage button:active {
+  transform: scale(0.98);
+}
+
+/* ========================================== */
+/* עיצוב לכרטיס (Card.tsx) למקרה שמציגים אותו */
+/* ========================================== */
+.card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 350px;
+  margin: 15px auto;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  direction: rtl;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 1.2rem;
+  color: #111827;
+  margin: 0 0 10px 0;
+}
+
+.name {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin: 0;
+}
