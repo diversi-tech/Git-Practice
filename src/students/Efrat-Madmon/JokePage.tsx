@@ -11,6 +11,8 @@ export default function EfratMadmonJokePage({onBack}:PageProps){
             <button onClick={onBack}>← Back</button>
         </div>
 
-        
+
+
+
     )
 }
