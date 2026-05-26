@@ -6,12 +6,24 @@ import DanaDuviJokePage from "./dana-duvi/JokePage";
 import ChaniChanzinCard from "./chani-chanzin/Card";
 import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
 
+<<<<<<< HEAD
 
 
 import ChavivaSeiffCard from "./Chaviva Seiff/Card";
 import ChavivaSeiffJokePage from "./Chaviva Seiff/JokePage";
 
 
+=======
+import SaraRafalowitzCard from "./saraRafalowitz/Card";
+import SaraRafalowitzJokePage from "./saraRafalowitz/JokePage";
+
+import MaayanCard from "./Maayan-shoukron/MaayanCard";
+import MaayanJokePage from "./Maayan-shoukron/MaayanJokePage";
+
+// ⚠️ סדר הרשימה חייב להיות לפי סדר האלף-בית העברי לפי שם המשפחה.
+// כל תלמידה מוסיפה את עצמה במקום הנכון ידנית.
+// אסור להשתמש בפונקציית-sort! 
+>>>>>>> f0ab12657213412bb431fc95257ee9955d603405
 const students: Student[] = [
   {
     id: "dana-duvi",
@@ -28,12 +40,28 @@ const students: Student[] = [
     JokePageComponent: ChaniChanzinJokePage,
   },
   {
+<<<<<<< HEAD
   id: "332290840",
   name: "ChavivaSeiff",
   jokeTitle: "באגים מחוץ למערכת",
   CardComponent: ChavivaSeiffCard,
   JokePageComponent: ChavivaSeiffJokePage,
 },
+=======
+    id: "sara-rafalowitz",
+    name: "שרה רפאלוביץ'",
+    jokeTitle: "השניצל והחומוס",
+    CardComponent: SaraRafalowitzCard,
+    JokePageComponent: SaraRafalowitzJokePage,
+  },
+  {
+    id: "maayan-shoukron",
+    name: "מעיין שוקרון",
+    jokeTitle: "החלב הצוחק",
+    CardComponent: MaayanCard,
+    JokePageComponent: MaayanJokePage,
+  },
+>>>>>>> f0ab12657213412bb431fc95257ee9955d603405
 ];
 
 export default students;
