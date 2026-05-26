@@ -2,7 +2,7 @@
 import type { BranchData } from "../types";
 
 const data: BranchData = {
-  "generatedAt": "2026-05-26T10:05:07.361Z",
+  "generatedAt": "2026-05-26T11:56:54.628Z",
   "currentBranch": "stars-green-johnny-update-team2-LitalShamanov",
   "mainBranch": "master",
   "branches": [
@@ -488,9 +488,9 @@ const data: BranchData = {
     },
     {
       "name": "stars-green-johnny-update-team2-LitalShamanov",
-      "parentBranch": null,
-      "shortHash": "0c10217",
-      "lastCommitMessage": "fix: instructions branch names",
+      "parentBranch": "master",
+      "shortHash": "99fbf4b",
+      "lastCommitMessage": "update index and components",
       "isMergedIntoParent": false,
       "isCurrent": true
     },
