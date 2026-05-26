@@ -11,7 +11,7 @@ export default function MyJokePage({ onBack }: PageProps) {
         הוא חזר הביתה עם 10 כיכרות לחם. <br />
         כששאלה אותו למה, הוא ענה: "כי היו ביצים". 🥚🥖
       </p>
-      <button onClick={onBack}>← חזרה</button>
+      <button onClick={onBack}>←אחורה חזרה</button>
     </div>
   );
 }
