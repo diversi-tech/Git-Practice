@@ -3,8 +3,13 @@ import { Student } from "../types";
 import DanaDuviCard from "./dana-duvi/Card";
 import DanaDuviJokePage from "./dana-duvi/JokePage";
 
+import hadasCard from "./hadas/Card";
+import hadasPage from "./hadas/JokePage";
+
 import ChaniChanzinCard from "./chani-chanzin/Card";
 import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
+import Card from "./hadas/Card";
+import JokePage from "./hadas/JokePage";
 
 // ⚠️ סדר הרשימה חייב להיות לפי סדר האלף-בית העברי לפי שם המשפחה.
 // כל תלמידה מוסיפה את עצמה במקום הנכון ידנית.
@@ -16,6 +21,13 @@ const students: Student[] = [
     jokeTitle: "הדוב הפחדן",
     CardComponent: DanaDuviCard,
     JokePageComponent: DanaDuviJokePage,
+  },
+  {
+    id: "hadas",
+    name: "הדס חומרי",
+    jokeTitle: "סכנת התקררות❄️",
+    CardComponent: hadasCard,
+    JokePageComponent: hadasPage,
   },
   {
     id: "chani-chanzin",
