@@ -80,6 +80,31 @@ const data: BranchData = {
     },
     {
       "name": "Vcomm_1",
+      "name": "Eti-Orenbach",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "Hilla_Arye",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "Hilla_Arye_2",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "Maayan-Bukrits",
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
@@ -88,6 +113,7 @@ const data: BranchData = {
     },
     {
       "name": "Vcomm_2",
+      "name": "RivkaBarashi",
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
@@ -95,6 +121,52 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+      "name": "Vcomm_3",
+      "name": "Shira-Shemesh",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "Vcomm_3_noaNew",
+      "name": "ShiraShemesh2",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "ayala-joke2",
+      "name": "Vcomm",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "hadar-gerafi",
+      "name": "Vcomm_1",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "hadas-karasenti",
+      "name": "Vcomm_2",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "johnny-update-3",
       "name": "Vcomm_3",
       "parentBranch": null,
       "shortHash": "",
