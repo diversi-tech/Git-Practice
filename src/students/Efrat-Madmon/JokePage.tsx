@@ -10,9 +10,5 @@ export default function EfratMadmonJokePage({onBack}:PageProps){
 האיש מרחם עליו, מוציא שטר של 50 שקלים, נותן לו ואומר: "הנה, קח 50 שקלים ותביא איתך עוד ארבעה חברים!"</p>
             <button onClick={onBack}>← Back</button>
         </div>
-
-
-
-
     )
 }
