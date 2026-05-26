@@ -20,5 +20,6 @@ export default function YehuditBJokePage({ onBack }: PageProps) {
         </p>
       <button onClick={onBack}>← חזרה</button>
     </div>
+    
   );
 }
