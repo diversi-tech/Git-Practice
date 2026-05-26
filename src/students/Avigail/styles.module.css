@@ -1,0 +1,60 @@
+.card {
+  background: #f5f0ff;
+  border: 2px solid #c4b5fd;
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.12);
+}
+
+.card::before {
+  content: "🐱";
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 0.4rem;
+}
+
+.title {
+  font-size: 1.2rem;
+  color: #5b21b6;
+  margin-bottom: 0.25rem;
+}
+
+.name {
+  font-size: 0.95rem;
+  color: #7c3aed;
+}
+.jokePage {
+  background: linear-gradient(160deg, #ede9fe 0%, #f5f0ff 100%);
+}
+
+.jokePage > p:first-child {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #5b21b6;
+}
+
+.jokePage > p:nth-child(2) {
+  background: #fff;
+  border: 2px solid #c4b5fd;
+  border-radius: 16px;
+  padding: 1.25rem 1.5rem;
+  max-width: 520px;
+  line-height: 1.75;
+  color: #3b0764;
+  white-space: pre-line;
+  box-shadow: 0 6px 18px rgba(124, 58, 237, 0.12);
+}
+
+.jokePage > button {
+  background: #7c3aed;
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  padding: 0.65rem 1.6rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.jokePage > button:hover {
+  background: #6d28d9;
+}
