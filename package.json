@@ -4,10 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-<<<<<<< HEAD
-=======
     "dev": "gen-branches && vite",
->>>>>>> 7d08bf688bc08b0abf0f88124cba529e54da77b7
     "dev": "node scripts/gen-branches.cjs && vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
