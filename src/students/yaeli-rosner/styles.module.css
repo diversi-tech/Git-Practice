@@ -1,0 +1,191 @@
+
+.card {
+  background: linear-gradient(135deg, #fff9e6 0%, #ffe6cc 100%);
+  border: 2px solid #e6b800;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  text-align: center;
+  max-width: 300px;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(230, 184, 0, 0.2);
+  border-color: #ff9900;
+}
+
+.title {
+  color: #8a4f00;
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+
+.name {
+  color: #b36b00;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.restaurantScene {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff0db;
+  border-radius: 12px;
+  padding: 10px 20px;
+  margin-bottom: 15px;
+  height: 50px;
+  position: relative;
+  border: 1px dashed #ffd199;
+}
+
+.actor {
+  font-size: 1.8rem;
+  display: inline-block;
+  user-select: none;
+}
+
+.waiter {
+  animation: walkAndServe 4s ease-in-out infinite;
+}
+
+@keyframes walkAndServe {
+  0%, 100% {
+    transform: translateX(0) scaleX(1);
+  }
+  40% {
+    transform: translateX(45px) scaleX(1);
+  }
+  50% {
+    transform: translateX(45px) scaleX(-1);
+  }
+  90% {
+    transform: translateX(0) scaleX(-1);
+  }
+}
+
+.soup {
+  animation: steamingSoup 1.5s ease-in-out infinite;
+}
+
+@keyframes steamingSoup {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+    filter: drop-shadow(0 0 0px rgba(255,100,0,0));
+  }
+  50% {
+    transform: translateY(-4px) scale(1.05);
+    filter: drop-shadow(0 -3px 3px #ffaa44);
+  }
+}
+
+.customer {
+  animation: angryCustomer 2s ease-in-out infinite;
+}
+
+@keyframes angryCustomer {
+  0%, 100% {
+    transform: rotate(0deg) scale(1);
+  }
+  25% {
+    transform: rotate(-10deg) translateY(-3px);
+  }
+  50% {
+    transform: rotate(10deg) scale(1.05);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+}
+
+.jokePage {
+  background-color: #fffdf9;
+  border-radius: 24px;
+  padding: 40px;
+  max-width: 650px;
+  margin: 30px auto;
+  box-shadow: 0 10px 30px rgba(138, 79, 0, 0.1);
+  font-family: system-ui, -apple-system, sans-serif;
+  direction: rtl;
+}
+
+.pageTitle {
+  color: #cc7a00;
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  border-bottom: 3px dashed #ffe6cc;
+  padding-bottom: 15px;
+}
+
+.storyContainer {
+  background-color: #ffffff;
+  border: 1px solid #f2e6d9;
+  border-radius: 16px;
+  padding: 25px;
+  line-height: 1.8;
+  font-size: 1.15rem;
+  color: #4a3b32;
+  margin-bottom: 30px;
+}
+
+.narration {
+  font-style: italic;
+  color: #7a6657;
+  margin: 12px 0;
+}
+
+.dialogue {
+  margin: 10px 0;
+  padding-right: 15px;
+  border-right: 3px solid #ffd699;
+}
+
+.character {
+  color: #b35900;
+}
+
+.punchline {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #fff2e6;
+  border-radius: 8px;
+  border-right: 5px solid #ff8000;
+  font-size: 1.3rem;
+  font-weight: bold;
+  animation: popIn 0.5s ease-out;
+}
+
+.backButton {
+  background-color: #cc7a00;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  display: block;
+  margin: 0 auto;
+}
+
+.backButton:hover {
+  background-color: #b36b00;
+  transform: scale(1.05);
+}
+
+.backButton:active {
+  transform: scale(0.98);
+}
+
+@keyframes popIn {
+  0% { transform: scale(0.95); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
