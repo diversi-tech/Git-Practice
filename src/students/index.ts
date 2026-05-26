@@ -5,6 +5,8 @@ import DanaDuviJokePage from "./dana-duvi/JokePage";
 
 import ChaniChanzinCard from "./chani-chanzin/Card";
 import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
+import yaeliCard from "./yaeli-rosner/Card";
+import yaeliJokePage from "./yaeli-rosner/JokePage";
 
 // ⚠️ סדר הרשימה חייב להיות לפי סדר האלף-בית העברי לפי שם המשפחה.
 // כל תלמידה מוסיפה את עצמה במקום הנכון ידנית.
@@ -24,6 +26,13 @@ const students: Student[] = [
     CardComponent: ChaniChanzinCard,
     JokePageComponent: ChaniChanzinJokePage,
   },
+  {
+  id: "yaeli-rosner",
+  name: "יעלי רוזנר",
+  jokeTitle: "מה קרה למרק???",
+  CardComponent: yaeliCard,
+  JokePageComponent: yaeliJokePage,
+},
 ];
 
 export default students;
