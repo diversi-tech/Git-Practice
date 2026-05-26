@@ -16,6 +16,8 @@ function exec(cmd) {
   }
 }
 
+
+
 // ── Git helpers ──────────────────────────────────────────────
 
 function getAllBranches() {
@@ -32,7 +34,7 @@ function getCurrentBranch() {
   return exec('git rev-parse --abbrev-ref HEAD');
 }
 
-function getTip(branch) {
+function getTip(branch) {ע
   return exec(`git rev-parse ${branch}`);
 }
 
