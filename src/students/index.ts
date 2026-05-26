@@ -8,6 +8,8 @@ import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
 
 import EtiMunkCard from "./Eti-Munk/Card";
 import EtiMunkJokePage from "./Eti-Munk/JokePage";
+import ChanaMoshayevJokePage from "./chanaMoshayev/JokePage";
+import chanaMoshayevCard from "./chanaMoshayev/Card";
 
 import MaayanCard from "./Maayan-Babahanov/Card";
 import MaayanJokePage from "./Maayan-Babahanov/JokePage";
@@ -53,6 +55,13 @@ const students: Student[] = [
     jokeTitle: "לאכל עם כף ",
     CardComponent: EtiMunkCard,
     JokePageComponent: EtiMunkJokePage,
+  },
+  {
+    id: "chana-moshayev",
+    name: "חנה מושייב",
+    jokeTitle: "המחשב החולה",
+    CardComponent: chanaMoshayevCard,
+    JokePageComponent: ChanaMoshayevJokePage,
   },
 ];
 
