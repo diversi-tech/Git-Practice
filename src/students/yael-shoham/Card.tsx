@@ -1,15 +1,11 @@
-import React from 'react';
-import styles from './styles.module.css';
+import styles from "./styles.module.css";
 
-interface CardProps {
-  onClick: () => void;
-}
-
-export default function YaelCard({ student, onClick }: any) {  return (
+export default function YaelCard({ onClick }: any) {
+  return (
     <div className={styles.cardContainer} onClick={onClick}>
       {/* אייקון עליון */}
       <div className={styles.iconBubble}>
-        👦💬
+        👦 💬
       </div>
 
       {/* כותרת ותת כותרת */}
@@ -25,4 +21,4 @@ export default function YaelCard({ student, onClick }: any) {  return (
       </button>
     </div>
   );
-};
+}
