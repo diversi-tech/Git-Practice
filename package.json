@@ -4,10 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "gen-branches && vite",
+    "dev": "npm run gen-branches && vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "gen-branches": "node scripts/gen-branches.cjs"
   },
   "dependencies": {
     "react": "^18.3.1",
