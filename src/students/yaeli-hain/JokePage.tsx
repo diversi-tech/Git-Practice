@@ -6,10 +6,10 @@ export default function yaelihainJokePage({ onBack }: PageProps) {
   return (
     <div className={`joke-page ${styles.jokePage}`}>
     
-      <p>למה מתכנתים מעדיפים להשתמש במצב כהה (Dark Mode)?
+      <p>למה מתכנתים אוהבים להשתמש במצב לילה (Dark Mode)?
 
-כי אור מושך באגים. 😉</p>
-      <button onClick={onBack}>← Back</button>
+            כי אור מושך באגים. 😉</p>
+      <button onClick={onBack}>← חזרה</button>
     </div>
   );
 }
