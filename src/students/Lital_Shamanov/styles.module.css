@@ -1,0 +1,69 @@
+.jokePage {
+  max-width: 480px;
+  margin: 50px auto;
+  padding: 35px 25px;
+  background: #ffffff;
+  border-radius: 20px;
+  /* צל סופר עדין ומודרני */
+  box-shadow: 0 10px 25px rgba(160, 174, 192, 0.15); 
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  direction: rtl;
+  border: 1px solid #edf2f7;
+}
+
+/* לוח האייקונים העליון */
+.emojiHeader {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  letter-spacing: 8px;
+  opacity: 0.9;
+}
+
+.jokePage h2 {
+  color: #2d3748;
+  font-size: 1.55rem;
+  margin-bottom: 18px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.jokePage p {
+  color: #4a5568;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin-bottom: 32px;
+}
+
+/* הדגשת מילים ספציפיות בתוך הטקסט */
+.jokePage p strong {
+  color: #3182ce; /* צבע כחול-הייטק עדין */
+  font-weight: 600;
+}
+
+/* כפתור החזרה עם האימוג'י */
+.backButton {
+  background-color: #edf2f7;
+  color: #4a5568;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+  transition: all 0.25s ease;
+}
+
+/* אפקט ריחוף עדין שמקפיץ מעט את הכפתור */
+.backButton:hover {
+  background-color: #e2e8f0;
+  color: #1a202c;
+  transform: translateY(-1px); /* הרמה קלה של הכפתור */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* אפקט לחיצה */
+.backButton:active {
+  transform: translateY(1px);
+}
