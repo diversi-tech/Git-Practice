@@ -12,6 +12,7 @@ export default function MyJokePage({ onBack }: PageProps) {
         כששאלה אותו למה, הוא ענה: "כי היו ביצים". 🥚
       </p>
       <button onClick={onBack}>←אחורה חזרה</button>
+
       
     </div>
   );
