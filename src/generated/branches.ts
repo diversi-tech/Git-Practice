@@ -2,10 +2,8 @@
 import type { BranchData } from "../types";
 
 const data: BranchData = {
-  "generatedAt": "2026-05-26T10:19:24.778Z",
-  "currentBranch": "master",
-  "generatedAt": "2026-05-26T09:14:09.358Z",
-  "currentBranch": "mayanSJoke",
+  "generatedAt": "2026-05-26T11:56:54.628Z",
+  "currentBranch": "stars-green-johnny-update-team2-LitalShamanov",
   "mainBranch": "master",
   "branches": [
     {
@@ -345,14 +343,6 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
-      "name": "mayanSJoke",
-      "parentBranch": null,
-      "shortHash": "0c10217",
-      "lastCommitMessage": "fix: instructions branch names",
-      "isMergedIntoParent": false,
-      "isCurrent": true
-    },
-    {
       "name": "noa_gabay",
       "parentBranch": null,
       "shortHash": "",
@@ -466,10 +456,6 @@ const data: BranchData = {
     },
     {
       "name": "sola_sola2-Tamar",
-      "isCurrent": false
-    },
-    {
-      "name": "shani2",
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
@@ -478,7 +464,6 @@ const data: BranchData = {
     },
     {
       "name": "sola_sola2_gili",
-      "name": "shiraGidi",
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
@@ -487,7 +472,6 @@ const data: BranchData = {
     },
     {
       "name": "sola_sola2_hadas",
-      "name": "sola",
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
@@ -496,7 +480,6 @@ const data: BranchData = {
     },
     {
       "name": "sola_sola2_tamarD",
-      "name": "sola3",
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
@@ -505,7 +488,6 @@ const data: BranchData = {
     },
     {
       "name": "sola_sola2_yehudit",
-      "name": "sola4",
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
@@ -514,7 +496,6 @@ const data: BranchData = {
     },
     {
       "name": "sola_sola3_Efrat_Madmon",
-      "name": "sola_sola1",
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
@@ -523,7 +504,6 @@ const data: BranchData = {
     },
     {
       "name": "sola_sola3_saralevin",
-      "name": "sola_sola1_carmi",
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
@@ -532,56 +512,6 @@ const data: BranchData = {
     },
     {
       "name": "sola_sola3_yaeli",
-      "name": "sola_sola1_malka",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "stars",
-      "name": "sola_sola1_sari",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "sola_sola1_shifraZ",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "sola_sola2",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "sola_sola2-Tamar",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "sola_sola2_gili",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "sola_sola2_yehudit",
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
@@ -623,10 +553,18 @@ const data: BranchData = {
     {
       "name": "stars-green-johnny-update-team2",
       "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
+      "shortHash": "0c10217",
+      "lastCommitMessage": "fix: instructions branch names",
       "isMergedIntoParent": false,
       "isCurrent": false
+    },
+    {
+      "name": "stars-green-johnny-update-team2-LitalShamanov",
+      "parentBranch": "master",
+      "shortHash": "99fbf4b",
+      "lastCommitMessage": "update index and components",
+      "isMergedIntoParent": false,
+      "isCurrent": true
     },
     {
       "name": "stars-green-johnny-update-team3",

@@ -10,7 +10,9 @@ const OUT_FILE = path.join(ROOT, 'src', 'generated', 'branches.ts');
 
 function exec(cmd) {
   try {
-    return execSync(cmd, { cwd: ROOT, encoding: 'utf8' }).trim();
+    // Capture stdout while silencing stderr so git warnings/errors don't
+    // flood the dev console when running on machines without all refs.
+    return execSync(cmd, { cwd: ROOT, encoding: 'utf8', stdio: ['pipe', 'pipe', 'ignore'] }).trim();
   } catch {
     return '';
   }

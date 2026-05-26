@@ -6,14 +6,14 @@ import DanaDuviJokePage from "./dana-duvi/JokePage";
 import ChaniChanzinCard from "./chani-chanzin/Card";
 import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
 
-import SaraRafalowitzCard from "./saraRafalowitz/Card";
-import SaraRafalowitzJokePage from "./saraRafalowitz/JokePage";
+import LitalShamanovCard from "./Lital_Shamanov/Card";
+import LitalShamanovJokePage from "./Lital_Shamanov/JokePage";
 
 import MaayanCard from "./Maayan-shoukron/MaayanCard";
 import MaayanJokePage from "./Maayan-shoukron/MaayanJokePage";
 
-import AyalaSamsonCard from "./ayala-samson/Card";
-import AyalaSamsonJokePage from "./ayala-samson/JokePage";
+import SaraRafalowitzCard from "./saraRafalowitz/Card";
+import SaraRafalowitzJokePage from "./saraRafalowitz/JokePage";
 
 // ⚠️ סדר הרשימה חייב להיות לפי סדר האלף-בית העברי לפי שם המשפחה.
 // כל תלמידה מוסיפה את עצמה במקום הנכון ידנית.
@@ -34,18 +34,11 @@ const students: Student[] = [
     JokePageComponent: ChaniChanzinJokePage,
   },
   {
-
-    id: "ayala-samson",
-    name: "איילה סאמסון",
-    jokeTitle: "החתול המתכנת",
-    CardComponent: AyalaSamsonCard,
-    JokePageComponent: AyalaSamsonJokePage,
-
-    id: "sara-rafalowitz",
-    name: "שרה רפאלוביץ'",
-    jokeTitle: "השניצל והחומוס",
-    CardComponent: SaraRafalowitzCard,
-    JokePageComponent: SaraRafalowitzJokePage,
+    id: "lital-shamanov",
+    name: "ליטל שמנוב",
+    jokeTitle: "למה מתכנתים שונאים טבע?",
+    CardComponent: LitalShamanovCard,
+    JokePageComponent: LitalShamanovJokePage,
   },
   {
     id: "maayan-shoukron",
@@ -53,6 +46,13 @@ const students: Student[] = [
     jokeTitle: "החלב הצוחק",
     CardComponent: MaayanCard,
     JokePageComponent: MaayanJokePage,
+  },
+  {
+    id: "sara-rafalowitz",
+    name: "שרה רפאלוביץ'",
+    jokeTitle: "השניצל והחומוס",
+    CardComponent: SaraRafalowitzCard,
+    JokePageComponent: SaraRafalowitzJokePage,
   },
 ];
 
