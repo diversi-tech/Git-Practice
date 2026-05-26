@@ -8,5 +8,4 @@ export default function YehuditBCard({ student, onClick }: CardProps) {
       <p className={styles.name}>{student.name}</p>
     </div>
   );
-  
 }
