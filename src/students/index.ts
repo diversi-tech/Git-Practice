@@ -5,6 +5,8 @@ import DanaDuviJokePage from "./dana-duvi/JokePage";
 
 import ChaniChanzinCard from "./chani-chanzin/Card";
 import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
+import saraRafalowitzCard from "./saraRafalowitz/Card";
+import saraRafalowitzJokePage from "./saraRafalowitz/JokePage";
 
 // ⚠️ סדר הרשימה חייב להיות לפי סדר האלף-בית העברי לפי שם המשפחה.
 // כל תלמידה מוסיפה את עצמה במקום הנכון ידנית.
@@ -23,6 +25,13 @@ const students: Student[] = [
     jokeTitle: "התנין והתנינה",
     CardComponent: ChaniChanzinCard,
     JokePageComponent: ChaniChanzinJokePage,
+  },
+  {
+    id: "sara-rafalowitz",
+    name: "שרה רפאלוביץ'",
+    jokeTitle: "השניצל והחומוס",
+    CardComponent: saraRafalowitzCard,
+    JokePageComponent: saraRafalowitzJokePage,
   },
 ];
 
