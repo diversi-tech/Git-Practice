@@ -34,13 +34,13 @@ const students: Student[] = [
     JokePageComponent: ChaniChanzinJokePage,
   },
   {
-  id: "yaeli-hain",
+  id: "yaeli-hain ",
   name: "יעלי היין",
   jokeTitle:"באגים",
   CardComponent: yaelihainCard,
   JokePageComponent: yaelihainJokePage,
 },
-  },
+  
 {
   id: "sara-levin",
   name: "שרה לוין",
