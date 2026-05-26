@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "gen-branches && vite",
+    
     "dev":"node scripts/gen-branches.cjs && vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
