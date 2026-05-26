@@ -2,7 +2,7 @@
 import type { BranchData } from "../types";
 
 const data: BranchData = {
-  "generatedAt": "2026-05-26T10:48:12.721Z",
+  "generatedAt": "2026-05-26T11:15:20.937Z",
   "currentBranch": "stars-green-johnny-update-team1-bracha",
   "mainBranch": "master",
   "branches": [
@@ -136,6 +136,14 @@ const data: BranchData = {
     },
     {
       "name": "ayala-oshri-stars-green-johnny-update-team1",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "ayala-samson",
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
@@ -529,8 +537,8 @@ const data: BranchData = {
     {
       "name": "stars-green-johnny-update-team1-bracha",
       "parentBranch": "master",
-      "shortHash": "584dd73",
-      "lastCommitMessage": "add brachas joke",
+      "shortHash": "1c878cb",
+      "lastCommitMessage": "add chandes bracha",
       "isMergedIntoParent": false,
       "isCurrent": true
     },
@@ -560,6 +568,14 @@ const data: BranchData = {
     },
     {
       "name": "stars-green-johnny-update-team3-Zehavi",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "stars-green-johnny-update-team3-chanaMoshayev",
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
