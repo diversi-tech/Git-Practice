@@ -11,5 +11,5 @@ return (
             <p>{'הקבצן עונה לו: "אני לא יכול לעבוד, אני קבצן!"'}</p>
             <button onClick={onBack}>Back</button>
         </div>
-    );git add .
+    );
 }
