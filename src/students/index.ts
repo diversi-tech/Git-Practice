@@ -5,6 +5,8 @@ import DanaDuviJokePage from "./dana-duvi/JokePage";
 
 import ChaniChanzinCard from "./chani-chanzin/Card";
 import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
+import zehaviJokePage from "./zehavi-gerlitz/JokePage";
+import zehaviCard from "./zehavi-gerlitz/card";
 import EtiMunkCard from "./Eti-Munk/Card";
 import EtiMunkJokePage from "./Eti-Munk/JokePage";
 
@@ -12,6 +14,14 @@ import EtiMunkJokePage from "./Eti-Munk/JokePage";
 // כל תלמידה מוסיפה את עצמה במקום הנכון ידנית.
 // אסור להשתמש בפונקציית-sort! 
 const students: Student[] = [
+
+    {
+  id: "zehavi-gerlitz",
+  name: "זהבי גרליץ",
+  jokeTitle: "כעכים או כאחים?",
+  CardComponent: zehaviCard,
+  JokePageComponent: zehaviJokePage,
+},
   {
     id: "dana-duvi",
     name: "דנה דובי",
@@ -26,6 +36,7 @@ const students: Student[] = [
     CardComponent: ChaniChanzinCard,
     JokePageComponent: ChaniChanzinJokePage,
   },
+
   {
     id: "Eti Munk",
     name: "אתי מונק",
