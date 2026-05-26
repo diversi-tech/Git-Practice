@@ -9,9 +9,7 @@ import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
 import ChavivaSeiffCard from "./Chaviva Seiff/Card";
 import ChavivaSeiffJokePage from "./Chaviva Seiff/JokePage";
 
-// ⚠️ סדר הרשימה חייב להיות לפי סדר האלף-בית העברי לפי שם המשפחה.
-// כל תלמידה מוסיפה את עצמה במקום הנכון ידנית.
-// אסור להשתמש בפונקציית-sort! 
+
 const students: Student[] = [
   {
     id: "dana-duvi",
@@ -29,7 +27,7 @@ const students: Student[] = [
   },
   {
   id: "332290840",
-  name: "חביבה סייף",
+  name: "ChavivaSeiff",
   jokeTitle: "באגים מחוץ למערכת",
   CardComponent: ChavivaSeiffCard,
   JokePageComponent: ChavivaSeiffJokePage,
