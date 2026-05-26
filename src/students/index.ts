@@ -5,6 +5,8 @@ import DanaDuviJokePage from "./dana-duvi/JokePage";
 
 import ChaniChanzinCard from "./chani-chanzin/Card";
 import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
+import RuthCard from "./Ruth-Mashiach/Card";
+import RuthJokePage from "./Ruth-Mashiach/JokePage";
 
 // ⚠️ סדר הרשימה חייב להיות לפי סדר האלף-בית העברי לפי שם המשפחה.
 // כל תלמידה מוסיפה את עצמה במקום הנכון ידנית.
@@ -24,6 +26,13 @@ const students: Student[] = [
     CardComponent: ChaniChanzinCard,
     JokePageComponent: ChaniChanzinJokePage,
   },
+  {
+  id: "Ruth Malka Mashiach",
+  name: "רות מלכה משיח",
+  jokeTitle: "משבר זהות ברשת",
+  CardComponent: RuthCard,
+  JokePageComponent: RuthJokePage,
+},
 ];
 
 export default students;
