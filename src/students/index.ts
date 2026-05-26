@@ -10,6 +10,8 @@ import YaelJokePage from "./yael-shoham/JokePage";
 
 import AyalaOshriCard from "./ayala oshri/Card";
 import AyalaOshriJokePage from "./ayala oshri/JokePage";
+import BrachaCard from "./bracha-pappenheim/Card";
+import brachaJokePage from "./bracha-pappenheim/JokePage";
 
 import TamarCard from "./tamar-lev/Card";
 import TamarJokePage from "./tamar-lev/JokePage";
@@ -19,6 +21,13 @@ import TamarJokePage from "./tamar-lev/JokePage";
 // אסור להשתמש בפונקציית-sort!
 const students: Student[] = [
   {
+    id: "bracha-pappenheim",
+    name: "ברכה פפנהיים",
+    jokeTitle: "שלום וברכה!",
+    CardComponent: BrachaCard,
+    JokePageComponent: brachaJokePage,
+  },
+  {
     id: "dana-duvi",
     name: "דנה דובי",
     jokeTitle: "הדוב הפחדן",
@@ -26,12 +35,12 @@ const students: Student[] = [
     JokePageComponent: DanaDuviJokePage,
   },
   {
-  id: "Yael-Shoham",
-  name: "יעל שהם",
-  jokeTitle: "הילד המדבר",
-  CardComponent: YaelCard,
-  JokePageComponent: YaelJokePage,
-},
+    id: "Yael-Shoham",
+    name: "יעל שהם",
+    jokeTitle: "הילד המדבר",
+    CardComponent: YaelCard,
+    JokePageComponent: YaelJokePage,
+  },
   {
     id: "chani-chanzin",
     name: "חני חנזין",
@@ -46,12 +55,14 @@ const students: Student[] = [
     CardComponent: TamarCard,
     JokePageComponent: TamarJokePage,
   },
+  {
     id: "ayala-oshri",
     name: "אילה עושרי",
     jokeTitle: "לולאה אינסופית",
     CardComponent: AyalaOshriCard,
     JokePageComponent: AyalaOshriJokePage,
   }
+
 ];
 
 export default students;
