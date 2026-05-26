@@ -34,8 +34,6 @@ const students: Student[] = [
   JokePageComponent: TamarZwiebelJokePage,
 },
 
-
-
 ];
 
 export default students;
