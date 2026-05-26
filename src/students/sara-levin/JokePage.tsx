@@ -9,7 +9,7 @@ export default function MyJokePage({ onBack }: PageProps) {
       </p>
       <p>
         הוא חזר הביתה עם 10 כיכרות לחם. <br />
-        כששאלה אותו למה, הוא ענה: "כי היו ביצים". 🥚🥖
+        כששאלה אותו למה, הוא ענה: "כי היו ביצים". 🥚
       </p>
       <button onClick={onBack}>←אחורה חזרה</button>
     </div>
