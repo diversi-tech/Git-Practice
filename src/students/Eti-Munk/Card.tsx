@@ -9,3 +9,4 @@ export default function EtiMunkCard({ student, onClick }: CardProps) {
     </div>
   );
 }
+
