@@ -5,10 +5,8 @@ import DanaDuviJokePage from "./dana-duvi/JokePage";
 
 import ChaniChanzinCard from "./chani-chanzin/Card";
 import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
-<<<<<<< HEAD
 import EtiMunkCard from "./Eti-Munk/Card";
 import EtiMunkJokePage from "./Eti-Munk/JokePage";
-
 import ChanaMoshayevJokePage from "./chanaMoshayev/JokePage";
 import chanaMoshayevCard from "./chanaMoshayev/Card";
 
