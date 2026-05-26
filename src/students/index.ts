@@ -1,5 +1,8 @@
 import { Student } from "../types";
 
+import YaelCard from "./yael-yosef/Card"; 
+import YaelJokePage from "./yael-yosef/JokePage";
+
 import DanaDuviCard from "./dana-duvi/Card";
 import DanaDuviJokePage from "./dana-duvi/JokePage";
 
@@ -7,7 +10,6 @@ import ChaniChanzinCard from "./chani-chanzin/Card";
 import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
 import efratJokePage from "./efrat-posen/JokePage";
 import efratCard from "./efrat-posen/card";
-
 // ⚠️ סדר הרשימה חייב להיות לפי סדר האלף-בית העברי לפי שם המשפחה.
 // כל תלמידה מוסיפה את עצמה במקום הנכון ידנית.
 // אסור להשתמש בפונקציית-sort! 
@@ -32,6 +34,13 @@ const students: Student[] = [
   jokeTitle: "הבדיחה הכי מצחיקה",
   CardComponent: efratCard,
   JokePageComponent: efratJokePage,
+},
+{
+  id: "yael-yosef",
+  name: "יעל יוסף",
+  jokeTitle: "חמש שקלים בכיס",
+  CardComponent: YaelCard,
+  JokePageComponent: YaelJokePage,
 },
 ];
 
