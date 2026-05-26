@@ -2,8 +2,13 @@
 import type { BranchData } from "../types";
 
 const data: BranchData = {
+<<<<<<< HEAD
   "generatedAt": "2026-05-26T08:58:09.810Z",
   "currentBranch": "sola_sola2_yehudit",
+=======
+  "generatedAt": "2026-05-26T07:24:41.109Z",
+  "currentBranch": "master",
+>>>>>>> a22a5fbcaef175a05fa712fdbd0c0dea5d1b94e6
   "mainBranch": "master",
   "branches": [
     {
@@ -251,6 +256,7 @@ const data: BranchData = {
       "parentBranch": null,
       "shortHash": "0c10217",
       "lastCommitMessage": "fix: instructions branch names",
+<<<<<<< HEAD
       "isMergedIntoParent": false,
       "isCurrent": false
     },
@@ -331,11 +337,17 @@ const data: BranchData = {
       "parentBranch": "master",
       "shortHash": "9c97500",
       "lastCommitMessage": "add: yehudit joke",
+=======
+>>>>>>> a22a5fbcaef175a05fa712fdbd0c0dea5d1b94e6
       "isMergedIntoParent": false,
       "isCurrent": true
     },
     {
+<<<<<<< HEAD
       "name": "stars",
+=======
+      "name": "noa_gabay",
+>>>>>>> a22a5fbcaef175a05fa712fdbd0c0dea5d1b94e6
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
@@ -343,7 +355,11 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+<<<<<<< HEAD
       "name": "stars-green",
+=======
+      "name": "shani",
+>>>>>>> a22a5fbcaef175a05fa712fdbd0c0dea5d1b94e6
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
@@ -351,7 +367,11 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+<<<<<<< HEAD
       "name": "stars-green-bat-sheva-bloch",
+=======
+      "name": "shani2",
+>>>>>>> a22a5fbcaef175a05fa712fdbd0c0dea5d1b94e6
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
@@ -359,7 +379,11 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+<<<<<<< HEAD
       "name": "stars-green-jonny-update-miryam-dahari",
+=======
+      "name": "shiraGidi",
+>>>>>>> a22a5fbcaef175a05fa712fdbd0c0dea5d1b94e6
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
@@ -367,7 +391,11 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+<<<<<<< HEAD
       "name": "tamar-levi-branch",
+=======
+      "name": "stars",
+>>>>>>> a22a5fbcaef175a05fa712fdbd0c0dea5d1b94e6
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
@@ -375,7 +403,11 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+<<<<<<< HEAD
       "name": "team/vcomm/sub/vcomm3/noagabay",
+=======
+      "name": "stars-green",
+>>>>>>> a22a5fbcaef175a05fa712fdbd0c0dea5d1b94e6
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
@@ -383,7 +415,11 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+<<<<<<< HEAD
       "name": "tovi",
+=======
+      "name": "stars-green-bat-sheva-bloch",
+>>>>>>> a22a5fbcaef175a05fa712fdbd0c0dea5d1b94e6
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
@@ -391,6 +427,44 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+<<<<<<< HEAD
+      "name": "vcomm/vcomm-1/ShiraShemesh",
+=======
+      "name": "tamar-levi-branch",
+>>>>>>> a22a5fbcaef175a05fa712fdbd0c0dea5d1b94e6
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+<<<<<<< HEAD
+      "name": "vcomm/vcomm-1/ShiraShemesh2",
+=======
+      "name": "team/vcomm/sub/vcomm3/noagabay",
+>>>>>>> a22a5fbcaef175a05fa712fdbd0c0dea5d1b94e6
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+<<<<<<< HEAD
+      "name": "vcomm/vcomm-1/tova",
+=======
+      "name": "tovi",
+>>>>>>> a22a5fbcaef175a05fa712fdbd0c0dea5d1b94e6
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+<<<<<<< HEAD
+=======
       "name": "vcomm/vcomm-1/ShiraShemesh",
       "parentBranch": null,
       "shortHash": "",
@@ -415,6 +489,7 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+>>>>>>> a22a5fbcaef175a05fa712fdbd0c0dea5d1b94e6
       "name": "vcomm/vcomm-1/tovi",
       "parentBranch": null,
       "shortHash": "",
