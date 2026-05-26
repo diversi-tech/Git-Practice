@@ -5,7 +5,7 @@ import DanaDuviJokePage from "./dana-duvi/JokePage";
 
 import ChaniChanzinCard from "./chani-chanzin/Card";
 import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
-import EtiMunkCard from "../Card";
+import EtiMunkCard from "./Eti-Munk/Card";
 import EtiMunkJokePage from "./Eti-Munk/JokePage";
 
 // ⚠️ סדר הרשימה חייב להיות לפי סדר האלף-בית העברי לפי שם המשפחה.
