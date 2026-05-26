@@ -1,14 +1,25 @@
 import styles from "./styles.module.css";
-import { PageProps } from "../../types";
 
-export default function YaelJokePage({ onBack }: PageProps) {
+export default function YaelJokePage({ onBack }: any) {
   return (
-    <div className={`joke-page ${styles.jokePage}`}>
-      <p> מדוע לדבר לעצמי?</p>
-      <p>אמא שואלת את הילד: "למה אתה מדבר עם עצמך?"
-      הילד עונה: "כי אני היחיד שמבין אותי."
-       אמא: "טוב, לפחות דבר עם מישהו חכם." </p>
-      <button onClick={onBack}>← חזרה</button>
+   <div className={styles.pageWrapper}>
+      <div className={styles.decorIcons}>👦 💬 ✨</div>
+
+      <div className={styles.jokeContainer}>
+        <div className={styles.questionBox}>
+          <span className={styles.dialogLabel}>אמא שואלת:</span>
+          <p className={styles.textMain}>"למה אתה תמיד מדבר עם עצמך?"</p>
+        </div>
+
+        <div className={styles.answerBox}>
+          <span className={styles.dialogLabelAnswer}>הילד עונה:</span>
+          <p className={styles.textMain}>"כי אני אוהב לדבר עם אנשים חכמים!"</p>
+        </div>
+      </div>
+
+      <button onClick={onBack} className={styles.backButton}>
+        ← חזרה 
+      </button>
     </div>
   );
 }
