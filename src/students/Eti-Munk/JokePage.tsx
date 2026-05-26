@@ -1,7 +1,7 @@
 import styles from "./styles.module.css";
 import { PageProps } from "../../types";
 
-export default function Eti_Munk_JokePage({ onBack }: PageProps) {
+export default function EtiMunkJokePage({ onBack }: PageProps) {
   return (
     <div className={`joke-page ${styles.jokePage}`}>
       <p>לאכל עם כף</p>
