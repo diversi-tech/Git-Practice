@@ -5,6 +5,11 @@ import DanaDuviJokePage from "./dana-duvi/JokePage";
 
 import ChaniChanzinCard from "./chani-chanzin/Card";
 import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
+import YaelCard from "./yael-shoham/Card";
+import YaelJokePage from "./yael-shoham/JokePage";
+
+import AyalaOshriCard from "./ayala oshri/Card";
+import AyalaOshriJokePage from "./ayala oshri/JokePage";
 
 import TamarCard from "./tamar-lev/Card";
 import TamarJokePage from "./tamar-lev/JokePage";
@@ -21,6 +26,13 @@ const students: Student[] = [
     JokePageComponent: DanaDuviJokePage,
   },
   {
+  id: "Yael-Shoham",
+  name: "יעל שהם",
+  jokeTitle: "הילד המדבר",
+  CardComponent: YaelCard,
+  JokePageComponent: YaelJokePage,
+},
+  {
     id: "chani-chanzin",
     name: "חני חנזין",
     jokeTitle: "התנין והתנינה",
@@ -34,6 +46,12 @@ const students: Student[] = [
     CardComponent: TamarCard,
     JokePageComponent: TamarJokePage,
   },
+    id: "ayala-oshri",
+    name: "אילה עושרי",
+    jokeTitle: "לולאה אינסופית",
+    CardComponent: AyalaOshriCard,
+    JokePageComponent: AyalaOshriJokePage,
+  }
 ];
 
 export default students;
