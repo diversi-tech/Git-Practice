@@ -1,0 +1,273 @@
+/* ---- הגדרות בסיסיות וכיוון טקסט ---- */
+.coffeeCard, .pageWrapper {
+  direction: rtl;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* ---- עיצוב כרטיסיית הקפה בדף הבית ---- */
+.coffeeCard {
+  position: relative;
+  background: linear-gradient(145deg, #1f140e 0%, #120a06 100%);
+  border: 1px solid rgba(245, 158, 11, 0.15);
+  border-radius: 24px;
+  padding: 28px;
+  min-height: 170px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), 
+              inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+/* זוהר חמים עדין מאחורי הכרטיס שנדלק בריחוף */
+.cardSteamGlow {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(245, 158, 11, 0.1) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+/* אפקט ריחוף (Hover) אינטראקטיבי */
+.coffeeCard:hover {
+  transform: translateY(-8px);
+  border-color: rgba(245, 158, 11, 0.6);
+  box-shadow: 0 20px 40px rgba(245, 158, 11, 0.15), 
+              0 1px 20px rgba(245, 158, 11, 0.05);
+}
+
+.coffeeCard:hover .cardSteamGlow {
+  opacity: 1;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.coffeeBadge {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(120, 53, 4, 0.2));
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  color: #fbbf24;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 30px;
+  letter-spacing: 0.5px;
+}
+
+.emoji {
+  font-size: 1.5rem;
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.3));
+}
+
+.cardTitle {
+  color: #fffaf5;
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin: 20px 0;
+  line-height: 1.5;
+  text-align: right;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.cardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding-top: 14px;
+}
+
+.authorName {
+  color: #a16207;
+  font-size: 0.9rem;
+  font-weight: 700;
+  background: rgba(245, 158, 11, 0.05);
+  padding: 2px 8px;
+  border-radius: 6px;
+}
+
+.actionText {
+  color: #f59e0b;
+  font-size: 0.85rem;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.coffeeCard:hover .actionText {
+  transform: translateX(-6px);
+  color: #fbbf24;
+}
+
+
+/* ---- עיצוב דף הבדיחה המלא ---- */
+.pageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 20px;
+}
+
+.coffeeContainer {
+  background: rgba(26, 16, 10, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  max-width: 600px;
+  width: 100%;
+  padding: 45px;
+  border-radius: 36px;
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.6),
+              inset 0 1px 1px rgba(255, 255, 255, 0.1);
+}
+
+.coffeeHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 40px;
+}
+
+.coffeeIcon {
+  font-size: 2.5rem;
+  filter: drop-shadow(0 0 12px rgba(245, 158, 11, 0.4));
+  animation: steamFloat 2.5s ease-in-out infinite alternate;
+}
+
+.pageTitle {
+  background: linear-gradient(135deg, #fffaf5 0%, #f59e0b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.2rem;
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.jokeContent {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 45px;
+}
+
+.questionBox {
+  background: rgba(255, 255, 255, 0.02);
+  border-right: 4px solid #f59e0b;
+  padding: 20px 24px;
+  border-radius: 16px;
+  text-align: right;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.questionBox h2 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+/* תיבת הפאנץ' ליין - שלט הניאון המהודר */
+.punchlineBox {
+  background: linear-gradient(135deg, #120a06 0%, #1f140e 100%);
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  padding: 35px 24px;
+  border-radius: 24px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  animation: pulseNeon 3s infinite alternate;
+}
+
+.punchlineText {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+.punchlineText strong {
+  background: linear-gradient(120deg, #f59e0b 0%, #d97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  padding: 0 4px;
+  position: relative;
+}
+
+.subText {
+  display: block;
+  color: #78350f;
+  font-size: 0.95rem;
+  margin-top: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* כפתור חזרה מעוצב מודרני ונקי */
+.coffeeBackButton {
+  background: linear-gradient(135deg, #f59e0b 0%, #b45309 100%);
+  border: none;
+  padding: 16px 36px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #120a06;
+  border-radius: 18px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 10px 25px rgba(245, 158, 11, 0.3);
+}
+
+.coffeeBackButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(245, 158, 11, 0.45);
+  filter: brightness(1.1);
+}
+
+.coffeeBackButton:active {
+  transform: translateY(-1px);
+}
+
+
+/* אנימציית ריחוף ורעידה קלה לכוס הקפה */
+@keyframes steamFloat {
+  0% { 
+    transform: translateY(0) scale(1); 
+    filter: drop-shadow(0 2px 5px rgba(245, 158, 11, 0.2));
+  }
+  100% { 
+    transform: translateY(-8px) scale(1.05); 
+    filter: drop-shadow(0 8px 15px rgba(245, 158, 11, 0.5));
+  }
+}
+
+/* אנימציית זוהר עמוקה לפאנץ' ליין */
+@keyframes pulseNeon {
+  0% {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4),
+                0 0 15px rgba(245, 158, 11, 0.1);
+    border-color: rgba(245, 158, 11, 0.3);
+  }
+  100% {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4),
+                0 0 25px rgba(245, 158, 11, 0.3);
+    border-color: rgba(245, 158, 11, 0.6);
+  }
+}
