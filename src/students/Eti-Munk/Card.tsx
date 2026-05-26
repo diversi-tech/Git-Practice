@@ -1,4 +1,4 @@
-import styles from "./Styles.module.css";
+import styles from "./styles.module.css";
 import { CardProps } from "../../types";
 
 export default function EtiMunkCard({ student, onClick }: CardProps) {
