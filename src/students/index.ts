@@ -5,6 +5,10 @@ import DanaDuviJokePage from "./dana-duvi/JokePage";
 
 import ChaniChanzinCard from "./chani-chanzin/Card";
 import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
+
+import saraRafalowitzCard from "./saraRafalowitz/Card";
+import saraRafalowitzJokePage from "./saraRafalowitz/JokePage";
+
 import MaayanCard from "./Maayan-shoukron/MaayanCard";
 import MaayanJokePage from "./Maayan-shoukron/MaayanJokePage";
 
@@ -27,13 +31,19 @@ const students: Student[] = [
     JokePageComponent: ChaniChanzinJokePage,
   },
   {
-  id: "Maayan shoukron",
-  name: "מעיין שוקרון",
-  jokeTitle: "החלב הצוחק",
-  CardComponent: MaayanCard,
-  JokePageComponent: MaayanJokePage,
-}
-
+    id: "sara-rafalowitz",
+    name: "שרה רפאלוביץ'",
+    jokeTitle: "השניצל והחומוס",
+    CardComponent: saraRafalowitzCard,
+    JokePageComponent: saraRafalowitzJokePage,
+  },
+  {
+    id: "Maayan shoukron",
+    name: "מעיין שוקרון",
+    jokeTitle: "החלב הצוחק",
+    CardComponent: MaayanCard,
+    JokePageComponent: MaayanJokePage,
+  }
 ];
 
 export default students;
