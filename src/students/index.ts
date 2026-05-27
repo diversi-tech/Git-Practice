@@ -20,6 +20,15 @@ const students: Student[] = [
     CardComponent: DanaDuviCard,
     JokePageComponent: DanaDuviJokePage,
   },
+   
+  {
+  id: "tamar-damti",
+  name: "תמר דמתי",
+  jokeTitle:"הבננה",
+  CardComponent: TamarDamtiCard,
+  JokePageComponent: TamarDamtiJokePage,
+ },
+
   {
     id: "hadas",
     name: "הדס חומרי",
@@ -34,6 +43,13 @@ const students: Student[] = [
     CardComponent: ChaniChanzinCard,
     JokePageComponent: ChaniChanzinJokePage,
   },
+  {
+  id: "tamar-damti",
+  name: "תמר דמתי",
+  jokeTitle:"הבננה",
+  CardComponent: TamarDamtiCard,
+  JokePageComponent: TamarDamtiJokePage,
+},
 ];
 
 export default students;
