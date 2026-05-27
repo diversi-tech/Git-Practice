@@ -25,6 +25,14 @@ const students: Student[] = [
     JokePageComponent: DanaDuviJokePage,
   },
   {
+    id: "tamar-damti",
+    name: "תמר דמתי",
+    jokeTitle: "הבננה",
+    CardComponent: TamarDamtiCard,
+    JokePageComponent: TamarDamtiJokePage,
+
+  },
+  {
     id: "hadas",
     name: "הדס חומרי",
     jokeTitle: "סכנת התקררות❄️",
@@ -38,14 +46,7 @@ const students: Student[] = [
     CardComponent: ChaniChanzinCard,
     JokePageComponent: ChaniChanzinJokePage,
   },
-  {
-    id: "tamar-damti",
-    name: "תמר דמתי",
-    jokeTitle: "הבננה",
-    CardComponent: TamarDamtiCard,
-    JokePageComponent: TamarDamtiJokePage,
-
-  },
+  
   {
     id: "Tamar_zwiebel",
     name: "תמר צויבל",
