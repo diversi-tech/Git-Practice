@@ -2,20 +2,12 @@
 import type { BranchData } from "../types";
 
 const data: BranchData = {
-  "generatedAt": "2026-05-27T09:28:41.352Z",
-  "currentBranch": "lali-fefer",
+  "generatedAt": "2026-05-27T12:17:11.337Z",
+  "currentBranch": "catalystIQ_3",
   "mainBranch": "master",
   "branches": [
     {
       "name": "#catalystiq/#catalystiq-1/shevi-shapira",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "#catalystiq/#catalystiq-3/lali-fefer",
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
@@ -183,7 +175,39 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+      "name": "catalistIQ_1_Yael_Ordman",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
       "name": "catalystIQ_1",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "catalystIQ_1_Chaya_Sprung",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "catalystIQ_1_Yael_Shitrit",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "catalystIQ_1_nechami_brim",
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
@@ -199,15 +223,7 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
-      "name": "catalystIQ_3",
-      "parentBranch": null,
-      "shortHash": "0c10217",
-      "lastCommitMessage": "fix: instructions branch names",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "catalystiq/catalystiq-1/shevi-shapira",
+      "name": "catalystIQ_2_Orit_Zadok",
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
@@ -215,7 +231,63 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
-      "name": "catalystiq/catalystiq-3/TamarRotan",
+      "name": "catalystIQ_2_Orit_Zadok_!",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "catalystIQ_2_noa_megera",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "catalystIQ_3",
+      "parentBranch": "lali-fefer",
+      "shortHash": "3d43d6c",
+      "lastCommitMessage": "Merge pull request #111 from diversi-tech/catalystIQ_3_HodayaYfrach",
+      "isMergedIntoParent": false,
+      "isCurrent": true
+    },
+    {
+      "name": "catalystIQ_3_HodayaYfrach",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "catalystIQ_3_Yael_Refaelov",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "catalystiq-3/TamarRotan",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "catalystiq-3/lali-fefer",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "catalystiq/catalystiq-1/shevi-shapira",
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
@@ -360,11 +432,11 @@ const data: BranchData = {
     },
     {
       "name": "lali-fefer",
-      "parentBranch": null,
-      "shortHash": "0c10217",
-      "lastCommitMessage": "fix: instructions branch names",
+      "parentBranch": "master",
+      "shortHash": "dbe78b9",
+      "lastCommitMessage": "add: my personal joke and registry update",
       "isMergedIntoParent": false,
-      "isCurrent": true
+      "isCurrent": false
     },
     {
       "name": "maayan-vecomm-1-vecomm",
@@ -576,6 +648,14 @@ const data: BranchData = {
     },
     {
       "name": "sola_sola3_yaeli",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "sola_sola3_yaelih",
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
