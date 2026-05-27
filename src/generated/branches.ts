@@ -2,8 +2,8 @@
 import type { BranchData } from "../types";
 
 const data: BranchData = {
-  "generatedAt": "2026-05-27T09:58:24.946Z",
-  "currentBranch": "catalystIQ_3_HodayaYfrach",
+  "generatedAt": "2026-05-27T09:28:41.352Z",
+  "currentBranch": "lali-fefer",
   "mainBranch": "master",
   "branches": [
     {
@@ -207,14 +207,6 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
-      "name": "catalystIQ_3_HodayaYfrach",
-      "parentBranch": null,
-      "shortHash": "0c10217",
-      "lastCommitMessage": "fix: instructions branch names",
-      "isMergedIntoParent": false,
-      "isCurrent": true
-    },
-    {
       "name": "catalystiq/catalystiq-1/shevi-shapira",
       "parentBranch": null,
       "shortHash": "",
@@ -365,6 +357,14 @@ const data: BranchData = {
       "lastCommitMessage": "",
       "isMergedIntoParent": false,
       "isCurrent": false
+    },
+    {
+      "name": "lali-fefer",
+      "parentBranch": null,
+      "shortHash": "0c10217",
+      "lastCommitMessage": "fix: instructions branch names",
+      "isMergedIntoParent": false,
+      "isCurrent": true
     },
     {
       "name": "maayan-vecomm-1-vecomm",
