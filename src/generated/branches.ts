@@ -2,8 +2,8 @@
 import type { BranchData } from "../types";
 
 const data: BranchData = {
-  "generatedAt": "2026-05-26T08:32:45.334Z",
-  "currentBranch": "sola_sola3_Efrat",
+  "generatedAt": "2026-05-27T11:18:58.458Z",
+  "currentBranch": "sola3",
   "mainBranch": "master",
   "branches": [
     {
@@ -304,11 +304,11 @@ const data: BranchData = {
     },
     {
       "name": "sola3",
-      "parentBranch": null,
-      "shortHash": "0c10217",
-      "lastCommitMessage": "fix: instructions branch names",
+      "parentBranch": "sola_sola3_Efrat_Madmon",
+      "shortHash": "8391cad",
+      "lastCommitMessage": "Merge pull request #92 from diversi-tech/sola_sola3_yaeli",
       "isMergedIntoParent": false,
-      "isCurrent": false
+      "isCurrent": true
     },
     {
       "name": "sola4",
@@ -383,12 +383,12 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
-      "name": "sola_sola3_Efrat",
-      "parentBranch": null,
-      "shortHash": "0c10217",
-      "lastCommitMessage": "fix: instructions branch names",
+      "name": "sola_sola3_Efrat_Madmon",
+      "parentBranch": "master",
+      "shortHash": "d1df2fe",
+      "lastCommitMessage": "Merge branch 'sola3' of https://github.com/diversi-tech/Git-Practice into sola_sola3_Efrat_Madmon",
       "isMergedIntoParent": false,
-      "isCurrent": true
+      "isCurrent": false
     },
     {
       "name": "stars",
