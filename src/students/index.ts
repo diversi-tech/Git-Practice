@@ -10,11 +10,20 @@ import OritCard from "./orit-zadok/Card";
 
 import NoaMegeraCard from "./noa-megera/Card";
 import NoaMegeraJokePage from "./noa-megera/JokePage";
+import EfratAbukasisCard from "./efrat-abukasis/Card";
+import EfratAbukasisJokePage from "./efrat-abukasis/JokePage";
 
 // ⚠️ סדר הרשימה חייב להיות לפי סדר האלף-בית העברי לפי שם המשפחה.
 // כל תלמידה מוסיפה את עצמה במקום הנכון ידנית.
 // אסור להשתמש בפונקציית-sort! 
 const students: Student[] = [
+  {
+  id: "efrat-abukasis",
+  name: "אפרת אבוקסיס",
+  jokeTitle: "המחשב העייף",
+  CardComponent: EfratAbukasisCard,
+  JokePageComponent: EfratAbukasisJokePage,
+  },
   {
   id: "orit zadok",
   name: "אורית צדוק",
