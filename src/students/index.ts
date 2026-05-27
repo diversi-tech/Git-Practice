@@ -22,41 +22,20 @@ import MalkaJokePage from "./malka-gadlowitz/JokePage";
 // כל תלמידה מוסיפה את עצמה במקום הנכון ידנית.
 // אסור להשתמש בפונקציית-sort! 
 const students: Student[] = [
-   {
-    id: "shira-carmi",
-    name: "שירה כרמי",
-    jokeTitle: "המפתחים וה-Git",
-    CardComponent: ShiraCarmiCard,
-    JokePageComponent: ShiraCarmiJokePage,
-  },
     {
-    id: "chani-chanzin",
-    name: "חני חנזין",
-    jokeTitle: "התנין והתנינה",
-    CardComponent: ChaniChanzinCard,
-    JokePageComponent: ChaniChanzinJokePage,
-  },
-  {
-    id: "dana-duvi",
-    name: "דנה דובי",
-    jokeTitle: "הדוב הפחדן",
-    CardComponent: DanaDuviCard,
-    JokePageComponent: DanaDuviJokePage,
-  },
-  {
   id: "malka-gedelovitz",
   name: "מלכה גדלוביץ",
   jokeTitle: "המתכנת והקפה",
   CardComponent: MalkaCard,
   JokePageComponent: MalkaJokePage,
 },
-  {
-  id: "Ruti-Paniri",
-  name: "רותי פנירי",
-  jokeTitle: "המחשב העקשן",
-  CardComponent: RutiCard,
-  JokePageComponent: RutiJokePage,
-},
+    {
+    id: "dana-duvi",
+    name: "דנה דובי",
+    jokeTitle: "הדוב הפחדן",
+    CardComponent: DanaDuviCard,
+    JokePageComponent: DanaDuviJokePage,
+  },
    {
     id: "Shifra-Zaafrani",
     name: "שפרה זעפרני",
@@ -64,6 +43,31 @@ const students: Student[] = [
     CardComponent: ShifraZaafraniCard,
     JokePageComponent: ShifraZaafraniJokePage,
   },
+      {
+    id: "chani-chanzin",
+    name: "חני חנזין",
+    jokeTitle: "התנין והתנינה",
+    CardComponent: ChaniChanzinCard,
+    JokePageComponent: ChaniChanzinJokePage,
+  },
+   {
+    id: "shira-carmi",
+    name: "שירה כרמי",
+    jokeTitle: "המפתחים וה-Git",
+    CardComponent: ShiraCarmiCard,
+    JokePageComponent: ShiraCarmiJokePage,
+  },
+
+
+
+  {
+  id: "Ruti-Paniri",
+  name: "רותי פנירי",
+  jokeTitle: "המחשב העקשן",
+  CardComponent: RutiCard,
+  JokePageComponent: RutiJokePage,
+},
+
 
  
 
