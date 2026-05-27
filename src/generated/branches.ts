@@ -2,8 +2,8 @@
 import type { BranchData } from "../types";
 
 const data: BranchData = {
-  "generatedAt": "2026-05-26T11:17:34.307Z",
-  "currentBranch": "stars-green-johnny-update-team3-chanaMoshayev",
+  "generatedAt": "2026-05-27T08:00:52.317Z",
+  "currentBranch": "avigail_jobke",
   "mainBranch": "master",
   "branches": [
     {
@@ -127,6 +127,14 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+      "name": "avigail_jobke",
+      "parentBranch": "master",
+      "shortHash": "1be8974",
+      "lastCommitMessage": "Merge stars-green-johnny-update-team3 and resolve conflicts",
+      "isMergedIntoParent": false,
+      "isCurrent": true
+    },
+    {
       "name": "ayala-joke2",
       "parentBranch": null,
       "shortHash": "",
@@ -136,6 +144,14 @@ const data: BranchData = {
     },
     {
       "name": "ayala-oshri-stars-green-johnny-update-team1",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "ayala-samson",
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
@@ -311,6 +327,14 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+      "name": "ruth_jokes",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
       "name": "shani",
       "parentBranch": null,
       "shortHash": "",
@@ -479,6 +503,14 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+      "name": "sola_sola3_yehudit",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
       "name": "stars",
       "parentBranch": null,
       "shortHash": "",
@@ -553,8 +585,8 @@ const data: BranchData = {
     {
       "name": "stars-green-johnny-update-team3",
       "parentBranch": null,
-      "shortHash": "0c10217",
-      "lastCommitMessage": "fix: instructions branch names",
+      "shortHash": "",
+      "lastCommitMessage": "",
       "isMergedIntoParent": false,
       "isCurrent": false
     },
@@ -568,11 +600,11 @@ const data: BranchData = {
     },
     {
       "name": "stars-green-johnny-update-team3-chanaMoshayev",
-      "parentBranch": "master",
-      "shortHash": "b000af7",
-      "lastCommitMessage": "chana: update dev script and generated branches",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
       "isMergedIntoParent": false,
-      "isCurrent": true
+      "isCurrent": false
     },
     {
       "name": "stars-green-jonny-update-miryam-dahari",
