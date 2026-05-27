@@ -7,8 +7,8 @@ import ChaniChanzinCard from "./chani-chanzin/Card";
 import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
 
 // מייבא את הקומפוננטות שלך
-import SheviShapiraCard from "./shevi shapira/Card";
-import SheviShapiraJokePage from "./shevi shapira/JokePage";
+import SheviShapiraCard from "./shevi-shapira/Card";
+import SheviShapiraJokePage from "./shevi-shapira/JokePage";
 
 // ⚠️ סדר הרשימה חייב להיות לפי סדר האלף-בית העברי לפי שם המשפחה.
 // כל תלמידה מוסיפה את עצמה במקום הנכון ידנית.
