@@ -51,7 +51,7 @@ const students: Student[] = [
     jokeTitle: "וירוס במחשב ",
     CardComponent: efratMittelmanCard,
     JokePageComponent: efratMittelmanJokePage,
-  }
+  },
   {
   id: "shevi-shapira",
   name: "שבי שפירא",
