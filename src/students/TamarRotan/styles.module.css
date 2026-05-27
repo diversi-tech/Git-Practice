@@ -1,0 +1,41 @@
+
+.cardContent {
+  flex-grow: 1; /* זה גורם לתוכן העליון לתפוס את המקום המרכזי */
+}
+.card {
+  padding: 20px;
+  border: 2px solid #ffcc00;
+  border-radius: 15px;
+  background-color: #fff;
+  text-align: center;
+  
+  /* הופכים את הכרטיס לרשת (Grid) עם שתי שורות */
+  display: grid;
+  grid-template-rows: 1fr auto; /* השורה הראשונה לוקחת את כל המקום, השנייה נצמדת לתחתית */
+  min-height: 250px;
+  height: 100%;
+}
+
+.button {
+  width: 100%;
+  padding: 10px;
+  background-color: #ff9900;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  margin-top: 15px; /* מרווח קטן מהטקסט */
+}
+.jokePage {
+  /* מבנה שמרכז הכל */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* מרכז אנכית (למעלה-למטה) */
+  align-items: center;     /* מרכז אופקית (ימין-שמאל) */
+  
+  min-height: 100vh;       /* גובה של כל המסך */
+  width: 100%;             /* רוחב מלא */
+  padding: 20px;
+  text-align: center;      /* מוודא שהטקסט בתוך התיבה גם ממורכז */
+}
