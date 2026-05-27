@@ -12,6 +12,9 @@ import YehuditBCard from "./YehuditB/Card";
 import yaelihainCard from "./yaeli-hain/Card";
 import yaelihainJokePage from "./yaeli-hain/JokePage";
 
+import saralevinCard from "./sara-levin/Card";
+import saralevinJokePage from "./sara-levin/JokePage";
+
 
 // ⚠️ סדר הרשימה חייב להיות לפי סדר האלף-בית העברי לפי שם המשפחה.
 // כל תלמידה מוסיפה את עצמה במקום הנכון ידנית.
@@ -39,7 +42,7 @@ const students: Student[] = [
     CardComponent: YehuditBCard,
     JokePageComponent: YehuditBJokePage,
   },
-
+{
   id: "yaeli-hain ",
   name: "יעלי היין",
   jokeTitle:"באגים",
@@ -51,8 +54,8 @@ const students: Student[] = [
   id: "sara-levin",
   name: "שרה לוין",
   jokeTitle: "אמא של מתכנתים",
-  CardComponent: SaraLevinCard,
-  JokePageComponent: SaraLevinJokePage,
+  CardComponent: saralevinCard,
+  JokePageComponent: saralevinJokePage,
 
 },
   
@@ -60,8 +63,8 @@ const students: Student[] = [
   id: "yaeli-rosner",
   name: "יעלי רוזנר",
   jokeTitle: "מה קרה למרק???",
-  CardComponent: yaeliCard,
-  JokePageComponent: yaeliJokePage,
+  CardComponent: yaelihainCard,
+  JokePageComponent: yaelihainJokePage,
   }
 
 
