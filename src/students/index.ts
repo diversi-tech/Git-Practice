@@ -8,7 +8,8 @@ import hadasPage from "./hadas/JokePage";
 
 import ChaniChanzinCard from "./chani-chanzin/Card";
 import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
-
+import TamarDamtiCard from "./tamar-damti/Card";
+import TamarDamtiJokePage from "./tamar-damti/JokePage";
 // ⚠️ סדר הרשימה חייב להיות לפי סדר האלף-בית העברי לפי שם המשפחה.
 // כל תלמידה מוסיפה את עצמה במקום הנכון ידנית.
 // אסור להשתמש בפונקציית-sort! 
