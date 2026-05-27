@@ -1,0 +1,220 @@
+/* ── קו עיצובי כללי - ניאון וסייבר ── */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+
+.card, .jokePage {
+  font-family: 'Fira Code', 'Segoe UI', monospace;
+  direction: rtl;
+}
+
+.card {
+  background: #1e1e2e;
+  border: 2px solid #bd93f9;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(189, 147, 249, 0.15);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  padding: 0 !important;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(189, 147, 249, 0.3);
+  border-color: #ff79c6;
+}
+
+.windowHeader {
+  background: #181825;
+  padding: 0.6rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #313244;
+}
+
+.dots {
+  display: flex;
+  gap: 6px;
+}
+
+.dots span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dotRed { background: #ff5555; }
+.dotYellow { background: #ffb86c; }
+.dotGreen { background: #50fa7b; }
+
+.windowTitle {
+  color: #6272a4;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.cardBody {
+  padding: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.codeIcon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+.title {
+  color: #f8f8f2;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+  line-height: 1.4;
+}
+
+.name {
+  color: #8be9fd;
+  font-size: 0.9rem;
+  margin-bottom: 1.2rem;
+}
+
+.actionBadge {
+  background: #50fa7b;
+  color: #282a36;
+  font-weight: bold;
+  font-size: 0.8rem;
+  padding: 0.4rem 1.2rem;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(80, 250, 123, 0.3);
+}
+
+.jokePage {
+  background: #181825;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.mainContainer {
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.pageHeader {
+  text-align: center;
+}
+
+.pageTitle {
+  color: #ff79c6;
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-bottom: 0.2rem;
+  text-shadow: 0 0 15px rgba(255, 121, 198, 0.4);
+}
+
+.intro {
+  color: #f8f8f2;
+  font-size: 0.95rem;
+  opacity: 0.9;
+  margin-bottom: 0.5rem;
+}
+
+.stepsGrid {
+  display: grid;
+  grid-template-columns: 1fr; 
+  gap: 0.8rem; 
+  width: 100%;
+}
+
+.stepCard {
+  background: #1e1e2e;
+  border-radius: 8px;
+  padding: 0.8rem 1.2rem; 
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  position: relative;
+  border: 1px solid #313244;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+}
+
+.stepCard:hover {
+  transform: scale(1.01);
+}
+
+.stepNum {
+  position: absolute;
+  top: 0.4rem;
+  left: 1rem;
+  font-size: 1.8rem;
+  font-weight: 800;
+  opacity: 0.04;
+  color: #fff;
+}
+
+.stepIcon {
+  font-size: 1.6rem; 
+}
+
+.stepContent h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 0.1rem;
+}
+
+.stepContent p {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: #a6adc8;
+}
+
+.step1 { border-right: 4px solid #50fa7b; }
+.step1 h3 { color: #50fa7b; }
+
+.step2 { border-right: 4px solid #ffb86c; }
+.step2 h3 { color: #ffb86c; }
+
+.step3 { border-right: 4px solid #ff5555; }
+.step3 h3 { color: #ff5555; }
+
+.step4 { border-right: 4px solid #8be9fd; }
+.step4 h3 { color: #8be9fd; }
+
+.backBtn {
+  background: linear-gradient(90deg, #bd93f9 0%, #ff79c6 100%);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.6rem 2rem;
+  font-size: 0.85rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(189, 147, 249, 0.3);
+  transition: all 0.2s;
+  font-family: inherit;
+  margin-top: 0.5rem;
+}
+
+.backBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 121, 198, 0.6);
+  filter: brightness(1.1);
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0px); }
+}
