@@ -14,7 +14,7 @@
   box-shadow: 0 8px 25px rgba(189, 147, 249, 0.15);
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   cursor: pointer;
-  padding: 0 !important; /* מבטל פדינג חיצוני של התשתית */
+  padding: 0 !important;
 }
 
 .card:hover {
@@ -94,12 +94,12 @@
 
 .jokePage {
   background: #181825;
-  height: 100vh; /* נועל את הדף בדיוק לגובה המסך למניעת גלילה */
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  overflow: hidden; /* מונע גלילה של הדף כולו */
+  overflow: hidden;
 }
 
 .mainContainer {
@@ -108,7 +108,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.8rem; /* צמצום הריווח בין האלמנטים */
+  gap: 0.8rem;
 }
 
 .pageHeader {
@@ -117,7 +117,7 @@
 
 .pageTitle {
   color: #ff79c6;
-  font-size: 1.6rem; /* הקטנת גודל הכותרת */
+  font-size: 1.6rem;
   font-weight: 800;
   margin-bottom: 0.2rem;
   text-shadow: 0 0 15px rgba(255, 121, 198, 0.4);
@@ -125,23 +125,22 @@
 
 .intro {
   color: #f8f8f2;
-  font-size: 0.95rem; /* הקטנת טקסט ההסבר */
+  font-size: 0.95rem;
   opacity: 0.9;
   margin-bottom: 0.5rem;
 }
 
-/* סידור המלבנים בטור אנכי אחד מתחת לשני */
 .stepsGrid {
   display: grid;
-  grid-template-columns: 1fr; /* עמודה אחת בלבד */
-  gap: 0.8rem; /* רווח קומפקטי בין שלב לשלב */
+  grid-template-columns: 1fr; 
+  gap: 0.8rem; 
   width: 100%;
 }
 
 .stepCard {
   background: #1e1e2e;
   border-radius: 8px;
-  padding: 0.8rem 1.2rem; /* צמצום הפדינג הפנימי כדי לחסוך מקום */
+  padding: 0.8rem 1.2rem; 
   display: flex;
   gap: 1.2rem;
   align-items: center;
@@ -166,7 +165,7 @@
 }
 
 .stepIcon {
-  font-size: 1.6rem; /* גודל אייקון מותאם */
+  font-size: 1.6rem; 
 }
 
 .stepContent h3 {
@@ -181,7 +180,6 @@
   color: #a6adc8;
 }
 
-/* צבעי ניאון ייחודיים לכל שלב */
 .step1 { border-right: 4px solid #50fa7b; }
 .step1 h3 { color: #50fa7b; }
 
@@ -194,7 +192,6 @@
 .step4 { border-right: 4px solid #8be9fd; }
 .step4 h3 { color: #8be9fd; }
 
-/* כפתור חזרה מעוצב וקומפקטי */
 .backBtn {
   background: linear-gradient(90deg, #bd93f9 0%, #ff79c6 100%);
   color: #fff;

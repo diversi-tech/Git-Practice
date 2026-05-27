@@ -6,7 +6,6 @@ export default function YWeissJokePage({ onBack }: PageProps) {
     <div className={`joke-page ${styles.jokePage}`}>
       <div className={styles.mainContainer}>
         
-        {/* כותרת הדף */}
         <div className={styles.pageHeader}>
           <div className={styles.glitchWrapper}>
             <h1 className={styles.pageTitle}>⚡ ארבעת שלבי האבל והקוד ⚡</h1>
@@ -16,7 +15,6 @@ export default function YWeissJokePage({ onBack }: PageProps) {
           </p>
         </div>
 
-        {/* שלבי הבדיחה */}
         <div className={styles.stepsGrid}>
           
           <div className={`${styles.stepCard} ${styles.step1}`}>
@@ -57,7 +55,6 @@ export default function YWeissJokePage({ onBack }: PageProps) {
 
         </div>
 
-        {/* כפתור חזרה */}
         <button className={styles.backBtn} onClick={onBack}>
           <span>חזרה   ↩</span>
         </button>

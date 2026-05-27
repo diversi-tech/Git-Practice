@@ -4,7 +4,7 @@ import { CardProps } from "../../types";
 export default function YWeissCard({ student, onClick }: CardProps) {
   return (
     <div onClick={onClick} className={`joke-card ${styles.card}`}>
-      {/* סרגל עליון של חלון מערכת */}
+
       <div className={styles.windowHeader}>
         <div className={styles.dots}>
           <span className={styles.dotRed}></span>
@@ -14,7 +14,6 @@ export default function YWeissCard({ student, onClick }: CardProps) {
         <span className={styles.windowTitle}>system_error.log</span>
       </div>
 
-      {/* תוכן הכרטיסייה */}
       <div className={styles.cardBody}>
         <div className={styles.codeIcon}>💻</div>
         <h2 className={styles.title}>{student.jokeTitle}</h2>
