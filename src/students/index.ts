@@ -10,6 +10,9 @@ import RachelPanetJokePage from "./RachelPanet/JokePage";
 import EsterLewinJokePage from "./ester-lewin/JokerPage";
 import EsterLewinCard from "./ester-lewin/Card";
 
+import YWeissCard from "./YWeiss/Card";
+import YWeissJokePage from "./YWeiss/JokePage";
+
 
 // ⚠️ סדר הרשימה חייב להיות לפי סדר האלף-בית העברי לפי שם המשפחה.
 // כל תלמידה מוסיפה את עצמה במקום הנכון ידנית.
@@ -21,6 +24,13 @@ const students: Student[] = [
     jokeTitle: "הדוב הפחדן",
     CardComponent: DanaDuviCard,
     JokePageComponent: DanaDuviJokePage,
+  },
+  {
+    id: "YWeiss",
+    name: "יעל וייס",
+    jokeTitle: "ארבעת השלבים של פיתוח חדש",
+    CardComponent: YWeissCard,
+    JokePageComponent: YWeissJokePage,
   },
   {
     id: "chani-chanzin",
