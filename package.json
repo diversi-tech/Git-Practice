@@ -5,6 +5,9 @@
   "type": "module",
   "scripts": {
 
+
+
+
     "dev": "npm run gen-branches && vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
