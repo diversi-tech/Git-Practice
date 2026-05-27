@@ -1,0 +1,156 @@
+/* כרטיס תצוגה משודרג בדף הבית - מראה בוגר, נקי והייטקיסטי */
+.card {
+  padding: 30px 24px;
+  background: rgba(255, 255, 255, 0.04); /* רקע שקוף למחצה */
+  backdrop-filter: blur(12px); /* אפקט טשטוש זכוכית */
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08); /* גבול סמי-שקוף עדין */
+  border-radius: 20px; /* פינות מעוגלות מקצועיות */
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* אפקט משיכה יוקרתי בעת מעבר עכבר (Hover) */
+.card:hover {
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(168, 85, 247, 0.4); /* נגיעה עדינה של סגול בגבול */
+  box-shadow: 0 12px 30px rgba(168, 85, 247, 0.2); /* הילה סגולה מתוחכמת למטה */
+}
+
+/* כותרת הכרטיס (האייקון והטקסט) */
+.cardTitleWithIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+
+/* האייקון של העגלה - תנועה קלה ב-Hover */
+.cardTitleWithIcon span:first-child {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .cardTitleWithIcon span:first-child {
+  transform: scale(1.1) rotate(-5deg);
+}
+
+/* תת כותרת - שם המפתח */
+.name {
+  color: #94a3b8; /* צבע אפור-כחול אלגנטי */
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+.card:hover .name {
+  color: #c084fc; /* השם נצבע בסגול בהיר מעודן */
+}
+
+/* עמוד הבדיחה - טרמינל נקי */
+.jokePage {
+  background-color: #0b0f19;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: system-ui, -apple-system, sans-serif;
+  padding: 20px;
+}
+
+.terminalContainer {
+  width: 100%;
+  max-width: 600px;
+  background-color: #020617;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+  margin-bottom: 35px;
+  overflow: hidden;
+}
+
+.terminalHeader {
+  background-color: #1e293b;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot:nth-child(1) { background-color: #ef4444; }
+.dot:nth-child(2) { background-color: #eab308; }
+.dot:nth-child(3) { background-color: #22c55e; }
+
+.title {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.terminalBody {
+  padding: 30px;
+  text-align: right;
+  direction: rtl;
+}
+
+.output {
+  margin-bottom: 30px;
+  padding-right: 20px;
+  border-right: 3px solid #475569;
+}
+
+.setup {
+  color: #f8fafc;
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+.punchline {
+  color: #22c55e;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  font-weight: bold;
+}
+
+/* כפתור חזרה מעוצב ומזמין */
+.cyberButton {
+  background: linear-gradient(90deg, #ec4899 0%, #8b5cf6 100%);
+  color: #ffffff;
+  border: none;
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 50px;
+  box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+  transition: all 0.2s ease;
+}
+
+.cyberButton:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(236, 72, 153, 0.5);
+}
