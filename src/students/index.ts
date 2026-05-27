@@ -5,11 +5,20 @@ import DanaDuviJokePage from "./dana-duvi/JokePage";
 
 import ChaniChanzinCard from "./chani-chanzin/Card";
 import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
+import OritJokePage from "./orit-zadok/JokePage";
+import OritCard from "./orit-zadok/Card";
 
 // ⚠️ סדר הרשימה חייב להיות לפי סדר האלף-בית העברי לפי שם המשפחה.
 // כל תלמידה מוסיפה את עצמה במקום הנכון ידנית.
 // אסור להשתמש בפונקציית-sort! 
 const students: Student[] = [
+  {
+  id: "orit zadok",
+  name: "אורית צדוק",
+  jokeTitle: "המתכנת שנשלח לסופר",
+  CardComponent: OritCard,
+  JokePageComponent: OritJokePage,
+  },
   {
     id: "dana-duvi",
     name: "דנה דובי",
