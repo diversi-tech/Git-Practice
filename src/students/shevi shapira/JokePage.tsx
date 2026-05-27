@@ -9,22 +9,15 @@ export default function SheviShapiraJokePage({ onBack }: PageProps) {
           <span className={styles.dot}></span>
           <span className={styles.dot}></span>
           <span className={styles.dot}></span>
-          <span className={styles.title}>bash - joke_generator.sh</span>
+          <span className={styles.title}>מערכת הבדיקות - הרצת לוגיקה</span>
         </div>
         
         <div className={styles.terminalBody}>
-          <div className={styles.line}>
-            <span className={styles.prompt}>$</span> npm run tell-joke
-          </div>
-          
           <div className={styles.output}>
             <p className={styles.setup}>
-              אשתו של מתכנת שולחת אותו לסופר: "תקנה כיכר לחם. ואם יש ביצים — תקנה עשרה".
+              אשתו של מתכנת שולחת אותו לסופר: <br />
+              "תקנה כיכר לחם אחת. ואם יש ביצים — תקנה עשרה".
             </p>
-          </div>
-
-          <div className={styles.line}>
-            <span className={styles.prompt}>$</span> resolve --logic
           </div>
 
           <div className={styles.output}>
@@ -38,7 +31,7 @@ export default function SheviShapiraJokePage({ onBack }: PageProps) {
       </div>
 
       <button onClick={onBack} className={styles.cyberButton}>
-        $ cd .. (Back)
+        חזרה לדף הבית
       </button>
     </div>
   );

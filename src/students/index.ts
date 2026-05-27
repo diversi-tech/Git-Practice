@@ -29,12 +29,12 @@ const students: Student[] = [
     JokePageComponent: ChaniChanzinJokePage,
   },
   {
-    id: "shevi-shapira",
-    name: "שבי שפירא",
-    jokeTitle: "למה מתכנתים מעדיפים Dark Mode?", // תוכלי לשנות את הכותרת הזו בהתאם לבדיחה שלך
-    CardComponent: SheviShapiraCard,
-    JokePageComponent: SheviShapiraJokePage,
-  },
+  id: "shevi-shapira",
+  name: "שבי שפירא",
+  jokeTitle: "אלגוריתם בסופרמרקט 🛒", // הכותרת החדשה והמתאימה
+  CardComponent: SheviShapiraCard,
+  JokePageComponent: SheviShapiraJokePage,
+},
 ];
 
 export default students;
