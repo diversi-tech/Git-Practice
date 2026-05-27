@@ -16,6 +16,8 @@ import TamarDamtiJokePage from "./tamar-damti/JokePage";
 
 import YehuditCard from "./yehudit vagshal/Card";
 import YehuditJokePage from "./yehudit vagshal/JokePage";
+import giliCard from "./Gili-Lev/Card";
+import GiliJokePage from "./Gili-Lev/JokePage";
 
 // ⚠️ סדר הרשימה חייב להיות לפי סדר האלף-בית העברי לפי שם המשפחה.
 const students: Student[] = [
@@ -53,6 +55,13 @@ const students: Student[] = [
     jokeTitle: "התנין והתנינה",
     CardComponent: ChaniChanzinCard,
     JokePageComponent: ChaniChanzinJokePage,
+  },
+{
+    id: "gili-lev",
+    name: "גילי לב",
+    jokeTitle: "מה קרה בשמונה? ⏰",
+    CardComponent: giliCard,
+    JokePageComponent: GiliJokePage,
   },
   {
     id: "Tamar_zwiebel",
