@@ -241,8 +241,8 @@ const data: BranchData = {
     {
       "name": "kiteria-3",
       "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
+      "shortHash": "0c10217",
+      "lastCommitMessage": "fix: instructions branch names",
       "isMergedIntoParent": false,
       "isCurrent": false
     },
@@ -257,10 +257,10 @@ const data: BranchData = {
     {
       "name": "kiteria-3-ester",
       "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
+      "shortHash": "0c10217",
+      "lastCommitMessage": "fix: instructions branch names",
       "isMergedIntoParent": false,
-      "isCurrent": false
+      "isCurrent": true
     },
     {
       "name": "kiteria-3_RachelPanet",
@@ -273,10 +273,10 @@ const data: BranchData = {
     {
       "name": "kiteria/YWeiss",
       "parentBranch": null,
-      "shortHash": "0c10217",
-      "lastCommitMessage": "fix: instructions branch names",
+      "shortHash": "",
+      "lastCommitMessage": "",
       "isMergedIntoParent": false,
-      "isCurrent": true
+      "isCurrent": false
     },
     {
       "name": "kiteria_chedva",
@@ -351,7 +351,7 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
-      "name": "sola",
+      "name": "solla",
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
