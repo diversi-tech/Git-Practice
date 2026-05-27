@@ -3,15 +3,26 @@ import { PageProps } from "../../types";
 
 export default function YaelShitritJokePage({ onBack }: PageProps) {
   return (
-    <div className={`joke-page ${styles.jokePage}`}>
-      <p>מתכנת אחד הולך למכולת. אשתו אומרת לו:
-"תקנה בבקשה כיכר לחם אחת, ואם יש ביצים – תקנה עשר".
+    <div className={styles.container}>
+      <div className={styles.card}>
+        <h1 className={styles.title}>באג של מתכנתים</h1>
+        
+        <p className={styles.jokeText}>
+          מתכנת אחד הולך למכולת. אשתו אומרת לו:<br />
+          <strong>"תקנה בבקשה כיכר לחם אחת, ואם יש ביצים – תקנה עשר".</strong>
+          <br /><br />
+          המתכנת מגיע למכולת, רואה שיש ביצים, וחוזר הביתה עם עשר כיכרי לחם.<br /><br />
+          אשתו ההמומה שואלת אותו: "למה קנית עשר כיכרי לחם?!"
+        </p>
+        
+        <div className={styles.punchline}>
+          אומר הלה: "כי היו ביצים!"
+        </div>
 
-המתכנת מגיע למכולת, רואה שיש ביצים, וחוזר הביתה עם 10 כיכרי לחם.
-
-אשתו ההמומה שואלת אותו: "למה קנית עשר כיכרי לחם?!"
-אומר הלה: "כי היו ביצים!"</p>
-      <button onClick={onBack}>← חזרה לעמוד הראשי</button>
+        <div className={styles.decor}>
+          🥚 🍞
+        </div>
+      </div>
     </div>
   );
 }

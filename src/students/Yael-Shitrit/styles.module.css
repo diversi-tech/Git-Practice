@@ -1,21 +1,69 @@
+/* מיכל ראשי - אוירה בהירה, רעננה ונשייה */
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  padding: 20px;
+  direction: rtl;
+}
+
+/* כרטיס הבדיחה - מעוצב, בולט ונקי */
 .card {
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    cursor: pointer;
-    background-color: #f9f9f9;
-  }
-  
-  .title {
-    color: #333;
-    font-size: 1.5rem;
-  }
-  
-  .name {
-    color: #666;
-  }
-  
-  .jokePage {
-    padding: 40px;
-    text-align: center;
-  }
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  padding: 40px;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  border: 1px solid #e1e8ed;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* כותרת הבדיחה - גדולה וברורה */
+.title {
+  font-size: 2.2rem;
+  color: #2c3e50;
+  margin-bottom: 25px;
+  font-weight: 700;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+/* גוף הבדיחה והדיאלוגים - אותיות גדולות וקריאות */
+.jokeText {
+  font-size: 1.35rem;
+  line-height: 1.8;
+  color: #34495e;
+  margin-bottom: 30px;
+  text-align: right;
+  white-space: pre-line; /* שומר על ירידת שורות קריאה */
+}
+
+/* הדגשה לפאנץ' ליין בסוף */
+.punchline {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e74c3c;
+  background-color: #fdf2f2;
+  padding: 15px;
+  border-radius: 8px;
+  border-right: 5px solid #e74c3c;
+  margin-top: 20px;
+}
+
+/* אלמנט עיטורי קטן בתחתית שקשור למכולת וביצים */
+.decor {
+  font-size: 2rem;
+  margin-top: 20px;
+  opacity: 0.8;
+}
