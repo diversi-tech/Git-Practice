@@ -1,27 +1,22 @@
-// import styles from "./styles.module.css";
-// import { PageProps } from "../../types";
-
-// export default function NechamiJokePage({ onBack }: PageProps) {
-//   return (
-//     <div className={`joke-page ${styles.jokePage}`}>
-//       <p>חוקי הפיזיקה של ההייטק</p>
-//       <p></p>
-//       <button onClick={onBack}>← חזרה</button>
-//     </div>
-//   );
-// }
-
-
-//-------------
 import React, { useState } from 'react';
 import styles from "./styles.module.css";
+import { PageProps } from "../../types";
 
-const DevHumorComponent = () => {
-  const [showPunchline, setShowPunchline] = useState(false);
+export default function NechamiJokePage({ onBack }: PageProps) {
+  // ניהול הסטייט להצגת הפאנץ' ליין
+  const [showPunchline, setShowPunchline] = useState<boolean>(false);
 
   return (
     <div className={styles.page}>
       <div className={styles.card}>
+        
+        {/* כפתור חזרה (אופציונלי - משתמש ב-onBack שהגיע מה-Props) */}
+        {onBack && (
+          <button onClick={onBack} className={styles.backButton} style={{ float: 'left', cursor: 'pointer' }}>
+            🔙 חזרה
+          </button>
+        )}
+
         <h3 className={styles.heading}>
           סיפור אמיתי בצוות פיתוח 💻
         </h3>
@@ -36,27 +31,26 @@ const DevHumorComponent = () => {
           </p>
         </div>
 
-      {/* כפתור לחשיפת התשובה */}
-      {!showPunchline && (
-        <button onClick={() => setShowPunchline(true)} className={styles.button}>
-          מה המפתח הבכיר ענה? 🤔
-        </button>
-      )}
+        {/* כפתור לחשיפת התשובה */}
+        {!showPunchline && (
+          <button onClick={() => setShowPunchline(true)} className={styles.button}>
+            מה המפתח הבכיר ענה? 🤔
+          </button>
+        )}
 
-      {/* תגובת המפתח הבכיר */}
-      {showPunchline && (
-        <div className={styles.punchlineBox}>
-          <strong className={styles.punchlineTitle}>
-            👴 מפתח בכיר (מחייך):
-          </strong>
-          <p className={styles.punchlineText}>
-            "ברוך הבא להייטק. חוק שימור הבאגים אומר: קוד אף פעם לא באמת 'עובד', הוא פשוט לוקח הפסקת קפה לפעמים." ☕
-          </p>
-        </div>
-      )}
+        {/* תגובת המפתח הבכיר */}
+        {showPunchline && (
+          <div className={styles.punchlineBox}>
+            <strong className={styles.punchlineTitle}>
+              👴 מפתח בכיר (מחייך):
+            </strong>
+            <p className={styles.punchlineText}>
+              "ברוך הבא להייטק. חוק שימור הבאגים אומר: קוד אף פעם לא באמת 'עובד', הוא פשוט לוקח הפסקת קפה לפעמים." ☕
+            </p>
+          </div>
+        )}
+        
       </div>
     </div>
   );
-};
-
-export default DevHumorComponent;
+}
