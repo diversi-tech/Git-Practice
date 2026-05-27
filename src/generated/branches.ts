@@ -2,10 +2,18 @@
 import type { BranchData } from "../types";
 
 const data: BranchData = {
-  "generatedAt": "2026-05-26T09:21:14.576Z",
-  "currentBranch": "ruth_jokes",
+  "generatedAt": "2026-05-26T12:09:11.294Z",
+  "currentBranch": "stars-green-johnny-update-team1-bracha",
   "mainBranch": "master",
   "branches": [
+    {
+      "name": "ChavivaSeiff",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
     {
       "name": "Eti-NewJoke",
       "parentBranch": null,
@@ -40,6 +48,14 @@ const data: BranchData = {
     },
     {
       "name": "Maayan-Bukrits",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "MaayanBaba",
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
@@ -112,6 +128,22 @@ const data: BranchData = {
     },
     {
       "name": "ayala-joke2",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "ayala-oshri-stars-green-johnny-update-team1",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "ayala-samson",
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
@@ -271,7 +303,7 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
-      "name": "noa_gabay",
+      "name": "mayanSJoke",
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
@@ -279,12 +311,12 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
-      "name": "ruth_jokes",
-      "parentBranch": "master",
-      "shortHash": "55c51ed",
-      "lastCommitMessage": "add new joke",
+      "name": "noa_gabay",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
       "isMergedIntoParent": false,
-      "isCurrent": true
+      "isCurrent": false
     },
     {
       "name": "shani",
@@ -359,6 +391,14 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+      "name": "sola_sola1_ruti",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
       "name": "sola_sola1_sari",
       "parentBranch": null,
       "shortHash": "",
@@ -399,7 +439,47 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+      "name": "sola_sola2_hadas",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "sola_sola2_tamarD",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
       "name": "sola_sola2_yehudit",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "sola_sola3_Efrat_Madmon",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "sola_sola3_saralevin",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "sola_sola3_yaeli",
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
@@ -433,13 +513,45 @@ const data: BranchData = {
     {
       "name": "stars-green-johnny-update-team1",
       "parentBranch": null,
+      "shortHash": "0c10217",
+      "lastCommitMessage": "fix: instructions branch names",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "stars-green-johnny-update-team1-Tamar",
+      "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
       "isMergedIntoParent": false,
       "isCurrent": false
     },
     {
+      "name": "stars-green-johnny-update-team1-Yael",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "stars-green-johnny-update-team1-bracha",
+      "parentBranch": "master",
+      "shortHash": "f0c8976",
+      "lastCommitMessage": "fix: resolve sync syntax error and update student list",
+      "isMergedIntoParent": false,
+      "isCurrent": true
+    },
+    {
       "name": "stars-green-johnny-update-team2",
+      "parentBranch": null,
+      "shortHash": "0c10217",
+      "lastCommitMessage": "fix: instructions branch names",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "stars-green-johnny-update-team2-LitalShamanov",
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
@@ -448,6 +560,22 @@ const data: BranchData = {
     },
     {
       "name": "stars-green-johnny-update-team3",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "stars-green-johnny-update-team3-Zehavi",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "stars-green-johnny-update-team3-chanaMoshayev",
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
@@ -528,6 +656,14 @@ const data: BranchData = {
     },
     {
       "name": "vcomm/vcomm3/ayalaKlein",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "yonny",
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
