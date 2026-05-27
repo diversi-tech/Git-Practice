@@ -1,0 +1,157 @@
+/* --- עיצוב הכרטיסייה (Card) - נשאר אותו דבר כדי לשמור על העיצוב היפה במסך הראשי --- */
+.card {
+  background: linear-gradient(135deg, #ffd7e5 0%, #fffacd 100%);
+  border: 2px dashed #ff91a4;
+  border-radius: 20px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(255, 145, 164, 0.2);
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-8px) rotate(-2deg);
+  box-shadow: 0 20px 30px rgba(255, 145, 164, 0.3);
+}
+
+.title {
+  font-size: 1.5rem;
+  color: #ff3c70;
+  font-weight: 800;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 0 rgba(255, 255, 255, 0.8);
+}
+
+.name {
+  font-size: 1rem;
+  color: #4a4a4a;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 4px 12px;
+  border-radius: 15px;
+}
+
+/* --- עיצוב עמוד הבדיחה המלא - צבעוני, ענק ומלא נוכחות --- */
+.jokePage {
+  /* רקע מעבר צבעים מרהיב שזז כל הזמן */
+  background: linear-gradient(45deg, #ff9a9e, #fecfef, #a1c4fd, #c2e9fb, #ffb199);
+  background-size: 300% 300%;
+  animation: gradientBG 8s ease infinite;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* מטריות וחיוכים ענקיים שמופיעים ישר ומתנדנדים בעדינות במקום לרדת לאט */
+.jokePage::before {
+  content: "☔️😂☔️😊☔️😂☔️😊☔️😂☔️😊☔️😂☔️😊☔️😂☔️😊";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 4rem; /* אימוג'ים ממש גדולים */
+  line-height: 2;
+  word-wrap: break-word;
+  text-align: center;
+  opacity: 0.3; /* בולט יותר מקודם */
+  z-index: 0;
+  pointer-events: none;
+  animation: swing 6s ease-in-out infinite alternate;
+}
+
+.jokeBox {
+  background: rgba(255, 255, 255, 0.85); /* רקע לבן חצי שקוף כדי שיראו את הצבעים מאחורה */
+  backdrop-filter: blur(10px);
+  border: 4px solid #ff3c70;
+  border-radius: 40px;
+  padding: 60px 40px;
+  max-width: 800px; /* הגדלתי את התיבה כדי שיכנס טקסט גדול */
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  position: relative;
+  z-index: 1;
+}
+
+.jokeBox::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border: 3px dashed #38bdf8;
+  border-radius: 25px;
+  pointer-events: none;
+}
+
+.jokeSetup {
+  font-size: 2.5rem; /* טקסט גדול מאוד לשאלה */
+  color: #1f2937;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  font-weight: 800;
+}
+
+.jokePunchline {
+  font-size: 3.5rem; /* טקסט ענקי לפאנץ' */
+  color: transparent;
+  background: linear-gradient(90deg, #ff007f, #7928ca, #ff007f);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-weight: 900;
+  line-height: 1.4;
+  margin-bottom: 50px;
+  animation: colorfulText 3s linear infinite, bounce 2s ease infinite alternate;
+}
+
+/* כפתור חזרה גדול יותר */
+.backBtn {
+  background: linear-gradient(90deg, #ff3c70, #ff8a00);
+  color: #fff;
+  border: none;
+  padding: 16px 48px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 20px rgba(255, 60, 112, 0.4);
+  text-transform: uppercase;
+}
+
+.backBtn:hover {
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 15px 30px rgba(255, 60, 112, 0.6);
+}
+
+/* --- הגדרת האנימציות --- */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes swing {
+  0% { transform: rotate(-3deg) scale(1); }
+  100% { transform: rotate(3deg) scale(1.1); }
+}
+
+@keyframes colorfulText {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
