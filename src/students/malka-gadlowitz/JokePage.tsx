@@ -4,8 +4,10 @@ import { PageProps } from "../../types";
 export default function MalkaJokePage({ onBack }: PageProps) {
   return (
     <div className={`joke-page ${styles.jokePage}`}>
-      <p>joke setup</p>
-      <p>joke punchline</p>
+    <p> למה מתכנתים שותים קפה?
+      כי בלי Java הם לא רצים.
+    </p>
+   
       <button onClick={onBack}>← Back</button>
     </div>
   );
