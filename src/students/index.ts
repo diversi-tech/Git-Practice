@@ -50,7 +50,7 @@ const students: Student[] = [
     JokePageComponent: ShiraCarmiJokePage,
   },
   {
-    id: "Ruti-Paniri",
+  id: "Ruti-Paniri",
   name: "רותי פנירי",
   jokeTitle: "המחשב העקשן",
   CardComponent: RutiCard,
