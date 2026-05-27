@@ -1,0 +1,126 @@
+/* =========================================
+   עיצוב לדף הבדיחה (Page)
+   ========================================= */
+
+.pageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  direction: rtl;
+  background-color: #e2e8f0;
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.pageContainer {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 3rem 2.5rem;
+  max-width: 550px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  text-align: center;
+}
+
+.setupText {
+  font-size: 1.5rem;
+  color: #2d3748;
+  font-weight: 600;
+  margin: 0 0 1.5rem 0;
+  line-height: 1.4;
+}
+
+.errorCode {
+  display: block;
+  margin-top: 0.75rem;
+  color: #718096;
+  font-size: 0.95rem;
+  font-weight: normal;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #f7fafc;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0; /* מסגרת עדינה לקוד */
+}
+
+.punchline {
+  font-size: 1.2rem;
+  color: #4a5568;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.backButton {
+  align-self: flex-start;
+  padding: 0.5rem 1.2rem;
+  background-color: #ffffff;
+  border: 1px solid #cbd5e0;
+  border-radius: 6px;
+  color: #4a5568;
+  font-family: inherit;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 1rem;
+}
+
+.backButton:hover {
+  background-color: #f7fafc;
+  border-color: #a0aec0;
+  color: #2d3748;
+}
+
+.backButton:focus-visible {
+  outline: 2px solid #3182ce;
+  outline-offset: 2px;
+}
+
+/* =========================================
+   עיצוב לכרטיסייה הלחיצה (Card Component)
+   ========================================= */
+
+.clickableCard {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+}
+
+.clickableCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.clickableCard:focus-visible {
+  outline: 2px solid #3182ce;
+  outline-offset: 2px;
+}
+
+.title {
+  font-size: 1.25rem;
+  color: #2d3748;
+  margin: 0 0 0.5rem 0;
+}
+
+.name {
+  font-size: 1rem;
+  color: #718096;
+  margin: 0 0 1rem 0;
+}
+
+.emoji {
+  font-size: 5rem;
+  line-height: 1;
+  margin: 0 auto;
+}
