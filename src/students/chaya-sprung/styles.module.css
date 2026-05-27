@@ -1,0 +1,92 @@
+/* ==========================================================================
+   1. עיצוב הכרטיסייה הראשית (ChayaSprungCard)
+   ========================================================================== */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background: transparent; /* הרקע הסגול מגיע מאפליקציית האם */
+}
+
+/* אפקט ריחוף עדין מעל הכרטיסייה */
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* עיצוב כותרת הבדיחה "בדיקת ראיה" בסגנון מחשב/פיקסלים */
+.title {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #000000;
+  margin: 0 0 8px 0;
+  letter-spacing: -0.5px;
+}
+
+/* עיצוב שם התלמידה */
+.name {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 1.1rem;
+  color: #333333;
+  margin: 0;
+}
+
+/* ==========================================================================
+   2. עיצוב עמוד הבדיחה המלא (ChayaSprungJokePage)
+   ========================================================================== */
+.jokePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 50vh;
+  padding: 40px 20px;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* כותרת עמוד הבדיחה */
+.jokePage h1 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 3rem;
+  color: #000000;
+  margin-bottom: 24px;
+}
+
+/* תוכן הבדיחה */
+.jokePage p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  max-width: 600px;
+  color: #111111;
+  margin-bottom: 40px;
+  white-space: pre-line; /* שומר על ירידת השורה בין הדוקטור לחולה */
+}
+
+/* כפתור החזרה */
+.jokePage button {
+  background-color: #fca311; /* צבע כתום התואם לכפתורים האחרים בעיצוב */
+  color: #ffffff;
+  border: none;
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.jokePage button:hover {
+  background-color: #e5920a;
+  transform: scale(1.03);
+}
+
+.jokePage button:active {
+  transform: scale(0.98);
+}
