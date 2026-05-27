@@ -17,13 +17,7 @@ import TamarRotanJokePage from "./TamarRotan/JokePage";
 // כל תלמידה מוסיפה את עצמה במקום הנכון ידנית.
 // אסור להשתמש בפונקציית-sort! 
 const students: Student[] = [
-  {
-    id: "chani-chanzin",
-    name: "חני חנזין",
-    jokeTitle: "התנין והתנינה",
-    CardComponent: ChaniChanzinCard,
-    JokePageComponent: ChaniChanzinJokePage,
-  },
+  
   {
     id: "dana-duvi",
     name: "דנה דובי",
