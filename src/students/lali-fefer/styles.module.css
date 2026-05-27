@@ -1,0 +1,157 @@
+.card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.cardHeader {
+  font-size: 48px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.cardBody {
+  flex: 1;
+  color: white;
+  text-align: center;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  color: white;
+}
+
+.jokeTitle {
+  font-size: 14px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+}
+
+.cardFooter {
+  margin-top: 12px;
+  text-align: center;
+}
+
+.readButton {
+  background: white;
+  color: #667eea;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-size: 14px;
+}
+
+.readButton:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+/* Joke Page Styles */
+.jokePage {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 32px 20px;
+}
+
+.backButton {
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 24px;
+  transition: background 0.3s ease;
+}
+
+.backButton:hover {
+  background: #764ba2;
+}
+
+.jokeContainer {
+  background: white;
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.jokeHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #667eea;
+}
+
+.jokeTitle {
+  font-size: 32px;
+  margin: 0;
+  color: #333;
+  flex: 1;
+}
+
+.jokeEmoji {
+  font-size: 48px;
+  margin-right: 16px;
+}
+
+.jokeSetup,
+.jokePunchline,
+.jokeReflection {
+  margin-bottom: 24px;
+}
+
+.jokeSetup h2,
+.jokePunchline h2,
+.jokeReflection h3 {
+  color: #667eea;
+  margin: 0 0 12px 0;
+  font-size: 18px;
+}
+
+.jokeSetup p,
+.jokePunchline p,
+.jokeReflection p {
+  color: #555;
+  line-height: 1.8;
+  font-size: 16px;
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .jokeContainer {
+    padding: 20px;
+  }
+
+  .jokeHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .jokeEmoji {
+    margin-right: 0;
+    margin-top: 12px;
+  }
+
+  .jokeTitle {
+    font-size: 24px;
+  }
+}
