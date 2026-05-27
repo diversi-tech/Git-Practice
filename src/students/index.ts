@@ -1,4 +1,6 @@
 import { Student } from "../types";
+import yehuditCard from "./yehudit/card";
+import yehuditJokePage from "./yehudit/jokePage";
 
 import DanaDuviCard from "./dana-duvi/Card";
 import DanaDuviJokePage from "./dana-duvi/JokePage";
@@ -8,10 +10,13 @@ import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
 import RachelWeinbergerJokePage from "./rachel-weinberger/JokePage";
 import RachelWeinbergerCard from "./rachel-weinberger/Card";
 
+
+
 // ⚠️ סדר הרשימה חייב להיות לפי סדר האלף-בית העברי לפי שם המשפחה.
 // כל תלמידה מוסיפה את עצמה במקום הנכון ידנית.
 // אסור להשתמש בפונקציית-sort! 
 const students: Student[] = [
+
   {
     id: "dana-duvi",
     name: "דנה דובי",
@@ -26,6 +31,17 @@ const students: Student[] = [
     CardComponent: ChaniChanzinCard,
     JokePageComponent: ChaniChanzinJokePage,
   },
+ 
+  {
+    id:"yehudit",
+    name: "יהודית",
+    jokeTitle:"התירוץ המושלם לרופא",
+    CardComponent: yehuditCard,
+    JokePageComponent: yehuditJokePage,
+  },
+  
+
+
     {
     id: "rachel-weinberger",
     name: "רחלי וינברגר",
@@ -33,6 +49,7 @@ const students: Student[] = [
     CardComponent: RachelWeinbergerCard,
     JokePageComponent: RachelWeinbergerJokePage,
   },
+
 ];
 
 export default students;
