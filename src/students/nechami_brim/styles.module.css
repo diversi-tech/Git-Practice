@@ -1,0 +1,210 @@
+ /* ==========================================
+   1. עיצוב עמוד הרקע והכרטיס המלא (DevHumorComponent)
+   ========================================== */
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  padding: 20px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  font-family: system-ui, -apple-system, sans-serif;
+  direction: rtl;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.heading {
+  color: #1a202c;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.messageBox {
+  background-color: #f7fafc;
+  border-right: 4px solid #3182ce;
+  border-radius: 4px 12px 12px 4px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.messageTitle {
+  color: #2b6cb0;
+  font-size: 0.95rem;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.messageText {
+  margin: 0;
+  color: #4a5568;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #3182ce 0%, #2b6cb0 100%);
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(49, 130, 206, 0.3);
+  transition: all 0.2s ease;
+}
+
+.button:hover {
+  background: linear-gradient(135deg, #2b6cb0 0%, #2c5282 100%);
+  transform: scale(1.01);
+  box-shadow: 0 6px 16px rgba(49, 130, 206, 0.4);
+}
+
+.button:active {
+  transform: scale(0.99);
+}
+
+.punchlineBox {
+  background-color: #f0fff4;
+  border-right: 4px solid #38a169;
+  border-radius: 4px 12px 12px 4px;
+  padding: 16px;
+  margin-top: 20px;
+  animation: slideDown 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.punchlineTitle {
+  color: #276749;
+  font-size: 0.95rem;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.punchlineText {
+  margin: 0;
+  color: #2f855a;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* ==========================================
+   עיצוב משודרג ומניע לפעולה לכרטיס תצוגה מקדימה (NechamiCard)
+   ========================================== */
+
+:global(.joke-card).card {
+  cursor: pointer;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px; /* פינות מעוגלות ומודרניות יותר */
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 140px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  
+  /* מעבר חלק לכל השינויים (צבע, צל, מיקום) */
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* אפקט ריחוף (Hover) עוצמתי שיוצר תחושה שהכרטיס "קופץ" לקראת המשתמש */
+:global(.joke-card).card:hover {
+  transform: translateY(-6px); /* הכרטיס עולה מעט למעלה */
+  border-color: #3182ce; /* המסגרת הופכת לכחול הייטק */
+  box-shadow: 0 20px 25px -5px rgba(49, 130, 206, 0.1), 0 10px 10px -5px rgba(49, 130, 206, 0.04);
+}
+
+/* הוספת פס צבע דקורטיבי עדין בצד הכרטיס שמשתנה בריחוף */
+:global(.joke-card).card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 5px;
+  background-color: #e2e8f0;
+  transition: background-color 0.3s ease;
+}
+
+:global(.joke-card).card:hover::before {
+  background-color: #3182ce; /* הפס נצבע בכחול בריחוף */
+}
+
+/* עיצוב כותרת הבדיחה */
+.title {
+  color: #1a202c;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 12px 0;
+  line-height: 1.5;
+  transition: color 0.3s ease;
+}
+
+/* בריחוף על הכרטיס, הכותרת נצבעת בכחול */
+:global(.joke-card).card:hover .title {
+  color: #2b6cb0;
+}
+
+/* עיצוב שורת שם הסטודנט */
+.name {
+  color: #718096;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* דוחף את השם לימין ואת הרמז לשמאל */
+}
+
+/* הוספת רמז ויזואלי דינמי (חץ קטן) שמופיע רק כשהמשתמש מרחף על הכרטיס */
+.name::after {
+  content: 'קרא עוד ←';
+  font-size: 0.8rem;
+  color: #3182ce;
+  opacity: 0;
+  transform: translateX(10px);
+  transition: all 0.3s ease;
+}
+
+:global(.joke-card).card:hover .name::after {
+  opacity: 1;
+  transform: translateX(0); /* החץ מחליק פנימה בצורה יפה */
+}
+
+/* ==========================================
+   3. אנימציות
+   ========================================== */
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
