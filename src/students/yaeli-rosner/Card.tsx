@@ -6,7 +6,8 @@ export default function yaeliCard({ student, onClick }: CardProps) {
     <div onClick={onClick} className={`${styles.card} joke-card`}>
       {/* אזור האנימציה של המסעדה */}
       <div className={styles.restaurantScene}>
-        <span className={`${styles.actor} ${styles.waiter}`}>🤵‍♂️</span>
+        {/* שימוש באימוג'ים אמיתיים במקום טקסט עם נקודתיים */}
+        <span className={`${styles.actor} ${styles.waiter}`}>🤵</span>
         <span className={`${styles.actor} ${styles.soup}`}>🍲</span>
         <span className={`${styles.actor} ${styles.customer}`}>🙋‍♂️</span>
       </div>

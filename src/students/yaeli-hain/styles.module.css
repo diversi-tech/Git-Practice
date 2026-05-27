@@ -1,147 +1,81 @@
-/* styles.module.css
-    Grid + card styles for a "joke" list. Designed for CSS Modules.
-*/
-
-.jokeGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 16px;
-  align-items: start;
-  padding: 12px;
+/* עיצוב לעמוד הבדיחה הראשי */
+.jokePage {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(18, 22, 45, 0.12);
+    max-width: 550px;
+    margin: 40px auto;
+    text-align: center;
+    border: 1px solid rgba(99, 102, 241, 0.1);
 }
 
-/* Individual joke card */
-.jokeCard {
-  background: linear-gradient(180deg, #ffffff 0%, #fbfbfe 100%);
-  border: 1px solid rgba(20, 24, 40, 0.06);
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(18, 22, 45, 0.06);
-  padding: 14px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  transition: transform 200ms ease, box-shadow 200ms ease;
-  overflow: hidden;
-  will-change: transform;
-}
-.jokeCard:hover,
-.jokeCard:focus-within {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 30px rgba(18, 22, 45, 0.12);
-}
-
-/* Header: avatar + title/meta */
-.jokeHeader {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-.avatar {
-  width: 40px;
-  height: 40px;
-  flex: 0 0 40px;
-  border-radius: 999px;
-  background: linear-gradient(135deg, #7b61ff, #00c2ff);
-  display: inline-block;
-  box-shadow: inset 0 -6px 18px rgba(0,0,0,0.08);
-}
-
-/* Setup text (the first part of the joke) */
-/* Grid background/color tweak */
-.jokeGrid {
-    background: linear-gradient(180deg, #f5f8ff 0%, #ffffff 100%);
-    border-radius: 14px;
-    padding: 14px;
-    border: 1px solid rgba(99,102,241,0.06);
-    box-shadow: 0 1px 0 rgba(255,255,255,0.6) inset;
-}
-
-/* Setup text (the first part of the joke) */
-.jokeSetup {
-    font-size: 16px;           /* גדל */
-    font-weight: 600;         /* חזק יותר */
-    color: #0b1220;           /* כהה יותר לקריאות */
-    line-height: 1.4;
-    margin: 0;
-    word-break: break-word;
-}
-
-/* Punchline: hidden by default and revealed with a data attribute */
-.jokePunchline {
-    font-size: 16px;          /* גדל */
-    font-weight: 600;         /* חזק יותר */
+/* עיצוב לשאלה של הבדיחה */
+.jokeQuestion {
+    font-size: 20px;
+    font-weight: 600;
     color: #0b1220;
-    background: rgba(11, 18, 32, 0.02);
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+/* עיצוב לתשובה (הפאנץ') */
+.jokeAnswer {
+    font-size: 18px;
+    font-weight: 600;
+    color: #4f46e5; /* צבע סגול יפה */
+    background: rgba(99, 102, 241, 0.06);
+    padding: 12px;
     border-radius: 8px;
-    padding: 10px;
-    margin-top: 6px;
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    transform-origin: top left;
-    transform: translateY(-6px) scale(0.995);
-    transition: opacity 220ms cubic-bezier(.2,.9,.2,1), max-height 220ms ease, transform 220ms ease;
+    margin-bottom: 24px;
 }
 
-/* When the card has data-revealed="true" (toggle from JS or via aria-expanded), show the punchline */
-[data-revealed="true"] .jokePunchline {
-    max-height: 400px; /* large enough for typical punchlines */
-    opacity: 1;
-    transform: none;
-}
-
-/* Meta row: tags, date, actions */
-.jokeMeta {
-    display: flex;
-    gap: 8px;
-    align-items: center;
-    margin-top: auto;
-    justify-content: space-between;
-    font-size: 13px;         /* מעט גדול יותר */
-    color: #50555f;          /* כהה יותר לקריאות */
-}
-.tag {
-    background: rgba(99,102,241,0.08);
-    color: #4f46e5;
-    padding: 6px 8px;
-    border-radius: 999px;
-    white-space: nowrap;
-}
-
-/* Simple action button (like reveal or vote) */
-.actionBtn {
-    background: transparent;
+/* כפתור חזרה */
+.backBtn {
+    background: #374151;
+    color: white;
     border: none;
-    color: #374151;
-    padding: 6px 8px;
+    padding: 10px 20px;
     border-radius: 8px;
     cursor: pointer;
-    transition: background 160ms ease, color 160ms ease;
-    font-weight: 600;        /* טיפה יותר ניגודיות לכפתורים */
+    font-weight: 600;
+    transition: background 0.2s;
 }
-.actionBtn:hover,
-.actionBtn:focus {
-    background: rgba(15,23,42,0.04);
-    color: #111827;
+.backBtn:hover {
+    background: #111827;
+}
+/* עיצוב הכרטיסייה שלה בדף הראשי */
+.card {
+    background: linear-gradient(180deg, #ffffff 0%, #fbfbfe 100%);
+    border: 1px solid rgba(20, 24, 40, 0.06);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(18, 22, 45, 0.06);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: transform 200ms ease, box-shadow 200ms ease;
+    cursor: pointer;
 }
 
-/* Accessibility focus outline */
-.jokeCard:focus-within .actionBtn,
-.actionBtn:focus {
-    outline: 3px solid rgba(59,130,246,0.18);
-    outline-offset: 2px;
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(18, 22, 45, 0.12);
 }
 
-/* Responsive tweaks */
-@media (max-width: 520px) {
-    .jokeGrid {
-         gap: 10px;
-         padding: 10px;
-         border-radius: 12px;
-         background: linear-gradient(180deg, #fbfdff 0%, #ffffff 100%);
-    }
-    .avatar { width: 36px; height: 36px; }
-    .jokeSetup { font-size: 15px; }
-    .jokePunchline { font-size: 15px; }
-    .jokeMeta { font-size: 12px; }
+/* עיצוב כותרת הבדיחה בכרטיסייה */
+.title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0b1220;
+    margin: 0;
+}
+
+/* עיצוב השם שלה בתחתית הכרטיסייה */
+.name {
+    font-size: 14px;
+    color: #7b61ff;
+    font-weight: 600;
+    margin: 0;
+    margin-top: auto; /* דוחף את השם לתחתית */
 }

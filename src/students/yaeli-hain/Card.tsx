@@ -1,6 +1,5 @@
 import styles from "./styles.module.css";
 import { CardProps } from "../../types";
-import students from "..";
 
 export default function yaelihainCard({ student, onClick }: CardProps) {
   return (
