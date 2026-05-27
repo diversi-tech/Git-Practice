@@ -34,7 +34,7 @@ function getCurrentBranch() {
   return exec('git rev-parse --abbrev-ref HEAD');
 }
 
-function getTip(branch) {ע
+function getTip(branch) {
   return exec(`git rev-parse ${branch}`);
 }
 
