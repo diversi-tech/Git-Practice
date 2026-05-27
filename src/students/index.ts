@@ -2,6 +2,12 @@ import { Student } from "../types";
 
 import DanaDuviCard from "./dana-duvi/Card";
 import DanaDuviJokePage from "./dana-duvi/JokePage";
+import YaelShitritCard from "./Yael-Shitrit/Card";
+import ChayaSprungCard from "./chaya-sprung/Card";
+import ChayaSprungJokePage from "./chaya-sprung/JokePage";
+import EfratMittelmanJokePage from "./efrat-mittelman/JokePage";
+import EfratMittelmanCard from "./efrat-mittelman/Card";
+import YaelShitritJokePage from "./Yael-Shitrit/JokePage";
 
 import ChaniChanzinCard from "./chani-chanzin/Card";
 import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
@@ -42,8 +48,8 @@ const students: Student[] = [
     id: "efrat-mittelman",
     name: "אפרת מיטלמן",
     jokeTitle: "וירוס במחשב ",
-    CardComponent: efratMittelmanCard,
-    JokePageComponent: efratMittelmanJokePage,
+    CardComponent: EfratMittelmanCard,
+    JokePageComponent: EfratMittelmanJokePage,
   },
 ];
 
