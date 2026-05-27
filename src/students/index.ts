@@ -4,6 +4,8 @@ import ChaniChanzinCard from "./chani-chanzin/Card";
 import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
 import YaelCard from "./Yael-Refaelov/Card";
 import YaelJokePage from "./Yael-Refaelov/JokePage";
+import HodayaYfrachJokePage from "./Hodaya_yfrach/JokePage";
+import HodayaYfrachCard from "./Hodaya_yfrach/Card";
 
 import DanaDuviCard from "./dana-duvi/Card";
 import DanaDuviJokePage from "./dana-duvi/JokePage";
@@ -53,6 +55,13 @@ const students: Student[] = [
       JokePageComponent: TamarRotanJokePage,
     },
 
+  {
+    id: "hodaya-yfrach",
+    name: "הודיה יפרח",
+    jokeTitle: "כולם כאלה?",
+    CardComponent: HodayaYfrachCard,
+    JokePageComponent: HodayaYfrachJokePage,
+  }
 ];
 
 export default students;
