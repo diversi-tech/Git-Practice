@@ -1,0 +1,265 @@
+.card {
+  background: linear-gradient(160deg, #eef7ff 0%, #cce7ff 100%);
+  border: 3px solid #4a90e2;
+  box-shadow: 0 6px 20px rgba(74, 144, 226, 0.25);
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin: 1rem;
+}
+
+.avatar {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 1.4rem;
+  color: #1a3a5a;
+  margin-bottom: 0.4rem;
+}
+
+.name {
+  font-size: 1rem;
+  color: #2c5680;
+  margin-bottom: 1rem;
+}
+
+.badge {
+  display: inline-block;
+  background: #4a90e2;
+  color: #fff;
+  border-radius: 20px;
+  padding: 0.3rem 1rem;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.jokePage {
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jokeHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.bigEmoji {
+  font-size: 5rem;
+}
+
+.jokeCard {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 2rem 2.5rem;
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(74, 144, 226, 0.2);
+  color: #1a3a5a;
+}
+
+.jokeCard h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.6rem;
+}
+
+.jokeCard p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  margin-top: 0.8rem;
+}
+
+.backBtn {
+  background: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 0.7rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 1.5rem;
+}
+
+.backBtn:hover {
+  background: #357abd;
+}
+.card {
+  background: #ffffff;
+  border: 2px solid #4a90e2;
+  border-radius: 20px;
+  padding: 1.5rem;
+  width: 300px;        /* גודל קבוע לכל הכרטיסים */
+  height: 200px;       /* גודל קבוע לכל הכרטיסים */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+  transform: scale(1.05); /* אפקט מגניב כשעוברים עם העכבר */
+}
+
+.avatar {
+  font-size: 3rem;     /* גודל האימוג'י */
+  margin-top: 0.5rem;
+}
+/* --- עיצוב הכרטיס המרכזי באותו סטייל של הפרויקט --- */
+.card {
+  background: #ffffff;
+  border: 2px solid #4a90e2;
+  border-radius: 20px;
+  padding: 1.5rem;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  /* צל עדין שנותן תחושת עומק */
+  box-shadow: 0 6px 12px rgba(74, 144, 226, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 10px 20px rgba(74, 144, 226, 0.25);
+  border-color: #357abd;
+}
+
+/* --- עיצוב הטקסט והתוכן --- */
+.title {
+  font-size: 1.3rem;
+  color: #1a3a5a;
+  margin: 0;
+  font-weight: 700;
+  text-align: center;
+}
+
+.avatar {
+  font-size: 3.5rem;
+  margin-top: 0.5rem;
+}
+
+.badge {
+  background: #eef7ff;
+  color: #4a90e2;
+  border: 1px solid #4a90e2;
+  border-radius: 12px;
+  padding: 0.4rem 1.2rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* --- עיצוב עמוד הבדיחה המלא --- */
+.jokePage {
+  background-color: #f8fbff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jokeCard {
+  background: #ffffff;
+  border-radius: 25px;
+  padding: 3rem;
+  max-width: 500px;
+  text-align: center;
+  border: 1px solid #d1e3f8;
+  box-shadow: 0 15px 35px rgba(74, 144, 226, 0.1);
+}
+
+.backBtn {
+  background: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 0.8rem 2.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+.card {
+  background: #ffffff;
+  /* מסגרת עם צל פנימי עדין למראה תלת-ממדי */
+  border: 2px solid #4a90e2;
+  border-radius: 20px;
+  padding: 1.5rem;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  /* צל כפול למראה עמוק */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1), 0 0 0 4px #e3f2fd;
+  position: relative;
+  overflow: hidden;
+}
+
+/* אפקט ריחוף (Hover) מרשים */
+.card:hover {
+  transform: translateY(-10px) rotate(2deg);
+  box-shadow: 0 20px 30px rgba(74, 144, 226, 0.3);
+  border-color: #1a3a5a;
+}
+
+/* הוספת "פס טכנולוגי" למעלה למראה של כרטיס משחק */
+.card::before {
+  content: "SYSTEM_01";
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  font-family: monospace;
+  font-size: 0.7rem;
+  color: #4a90e2;
+  opacity: 0.6;
+}
+
+.title {
+  font-size: 1.3rem;
+  color: #1a3a5a;
+  margin-top: 15px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.avatar {
+  font-size: 3.5rem;
+  margin-top: 0.5rem;
+  filter: drop-shadow(0 5px 5px rgba(0,0,0,0.1));
+}
+
+.badge {
+  background: #1a3a5a;
+  color: #fff;
+  border-radius: 8px;
+  padding: 0.4rem 1.2rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  transition: background 0.3s;
+}
+
+.card:hover .badge {
+  background: #4a90e2;
+}
