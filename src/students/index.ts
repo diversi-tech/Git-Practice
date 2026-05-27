@@ -56,6 +56,7 @@ const students: Student[] = [
   jokeTitle: "מה קרה למרק???",
   CardComponent: yaeliCard,
   JokePageComponent: yaeliJokePage,
+  }
 
   
 
