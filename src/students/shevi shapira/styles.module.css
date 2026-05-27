@@ -1,0 +1,42 @@
+.card {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.name {
+  color: #666;
+}
+
+.jokePage {
+  padding: 40px;
+  text-align: center;
+}
+
+.setup {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.punchline {
+  font-size: 1.8rem;
+  color: #0070f3;
+  margin-bottom: 40px;
+}
+
+.backButton {
+  padding: 10px 20px;
+  cursor: pointer;
+}

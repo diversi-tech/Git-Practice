@@ -6,6 +6,10 @@ import DanaDuviJokePage from "./dana-duvi/JokePage";
 import ChaniChanzinCard from "./chani-chanzin/Card";
 import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
 
+// מייבא את הקומפוננטות שלך
+import SheviShapiraCard from "./shevi shapira/Card";
+import SheviShapiraJokePage from "./shevi shapira/JokePage";
+
 // ⚠️ סדר הרשימה חייב להיות לפי סדר האלף-בית העברי לפי שם המשפחה.
 // כל תלמידה מוסיפה את עצמה במקום הנכון ידנית.
 // אסור להשתמש בפונקציית-sort! 
@@ -23,6 +27,13 @@ const students: Student[] = [
     jokeTitle: "התנין והתנינה",
     CardComponent: ChaniChanzinCard,
     JokePageComponent: ChaniChanzinJokePage,
+  },
+  {
+    id: "shevi-shapira",
+    name: "שבי שפירא",
+    jokeTitle: "למה מתכנתים מעדיפים Dark Mode?", // תוכלי לשנות את הכותרת הזו בהתאם לבדיחה שלך
+    CardComponent: SheviShapiraCard,
+    JokePageComponent: SheviShapiraJokePage,
   },
 ];
 
