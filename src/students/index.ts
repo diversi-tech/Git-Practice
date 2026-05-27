@@ -5,17 +5,19 @@ import DanaDuviJokePage from "./dana-duvi/JokePage";
 
 import ChaniChanzinCard from "./chani-chanzin/Card";
 import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
+
+import YehuditBJokePage from "./YehuditB/JokePage";
+import YehuditBCard from "./YehuditB/Card";
+
 import yaelihainCard from "./yaeli-hain/Card";
 import yaelihainJokePage from "./yaeli-hain/JokePage";
 
-import SaraLevinCard from "./sara-levin/Card"
-import SaraLevinJokePage from "./sara-levin/JokePage"
+import saralevinCard from "./sara-levin/Card";
+import saralevinJokePage from "./sara-levin/JokePage";
 
-import yaeliCard from "./yaeli-rosner/Card"
-import yaeliJokePage from "./yaeli-rosner/JokePage"
+import EfratMadmonCard from "./Efrat-Madmon/Card";
+import EfratMadmonJokePage from "./Efrat-Madmon/JokePage";
 
-import EfratMadmonCard from "./Efrat-Madmon/Card"
-import EfratMadmonJokePage from "./Efrat-Madmon/JokePage"
 
 // ⚠️ סדר הרשימה חייב להיות לפי סדר האלף-בית העברי לפי שם המשפחה.
 // כל תלמידה מוסיפה את עצמה במקום הנכון ידנית.
@@ -36,6 +38,14 @@ const students: Student[] = [
     JokePageComponent: ChaniChanzinJokePage,
   },
   {
+
+    id: "Yehudit",
+    name: "יהודית בירמן",
+    jokeTitle: "לאן הגיע הפינגווין???",
+    CardComponent: YehuditBCard,
+    JokePageComponent: YehuditBJokePage,
+  },
+{
   id: "yaeli-hain ",
   name: "יעלי היין",
   jokeTitle:"באגים",
@@ -47,25 +57,27 @@ const students: Student[] = [
   id: "sara-levin",
   name: "שרה לוין",
   jokeTitle: "אמא של מתכנתים",
-  CardComponent: SaraLevinCard,
-  JokePageComponent: SaraLevinJokePage,
+  CardComponent: saralevinCard,
+  JokePageComponent: saralevinJokePage,
 
 },
+
 {
-    id: "Efrat-Madmon",
-    name: "אפרת מדמון",
-    jokeTitle: "עשרה שקלים",
-    CardComponent: EfratMadmonCard,
-    JokePageComponent: EfratMadmonJokePage,
-  },
+  id: "Efrat-Madmon",
+  name: "אפרת מדמון",
+  jokeTitle: "עשרה שקלים",
+  CardComponent: EfratMadmonCard,
+  JokePageComponent: EfratMadmonJokePage,
+},
   
   {
   id: "yaeli-rosner",
   name: "יעלי רוזנר",
   jokeTitle: "מה קרה למרק???",
-  CardComponent: yaeliCard,
-  JokePageComponent: yaeliJokePage,
+  CardComponent: yaelihainCard,
+  JokePageComponent: yaelihainJokePage,
   }
+
 
 ];
 

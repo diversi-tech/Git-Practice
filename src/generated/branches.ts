@@ -2,8 +2,13 @@
 import type { BranchData } from "../types";
 
 const data: BranchData = {
-  "generatedAt": "2026-05-27T11:18:58.458Z",
-  "currentBranch": "sola3",
+
+  "generatedAt": "2026-05-26T07:39:46.973Z",
+  "currentBranch": "master",
+
+  "generatedAt": "2026-05-26T08:32:45.334Z",
+  "currentBranch": "sola_sola3_Efrat",
+
   "mainBranch": "master",
   "branches": [
     {
@@ -135,6 +140,8 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+
+
       "name": "johnny-update-3",
       "parentBranch": null,
       "shortHash": "",
@@ -143,6 +150,7 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+
       "name": "kiter-2-RachelWeinberger",
       "parentBranch": null,
       "shortHash": "",
@@ -184,6 +192,8 @@ const data: BranchData = {
     },
     {
       "name": "kiteria-2",
+
+
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
@@ -256,6 +266,7 @@ const data: BranchData = {
     },
     {
       "name": "master",
+
       "parentBranch": null,
       "shortHash": "0c10217",
       "lastCommitMessage": "fix: instructions branch names",
@@ -287,7 +298,11 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+
+      "name": "kiteria-2-yehudit",
+
       "name": "shiraGidi",
+
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
@@ -295,23 +310,41 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+
+      "name": "kiteria-3",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+
       "name": "sola",
       "parentBranch": null,
       "shortHash": "0c10217",
       "lastCommitMessage": "fix: instructions branch names",
+
       "isMergedIntoParent": false,
       "isCurrent": false
     },
     {
+
+      "name": "kiteria-3-Ayelet",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+
       "name": "sola3",
-      "parentBranch": "sola_sola3_Efrat_Madmon",
-      "shortHash": "8391cad",
-      "lastCommitMessage": "Merge pull request #92 from diversi-tech/sola_sola3_yaeli",
+      "parentBranch": null,
+      "shortHash": "0c10217",
+      "lastCommitMessage": "fix: instructions branch names",
+
       "isMergedIntoParent": false,
-      "isCurrent": true
+      "isCurrent": false
     },
     {
+
+      "name": "kiteria-3-ester",
+
       "name": "sola4",
+
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
@@ -319,7 +352,11 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+
+      "name": "kiteria-3_RachelPanet",
+
       "name": "sola_sola1",
+
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
@@ -327,7 +364,11 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+
+      "name": "kiteria_chedva",
+
       "name": "sola_sola1_carmi",
+
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
@@ -335,7 +376,11 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+
+      "name": "maayan-vecomm-1-vecomm",
+
       "name": "sola_sola1_malka",
+
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
@@ -343,7 +388,11 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+
+      "name": "maayan2",
+
       "name": "sola_sola1_sari",
+
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
@@ -351,6 +400,9 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+
+      "name": "master",
+
       "name": "sola_sola2",
       "parentBranch": null,
       "shortHash": "",
@@ -383,19 +435,56 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
-      "name": "sola_sola3_Efrat_Madmon",
-      "parentBranch": "master",
-      "shortHash": "d1df2fe",
-      "lastCommitMessage": "Merge branch 'sola3' of https://github.com/diversi-tech/Git-Practice into sola_sola3_Efrat_Madmon",
+      "name": "sola_sola3_Efrat",
+
+      "parentBranch": null,
+      "shortHash": "0c10217",
+      "lastCommitMessage": "fix: instructions branch names",
+      "isMergedIntoParent": false,
+      "isCurrent": true
+    },
+    {
+
+      "name": "noa_gabay",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
       "isMergedIntoParent": false,
       "isCurrent": false
     },
     {
+      "name": "shani",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "shani2",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "shiraGidi",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+
+
       "name": "stars",
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
       "isMergedIntoParent": false,
+
       "isCurrent": false
     },
     {
@@ -408,6 +497,12 @@ const data: BranchData = {
     },
     {
       "name": "stars-green-bat-sheva-bloch",
+
+      "isCurrent": false
+    },
+    {
+      "name": "stars-green",
+
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
@@ -415,39 +510,11 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
-      "name": "stars-green-johnny-update-team1",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "stars-green-johnny-update-team2",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "stars-green-johnny-update-team3",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "stars-green-jonny-update-miryam-dahari",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
+
       "name": "tamar-levi-branch",
+
+      "name": "stars-green-bat-sheva-bloch",
+
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
@@ -455,7 +522,11 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+
       "name": "team/vcomm/sub/vcomm3/noagabay",
+
+      "name": "stars-green-johnny-update-team1",
+
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
@@ -463,7 +534,11 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+
       "name": "tovi",
+
+      "name": "stars-green-johnny-update-team2",
+
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
@@ -471,6 +546,68 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+
+      "name": "vcomm/vcomm-1/ShiraShemesh",
+
+      "name": "stars-green-johnny-update-team3",
+
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+
+      "name": "vcomm/vcomm-1/ShiraShemesh2",
+
+      "name": "stars-green-jonny-update-miryam-dahari",
+
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+
+      "name": "vcomm/vcomm-1/tova",
+
+      "name": "tamar-levi-branch",
+
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+
+      "name": "vcomm/vcomm-1/tovi",
+
+      "name": "team/vcomm/sub/vcomm3/noagabay",
+
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+
+      "name": "vcomm/vcomm-1/tovi-joke2",
+
+      "name": "tovi",
+
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+
+
       "name": "vcomm/vcomm-1/ShiraShemesh",
       "parentBranch": null,
       "shortHash": "",
@@ -511,12 +648,15 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+
       "name": "vcomm/vcomm3/ayalaKlein",
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
       "isMergedIntoParent": false,
       "isCurrent": false
+
+
     },
     {
       "name": "yonny-update-saraRafalowitz",
@@ -525,6 +665,7 @@ const data: BranchData = {
       "lastCommitMessage": "",
       "isMergedIntoParent": false,
       "isCurrent": false
+
     }
   ]
 };
