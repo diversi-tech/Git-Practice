@@ -1,5 +1,8 @@
 import { Student } from "../types";
 
+import YaelOrdmanCard from "./yael-ordman/Card";
+import YaelOrdmanJokePage from "./yael-ordman/JokePage";
+
 import DanaDuviCard from "./dana-duvi/Card";
 import DanaDuviJokePage from "./dana-duvi/JokePage";
 
@@ -10,6 +13,13 @@ import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
 // כל תלמידה מוסיפה את עצמה במקום הנכון ידנית.
 // אסור להשתמש בפונקציית-sort! 
 const students: Student[] = [
+  {
+    id: "yael-ordman",
+    name: "יעל אורדמן",
+    jokeTitle: "רקורסיה",//מה ההגדרה המילונית של רקורסיה? עיין ערך רקורסיה... חחח
+    CardComponent: YaelOrdmanCard,
+    JokePageComponent: YaelOrdmanJokePage,
+  },
   {
     id: "dana-duvi",
     name: "דנה דובי",
