@@ -39,12 +39,20 @@ const students: Student[] = [
     JokePageComponent: ChaniChanzinJokePage,
   },
   {
-  id: "Tamar_zwiebel",
-  name: "תמר צויבל",
-  jokeTitle: "לא באחריותי! 🛑",
-  CardComponent: TamarZwiebelCard,
-  JokePageComponent: TamarZwiebelJokePage,
-},
+    id: "tamar-damti",
+    name: "תמר דמתי",
+    jokeTitle: "הבננה",
+    CardComponent: TamarDamtiCard,
+    JokePageComponent: TamarDamtiJokePage,
+
+  },
+  {
+    id: "Tamar_zwiebel",
+    name: "תמר צויבל",
+    jokeTitle: "לא באחריותי! 🛑",
+    CardComponent: TamarZwiebelCard,
+    JokePageComponent: TamarZwiebelJokePage,
+  },
 ];
 
 export default students;
