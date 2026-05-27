@@ -1,3 +1,4 @@
+/* כרטיס תצוגה בדף הבית */
 .card {
   padding: 20px;
   border: 1px solid #ccc;
@@ -19,90 +20,108 @@
   color: #666;
 }
 
+/* עמוד הבדיחה - סגנון טרמינל אפל */
 .jokePage {
-  padding: 40px;
-  text-align: center;
-}
-
-.setup {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.punchline {
-  font-size: 1.8rem;
-  color: #0070f3;
-  margin-bottom: 40px;
-}
-
-.backButton {
-  padding: 10px 20px;
-  cursor: pointer;
-}
-.jokePage {
+  background-color: #0f172a;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 60vh;
-  padding: 40px;
-  font-family: system-ui, -apple-system, sans-serif;
+  font-family: 'Fira Code', 'Courier New', monospace;
+  padding: 20px;
 }
 
-.jokeContainer {
-  max-width: 600px;
-  background-color: #f8f9fa;
-  border-radius: 12px;
-  padding: 30px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.terminalContainer {
+  width: 100%;
+  max-width: 650px;
+  background-color: #050b14;
+  border: 1px solid #1e293b;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   margin-bottom: 30px;
-  text-align: right; /* בשביל עברית מסודרת */
+  overflow: hidden;
+}
+
+.terminalHeader {
+  background-color: #1e293b;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot:nth-child(1) { background-color: #ef4444; }
+.dot:nth-child(2) { background-color: #eab308; }
+.dot:nth-child(3) { background-color: #22c55e; }
+
+.title {
+  color: #94a3b8;
+  font-size: 0.85rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.terminalBody {
+  padding: 20px;
+  text-align: right;
   direction: rtl;
 }
 
-.jokeHeader {
-  font-size: 1.8rem;
-  color: #333;
-  margin-bottom: 25px;
-  border-bottom: 2px solid #eceff1;
-  padding-bottom: 10px;
+.line {
+  color: #38bdf8;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  text-align: left;
+  direction: ltr;
 }
 
-.jokeStep {
-  margin-bottom: 20px;
-}
-
-.stepNumber {
+.prompt {
+  color: #f43f5e;
   font-weight: bold;
-  color: #5c6bc0;
-  font-size: 1.1rem;
+}
+
+.output {
+  margin-bottom: 25px;
+  padding-right: 15px;
+  border-right: 2px solid #334155;
 }
 
 .setup {
-  font-size: 1.3rem;
-  color: #455a64;
-  margin-top: 5px;
+  color: #e2e8f0;
+  font-size: 1.2rem;
+  line-height: 1.6;
 }
 
 .punchline {
-  font-size: 1.4rem;
-  color: #d32f2f; /* צבע אדום להדגשת הדרמה */
-  font-weight: bold;
-  margin-top: 5px;
+  color: #4ade80;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-weight: 600;
 }
 
-.backButton {
-  padding: 12px 24px;
+
+.cyberButton {
+  background-color: transparent;
+  color: #f43f5e;
+  border: 1px solid #f43f5e;
+  padding: 10px 20px;
+  font-family: inherit;
   font-size: 1rem;
-  background-color: #0070f3;
-  color: white;
-  border: none;
-  border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.2s;
+  border-radius: 4px;
+  transition: all 0.2s ease;
 }
 
-.backButton:hover {
-  background-color: #0051b3;
+.cyberButton:hover {
+  background-color: #f43f5e;
+  color: #0f172a;
+  box-shadow: 0 0 15px rgba(244, 63, 94, 0.4);
 }
