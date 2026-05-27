@@ -1,0 +1,348 @@
+/* ─── Global App Layout ────────────────────────────────────── */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ─── Navbar ────────────────────────────────────────────────── */
+.navbar {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 16px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  direction: rtl;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.nav-logo:hover {
+  transform: scale(1.05);
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.3s ease;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.nav-link:hover {
+  opacity: 0.8;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* ─── Main Content ──────────────────────────────────────────── */
+.main-content {
+  flex: 1;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* ─── Footer ────────────────────────────────────────────────── */
+.footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+  direction: rtl;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* ─── Instructions Page ────────────────────────────────────── */
+.instructions-page {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 12px;
+  padding: 40px 30px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.instructions-page h1 {
+  color: #667eea;
+  margin-bottom: 32px;
+  font-size: 28px;
+  text-align: center;
+}
+
+.instructions-page h2 {
+  color: #667eea;
+  margin-top: 28px;
+  margin-bottom: 16px;
+  font-size: 20px;
+}
+
+.instructions-section {
+  margin-bottom: 32px;
+}
+
+.instructions-intro {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.branch-tree {
+  background: #f5f5f5;
+  border-left: 4px solid #667eea;
+  padding: 20px;
+  margin: 16px 0;
+  border-radius: 6px;
+}
+
+.branch-level {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  margin: 8px 0;
+  background: white;
+  border-radius: 6px;
+}
+
+.branch-icon {
+  font-size: 20px;
+}
+
+.branch-level code {
+  background: #e8e8e8;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-family: "Courier New", monospace;
+  color: #333;
+}
+
+.branch-desc {
+  margin-right: auto;
+  color: #777;
+  font-size: 14px;
+}
+
+.branch-connector {
+  text-align: center;
+  color: #667eea;
+  font-weight: bold;
+  margin: 4px 0;
+}
+
+.branch-rule {
+  background: #fff3cd;
+  border-left: 4px solid #ffc107;
+  padding: 16px;
+  margin-top: 20px;
+  border-radius: 6px;
+  color: #333;
+}
+
+.instructions-back-btn {
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 24px;
+  transition: background 0.3s ease;
+}
+
+.instructions-back-btn:hover {
+  background: #764ba2;
+}
+
+/* ─── Branches Page ────────────────────────────────────────── */
+.bg-node-wrap {
+  margin: 12px 0;
+}
+
+.bg-node {
+  background: white;
+  border: 2px solid #e8e8e8;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: all 0.3s ease;
+}
+
+.bg-node:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: #667eea;
+}
+
+.bg-node--current {
+  background: #f0f4ff;
+  border-color: #667eea;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+}
+
+.bg-node--root {
+  background: #e8f5e9;
+  border-color: #4caf50;
+}
+
+.bg-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.bg-dot--root {
+  background: #4caf50;
+}
+
+.bg-dot--merged {
+  background: #2196f3;
+}
+
+.bg-dot--pending {
+  background: #ff9800;
+}
+
+.bg-info {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.bg-name {
+  font-weight: 600;
+  color: #333;
+}
+
+.bg-hash {
+  background: #f0f0f0;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: "Courier New", monospace;
+  font-size: 12px;
+  color: #666;
+}
+
+.bg-msg {
+  font-size: 13px;
+  color: #999;
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bg-badges {
+  display: flex;
+  gap: 8px;
+}
+
+.bg-badge {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.bg-badge--current {
+  background: #667eea;
+  color: white;
+}
+
+.bg-badge--merged {
+  background: #c8e6c9;
+  color: #2e7d32;
+}
+
+.bg-badge--pending {
+  background: #ffe0b2;
+  color: #e65100;
+}
+
+.bg-children {
+  margin-right: 32px;
+  margin-top: 8px;
+  border-left: 2px solid #e8e8e8;
+  padding-left: 16px;
+}
+
+/* ─── Responsive ────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .nav-links {
+    gap: 16px;
+  }
+
+  .nav-link {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+  .instructions-page {
+    padding: 20px 15px;
+  }
+
+  .cards-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
+  .main-content {
+    padding: 20px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+  }
+
+  .instructions-page {
+    padding: 16px 12px;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer {
+    font-size: 12px;
+  }
+}
