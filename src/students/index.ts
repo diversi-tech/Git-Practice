@@ -24,6 +24,14 @@ const students: Student[] = [
     CardComponent: DanaDuviCard,
     JokePageComponent: DanaDuviJokePage,
   },
+    {
+    id: "tamar-damti",
+    name: "תמר דמתי",
+    jokeTitle: "הבננה",
+    CardComponent: TamarDamtiCard,
+    JokePageComponent: TamarDamtiJokePage,
+
+  },
   {
     id: "tamar-damti",
     name: "תמר דמתי",
