@@ -2,12 +2,12 @@
 import type { BranchData } from "../types";
 
 const data: BranchData = {
-  "generatedAt": "2026-05-26T08:32:45.334Z",
-  "currentBranch": "sola_sola3_Efrat",
+  "generatedAt": "2026-05-28T07:15:09.117Z",
+  "currentBranch": "sola3",
   "mainBranch": "master",
   "branches": [
     {
-      "name": "master",
+      "name": "Eti-NewJoke",
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
@@ -15,66 +15,66 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
-      "name": "diamond",
-      "parentBranch": "master",
-      "shortHash": "234",
-      "lastCommitMessage": "diamond",
+      "name": "Eti-Orenbach",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
       "isMergedIntoParent": false,
       "isCurrent": false
     },
     {
-      "name": "red",
-      "parentBranch": "diamond",
-      "shortHash": "23444",
-      "lastCommitMessage": "moshe",
+      "name": "Hilla_Arye",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
       "isMergedIntoParent": false,
       "isCurrent": false
     },
     {
-      "name": "miri",
-      "parentBranch": "red",
-      "shortHash": "23444",
-      "lastCommitMessage": "miri",
+      "name": "Hilla_Arye_2",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
       "isMergedIntoParent": false,
       "isCurrent": false
     },
     {
-      "name": "roch",
-      "parentBranch": "red",
-      "shortHash": "23444",
-      "lastCommitMessage": "roch ",
+      "name": "Maayan-Bukrits",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
       "isMergedIntoParent": false,
       "isCurrent": false
     },
     {
-      "name": "roch",
-      "parentBranch": "red",
-      "shortHash": "23444",
-      "lastCommitMessage": "roch ",
+      "name": "RivkaBarashi",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
       "isMergedIntoParent": false,
       "isCurrent": false
     },
     {
-      "name": "avi nos",
-      "parentBranch": "red",
-      "shortHash": "23444",
-      "lastCommitMessage": "roch ",
-      "isMergedIntoParent": true,
-      "isCurrent": false
-    },
-    {
-      "name": "shia cjss  s",
-      "parentBranch": "red",
-      "shortHash": "23444",
-      "lastCommitMessage": "roch ",
+      "name": "Shira-Shemesh",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
       "isMergedIntoParent": false,
       "isCurrent": false
     },
     {
-      "name": "blue",
-      "parentBranch": "diamond",
-      "shortHash": "23444",
-      "lastCommitMessage": "moshe",
+      "name": "ShiraShemesh2",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "Vcomm",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
       "isMergedIntoParent": false,
       "isCurrent": false
     },
@@ -304,11 +304,11 @@ const data: BranchData = {
     },
     {
       "name": "sola3",
-      "parentBranch": null,
-      "shortHash": "0c10217",
-      "lastCommitMessage": "fix: instructions branch names",
+      "parentBranch": "sola_sola3_Efrat_Madmon",
+      "shortHash": "5e72417",
+      "lastCommitMessage": "Fix bugs in branches data and Yaeli Hain styling",
       "isMergedIntoParent": false,
-      "isCurrent": false
+      "isCurrent": true
     },
     {
       "name": "sola4",
@@ -383,12 +383,12 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
-      "name": "sola_sola3_Efrat",
-      "parentBranch": null,
-      "shortHash": "0c10217",
-      "lastCommitMessage": "fix: instructions branch names",
+      "name": "sola_sola3_Efrat_Madmon",
+      "parentBranch": "sola3",
+      "shortHash": "ee16740",
+      "lastCommitMessage": "save before pull",
       "isMergedIntoParent": false,
-      "isCurrent": true
+      "isCurrent": false
     },
     {
       "name": "stars",
@@ -399,22 +399,11 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
-
-
-      "name": "stars",
+      "name": "stars-green",
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
       "isMergedIntoParent": false,
-
-      "isCurrent": false
-    },
-    {
-      "name": "green",
-      "parentBranch": "star",
-      "shortHash": "23454",
-      "lastCommitMessage": "green",
-      "isMergedIntoParent": true,
       "isCurrent": false
     },
     {
@@ -528,8 +517,6 @@ const data: BranchData = {
       "lastCommitMessage": "",
       "isMergedIntoParent": false,
       "isCurrent": false
-
-
     },
     {
       "name": "yonny-update-saraRafalowitz",
