@@ -15,6 +15,8 @@ import ShiraCarmiCard from "./shira-carmi/Card";
 import ShifraZaafraniCard from "./Shifra-Zaafrani/Card";
 import ShifraZaafraniJokePage from "./Shifra-Zaafrani/JokePage";
 
+import SariYagelnikCard from "./Sari-Yagelnik/Card";
+import SariYagelnikJokePage from "./Sari-Yagelnik/JokePage.tsx";
 import MalkaCard from "./malka-gadlowitz/Card";
 import MalkaJokePage from "./malka-gadlowitz/JokePage";
 
@@ -43,14 +45,21 @@ const students: Student[] = [
     CardComponent: ShifraZaafraniCard,
     JokePageComponent: ShifraZaafraniJokePage,
   },
-      {
+  {
     id: "chani-chanzin",
     name: "חני חנזין",
     jokeTitle: "התנין והתנינה",
     CardComponent: ChaniChanzinCard,
     JokePageComponent: ChaniChanzinJokePage,
   },
-   {
+  {
+    id: "Sari-Yagelnik",
+    name: "שרי יגלניק",
+    jokeTitle: "העז והדוב",
+    CardComponent: SariYagelnikCard,
+    JokePageComponent: SariYagelnikJokePage,
+  },
+  {
     id: "shira-carmi",
     name: "שירה כרמי",
     jokeTitle: "המפתחים וה-Git",
@@ -67,12 +76,6 @@ const students: Student[] = [
   CardComponent: RutiCard,
   JokePageComponent: RutiJokePage,
 },
-
-
- 
-
-
-  
 
 ];
 
