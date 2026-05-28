@@ -1,0 +1,124 @@
+/* ==========================================================================
+   משתני עיצוב קבועים (CSS Variables) - מאפשר לשנות צבעים בקלות בעתיד
+   ========================================================================== */
+:local {
+  --primary-color: #4f46e5;       /* כחול אינדיגו מודרני */
+  --primary-hover: #4338ca;       /* אינדיגו כהה יותר למצב ריחוף */
+  --text-dark: #1e293b;           /* אפור כהה מאוד לקריאות מקסימלית */
+  --text-muted: #64748b;          /* אפור משני לשם הסטודנט */
+  --bg-light: #f8fafc;            /* רקע דף בהיר ונקי */
+  --card-bg: #ffffff;             /* רקע לבן נקי לכרטיסים */
+  --border-color: #e2e8f0;        /* גבולות עדינים */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* ==========================================================================
+   עיצוב רכיב: ShiraCarmiCard (כרטיס הבדיחה ברשימה)
+   ========================================================================== */
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 24px;
+  margin: 16px 0;
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  direction: rtl; /* מותאם לעברית, ישתנה אוטומטית לפי הטקסט */
+  text-align: right;
+}
+
+/* אפקט ריחוף מרשים ומעודן כשהעכבר מעל הכרטיס */
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary-color);
+}
+
+/* כותרת הבדיחה (ה-h2 בכרטיס) */
+.title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin: 0 0 8px 0;
+  line-height: 1.4;
+}
+
+/* שם הסטודנט שכתב את הבדיחה */
+.name {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin: 0;
+  font-weight: 500;
+  display: inline-block;
+  position: relative;
+}
+
+/* אלמנט עיצובי קטן (קו תחתון עדין) מתחת לשם הסטודנט בריחוף */
+.card:hover .name {
+  color: var(--primary-color);
+}
+
+
+/* ==========================================================================
+   עיצוב רכיב: ShiraCarmiJokePage (דף הצגת הבדיחה המלאה)
+   ========================================================================== */
+.jokePage {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 600px;
+  margin: 40px auto;
+  box-shadow: var(--shadow-md);
+  text-align: center;
+  direction: rtl;
+}
+
+/* עיצוב הפסקה של ה-Setup (החלק הראשון של הבדיחה) */
+.jokePage p:first-of-type {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+/* עיצוב הפסקה של ה-Punchline (הפואנטה) */
+.jokePage p:nth-of-type(2) {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--primary-color);
+  background-color: #f5f3ff; /* רקע סגלגל עדין שמדגיש את הפואנטה */
+  padding: 16px 24px;
+  border-radius: 8px;
+  margin-bottom: 32px;
+  display: inline-block;
+  border-right: 4px solid var(--primary-color); /* פס הדגשה בצד */
+}
+
+/* עיצוב כפתור החזרה (Back Button) */
+.jokePage button {
+  background-color: transparent;
+  color: var(--text-muted);
+  border: 1px solid var(--border-color);
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* אפקט ריחוף לכפתור החזרה */
+.jokePage button:hover {
+  background-color: #f1f5f9;
+  color: var(--text-dark);
+  border-color: var(--text-muted);
+  transform: translateX(2px); /* הזזה קלה ימינה באפקט החזרה */
+}
