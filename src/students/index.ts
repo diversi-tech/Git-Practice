@@ -12,6 +12,7 @@ import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
 // מייבא את הקומפוננטות שלך
 import SheviShapiraCard from "./shevi-shapira/Card";
 import SheviShapiraJokePage from "./shevi-shapira/JokePage";
+
 import ChayaSprungJokePage from "./chaya-sprung/JokePage";
 import ChayaSprungCard from "./chaya-sprung/Card";
 
