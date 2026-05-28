@@ -1,7 +1,7 @@
 import styles from "./styles.module.css";
 import { CardProps } from "../../types";
 
-export default function ChayaSprungCard({ student, onClick }: CardProps) {
+export default function YaelShitritCard({ student, onClick }: CardProps) {
   return (
     <div onClick={onClick} className={`joke-card ${styles.card}`}>
       <h2 className={styles.title}>{student.jokeTitle}</h2>
