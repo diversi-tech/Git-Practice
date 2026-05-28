@@ -15,21 +15,30 @@ import ShiraCarmiCard from "./shira-carmi/Card";
 import ShifraZaafraniCard from "./Shifra-Zaafrani/Card";
 import ShifraZaafraniJokePage from "./Shifra-Zaafrani/JokePage";
 
-import SariYagelnikCard from "./sari-yagelnik/Card";
-import SariYagelnikJokePage from "./sari-yagelnik/JokePage.tsx";
+import SariYagelnikCard from "./Sari-Yagelnik/Card";
+import SariYagelnikJokePage from "./Sari-Yagelnik/JokePage.tsx";
+import MalkaCard from "./malka-gadlowitz/Card";
+import MalkaJokePage from "./malka-gadlowitz/JokePage";
 
 // ⚠️ סדר הרשימה חייב להיות לפי סדר האלף-בית העברי לפי שם המשפחה.
 // כל תלמידה מוסיפה את עצמה במקום הנכון ידנית.
 // אסור להשתמש בפונקציית-sort! 
 const students: Student[] = [
-  {
+    {
+  id: "malka-gedelovitz",
+  name: "מלכה גדלוביץ",
+  jokeTitle: "המתכנת והקפה",
+  CardComponent: MalkaCard,
+  JokePageComponent: MalkaJokePage,
+},
+    {
     id: "dana-duvi",
     name: "דנה דובי",
     jokeTitle: "הדוב הפחדן",
     CardComponent: DanaDuviCard,
     JokePageComponent: DanaDuviJokePage,
   },
-  {
+   {
     id: "Shifra-Zaafrani",
     name: "שפרה זעפרני",
     jokeTitle: "הקבצן ברחוב",
@@ -57,6 +66,9 @@ const students: Student[] = [
     CardComponent: ShiraCarmiCard,
     JokePageComponent: ShiraCarmiJokePage,
   },
+
+
+
   {
   id: "Ruti-Paniri",
   name: "רותי פנירי",
@@ -64,7 +76,7 @@ const students: Student[] = [
   CardComponent: RutiCard,
   JokePageComponent: RutiJokePage,
 },
-  
+
 ];
 
 export default students;
