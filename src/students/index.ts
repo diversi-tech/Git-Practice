@@ -1,14 +1,25 @@
 import { Student } from "../types";
+import TamarZwiebelCard from "./Tamar-Zwiebel/Card";
+import TamarZwiebelJokePage from "./Tamar-Zwiebel/JokePage";
 
 import DanaDuviCard from "./dana-duvi/Card";
 import DanaDuviJokePage from "./dana-duvi/JokePage";
 
+import hadasCard from "./hadas/Card";
+import hadasPage from "./hadas/JokePage";
+
 import ChaniChanzinCard from "./chani-chanzin/Card";
 import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
 
+import TamarDamtiCard from "./tamar-damti/Card";
+import TamarDamtiJokePage from "./tamar-damti/JokePage";
+
+import YehuditCard from "./yehudit vagshal/Card";
+import YehuditJokePage from "./yehudit vagshal/JokePage";
+import giliCard from "./Gili-Lev/Card";
+import GiliJokePage from "./Gili-Lev/JokePage";
+
 // ⚠️ סדר הרשימה חייב להיות לפי סדר האלף-בית העברי לפי שם המשפחה.
-// כל תלמידה מוסיפה את עצמה במקום הנכון ידנית.
-// אסור להשתמש בפונקציית-sort! 
 const students: Student[] = [
   {
     id: "dana-duvi",
@@ -17,6 +28,27 @@ const students: Student[] = [
     CardComponent: DanaDuviCard,
     JokePageComponent: DanaDuviJokePage,
   },
+    {
+    id: "tamar-damti",
+    name: "תמר דמתי",
+    jokeTitle: "הבננה",
+    CardComponent: TamarDamtiCard,
+    JokePageComponent: TamarDamtiJokePage,
+  },
+  {
+    id: "yehudit",
+    name: "יהודית וגשל",
+    jokeTitle: "כוסות מים",
+    CardComponent: YehuditCard,
+    JokePageComponent: YehuditJokePage,
+  },
+  {
+    id: "hadas",
+    name: "הדס חומרי",
+    jokeTitle: "סכנת התקררות❄️",
+    CardComponent: hadasCard,
+    JokePageComponent: hadasPage,
+  },
   {
     id: "chani-chanzin",
     name: "חני חנזין",
@@ -24,6 +56,19 @@ const students: Student[] = [
     CardComponent: ChaniChanzinCard,
     JokePageComponent: ChaniChanzinJokePage,
   },
+{
+    id: "gili-lev",
+    name: "גילי לב",
+    jokeTitle: "מה קרה בשמונה? ⏰",
+    CardComponent: giliCard,
+    JokePageComponent: GiliJokePage,
+  },
+  {
+    id: "Tamar_zwiebel",
+    name: "תמר צויבל",
+    jokeTitle: "לא באחריותי! 🛑",
+    CardComponent: TamarZwiebelCard,
+    JokePageComponent: TamarZwiebelJokePage,
+  },
 ];
-
 export default students;
