@@ -23,6 +23,9 @@ import YaelShitritJokePage from "./yael-shitrit/JokePage";
 
 
 
+import NechamiJokePage from "./nechami_brim/JokePage";
+import NechamiCard from "./nechami_brim/Card";
+
 // ⚠️ סדר הרשימה חייב להיות לפי סדר האלף-בית העברי לפי שם המשפחה.
 // כל תלמידה מוסיפה את עצמה במקום הנכון ידנית.
 // אסור להשתמש בפונקציית-sort! 
@@ -56,8 +59,7 @@ const students: Student[] = [
     CardComponent: ChaniChanzinCard,
     JokePageComponent: ChaniChanzinJokePage,
   },
-  
-  
+ 
     {
     id: "efrat-mittelman",
     name: "אפרת מיטלמן",
@@ -72,6 +74,13 @@ const students: Student[] = [
     CardComponent: YaelShitritCard,
     JokePageComponent: YaelShitritJokePage,
   },
+    {
+  id: "nechami-brim",
+  name: "נחמי ברים",
+  jokeTitle: "חוקי הפיזיקה של ההייטק",
+  CardComponent: NechamiCard,
+  JokePageComponent: NechamiJokePage,
+},
   {
   id: "shevi-shapira",
   name: "שבי שפירא",
@@ -79,6 +88,7 @@ const students: Student[] = [
   CardComponent: SheviShapiraCard,
   JokePageComponent: SheviShapiraJokePage,
 },
+
 ];
 
 export default students;
