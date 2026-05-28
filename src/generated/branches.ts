@@ -2,7 +2,7 @@
 import type { BranchData } from "../types";
 
 const data: BranchData = {
-  "generatedAt": "2026-05-28T11:20:25.373Z",
+  "generatedAt": "2026-05-28T12:18:28.809Z",
   "currentBranch": "sola_sola1",
   "mainBranch": "master",
   "branches": [
@@ -568,9 +568,9 @@ const data: BranchData = {
     },
     {
       "name": "sola",
-      "parentBranch": "master",
-      "shortHash": "2952d5f",
-      "lastCommitMessage": "update Gili Lev card details",
+      "parentBranch": "sola_sola1",
+      "shortHash": "f359c18",
+      "lastCommitMessage": "Merge pull request #130 from diversi-tech/sola3",
       "isMergedIntoParent": false,
       "isCurrent": false
     },
@@ -592,9 +592,9 @@ const data: BranchData = {
     },
     {
       "name": "sola_sola1",
-      "parentBranch": "sola_sola1_carmi",
-      "shortHash": "c47abca",
-      "lastCommitMessage": "Merge pull request #125 from diversi-tech/sola_sola1_sari",
+      "parentBranch": "sola",
+      "shortHash": "aff5964",
+      "lastCommitMessage": "Resolve merge conflicts",
       "isMergedIntoParent": false,
       "isCurrent": true
     },
