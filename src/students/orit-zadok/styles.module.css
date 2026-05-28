@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Heebo:wght@400;500;800&display=swap');
+
+:root {
+  --bg-dark: #070a13;
+  --neon-cyan: #00f2fe;
+  --neon-blue: #00a2ff;
+  --text-primary: #f1f5f9;
+  --font-body: 'Heebo', sans-serif;
+  --font-code: 'Fira Code', monospace;
+  
+  --cyber-glow: 0 0 20px rgba(0, 242, 254, 0.3), inset 0 0 15px rgba(0, 242, 254, 0.1);
+  --cyber-glow-hover: 0 0 35px rgba(0, 242, 254, 0.7), inset 0 0 25px rgba(0, 242, 254, 0.25);
+}
+
+/* ==========================================================================
+   💥 1️⃣ עיצוב חלונית הפתיחה / הכרטיסייה הראשית (דף הבית)
+   ========================================================================== */
+.card {
+  font-family: var(--font-body);
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(10, 14, 23, 0.98));
+  border: 1px solid rgba(0, 242, 254, 0.3);
+  border-radius: 16px;
+  padding: 40px 24px 30px 24px;
+  box-shadow: var(--cyber-glow), 0 10px 30px rgba(0, 0, 0, 0.6);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  backdrop-filter: blur(12px);
+  min-height: 250px; /* הגדלתי מעט כדי לתת מקום לעגלה הגדולה */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* אפקט עגלה ענקית וממורכזת באמצע החלונית */
+.card::after {
+  content: "🛒";
+  font-size: 3.5rem; /* גודל ענק ומרשים */
+  display: block;
+  margin: 15px 0;
+  filter: drop-shadow(0 0 12px rgba(0, 242, 254, 0.4));
+  transition: transform 0.3s ease;
+}
+
+/* הגדלה קלה של העגלה כשהעכבר מעל הכרטיסייה */
+.card:hover::after {
+  transform: scale(1.1);
+}
+
+/* רקע סמלים שקופים מרומזים בצדדים */
+.card::before {
+  content: "🍞 🥚";
+  position: absolute;
+  font-size: 3rem;
+  opacity: 0.03;
+  bottom: -10px;
+  right: -10px;
+  transform: rotate(-15deg);
+  pointer-events: none;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: var(--neon-cyan);
+  box-shadow: var(--cyber-glow-hover), 0 15px 40px rgba(0, 242, 254, 0.4);
+  background: linear-gradient(135deg, rgba(22, 34, 57, 0.98), rgba(13, 20, 36, 0.99));
+}
+
+.cardAccent {
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 5px;
+  background: linear-gradient(90deg, var(--neon-blue), var(--neon-cyan), var(--neon-blue));
+  background-size: 200% auto;
+  animation: streamColors 4s linear infinite;
+  box-shadow: 0 2px 20px var(--neon-cyan);
+}
+
+/* כותרת הבדיחה (נקייה, ללא אימוג'י מחשב) */
+.title {
+  font-family: var(--font-body);
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  direction: rtl;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* תגית השם שנשארת בחלק התחתון ביותר */
+.name {
+  font-family: var(--font-code);
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--neon-cyan);
+  text-shadow: 0 0 10px rgba(0, 242, 254, 0.8);
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 4px 14px;
+  background: rgba(0, 242, 254, 0.07);
+  border-radius: 20px;
+  border: 1px solid rgba(0, 242, 254, 0.25);
+  margin-top: auto;
+  transition: all 0.3s ease;
+}
+
+.card:hover .name {
+  color: #ffffff;
+  text-shadow: 0 0 15px var(--neon-cyan);
+  background: rgba(0, 242, 254, 0.15);
+  border-color: var(--neon-cyan);
+}
+
+/* ==========================================================================
+   🖥️ 2️⃣ עיצוב עמוד הבדיחה המלא
+   ========================================================================== */
+.jokePage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  padding: 40px 20px;
+  background: radial-gradient(circle at center, #0f172a 0%, #05070f 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.jokePage::before {
+  content: "🛒 🍞";
+  position: absolute;
+  top: 10%; right: 8%;
+  font-size: 8rem;
+  opacity: 0.02;
+  filter: blur(1px) drop-shadow(0 0 20px var(--neon-cyan));
+  transform: rotate(15deg);
+  pointer-events: none;
+}
+
+.jokePage::after {
+  content: "🥚 🍞";
+  position: absolute;
+  bottom: 10%; left: 8%;
+  font-size: 8rem;
+  opacity: 0.02;
+  filter: blur(1px) drop-shadow(0 0 20px var(--neon-cyan));
+  transform: rotate(-15deg);
+  pointer-events: none;
+}
+
+.jokeContainer {
+  font-family: var(--font-body);
+  background: rgba(13, 20, 35, 0.85);
+  backdrop-filter: blur(20px);
+  padding: 50px 40px;
+  border-radius: 24px;
+  box-shadow: 0 0 40px rgba(0, 242, 254, 0.25), inset 0 0 30px rgba(0, 242, 254, 0.05);
+  max-width: 650px;
+  width: 100%;
+  text-align: center;
+  border: 1px solid rgba(0, 242, 254, 0.3);
+  z-index: 2;
+}
+
+.setup {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 35px;
+  line-height: 1.6;
+  direction: rtl;
+}
+
+.punchline {
+  font-family: var(--font-body); 
+  font-weight: 800;
+  font-size: 1.8rem;
+  color: var(--neon-cyan);
+  margin-bottom: 45px;
+  direction: rtl;
+  text-shadow: 0 0 20px rgba(0, 242, 254, 0.7);
+  animation: subtlePulse 2s infinite ease-in-out;
+}
+
+.backButton {
+  font-family: var(--font-body);
+  font-weight: 700;
+  background: transparent;
+  color: var(--neon-cyan);
+  border: 2px solid var(--neon-cyan);
+  padding: 12px 32px;
+  font-size: 1.05rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backButton:hover {
+  background: var(--neon-cyan);
+  color: #05070f;
+  box-shadow: 0 0 25px var(--neon-cyan);
+  transform: scale(1.05);
+}
+
+@keyframes streamColors {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes subtlePulse {
+  0%, 100% { transform: scale(1); text-shadow: 0 0 20px rgba(0, 242, 254, 0.7); }
+  50% { transform: scale(1.02); text-shadow: 0 0 30px rgba(0, 242, 254, 0.9); }
+}
