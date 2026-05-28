@@ -407,7 +407,6 @@ const data: BranchData = {
       "lastCommitMessage": "",
       "isMergedIntoParent": false,
       "isCurrent": false
-      "isCurrent": false
     },
     {
       "name": "mayanSJoke",
