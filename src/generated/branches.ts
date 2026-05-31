@@ -159,6 +159,22 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+      "name": "feature-one",
+      "parentBranch": "feature-two",
+      "shortHash": "0b932d8",
+      "lastCommitMessage": "feature one",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "feature-two",
+      "parentBranch": "feature-one",
+      "shortHash": "edd55d1",
+      "lastCommitMessage": "feature two",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
       "name": "hadar-gerafi",
       "parentBranch": null,
       "shortHash": "",
@@ -432,27 +448,27 @@ const data: BranchData = {
     },
     {
       "name": "sola_sola2",
-      "parentBranch": "sola_sola2-Tamar",
-      "shortHash": "8d348e9",
-      "lastCommitMessage": "finish marge",
-      "isMergedIntoParent": false,
-      "isCurrent": true
-    },
-    {
-      "name": "sola_sola2-Tamar",
-      "parentBranch": "sola_sole2-Tamar_bravcB",
-      "shortHash": "ff30267",
-      "lastCommitMessage": "tryy",
+      "parentBranch": "feature-one",
+      "shortHash": "3caba45",
+      "lastCommitMessage": "fix: restore Gili-Lev student folder",
       "isMergedIntoParent": false,
       "isCurrent": false
     },
     {
-      "name": "sola_sola2_gili",
+      "name": "sola_sola2-Tamar",
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
       "isMergedIntoParent": false,
       "isCurrent": false
+    },
+    {
+      "name": "sola_sola2_gili",
+      "parentBranch": "feature-one",
+      "shortHash": "3caba45",
+      "lastCommitMessage": "fix: restore Gili-Lev student folder",
+      "isMergedIntoParent": false,
+      "isCurrent": true
     },
     {
       "name": "sola_sola2_hadas",
@@ -507,22 +523,6 @@ const data: BranchData = {
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "sola_sole2-Tamar_bravcB",
-      "parentBranch": "sola_sole2-Tamar_bravchA",
-      "shortHash": "215c752",
-      "lastCommitMessage": "commit 6",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "sola_sole2-Tamar_bravchA",
-      "parentBranch": "sola_sole2-Tamar_bravcB",
-      "shortHash": "cd4260a",
-      "lastCommitMessage": "commit 4",
       "isMergedIntoParent": false,
       "isCurrent": false
     },
