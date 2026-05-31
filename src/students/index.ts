@@ -35,10 +35,30 @@ import YehuditJokePage from "./yehudit vagshal/JokePage";
 import giliCard from "./Gili-Lev/Card";
 import GiliJokePage from "./Gili-Lev/JokePage";
 
+import RutiCard from "./ruti-paniri/Card";
+import RutiJokePage from "./ruti-paniri/JokePage";
+
+import ShiraCarmiJokePage from "./shira-carmi/JokePage";
+import ShiraCarmiCard from "./shira-carmi/Card";
+
 import ShifraZaafraniCard from "./Shifra-Zaafrani/Card";
 import ShifraZaafraniJokePage from "./Shifra-Zaafrani/JokePage";
+
+import SariYagelnikCard from "./Sari-Yagelnik/Card";
+import SariYagelnikJokePage from "./Sari-Yagelnik/JokePage.tsx";
+
+import MalkaCard from "./malka-gadlowitz/Card";
+import MalkaJokePage from "./malka-gadlowitz/JokePage";
+
 // ⚠️ סדר הרשימה חייב להיות לפי סדר האלף-בית העברי לפי שם המשפחה.
 const students: Student[] = [
+   {
+  id: "malka-gedelovitz",
+  name: "מלכה גדלוביץ",
+  jokeTitle: "המתכנת והקפה",
+  CardComponent: MalkaCard,
+  JokePageComponent: MalkaJokePage,
+},
   {
 
     id: "Yehudit",
@@ -98,6 +118,21 @@ const students: Student[] = [
     CardComponent: ChaniChanzinCard,
     JokePageComponent: ChaniChanzinJokePage,
   },
+   {
+    id: "Sari-Yagelnik",
+    name: "שרי יגלניק",
+    jokeTitle: "העז והדוב",
+    CardComponent: SariYagelnikCard,
+    JokePageComponent: SariYagelnikJokePage,
+  },
+  
+  {
+    id: "shira-carmi",
+    name: "שירה כרמי",
+    jokeTitle: "המפתחים וה-Git",
+    CardComponent: ShiraCarmiCard,
+    JokePageComponent: ShiraCarmiJokePage,
+  },
   
 {
     id: "gili-lev",
@@ -122,6 +157,13 @@ const students: Student[] = [
   jokeTitle: "עשרה שקלים",
   CardComponent: EfratMadmonCard,
   JokePageComponent: EfratMadmonJokePage,
+},
+{
+  id: "Ruti-Paniri",
+  name: "רותי פנירי",
+  jokeTitle: "המחשב העקשן",
+  CardComponent: RutiCard,
+  JokePageComponent: RutiJokePage,
 },
 {
     id: "Tamar_zwiebel",
