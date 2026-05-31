@@ -2,8 +2,8 @@
 import type { BranchData } from "../types";
 
 const data: BranchData = {
-  "generatedAt": "2026-05-26T13:41:45.723Z",
-  "currentBranch": "sola_sola2_gili",
+  "generatedAt": "2026-05-26T19:31:35.447Z",
+  "currentBranch": "sola_sola2",
   "mainBranch": "master",
   "branches": [
     {
@@ -120,6 +120,14 @@ const data: BranchData = {
     },
     {
       "name": "Vcomm_3_noaNew",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "avigail_jobke",
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
@@ -328,6 +336,14 @@ const data: BranchData = {
     },
     {
       "name": "noa_gabay",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "ruth_jokes",
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
