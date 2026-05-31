@@ -1,0 +1,96 @@
+/* ========================================================
+   עיצוב כרטיסיית הבדיחה - בדיוק כמו שאר הריבועים
+   ======================================================== */
+
+.card, :global(.joke-card) {
+  background: #ffffff !important;
+  border: 3px solid #f5a623 !important; /* המסגרת הכתובה-מוזהבת היפה */
+  border-radius: 20px !important;       /* פינות מעוגלות בדיוק באותו קימור */
+  padding: 2.5rem 2rem !important;
+  margin: 15px auto !important;
+  max-width: 340px;
+  width: 100%;
+  box-shadow: 0 8px 24px rgba(245, 166, 35, 0.25) !important; /* ההילה המוארת מסביב */
+  transition: all 0.2s ease-in-out !important;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  direction: rtl;
+}
+
+/* אפקט הריחוף של הכרטיסייה */
+.card:hover, :global(.joke-card):hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 12px 30px rgba(245, 166, 35, 0.4) !important;
+}
+
+/* עיצוב הטקסטים בתוך הכרטיסייה */
+
+/* כותרת הבדיחה ("הבננה") */
+.title, :global(.joke-card) h2 {
+  font-size: 1.4rem !important;
+  color: #7a4800 !important; /* צבע חום-אדמדם כהה כמו בריבוע של דנה */
+  font-weight: bold !important;
+  margin-bottom: 0.5rem !important;
+  margin-top: 0 !important;
+}
+
+/* שם הסטודנט/ית ("תמר דמתי") */
+.name, :global(.joke-card) p {
+  font-size: 1rem !important;
+  color: #5a3400 !important;
+  margin: 0 !important;
+  font-weight: 500 !important;
+}
+
+
+/* ========================================================
+   עיצוב עמוד הבדיחה המלא 
+   ======================================================== */
+
+.jokePage, :global(.joke-page) {
+  background: linear-gradient(135deg, #fff3cd, #ffd77a) !important;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem !important;
+  direction: rtl;
+}
+
+/* קופסת הבדיחה הלבנה בפנים */
+.jokePage p:nth-of-type(2), :global(.joke-page) p:nth-of-type(2) {
+  background: #ffffff !important;
+  border-radius: 20px !important;
+  padding: 2rem 2.5rem !important;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(245, 166, 35, 0.3) !important;
+  color: #5a3400 !important;
+  font-size: 1.4rem !important;
+  line-height: 1.6 !important;
+  white-space: pre-line !important;
+}
+
+/* כפתור החזרה */
+.jokePage button, :global(.joke-page) button {
+  background: #f5a623 !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 30px !important;
+  padding: 0.7rem 2rem !important;
+  font-size: 1rem !important;
+  font-weight: bold !important;
+  cursor: pointer;
+  margin-top: 1.5rem !important;
+  transition: background 0.2s !important;
+}
+
+.jokePage button:hover, :global(.joke-page) button:hover {
+  background: #d4891a !important;
+}
