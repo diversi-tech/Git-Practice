@@ -1,0 +1,50 @@
+[33m6d67fdb[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32msola[m[33m, [m[1;31morigin/sola[m[33m)[m HEAD@{0}: reset: moving to origin/sola
+[33mf4a3578[m[33m ([m[1;32mbackup-before-reset[m[33m)[m HEAD@{1}: rebase (abort): returning to refs/heads/sola
+[33m6d67fdb[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32msola[m[33m, [m[1;31morigin/sola[m[33m)[m HEAD@{2}: rebase (start): checkout origin/sola
+[33mf4a3578[m[33m ([m[1;32mbackup-before-reset[m[33m)[m HEAD@{3}: reset: moving to HEAD
+[33mf4a3578[m[33m ([m[1;32mbackup-before-reset[m[33m)[m HEAD@{4}: commit: Fixing index.ts on sola branch
+[33maff5964[m HEAD@{5}: reset: moving to Head~1
+[33m6d67fdb[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32msola[m[33m, [m[1;31morigin/sola[m[33m)[m HEAD@{6}: checkout: moving from sola_sola1 to sola
+[33ma41d437[m[33m ([m[1;31morigin/sola_sola1[m[33m, [m[1;32msola_sola1[m[33m)[m HEAD@{7}: commit: Fix the index page
+[33m6d67fdb[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32msola[m[33m, [m[1;31morigin/sola[m[33m)[m HEAD@{8}: checkout: moving from sola to sola_sola1
+[33m6d67fdb[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32msola[m[33m, [m[1;31morigin/sola[m[33m)[m HEAD@{9}: merge sola_sola1: Fast-forward
+[33mf359c18[m HEAD@{10}: checkout: moving from sola_sola1 to sola
+[33m6d67fdb[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32msola[m[33m, [m[1;31morigin/sola[m[33m)[m HEAD@{11}: commit (merge): Merge sola_sola1 into sola
+[33maff5964[m HEAD@{12}: checkout: moving from sola to sola_sola1
+[33mf359c18[m HEAD@{13}: pull origin sola: Fast-forward
+[33m2952d5f[m HEAD@{14}: checkout: moving from sola_sola1 to sola
+[33maff5964[m HEAD@{15}: reset: moving to HEAD
+[33maff5964[m HEAD@{16}: commit (merge): Resolve merge conflicts
+[33mc47abca[m HEAD@{17}: checkout: moving from sola to sola_sola1
+[33m2952d5f[m HEAD@{18}: merge origin/sola: Fast-forward
+[33m0c10217[m[33m ([m[1;31morigin/yonny-update-saraRafalowitz[m[33m, [m[1;31morigin/yonny[m[33m, [m[1;31morigin/vcomm/vcomm-1/tova[m[33m, [m[1;31morigin/tovi[m[33m, [m[1;31morigin/team/vcomm/sub/vcomm3/noagabay[m[33m, [m[1;31morigin/stars-green-jonny-update-miryam-dahari[m[33m, [m[1;31morigin/sola4[m[33m, [m[1;31morigin/shani2[m[33m, [m[1;31morigin/maayan2[m[33m, [m[1;31morigin/kiteria-1-chedvaf[m[33m, [m[1;31morigin/kitera[m[33m, [m[1;31morigin/johnny-update-3[m[33m, [m[1;31morigin/Vcomm_3[m[33m, [m[1;31morigin/Vcomm_1[m[33m, [m[1;31morigin/ShiraShemesh2[m[33m, [m[1;31morigin/Shira-Shemesh[m[33m, [m[1;31morigin/#catalystiq/#catalystiq-1/shevi-shapira[m[33m, [m[1;32mnewBranch[m[33m, [m[1;32mmaster[m[33m)[m HEAD@{19}: checkout: moving from sola_sola1 to sola
+[33mc47abca[m HEAD@{20}: pull origin sola_sola1: Fast-forward
+[33m0a2cc46[m HEAD@{21}: checkout: moving from sola_sola1_carmi to sola_sola1
+[33m4000f8f[m[33m ([m[1;31morigin/sola_sola1_carmi[m[33m, [m[1;32msola_sola1_carmi[m[33m)[m HEAD@{22}: checkout: moving from sola_sola1 to sola_sola1_carmi
+[33m0a2cc46[m HEAD@{23}: checkout: moving from sola_sola1_sari to sola_sola1
+[33m3fa712b[m[33m ([m[1;32msola_sola1_sari[m[33m)[m HEAD@{24}: checkout: moving from sola_sola1 to sola_sola1_sari
+[33m0a2cc46[m HEAD@{25}: reset: moving to HEAD
+[33m0a2cc46[m HEAD@{26}: pull origin sola_sola1: Fast-forward
+[33m0738e70[m HEAD@{27}: commit: Add Shira Carmi to students list
+[33m93d1410[m HEAD@{28}: pull origin sola_sola1: Fast-forward
+[33m0c10217[m[33m ([m[1;31morigin/yonny-update-saraRafalowitz[m[33m, [m[1;31morigin/yonny[m[33m, [m[1;31morigin/vcomm/vcomm-1/tova[m[33m, [m[1;31morigin/tovi[m[33m, [m[1;31morigin/team/vcomm/sub/vcomm3/noagabay[m[33m, [m[1;31morigin/stars-green-jonny-update-miryam-dahari[m[33m, [m[1;31morigin/sola4[m[33m, [m[1;31morigin/shani2[m[33m, [m[1;31morigin/maayan2[m[33m, [m[1;31morigin/kiteria-1-chedvaf[m[33m, [m[1;31morigin/kitera[m[33m, [m[1;31morigin/johnny-update-3[m[33m, [m[1;31morigin/Vcomm_3[m[33m, [m[1;31morigin/Vcomm_1[m[33m, [m[1;31morigin/ShiraShemesh2[m[33m, [m[1;31morigin/Shira-Shemesh[m[33m, [m[1;31morigin/#catalystiq/#catalystiq-1/shevi-shapira[m[33m, [m[1;32mnewBranch[m[33m, [m[1;32mmaster[m[33m)[m HEAD@{29}: checkout: moving from sola_sola1_carmi to sola_sola1
+[33m4000f8f[m[33m ([m[1;31morigin/sola_sola1_carmi[m[33m, [m[1;32msola_sola1_carmi[m[33m)[m HEAD@{30}: commit (merge): Fix conflicts and conclude merge
+[33mffa6ea0[m[33m ([m[1;32mneeBranch[m[33m)[m HEAD@{31}: merge neeBranch: Fast-forward
+[33mbcaee8e[m HEAD@{32}: checkout: moving from newTwo to sola_sola1_carmi
+[33m3276b60[m[33m ([m[1;32mnewTwo[m[33m)[m HEAD@{33}: commit: commit6
+[33m47acaf1[m HEAD@{34}: commit: commit5
+[33mbcaee8e[m HEAD@{35}: checkout: moving from sola_sola1_carmi to newTwo
+[33mbcaee8e[m HEAD@{36}: checkout: moving from neeBranch to sola_sola1_carmi
+[33mffa6ea0[m[33m ([m[1;32mneeBranch[m[33m)[m HEAD@{37}: commit: commit4
+[33m9c55a1b[m HEAD@{38}: commit: commit3
+[33mbcaee8e[m HEAD@{39}: checkout: moving from sola_sola1_carmi to neeBranch
+[33mbcaee8e[m HEAD@{40}: checkout: moving from newBranch to sola_sola1_carmi
+[33m0c10217[m[33m ([m[1;31morigin/yonny-update-saraRafalowitz[m[33m, [m[1;31morigin/yonny[m[33m, [m[1;31morigin/vcomm/vcomm-1/tova[m[33m, [m[1;31morigin/tovi[m[33m, [m[1;31morigin/team/vcomm/sub/vcomm3/noagabay[m[33m, [m[1;31morigin/stars-green-jonny-update-miryam-dahari[m[33m, [m[1;31morigin/sola4[m[33m, [m[1;31morigin/shani2[m[33m, [m[1;31morigin/maayan2[m[33m, [m[1;31morigin/kiteria-1-chedvaf[m[33m, [m[1;31morigin/kitera[m[33m, [m[1;31morigin/johnny-update-3[m[33m, [m[1;31morigin/Vcomm_3[m[33m, [m[1;31morigin/Vcomm_1[m[33m, [m[1;31morigin/ShiraShemesh2[m[33m, [m[1;31morigin/Shira-Shemesh[m[33m, [m[1;31morigin/#catalystiq/#catalystiq-1/shevi-shapira[m[33m, [m[1;32mnewBranch[m[33m, [m[1;32mmaster[m[33m)[m HEAD@{41}: checkout: moving from sola_sola1 to newBranch
+[33m0c10217[m[33m ([m[1;31morigin/yonny-update-saraRafalowitz[m[33m, [m[1;31morigin/yonny[m[33m, [m[1;31morigin/vcomm/vcomm-1/tova[m[33m, [m[1;31morigin/tovi[m[33m, [m[1;31morigin/team/vcomm/sub/vcomm3/noagabay[m[33m, [m[1;31morigin/stars-green-jonny-update-miryam-dahari[m[33m, [m[1;31morigin/sola4[m[33m, [m[1;31morigin/shani2[m[33m, [m[1;31morigin/maayan2[m[33m, [m[1;31morigin/kiteria-1-chedvaf[m[33m, [m[1;31morigin/kitera[m[33m, [m[1;31morigin/johnny-update-3[m[33m, [m[1;31morigin/Vcomm_3[m[33m, [m[1;31morigin/Vcomm_1[m[33m, [m[1;31morigin/ShiraShemesh2[m[33m, [m[1;31morigin/Shira-Shemesh[m[33m, [m[1;31morigin/#catalystiq/#catalystiq-1/shevi-shapira[m[33m, [m[1;32mnewBranch[m[33m, [m[1;32mmaster[m[33m)[m HEAD@{42}: checkout: moving from sola_sola1_carmi to sola_sola1
+[33mbcaee8e[m HEAD@{43}: commit: commit2
+[33md359d06[m HEAD@{44}: commit: add emugy
+[33m16d6569[m HEAD@{45}: commit (merge): Fix merge conflict in students index
+[33m7269b05[m HEAD@{46}: commit: Update ShiraCarmiJokePage
+[33m83ec210[m HEAD@{47}: commit: Update ShiraCarmiJokePage with a new joke
+[33mdc4bf5a[m HEAD@{48}: commit: add: shira-carmi joke
+[33m0c10217[m[33m ([m[1;31morigin/yonny-update-saraRafalowitz[m[33m, [m[1;31morigin/yonny[m[33m, [m[1;31morigin/vcomm/vcomm-1/tova[m[33m, [m[1;31morigin/tovi[m[33m, [m[1;31morigin/team/vcomm/sub/vcomm3/noagabay[m[33m, [m[1;31morigin/stars-green-jonny-update-miryam-dahari[m[33m, [m[1;31morigin/sola4[m[33m, [m[1;31morigin/shani2[m[33m, [m[1;31morigin/maayan2[m[33m, [m[1;31morigin/kiteria-1-chedvaf[m[33m, [m[1;31morigin/kitera[m[33m, [m[1;31morigin/johnny-update-3[m[33m, [m[1;31morigin/Vcomm_3[m[33m, [m[1;31morigin/Vcomm_1[m[33m, [m[1;31morigin/ShiraShemesh2[m[33m, [m[1;31morigin/Shira-Shemesh[m[33m, [m[1;31morigin/#catalystiq/#catalystiq-1/shevi-shapira[m[33m, [m[1;32mnewBranch[m[33m, [m[1;32mmaster[m[33m)[m HEAD@{49}: checkout: moving f
