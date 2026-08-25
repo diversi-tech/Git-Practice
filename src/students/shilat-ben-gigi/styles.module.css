@@ -1,0 +1,85 @@
+.card {
+  background: linear-gradient(160deg, #e7f7ff 0%, #b7e4f5 100%);
+  border: 3px solid #168aad;
+  box-shadow: 0 6px 20px rgba(22, 138, 173, 0.35);
+}
+
+.avatar {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 1.4rem;
+  color: #075985;
+  margin-bottom: 0.4rem;
+}
+
+.name {
+  font-size: 1rem;
+  color: #164e63;
+  margin-bottom: 1rem;
+}
+
+.badge {
+  display: inline-block;
+  background: #168aad;
+  color: #fff;
+  border-radius: 20px;
+  padding: 0.3rem 1rem;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.jokePage {
+  background: linear-gradient(135deg, #dff6ff, #8ed1e8);
+}
+
+.jokeHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.bigEmoji {
+  font-size: 5rem;
+}
+
+.jokeCard {
+  background: #fff;
+  border-radius: 20px;
+  padding: 2rem 2.5rem;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(22, 138, 173, 0.3);
+  color: #164e63;
+}
+
+.jokeCard h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.6rem;
+}
+
+.jokeCard p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  margin-top: 0.8rem;
+}
+
+.backBtn {
+  background: #168aad;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 0.7rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.backBtn:hover {
+  background: #0d6f8c;
+}
