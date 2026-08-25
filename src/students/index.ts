@@ -1,13 +1,13 @@
 import { Student } from "../types";
 
+import RivkaBengioCard from "./rivkabracha-bengio/card";
+import RivkaBengioJokePage from "./rivkabracha-bengio/JokePage";
+
 import DanaDuviCard from "./dana-duvi/Card";
 import DanaDuviJokePage from "./dana-duvi/JokePage";
 
 import ChaniChanzinCard from "./chani-chanzin/Card";
 import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
-
-import RivkaBengioCard from "./rivkabracha-bengio/card";
-import RivkaBengioJokePage from "./rivkabracha-bengio/JokePage";
 
 // ⚠️ סדר הרשימה חייב להיות לפי סדר האלף-בית העברי לפי שם המשפחה.
 // כל תלמידה מוסיפה את עצמה במקום הנכון ידנית.
