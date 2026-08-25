@@ -6,10 +6,20 @@ import DanaDuviJokePage from "./dana-duvi/JokePage";
 import ChaniChanzinCard from "./chani-chanzin/Card";
 import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
 
+import AvishagCard from "./avishag/Card";
+import AvishagJokePage from "./avishag/jokePage";
+
 // ⚠️ סדר הרשימה חייב להיות לפי סדר האלף-בית העברי לפי שם המשפחה.
 // כל תלמידה מוסיפה את עצמה במקום הנכון ידנית.
 // אסור להשתמש בפונקציית-sort! 
 const students: Student[] = [
+  {
+    id: "avishag",
+    name: "אבישג בן דוד",
+    jokeTitle: "המחשב החולה",
+    CardComponent: AvishagCard,
+    JokePageComponent: AvishagJokePage,
+  },
   {
     id: "dana-duvi",
     name: "דנה דובי",
