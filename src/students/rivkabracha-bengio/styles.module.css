@@ -1,0 +1,83 @@
+.card {
+  background: linear-gradient(145deg, #fff7ed 0%, #fed7aa 100%);
+  border: 3px solid #c2410c;
+  box-shadow: 0 6px 0 #9a3412;
+  color: #431407;
+}
+
+.cup {
+  font-size: 3.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  color: #9a3412;
+  font-size: 1.35rem;
+  margin-bottom: 0.4rem;
+}
+
+.name {
+  color: #571c0c;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.badge {
+  display: inline-block;
+  background: #c2410c;
+  color: #fff7ed;
+  border-radius: 6px;
+  padding: 0.35rem 0.9rem;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.jokePage {
+  background: linear-gradient(135deg, #fff7ed 0%, #fdba74 100%);
+  color: #431407;
+}
+
+.jokeHeader {
+  font-size: 5rem;
+  line-height: 1;
+}
+
+.jokeCard {
+  background: #fffaf5;
+  border: 3px solid #c2410c;
+  border-radius: 8px;
+  box-shadow: 0 8px 0 #9a3412;
+  color: #571c0c;
+  max-width: 500px;
+  padding: 2rem 2.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+.jokeCard h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+}
+
+.jokeCard p {
+  color: #9a3412;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+.backBtn {
+  background: #9a3412;
+  border: none;
+  border-radius: 6px;
+  color: #fffaf5;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.7rem 2rem;
+  transition: background 0.2s;
+}
+
+.backBtn:hover {
+  background: #7c2d12;
+}
