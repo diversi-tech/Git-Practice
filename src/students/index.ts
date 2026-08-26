@@ -8,18 +8,34 @@ import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
 import TamarJokePage from "./TamarZ/JokePage";
 import TamarCard from "./TamarZ/Card";
 
+import HennyCard from "./henny/Card";
+import HennyJokePage from "./henny/JokePage";
+
+import YaelCard from "./yael/Card.txt";
+import YaelJokePage from "./yael/JokePage";
+
 import AvitalForshnerCard from "./avitalForshner/Card";
 import AvitalForshnerJokePage from "./avitalForshner/JokePage";
+
 import AvitalZakCard from "./avital-zak/Card";
 import AvitalZakJokePage from "./avital-zak/JokePage";
 
 import ShilatBenGigiCard from "./shilat-ben-gigi/Card";
 import ShilatBenGigiJokePage from "./shilat-ben-gigi/JokePage";
+import AvishagCard from "./avishag/Card";
+import AvishagJokePage from "./avishag/jokePage";
 
 // ⚠️ סדר הרשימה חייב להיות לפי סדר האלף-בית העברי לפי שם המשפחה.
 // כל תלמידה מוסיפה את עצמה במקום הנכון ידנית.
-// אסור להשתמש בפונקציית-sort! 
+// אסור להשתמש בפונקציית-sort!
 const students: Student[] = [
+  {
+    id: "avishag",
+    name: "אבישג בן דוד",
+    jokeTitle: "המחשב החולה",
+    CardComponent: AvishagCard,
+    JokePageComponent: AvishagJokePage,
+  },
   {
     id: "shilat-ben-gigi",
     name: "שילת בן גיגי",
@@ -50,12 +66,26 @@ const students: Student[] = [
   },
   {
     id: "chani-chanzin",
-    name: "חני חנזין",
-    jokeTitle: "התנין והתנינה",
+    name: "אפרת יעקובי",
+    jokeTitle: "המתכנתת והבאגים",
     CardComponent: ChaniChanzinCard,
     JokePageComponent: ChaniChanzinJokePage,
   },
  
+  {
+    id: "henny",
+    name: "הני כהן",
+    jokeTitle: "למה מתכנתים מעדיפים Dark Mode?",
+    CardComponent: HennyCard,
+    JokePageComponent: HennyJokePage,
+  },
+  {
+    id: "yael",
+    name: "יעל סגיס",
+    jokeTitle: "פיצריה",
+    CardComponent: YaelCard,
+    JokePageComponent: YaelJokePage,
+  },
   {
     id: "avital-forshner",
     name: "אביטל פורשנר",

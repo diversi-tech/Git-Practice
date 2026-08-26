@@ -73,13 +73,22 @@
 
 /* ── Card ── */
 .card {
-  background: #f7f7f7;
-  border: 2px solid #535353;
-  box-shadow: 4px 4px 0 #535353;
-  color: #535353;
+  background-color: #fff8e7;
+  background-image: linear-gradient(rgba(25, 168, 159, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(25, 168, 159, 0.08) 1px, transparent 1px);
+  background-size: 16px 16px;
+  border: 3px solid #172b4d;
+  box-shadow: 7px 7px 0 #f05d7b;
+  color: #172b4d;
   font-family: "Press Start 2P", monospace;
   image-rendering: pixelated;
   padding-top: 1rem;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 10px 10px 0 #f05d7b;
+  transform: translate(-3px, -3px);
 }
 
 .scoreBar {
@@ -98,6 +107,7 @@
 }
 
 .title {
+  color: #172b4d;
   line-height: 1.8;
   font-size: 1.2rem;
   letter-spacing: 3px;
