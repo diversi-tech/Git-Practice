@@ -6,6 +6,9 @@ import DanaDuviJokePage from "./dana-duvi/JokePage";
 import ChaniChanzinCard from "./chani-chanzin/Card";
 import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
 
+import AlumasHilatCard from "./alumas-hilat/Card";
+import AlumasHilatJokePage from "./alumas-hilat/JokePage";
+
 import YaelCard from "./yael/Card.txt";
 import YaelJokePage from "./yael/JokePage";
 
@@ -51,6 +54,13 @@ const students: Student[] = [
     jokeTitle: "התנין והתנינה",
     CardComponent: ChaniChanzinCard,
     JokePageComponent: ChaniChanzinJokePage,
+  },
+  {
+    id: "alumas-hilat",
+    name: "אלומה חילאת",
+    jokeTitle: "המחשב החולה",
+    CardComponent: AlumasHilatCard,
+    JokePageComponent: AlumasHilatJokePage,
   },
   
   {
