@@ -6,10 +6,19 @@ import DanaDuviJokePage from "./dana-duvi/JokePage";
 import ChaniChanzinCard from "./chani-chanzin/Card";
 import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
 
-import AvishagCard from "./avishag/Card";
-import AvishagJokePage from "./avishag/jokePage";
+import YaelCard from "./yael/Card.txt";
+import YaelJokePage from "./yael/JokePage";
+
+import AvitalForshnerCard from "./avitalForshner/Card";
+import AvitalForshnerJokePage from "./avitalForshner/JokePage";
+
+import AvitalZakCard from "./avital-zak/Card";
+import AvitalZakJokePage from "./avital-zak/JokePage";
+
 import ShilatBenGigiCard from "./shilat-ben-gigi/Card";
 import ShilatBenGigiJokePage from "./shilat-ben-gigi/JokePage";
+import AvishagCard from "./avishag/Card";
+import AvishagJokePage from "./avishag/jokePage";
 
 // ⚠️ סדר הרשימה חייב להיות לפי סדר האלף-בית העברי לפי שם המשפחה.
 // כל תלמידה מוסיפה את עצמה במקום הנכון ידנית.
@@ -36,12 +45,37 @@ const students: Student[] = [
     CardComponent: DanaDuviCard,
     JokePageComponent: DanaDuviJokePage,
   },
+
+  {
+    id: "avital-zak",
+    name: "אביטל זק",
+    jokeTitle: "המחשב והווירוס",
+    CardComponent: AvitalZakCard,
+    JokePageComponent: AvitalZakJokePage,
+  },
+  
   {
     id: "chani-chanzin",
-    name: "חני חנזין",
-    jokeTitle: "התנין והתנינה",
+    name: "אפרת יעקובי",
+    jokeTitle: "המתכנתת והבאגים",
     CardComponent: ChaniChanzinCard,
     JokePageComponent: ChaniChanzinJokePage,
+  },
+  
+  {
+    id: "yael",
+    name: "יעל סגיס",
+    jokeTitle: "פיצריה",
+    CardComponent: YaelCard,
+    JokePageComponent: YaelJokePage,
+  },
+  
+  {
+    id: "avital-forshner",
+    name: "אביטל פורשנר",
+    jokeTitle: "כרוב וכרובית",
+    CardComponent: AvitalForshnerCard,
+    JokePageComponent: AvitalForshnerJokePage,
   },
 ];
 
