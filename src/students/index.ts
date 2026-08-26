@@ -6,8 +6,8 @@ import DanaDuviJokePage from "./dana-duvi/JokePage";
 import ChaniChanzinCard from "./chani-chanzin/Card";
 import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
 
-import AlumasHilatCard from "./alumas-hilat/Card";
-import AlumasHilatJokePage from "./alumas-hilat/JokePage";
+import AlumasHilatCard from "./aluma-shilat/Card";
+import AlumasHilatJokePage from "./aluma-shilat/JokePage";
 
 import YaelCard from "./yael/Card.txt";
 import YaelJokePage from "./yael/JokePage";
