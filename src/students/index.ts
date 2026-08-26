@@ -20,11 +20,20 @@ import AvitalZakJokePage from "./avital-zak/JokePage";
 
 import ShilatBenGigiCard from "./shilat-ben-gigi/Card";
 import ShilatBenGigiJokePage from "./shilat-ben-gigi/JokePage";
+import AvishagCard from "./avishag/Card";
+import AvishagJokePage from "./avishag/jokePage";
 
 // ⚠️ סדר הרשימה חייב להיות לפי סדר האלף-בית העברי לפי שם המשפחה.
 // כל תלמידה מוסיפה את עצמה במקום הנכון ידנית.
 // אסור להשתמש בפונקציית-sort!
 const students: Student[] = [
+  {
+    id: "avishag",
+    name: "אבישג בן דוד",
+    jokeTitle: "המחשב החולה",
+    CardComponent: AvishagCard,
+    JokePageComponent: AvishagJokePage,
+  },
   {
     id: "shilat-ben-gigi",
     name: "שילת בן גיגי",
