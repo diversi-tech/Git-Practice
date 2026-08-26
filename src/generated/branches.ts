@@ -2,7 +2,7 @@
 import type { BranchData } from "../types";
 
 const data: BranchData = {
-  "generatedAt": "2026-08-26T08:00:36.255Z",
+  "generatedAt": "2026-08-26T08:03:20.916Z",
   "currentBranch": "monabid-team1-avitalForshner",
   "mainBranch": "master",
   "branches": [
@@ -553,8 +553,8 @@ const data: BranchData = {
     {
       "name": "monabid-team1-avitalForshner",
       "parentBranch": "stars-green-monabid",
-      "shortHash": "a46728c",
-      "lastCommitMessage": "add: avital joke",
+      "shortHash": "81b1d1b",
+      "lastCommitMessage": "Your commit message",
       "isMergedIntoParent": false,
       "isCurrent": true
     },
