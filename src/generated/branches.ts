@@ -4,6 +4,8 @@ import type { BranchData } from "../types";
 const data: BranchData = {
   "generatedAt": "2026-08-25T11:53:02.456Z",
   "currentBranch": "monobid-team1-efrat",
+  "generatedAt": "2026-08-25T11:48:19.504Z",
+  "currentBranch": "monabid-team1-avital-zak",
   "mainBranch": "master",
   "branches": [
     {
@@ -520,6 +522,7 @@ const data: BranchData = {
     },
     {
       "name": "monobid-team1-efrat",
+      "name": "monabid-team1-avital-zak",
       "parentBranch": null,
       "shortHash": "922bd5b",
       "lastCommitMessage": "Merge pull request #119 from diversi-tech/revert-114-catalystIQ_1",
@@ -623,6 +626,7 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+      "name": "sola3",
       "name": "sola_sola1_ruti",
       "parentBranch": null,
       "shortHash": "",
@@ -631,6 +635,7 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+      "name": "sola4",
       "name": "sola_sola1_sari",
       "parentBranch": null,
       "shortHash": "",
@@ -639,6 +644,7 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+      "name": "sola_sola1",
       "name": "sola_sola1_shifraZ",
       "parentBranch": null,
       "shortHash": "",
@@ -647,6 +653,7 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+      "name": "sola_sola1_carmi",
       "name": "sola_sola2",
       "parentBranch": null,
       "shortHash": "",
@@ -655,6 +662,7 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+      "name": "sola_sola1_malka",
       "name": "sola_sola2-Tamar",
       "parentBranch": null,
       "shortHash": "",
@@ -663,6 +671,7 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+      "name": "sola_sola1_ruti",
       "name": "sola_sola2-tamar_fix_all_change",
       "parentBranch": null,
       "shortHash": "",
@@ -671,6 +680,7 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+      "name": "sola_sola1_sari",
       "name": "sola_sola2_gili",
       "parentBranch": null,
       "shortHash": "",
@@ -679,6 +689,7 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+      "name": "sola_sola1_shifraZ",
       "name": "sola_sola2_hadas",
       "parentBranch": null,
       "shortHash": "",
@@ -687,6 +698,7 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+      "name": "sola_sola2",
       "name": "sola_sola2_tamarD",
       "parentBranch": null,
       "shortHash": "",
@@ -695,6 +707,7 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+      "name": "sola_sola2-Tamar",
       "name": "sola_sola2_yehudit",
       "parentBranch": null,
       "shortHash": "",
@@ -703,6 +716,7 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+      "name": "sola_sola2-tamar_fix_all_change",
       "name": "sola_sola3_Efrat_Madmon",
       "parentBranch": null,
       "shortHash": "",
@@ -711,6 +725,7 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+      "name": "sola_sola2_gili",
       "name": "sola_sola3_saralevin",
       "parentBranch": null,
       "shortHash": "",
@@ -719,6 +734,7 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+      "name": "sola_sola2_hadas",
       "name": "sola_sola3_yaeli",
       "parentBranch": null,
       "shortHash": "",
@@ -727,6 +743,7 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+      "name": "sola_sola2_tamarD",
       "name": "sola_sola3_yaelih",
       "parentBranch": null,
       "shortHash": "",
@@ -735,6 +752,7 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+      "name": "sola_sola2_yehudit",
       "name": "sola_sola3_yehudit",
       "parentBranch": null,
       "shortHash": "",
@@ -743,6 +761,7 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+      "name": "sola_sola3_Efrat_Madmon",
       "name": "sola_yehudit",
       "parentBranch": null,
       "shortHash": "",
@@ -751,6 +770,7 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+      "name": "sola_sola3_saralevin",
       "name": "stars",
       "parentBranch": null,
       "shortHash": "",
@@ -759,7 +779,109 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+      "name": "sola_sola3_yaeli",
       "name": "stars-green",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "sola_sola3_yaelih",
+      "name": "stars-green-bat-sheva-bloch",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "sola_sola3_yehudit",
+      "name": "stars-green-johnny-update-team1",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "sola_yehudit",
+      "name": "stars-green-johnny-update-team1-Tamar",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "stars",
+      "name": "stars-green-johnny-update-team1-Yael",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "stars-green",
+      "name": "stars-green-johnny-update-team1-bracha",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "stars-green-johnny-update-team2",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "stars-green-johnny-update-team2-LitalShamanov",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "stars-green-johnny-update-team3",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "stars-green-johnny-update-team3-Zehavi",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "stars-green-johnny-update-team3-chanaMoshayev",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "stars-green-jonny-update-miryam-dahari",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "stars-green-monabid",
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
