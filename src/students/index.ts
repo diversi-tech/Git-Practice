@@ -8,6 +8,11 @@ import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
 import TamarJokePage from "./TamarZ/JokePage";
 import TamarCard from "./TamarZ/Card";
 
+import AvitalForshnerCard from "./avitalForshner/Card";
+import AvitalForshnerJokePage from "./avitalForshner/JokePage";
+import AvitalZakCard from "./avital-zak/Card";
+import AvitalZakJokePage from "./avital-zak/JokePage";
+
 import ShilatBenGigiCard from "./shilat-ben-gigi/Card";
 import ShilatBenGigiJokePage from "./shilat-ben-gigi/JokePage";
 
@@ -29,6 +34,20 @@ const students: Student[] = [
     CardComponent: DanaDuviCard,
     JokePageComponent: DanaDuviJokePage,
   },
+   {
+      id: "tamar z",
+      name: "תמר ז",
+      jokeTitle: "THE BUS",
+      CardComponent: TamarCard,
+      JokePageComponent: TamarJokePage,
+   },
+  {
+    id: "avital-zak",
+    name: "אביטל זק",
+    jokeTitle: "המחשב והווירוס",
+    CardComponent: AvitalZakCard,
+    JokePageComponent: AvitalZakJokePage,
+  },
   {
     id: "chani-chanzin",
     name: "חני חנזין",
@@ -36,12 +55,13 @@ const students: Student[] = [
     CardComponent: ChaniChanzinCard,
     JokePageComponent: ChaniChanzinJokePage,
   },
+ 
   {
-    id: "tamar z",
-    name: "תמר ז",
-    jokeTitle: "THE BUS",
-    CardComponent: TamarCard,
-    JokePageComponent: TamarJokePage,
+    id: "avital-forshner",
+    name: "אביטל פורשנר",
+    jokeTitle: "כרוב וכרובית",
+    CardComponent: AvitalForshnerCard,
+    JokePageComponent: AvitalForshnerJokePage,
   },
 ];
 
