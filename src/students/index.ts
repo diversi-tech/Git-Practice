@@ -6,6 +6,9 @@ import DanaDuviJokePage from "./dana-duvi/JokePage";
 import ChaniChanzinCard from "./chani-chanzin/Card";
 import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
 
+import HennyCard from "./henny/Card";
+import HennyJokePage from "./henny/JokePage";
+
 import YaelCard from "./yael/Card.txt";
 import YaelJokePage from "./yael/JokePage";
 
@@ -20,7 +23,7 @@ import ShilatBenGigiJokePage from "./shilat-ben-gigi/JokePage";
 
 // ⚠️ סדר הרשימה חייב להיות לפי סדר האלף-בית העברי לפי שם המשפחה.
 // כל תלמידה מוסיפה את עצמה במקום הנכון ידנית.
-// אסור להשתמש בפונקציית-sort! 
+// אסור להשתמש בפונקציית-sort!
 const students: Student[] = [
   {
     id: "shilat-ben-gigi",
@@ -36,7 +39,6 @@ const students: Student[] = [
     CardComponent: DanaDuviCard,
     JokePageComponent: DanaDuviJokePage,
   },
-
   {
     id: "avital-zak",
     name: "אביטל זק",
@@ -44,7 +46,6 @@ const students: Student[] = [
     CardComponent: AvitalZakCard,
     JokePageComponent: AvitalZakJokePage,
   },
-  
   {
     id: "chani-chanzin",
     name: "אפרת יעקובי",
@@ -52,7 +53,13 @@ const students: Student[] = [
     CardComponent: ChaniChanzinCard,
     JokePageComponent: ChaniChanzinJokePage,
   },
-  
+  {
+    id: "henny",
+    name: "הני כהן",
+    jokeTitle: "למה מתכנתים מעדיפים Dark Mode?",
+    CardComponent: HennyCard,
+    JokePageComponent: HennyJokePage,
+  },
   {
     id: "yael",
     name: "יעל סגיס",
@@ -60,7 +67,6 @@ const students: Student[] = [
     CardComponent: YaelCard,
     JokePageComponent: YaelJokePage,
   },
-  
   {
     id: "avital-forshner",
     name: "אביטל פורשנר",
