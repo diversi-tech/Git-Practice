@@ -25,9 +25,9 @@ import ShilatBenGigiJokePage from "./shilat-ben-gigi/JokePage";
 import AvishagCard from "./avishag/Card";
 import AvishagJokePage from "./avishag/jokePage";
 
-// ⚠️ סדר הרשימה חייב להיות לפי סדר האלף-בית העברי לפי שם המשפחה.
-// כל תלמידה מוסיפה את עצמה במקום הנכון ידנית.
-// אסור להשתמש בפונקציית-sort!
+import MaliHashayCard from "./mali-hashay/Card";
+import MaliHashayJokePage from "./mali-hashay/JokePage";
+
 const students: Student[] = [
   {
     id: "avishag",
@@ -85,6 +85,13 @@ const students: Student[] = [
     jokeTitle: "פיצריה",
     CardComponent: YaelCard,
     JokePageComponent: YaelJokePage,
+  },
+  {
+    id: "mali-hashay",
+    name: "מלי חשאי",
+    jokeTitle: "השימפנזים בחורף",
+    CardComponent: MaliHashayCard,
+    JokePageComponent: MaliHashayJokePage,
   },
   {
     id: "avital-forshner",
