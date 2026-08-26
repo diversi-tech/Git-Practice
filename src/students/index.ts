@@ -6,6 +6,8 @@ import DanaDuviJokePage from "./dana-duvi/JokePage";
 import ChaniChanzinCard from "./chani-chanzin/Card";
 import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
 
+import AvitalForshnerCard from "./avitalForshner/Card";
+import AvitalForshnerJokePage from "./avitalForshner/JokePage";
 import AvitalZakCard from "./avital-zak/Card";
 import AvitalZakJokePage from "./avital-zak/JokePage";
 
@@ -55,7 +57,13 @@ const students: Student[] = [
     CardComponent: MaliHashayCard,
     JokePageComponent: MaliHashayJokePage,
   },
-  
+  {
+    id: "avital-forshner",
+    name: "אביטל פורשנר",
+    jokeTitle: "כרוב וכרובית",
+    CardComponent: AvitalForshnerCard,
+    JokePageComponent: AvitalForshnerJokePage,
+  },
 ];
 
 export default students;
