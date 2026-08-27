@@ -2,8 +2,8 @@
 import type { BranchData } from "../types";
 
 const data: BranchData = {
-  "generatedAt": "2026-08-25T11:48:19.504Z",
-  "currentBranch": "monabid-team1-avital-zak",
+  "generatedAt": "2026-08-27T10:36:21.807Z",
+  "currentBranch": "monabid/team1/aluma-shilat",
   "mainBranch": "master",
   "branches": [
     {
@@ -519,12 +519,92 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+      "name": "monabid-team1-Mali",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "monabid-team1-Tamar",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "monabid-team1-avishag",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
       "name": "monabid-team1-avital-zak",
       "parentBranch": null,
-      "shortHash": "922bd5b",
-      "lastCommitMessage": "Merge pull request #119 from diversi-tech/revert-114-catalystIQ_1",
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "monabid-team1-avitalForshner",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "monabid-team1-henny",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "monabid-team1-rivkabracha",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "monabid-team1-shilataddjoke",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "monabid-team1-yael",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "monabid/team1/aluma-shilat",
+      "parentBranch": "stars-green-monabid",
+      "shortHash": "33e92fa",
+      "lastCommitMessage": "Rename Aluma Shilat joke branch files",
       "isMergedIntoParent": false,
       "isCurrent": true
+    },
+    {
+      "name": "monobid-team1-efrat",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
     },
     {
       "name": "noa_gabay",
@@ -856,9 +936,9 @@ const data: BranchData = {
     },
     {
       "name": "stars-green-monabid",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
+      "parentBranch": "master",
+      "shortHash": "4e63216",
+      "lastCommitMessage": "Add Alumas Hilat joke",
       "isMergedIntoParent": false,
       "isCurrent": false
     },
