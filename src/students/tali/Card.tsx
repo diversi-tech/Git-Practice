@@ -1,0 +1,13 @@
+import styles from "./styles.module.css";
+import { CardProps } from "../../types";
+
+export default function TaliCard({ student, onClick }: CardProps) {
+  return (
+    <div onClick={onClick} className={`joke-card ${styles.card}`}>
+      <div className={styles.icon}>🌵</div>
+      <h2 className={styles.title}>{student.jokeTitle}</h2>
+      <p className={styles.name}>{student.name}</p>
+      <p className={styles.hint}>לחצי כדי לשמוע בדיחה</p>
+    </div>
+  );
+}
