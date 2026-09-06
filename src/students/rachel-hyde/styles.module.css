@@ -1,0 +1,16 @@
+.card {
+  background: #f3e8ff;
+  border: 3px solid #7c3aed;
+}
+
+.title {
+  color: #5b21b6;
+}
+
+.name {
+  color: #6b21a8;
+}
+
+.jokePage {
+  padding: 2rem;
+}
