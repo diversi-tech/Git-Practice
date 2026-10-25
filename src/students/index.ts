@@ -1,5 +1,6 @@
 import { Student } from "../types";
-
+import EfratGibraltarCard from "./efrat-gibraltar/Card";
+import EfratGibraltarJokePage from "./efrat-gibraltar/JokePage";
 import DanaDuviCard from "./dana-duvi/Card";
 import DanaDuviJokePage from "./dana-duvi/JokePage";
 
@@ -10,6 +11,13 @@ import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
 // כל תלמידה מוסיפה את עצמה במקום הנכון ידנית.
 // אסור להשתמש בפונקציית-sort! 
 const students: Student[] = [
+    {
+    id: "efrat-gibraltar",
+    name: "אפרת גיברלטר",
+    jokeTitle: "חדשות רעות",
+    CardComponent: EfratGibraltarCard,
+    JokePageComponent: EfratGibraltarJokePage,
+  },
   {
     id: "dana-duvi",
     name: "דנה דובי",
