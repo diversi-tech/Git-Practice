@@ -1,0 +1,23 @@
+.card {
+  background: linear-gradient(135deg, #e0f2fe, #f0f9ff);
+  border: 2px solid #7dd3fc;
+  border-radius: 16px;
+  padding: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.title {
+  color: #0c4a6e;
+}
+
+.name {
+  color: #0369a1;
+}
+
+.jokePage {
+  max-width: 600px;
+  margin: 3rem auto;
+  text-align: center;
+  font-size: 1.3rem;
+}
