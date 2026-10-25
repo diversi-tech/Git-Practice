@@ -3,13 +3,24 @@ import { Student } from "../types";
 import DanaDuviCard from "./dana-duvi/Card";
 import DanaDuviJokePage from "./dana-duvi/JokePage";
 
+
 import ChaniChanzinCard from "./chani-chanzin/Card";
 import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
+
+import MichaleCard from "./michale/Card";
+import michaleJokePage from "./michale/JokePage";
 
 // ⚠️ סדר הרשימה חייב להיות לפי סדר האלף-בית העברי לפי שם המשפחה.
 // כל תלמידה מוסיפה את עצמה במקום הנכון ידנית.
 // אסור להשתמש בפונקציית-sort! 
 const students: Student[] = [
+{
+  id: "michale",
+  name: "מיכל אילוז",
+  jokeTitle: "בדיחת קרש",
+  CardComponent: MichaleCard,
+  JokePageComponent: michaleJokePage,
+},
   {
     id: "dana-duvi",
     name: "דנה דובי",
