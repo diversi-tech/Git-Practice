@@ -7,9 +7,11 @@ import DanaDuviJokePage from "./dana-duvi/JokePage";
 
 import ChaniChanzinCard from "./chani-chanzin/Card";
 import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
+import SaritJokePage from "./sarit-cohen/JokePage";
 
 import MichaleCard from "./michale/Card";
 import michaleJokePage from "./michale/JokePage";
+import SaritCard from "./sarit-cohen/Card";
 
 import AdiCard from "./adi-tamir/Card";
 import AdiJokePage from "./adi-tamir/JokePage";
@@ -48,6 +50,13 @@ const students: Student[] = [
     jokeTitle: "התנין והתנינה",
     CardComponent: ChaniChanzinCard,
     JokePageComponent: ChaniChanzinJokePage,
+  },
+   {
+    id: "Sarit=Cohen",
+    name: "שרית כהן",
+    jokeTitle: "אופרת סבון",
+    CardComponent: SaritCard,
+    JokePageComponent: SaritJokePage,
   },
 {
   id: "adi-tamir",
