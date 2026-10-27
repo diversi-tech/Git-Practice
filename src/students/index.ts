@@ -5,6 +5,8 @@ import DanaDuviJokePage from "./dana-duvi/JokePage";
 
 import ChaniChanzinCard from "./chani-chanzin/Card";
 import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
+import ChavaJokePage from "./chava&sari/JokePage";
+import ChavaCard from "./chava&sari/Card";
 
 // ⚠️ סדר הרשימה חייב להיות לפי סדר האלף-בית העברי לפי שם המשפחה.
 // כל תלמידה מוסיפה את עצמה במקום הנכון ידנית.
@@ -17,6 +19,14 @@ const students: Student[] = [
     CardComponent: DanaDuviCard,
     JokePageComponent: DanaDuviJokePage,
   },
+    {
+    id: "chava&sari",
+    name: "חוה ושרי",
+    jokeTitle:"בדיחה AI",
+    CardComponent: ChavaCard,
+    JokePageComponent: ChavaJokePage,
+  },
+
   {
     id: "chani-chanzin",
     name: "חני חנזין",
