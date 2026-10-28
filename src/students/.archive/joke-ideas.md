@@ -13,9 +13,3 @@ These jokes are not registered in the application. They may be adapted for a fut
 **Setup:** Why did the scarecrow win an award?
 
 **Punchline:** Because he was outstanding in his field!
-
-## לולאה שלא עוצרת
-
-**Setup:** מה מתכנת עושה כשהוא לא מצליח לישון?
-
-**Punchline:** סופר כבשים? לא, הוא פשוט בודק למה הלולאה לא עוצרת!
