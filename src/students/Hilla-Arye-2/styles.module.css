@@ -1,19 +1,30 @@
 .card {
-  background-color: #1a1a2e;
-  color: #e0e0e0;
-  border-radius: 12px;
-  padding: 1rem;
+  min-height: 190px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  background: linear-gradient(145deg, #25253f, #161625);
+  color: #e0e0ef;
+  border: 1px solid rgba(168, 213, 240, 0.18);
+  border-radius: 16px;
+  padding: 1.8rem 1.4rem;
+  box-shadow: 0 10px 24px rgba(15, 20, 45, 0.3);
   cursor: pointer;
 }
 
 .title {
-  font-size: 1.1rem;
-  font-weight: bold;
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
+  font-weight: 700;
+  margin: 0;
 }
 
 .name {
-  font-size: 0.9rem;
-  color: #a0a0c0;
+  font-size: 1rem;
+  color: #a8d5f0;
+  margin: 0;
 }
 
 .jokePage {
@@ -57,66 +68,5 @@
 }
 
 .backBtn:hover {
-  background: #16213e;
-}
-.card {
-  background-color: #1a1a2e;
-  color: #e0e0e0;
-  border-radius: 12px;
-  padding: 1rem;
-  cursor: pointer;
-}
-
-.title {
-  font-size: 1.1rem;
-  font-weight: bold;
-}
-
-.name {
-  font-size: 0.9rem;
-  color: #a0a0c0;
-}
-
-.jokePage {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, #1a1a2e, #16213e);
-  color: white;
-  text-align: center;
-  padding: 2rem;
-  direction: rtl;
-}
-
-.emoji {
-  font-size: 5rem;
-  margin-bottom: 1rem;
-}
-
-.setup {
-  font-size: 1.8rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  color: #a8d5f0;
-}
-
-.punchline {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-.backBtn {
-  background: #0f3460;
-  color: white;
-  border: none;
-  padding: 0.7rem 1.5rem;
-  border-radius: 25px;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-.backBtn:hover {
-  background: #16213e;
+  background: #24558b;
 }
