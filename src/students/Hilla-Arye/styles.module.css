@@ -1,5 +1,5 @@
 .card {
-  min-height: 230px;
+  min-height: 250px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -18,7 +18,8 @@
 .icon,
 .jokeIcon { font-size: 3.25rem; line-height: 1; }
 .title { margin: 0; font-size: clamp(1.25rem, 3vw, 1.55rem); }
-.name { margin: 0; color: #bac2de; font-size: .9rem; text-decoration: none; overflow-wrap: anywhere; }
+.name { margin: 0; color: #bac2de; font-size: .85rem; text-decoration: none; overflow-wrap: anywhere; }
+.team { color: #89dceb; font-size: .85rem; font-weight: 700; text-decoration: none; }
 
 .action,
 .backButton {
