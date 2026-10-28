@@ -4,9 +4,11 @@ import { PageProps } from "../../types";
 export default function HillaJokePage({ onBack }: PageProps) {
   return (
     <div className={`joke-page ${styles.jokePage}`}>
-      <p>למה מתכנתים מעדיפים להשתמש במצב כהה (Dark Mode) במסך?</p>
-      <p>כי האור מושך באגים!</p>
-      <button onClick={onBack}>← Back</button>
+      <section className={styles.jokePanel}>
+        <p className={styles.setup}>למה מתכנתים מעדיפים להשתמש במצב כהה (Dark Mode) במסך?</p>
+        <p className={styles.punchline}>כי האור מושך באגים!</p>
+        <button className={styles.backButton} onClick={onBack}>← חזרה</button>
+      </section>
     </div>
   );
 }
