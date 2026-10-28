@@ -3,6 +3,7 @@
 .jokeIcon { font-size: 3.25rem; line-height: 1; }
 .title { margin: 0; font-size: clamp(1.25rem,3vw,1.55rem); }
 .name { margin: 0; color: #a8d5f0; font-size: .85rem; text-decoration: none; overflow-wrap: anywhere; }
+.name:hover { text-decoration: underline; }
 .team { color: #d7effc; font-size: .85rem; font-weight: 700; text-decoration: none; }
 .action,
 .backButton { margin-top: .4rem; border: 1px solid #a8d5f0; border-radius: 999px; padding: .65rem 1.35rem; background: #a8d5f0; color: #16213e; font: inherit; font-weight: 700; cursor: pointer; }
