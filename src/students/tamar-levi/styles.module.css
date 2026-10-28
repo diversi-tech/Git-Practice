@@ -13,6 +13,7 @@
   box-shadow: 0 10px 25px rgba(120, 72, 0, 0.16);
   color: #5a3400;
   text-align: center;
+  cursor: default;
 }
 
 .icon,
