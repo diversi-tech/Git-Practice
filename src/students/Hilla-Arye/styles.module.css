@@ -20,6 +20,7 @@
 .jokeIcon { font-size: 3.25rem; line-height: 1; }
 .title { margin: 0; font-size: clamp(1.25rem, 3vw, 1.55rem); }
 .name { margin: 0; color: #bac2de; font-size: .85rem; text-decoration: none; overflow-wrap: anywhere; }
+.name:hover { text-decoration: underline; }
 .team { color: #89dceb; font-size: .85rem; font-weight: 700; text-decoration: none; }
 
 .action,
