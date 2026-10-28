@@ -28,6 +28,7 @@
   background: radial-gradient(circle, rgba(0, 255, 255, 0.2) 0%, rgba(17, 17, 17, 0) 70%);
   opacity: 0;
   transition: opacity 0.3s ease;
+  pointer-events: none;
 }
 
 .card:hover {
@@ -61,10 +62,13 @@
 }
 
 .name {
+  position: relative;
+  z-index: 1;
   font-size: 1rem;
   color: #aaa;
   margin-bottom: 0.4rem;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .name:hover {
