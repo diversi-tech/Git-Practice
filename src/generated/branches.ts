@@ -2,8 +2,8 @@
 import type { BranchData } from "../types";
 
 const data: BranchData = {
-  "generatedAt": "2026-05-25T12:00:06.058Z",
-  "currentBranch": "vcomm/vcomm-1/tovi-joke2",
+  "generatedAt": "2026-05-25T10:20:17.421Z",
+  "currentBranch": "Maayan-Bukrits",
   "mainBranch": "master",
   "branches": [
     {
@@ -24,11 +24,11 @@ const data: BranchData = {
     },
     {
       "name": "Maayan-Bukrits",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
+      "parentBranch": "maayan-vecomm-1-vecomm",
+      "shortHash": "9e48a04",
+      "lastCommitMessage": "add joke",
       "isMergedIntoParent": false,
-      "isCurrent": false
+      "isCurrent": true
     },
     {
       "name": "RivkaBarashi",
@@ -55,6 +55,14 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
+      "name": "Vcomm_2",
+      "parentBranch": null,
+      "shortHash": "",
+      "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
       "name": "Vcomm_3",
       "parentBranch": null,
       "shortHash": "",
@@ -64,22 +72,6 @@ const data: BranchData = {
     },
     {
       "name": "hadar-gerafi",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "hadas-karasenti",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "kiter-2-RachelWeinberger",
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
@@ -111,14 +103,6 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
-      "name": "kiteria-1-efrat",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
       "name": "kiteria-2",
       "parentBranch": null,
       "shortHash": "",
@@ -128,22 +112,6 @@ const data: BranchData = {
     },
     {
       "name": "kiteria-3",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "kiteria-3-Ayelet",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "kiteria-3-ester",
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
@@ -168,17 +136,17 @@ const data: BranchData = {
     },
     {
       "name": "maayan-vecomm-1-vecomm",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
+      "parentBranch": "Maayan-Bukrits",
+      "shortHash": "5a45e43",
+      "lastCommitMessage": "add: maayan joke",
       "isMergedIntoParent": false,
       "isCurrent": false
     },
     {
       "name": "master",
       "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
+      "shortHash": "0c10217",
+      "lastCommitMessage": "fix: instructions branch names",
       "isMergedIntoParent": false,
       "isCurrent": false
     },
@@ -255,14 +223,6 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
-      "name": "vcomm/vcomm-1/ShiraShemesh",
-      "parentBranch": null,
-      "shortHash": "",
-      "lastCommitMessage": "",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
       "name": "vcomm/vcomm-1/tova",
       "parentBranch": null,
       "shortHash": "",
@@ -271,26 +231,18 @@ const data: BranchData = {
       "isCurrent": false
     },
     {
-      "name": "vcomm/vcomm-1/tovi",
-      "parentBranch": null,
-      "shortHash": "0c152dc",
-      "lastCommitMessage": "add: tova joke",
-      "isMergedIntoParent": false,
-      "isCurrent": false
-    },
-    {
-      "name": "vcomm/vcomm-1/tovi-joke2",
-      "parentBranch": "vcomm/vcomm-1/tovi",
-      "shortHash": "e529cd7",
-      "lastCommitMessage": "add: tova joke 2",
-      "isMergedIntoParent": false,
-      "isCurrent": true
-    },
-    {
       "name": "vcomm/vcomm3/ayalaKlein",
       "parentBranch": null,
       "shortHash": "",
       "lastCommitMessage": "",
+      "isMergedIntoParent": false,
+      "isCurrent": false
+    },
+    {
+      "name": "vecomm-1-vecomm",
+      "parentBranch": null,
+      "shortHash": "0c10217",
+      "lastCommitMessage": "fix: instructions branch names",
       "isMergedIntoParent": false,
       "isCurrent": false
     }
