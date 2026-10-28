@@ -1,5 +1,5 @@
 .card {
-  min-height: 230px;
+  min-height: 250px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -33,6 +33,13 @@
   font-size: 0.9rem;
   text-decoration: none;
   overflow-wrap: anywhere;
+}
+
+.team {
+  color: #5a3400;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 .action,
