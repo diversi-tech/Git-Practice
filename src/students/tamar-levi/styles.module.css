@@ -1,129 +1,85 @@
-/* ===================================================
-   1. עיצוב הכרטיס בדף הבית (התמונה הכחולה/שקופה ששלחת)
-   =================================================== */
-
 .card {
-  min-height: 190px;
+  min-height: 230px;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 0.65rem;
-  background: #ffffff;
   padding: 1.8rem 1.4rem;
+  background: linear-gradient(145deg, #fff8e7, #ffd99a);
+  border: 1px solid rgba(146, 64, 14, 0.16);
   border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 25px rgba(120, 72, 0, 0.16);
+  color: #5a3400;
   text-align: center;
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  position: relative;
-  overflow: hidden;
-  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-/* אפקט ריחוף מגניב כשעוברים עם העכבר על הכרטיס בדף הבית */
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
-}
-
-/* עיצוב הטקסטים בתוך הכרטיס בדף הבית */
-.icon {
-  font-size: 2.75rem;
+.icon,
+.jokeIcon {
+  font-size: 3.25rem;
   line-height: 1;
-  filter: drop-shadow(0 5px 8px rgba(120, 72, 0, 0.2));
 }
 
 .title {
-  font-size: clamp(1.25rem, 3vw, 1.6rem);
-  font-weight: 800;
-  color: #2d3748;
   margin: 0;
+  font-size: clamp(1.25rem, 3vw, 1.55rem);
+  color: #5a3400;
 }
 
 .name {
-  font-size: 1rem;
-  color: #718096;
-  font-weight: 500;
   margin: 0;
+  color: #7a4800;
+  font-size: 1rem;
 }
 
+.action,
+.backButton {
+  margin-top: 0.4rem;
+  border: 0;
+  border-radius: 999px;
+  padding: 0.65rem 1.35rem;
+  background: #ef8700;
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
 
-/* ===================================================
-   2. עיצוב הדף הפנימי של הבדיחה המפורטת
-   =================================================== */
-
-/* הרקע הסגול-כחול המדורג של הדף הפנימי */
-.pageBackground {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.jokePage {
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 2rem 1rem;
+  background: linear-gradient(145deg, #fff8e7, #ffd99a);
+  color: #5a3400;
   direction: rtl;
-  padding: 20px;
 }
 
-/* הכרטיס הלבן המרכזי בדף הפנימי */
-.jokeCard {
-  background: #ffffff;
-  padding: 3.5rem 2.5rem;
+.jokePanel {
+  width: min(100%, 560px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: clamp(1.5rem, 5vw, 3rem);
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(146, 64, 14, 0.14);
   border-radius: 24px;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.05);
-  width: 100%;
-  max-width: 480px;
+  box-shadow: 0 20px 50px rgba(120, 72, 0, 0.18);
   text-align: center;
 }
 
-/* אימוג'י עוגיה גדול */
-.bigEmoji {
-  font-size: 4.5rem;
-  margin-bottom: 1.5rem;
-  display: inline-block;
+.jokeTitle {
+  margin: 0;
+  font-size: clamp(1.6rem, 5vw, 2.2rem);
 }
 
-/* השאלה הראשית */
-.jokeQuestion {
-  font-size: 2.2rem;
-  font-weight: 800;
-  color: #2d3748;
-  margin-bottom: 1rem;
-  line-height: 1.3;
+.jokeText,
+.punchline {
+  margin: 0;
+  font-size: clamp(1.15rem, 3.5vw, 1.4rem);
+  line-height: 1.6;
 }
 
-/* התשובה */
-.jokeAnswer {
-  font-size: 1.3rem;
-  color: #718096;
-  margin-bottom: 2.5rem;
-  font-weight: 500;
-}
-
-/* כפתור החזרה הכתום והמעוגל */
-.backButton {
-  background: linear-gradient(135deg, #fca326 0%, #ef8700 100%);
-  color: white !important;
-  text-decoration: none !important;
-  padding: 14px 36px;
-  border-radius: 50px;
-  font-size: 1.1rem;
+.punchline {
   font-weight: 700;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  margin: 0 auto;
-  box-shadow: 0 4px 15px rgba(252, 163, 38, 0.4);
-  transition: all 0.25s ease;
-}
-
-.backButton:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(252, 163, 38, 0.6);
-  filter: brightness(1.05);
-}
-
-.backButton:active {
-  transform: translateY(0);
 }

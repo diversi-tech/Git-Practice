@@ -1,18 +1,22 @@
 import { Student } from "../types";
 
+import TamarCard from "./tamar-levi/Card";
+import TamarJokePage from "./tamar-levi/JokePage";
 import MaayanCard from "./maayan/Card";
 import MaayanJokePage from "./maayan/JokePage";
 import DanaDuviCard from "./dana-duvi/Card";
 import DanaDuviJokePage from "./dana-duvi/JokePage";
 import ChaniChanzinCard from "./chani-chanzin/Card";
 import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
-import TamarCard from "./tamar-levi/Card";
-import TamarJokePage from "./tamar-levi/JokePage";
 
-// ⚠️ סדר הרשימה חייב להיות לפי סדר האלף-בית העברי לפי שם המשפחה.
-// כל תלמידה מוסיפה את עצמה במקום הנכון ידנית.
-// אסור להשתמש בפונקציית-sort!
 const students: Student[] = [
+  {
+    id: "tamar-levi",
+    name: "תמר לוי",
+    jokeTitle: "דיאטת Cookies",
+    CardComponent: TamarCard,
+    JokePageComponent: TamarJokePage,
+  },
   {
     id: "Maayan-Bukrits",
     name: "מעיין בוקריץ",
@@ -33,13 +37,6 @@ const students: Student[] = [
     jokeTitle: "התנין והתנינה",
     CardComponent: ChaniChanzinCard,
     JokePageComponent: ChaniChanzinJokePage,
-  },
-  {
-    id: "tamar-levi",
-    name: "תמר לוי",
-    jokeTitle: "דיאטת Cookies",
-    CardComponent: TamarCard,
-    JokePageComponent: TamarJokePage,
   },
 ];
 

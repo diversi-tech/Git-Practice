@@ -7,6 +7,7 @@ export default function TamarCard({ student, onClick }: CardProps) {
       <span className={styles.icon} aria-hidden="true">🍪</span>
       <h2 className={styles.title}>{student.jokeTitle}</h2>
       <p className={styles.name}>{student.name}</p>
+      <span className={styles.action}>לבדיחה ←</span>
     </div>
   );
 }
