@@ -1,5 +1,7 @@
 import { Student } from "../types";
 
+import HillaCard from "./Hilla-Arye/Card";
+import HillaJokePage from "./Hilla-Arye/JokePage";
 import TamarCard from "./tamar-levi/Card";
 import TamarJokePage from "./tamar-levi/JokePage";
 import MaayanCard from "./maayan/Card";
@@ -10,6 +12,16 @@ import ChaniChanzinCard from "./chani-chanzin/Card";
 import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
 
 const students: Student[] = [
+  {
+    id: "hilla-arye",
+    name: "הילה אריה",
+    jokeTitle: "Dark Mode",
+    email: "yaeli.rosner@gmail.com",
+    teamName: "Vcomm-1",
+    teamProjectUrl: "",
+    CardComponent: HillaCard,
+    JokePageComponent: HillaJokePage,
+  },
   {
     id: "tamar-levi",
     name: "תמר לוי",
