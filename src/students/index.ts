@@ -1,4 +1,8 @@
 import { Student } from "../types";
+import HillaCard2 from "./Hilla-Arye-2/Card";
+import HillaJokePage2 from "./Hilla-Arye-2/JokePage";
+import NoaCard from "./noa_gabay/NoaCard";
+import NoaJokePage from "./noa_gabay/NoaJokePage";
 import YaelCard from "./yael-malka/Card";
 import YaelJokePage from "./yael-malka/JokePage";
 import EtiCard from "./eti/Card";
@@ -22,6 +26,8 @@ import ChaniChanzinCard from "./chani-chanzin/Card";
 import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
 
 const students: Student[] = [
+  { id: "hilla-arye-2", name: "הילה אריה", jokeTitle: "מנקה יסודי", email: "yaeli.rosner@gmail.com", teamName: "Vcomm-3", teamProjectUrl: "", CardComponent: HillaCard2, JokePageComponent: HillaJokePage2 },
+  { id: "noa-gabay", name: "נועה גבאי", jokeTitle: "בדיחה בינארית", email: "noa94744@gmail.com", teamName: "Vcomm-3", teamProjectUrl: "", CardComponent: NoaCard, JokePageComponent: NoaJokePage },
   { id: "yael-malka", name: "יעל מלכא", jokeTitle: "מורה ותלמיד", email: "329467211@zzv.org.il", teamName: "Vcomm-2", teamProjectUrl: "", CardComponent: YaelCard, JokePageComponent: YaelJokePage },
   { id: "eti-orenbach", name: "אתי אורנבך", jokeTitle: "חליפה למחפשי עבודה", email: "eti7671@gmail.com", teamName: "Vcomm-2", teamProjectUrl: "", CardComponent: EtiCard, JokePageComponent: EtiJokePage },
   { id: "hadar", name: "הדר ג'ראפי", jokeTitle: "אם יש ביצים", email: "Hadar0583229585@gmail.com", teamName: "Vcomm-2", teamProjectUrl: "", CardComponent: HadarCard, JokePageComponent: HadarJokePage },
