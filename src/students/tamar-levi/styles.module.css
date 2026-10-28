@@ -29,6 +29,12 @@
 }
 
 /* עיצוב הטקסטים בתוך הכרטיס בדף הבית */
+.icon {
+  font-size: 2.75rem;
+  line-height: 1;
+  filter: drop-shadow(0 5px 8px rgba(120, 72, 0, 0.2));
+}
+
 .title {
   font-size: clamp(1.25rem, 3vw, 1.6rem);
   font-weight: 800;
