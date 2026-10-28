@@ -15,7 +15,7 @@ const students: Student[] = [
     name: "תמר לוי",
     jokeTitle: "דיאטת Cookies",
     email: "tamarl5949@gmail.com",
-    teamName: "Vcomm",
+    teamName: "Vcomm-1",
     teamProjectUrl: "",
     CardComponent: TamarCard,
     JokePageComponent: TamarJokePage,

@@ -7,7 +7,7 @@ export default function TamarCard({ student, onClick }: CardProps) {
       <span className={styles.icon} aria-hidden="true">🍪</span>
       <h2 className={styles.title}>{student.jokeTitle}</h2>
       <a className={styles.name} href={`mailto:${student.email}`} onClick={(event) => event.stopPropagation()}>
-        {student.name} · {student.email}
+        {student.name}
       </a>
       {student.teamProjectUrl ? (
         <a className={styles.team} href={student.teamProjectUrl} onClick={(event) => event.stopPropagation()}>צוות {student.teamName}</a>

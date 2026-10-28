@@ -35,6 +35,10 @@
   overflow-wrap: anywhere;
 }
 
+.name:hover {
+  text-decoration: underline;
+}
+
 .team {
   color: #5a3400;
   font-size: 0.85rem;
