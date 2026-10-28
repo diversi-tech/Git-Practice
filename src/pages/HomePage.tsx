@@ -41,17 +41,10 @@ export default function HomePage() {
       <header className="home-header">
         <img src={`${import.meta.env.BASE_URL}diversitech-logo.png`} alt="Diversitech" className="home-logo" />
         <h1>PRACTICUM - 2026</h1>
-        <div className="home-header-btns">
-          <button className="instructions-btn" onClick={() => navigate("/instructions")}>
-            📋 איך מוסיפים בדיחה?
-          </button>
-          <button className="instructions-btn" onClick={() => navigate("/branches")}>
-            🌿 מפת הבראנצ'ים
-          </button>
-        </div>
       </header>
 
-      <section className="student-filters" aria-label="סינון תלמידות">
+      <div className="home-controls">
+        <section className="student-filters" aria-label="סינון תלמידות">
         <label>
           <span>צוות</span>
           <select
@@ -89,8 +82,18 @@ export default function HomePage() {
             onChange={(event) => setName(event.target.value)}
             autoComplete="off"
           />
-        </label>
-      </section>
+          </label>
+        </section>
+
+        <div className="home-header-btns">
+          <button className="instructions-btn" onClick={() => navigate("/instructions")}>
+            📋 איך מוסיפים בדיחה?
+          </button>
+          <button className="instructions-btn" onClick={() => navigate("/branches")}>
+            🌿 מפת הבראנצ'ים
+          </button>
+        </div>
+      </div>
 
       {filteredStudents.length > 0 ? (
         <main className="cards-grid">
