@@ -2,6 +2,8 @@ import { Student } from "../types";
 
 import HillaCard from "./Hilla-Arye/Card";
 import HillaJokePage from "./Hilla-Arye/JokePage";
+import TamarCard from "./tamar-levi/Card";
+import TamarJokePage from "./tamar-levi/JokePage";
 import MaayanCard from "./maayan/Card";
 import MaayanJokePage from "./maayan/JokePage";
 import DanaDuviCard from "./dana-duvi/Card";
@@ -19,6 +21,16 @@ const students: Student[] = [
     teamProjectUrl: "",
     CardComponent: HillaCard,
     JokePageComponent: HillaJokePage,
+  },
+  {
+    id: "tamar-levi",
+    name: "תמר לוי",
+    jokeTitle: "דיאטת Cookies",
+    email: "tamarl5949@gmail.com",
+    teamName: "Vcomm-1",
+    teamProjectUrl: "",
+    CardComponent: TamarCard,
+    JokePageComponent: TamarJokePage,
   },
   {
     id: "Maayan-Bukrits",
