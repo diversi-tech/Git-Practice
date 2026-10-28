@@ -70,7 +70,8 @@ body {
   font-weight: 600;
 }
 
-.student-filters select {
+.student-filters select,
+.student-filters input {
   width: 100%;
   padding: 0.65rem 0.75rem;
   border: 1px solid rgba(255, 255, 255, 0.7);
@@ -78,10 +79,14 @@ body {
   background: #fff;
   color: #2b2358;
   font: inherit;
+}
+
+.student-filters select {
   cursor: pointer;
 }
 
-.student-filters select:focus-visible {
+.student-filters select:focus-visible,
+.student-filters input:focus-visible {
   outline: 3px solid rgba(255, 255, 255, 0.55);
   outline-offset: 2px;
 }

@@ -29,22 +29,11 @@ export default function HomePage() {
     [team],
   );
 
-  const names = useMemo(
-    () => [
-      ...new Set(
-        students
-          .filter((student) => !team || getTeamName(student.teamName) === team)
-          .filter((student) => !subteam || student.teamName === subteam)
-          .map((student) => student.name),
-      ),
-    ].sort((first, second) => first.localeCompare(second, "he")),
-    [team, subteam],
-  );
-
+  const normalizedName = name.trim().toLocaleLowerCase("he");
   const filteredStudents = students.filter((student) =>
     (!team || getTeamName(student.teamName) === team) &&
     (!subteam || student.teamName === subteam) &&
-    (!name || student.name === name),
+    (!normalizedName || student.name.toLocaleLowerCase("he").includes(normalizedName)),
   );
 
   return (
@@ -94,10 +83,12 @@ export default function HomePage() {
 
         <label>
           <span>שם</span>
-          <select value={name} onChange={(event) => setName(event.target.value)}>
-            <option value="">הכול</option>
-            {names.map((option) => <option key={option} value={option}>{option}</option>)}
-          </select>
+          <input
+            type="search"
+            value={name}
+            onChange={(event) => setName(event.target.value)}
+            autoComplete="off"
+          />
         </label>
       </section>
 
