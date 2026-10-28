@@ -13,10 +13,11 @@
   box-shadow: 0 10px 25px rgba(79, 70, 229, 0.16);
   color: #1f2937;
   text-align: center;
+  cursor: default;
 }
 .icon,
 .jokeIcon { font-size: 3.25rem; line-height: 1; }
-.title { margin: 0; font-size: clamp(1.2rem, 3vw, 1.5rem); }
+.title { width: 100%; margin: 0; font-size: clamp(1.05rem, 2.5vw, 1.35rem); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .name { margin: 0; color: #4b5563; font-size: .85rem; text-decoration: none; overflow-wrap: anywhere; }
 .team { color: #4338ca; font-size: .85rem; font-weight: 700; text-decoration: none; }
 .action,
