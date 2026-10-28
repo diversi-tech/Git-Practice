@@ -1,10 +1,18 @@
- .card {
+.card {
+  min-height: 190px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
   background-color: #fef9c3;
+  border: 1px solid rgba(146, 64, 14, 0.14);
   border-radius: 16px;
-  padding: 20px;
+  padding: 1.8rem 1.4rem;
   cursor: pointer;
-  transition: transform 0.2s;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 8px 20px rgba(120, 53, 15, 0.14);
 }
 
 .card:hover {
@@ -12,14 +20,16 @@
 }
 
 .title {
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: clamp(1.15rem, 3vw, 1.45rem);
+  font-weight: 700;
   color: #92400e;
+  margin: 0;
 }
 
 .name {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #78716c;
+  margin: 0;
 }
 
 .jokePage {
