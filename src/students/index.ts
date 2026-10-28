@@ -1,4 +1,10 @@
 import { Student } from "../types";
+import YaelCard from "./yael-malka/Card";
+import YaelJokePage from "./yael-malka/JokePage";
+import EtiCard from "./eti/Card";
+import EtiJokePage from "./eti/JokePage";
+import HadarCard from "./hadar-jerafi/Card";
+import HadarJokePage from "./hadar-jerafi/JokePage";
 import TovaCard from "./tovi/Card";
 import TovaJokePage from "./tovi/JokePage";
 import TovaJokePage2 from "./tovi/JokePage2";
@@ -16,6 +22,9 @@ import ChaniChanzinCard from "./chani-chanzin/Card";
 import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
 
 const students: Student[] = [
+  { id: "yael-malka", name: "יעל מלכא", jokeTitle: "מורה ותלמיד", email: "329467211@zzv.org.il", teamName: "Vcomm-2", teamProjectUrl: "", CardComponent: YaelCard, JokePageComponent: YaelJokePage },
+  { id: "eti-orenbach", name: "אתי אורנבך", jokeTitle: "חליפה למחפשי עבודה", email: "eti7671@gmail.com", teamName: "Vcomm-2", teamProjectUrl: "", CardComponent: EtiCard, JokePageComponent: EtiJokePage },
+  { id: "hadar", name: "הדר ג'ראפי", jokeTitle: "אם יש ביצים", email: "Hadar0583229585@gmail.com", teamName: "Vcomm-2", teamProjectUrl: "", CardComponent: HadarCard, JokePageComponent: HadarJokePage },
   { id: "tovi-2", name: "טובה", jokeTitle: "Scarecrow Award", email: "t0556746399@gmail.com", teamName: "Vcomm-1", teamProjectUrl: "", CardComponent: TovaCard, JokePageComponent: TovaJokePage2 },
   { id: "tovi", name: "טובה", jokeTitle: "אופניים עייפים", email: "t0556746399@gmail.com", teamName: "Vcomm-1", teamProjectUrl: "", CardComponent: TovaCard, JokePageComponent: TovaJokePage },
   { id: "rivka-barashi", name: "Rivka Barashi", jokeTitle: "Computer Doctor", email: "rb0583252581@gmail.com", teamName: "Vcomm-1", teamProjectUrl: "", CardComponent: RivkaCard, JokePageComponent: RivkaJokePage },
