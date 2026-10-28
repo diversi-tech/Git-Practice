@@ -45,16 +45,44 @@ body {
 }
 
 .home-header p {
-  font-size: 1.1rem;
-  opacity: 0.85;
+  max-width: 680px;
+  margin: 0 auto;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  line-height: 1.6;
+  opacity: 0.9;
 }
 
 .home-controls {
+  position: sticky;
+  top: 0.75rem;
+  z-index: 20;
   display: flex;
   align-items: center;
   gap: 1rem;
   max-width: 1100px;
   margin: 0 auto 2rem;
+}
+
+.home-controls-logo {
+  width: 0;
+  height: 60px;
+  padding: 0;
+  flex: 0 0 auto;
+  object-fit: contain;
+  background: whitesmoke;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(0.75);
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.25));
+  transition: width 0.2s ease, padding 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
+  pointer-events: none;
+}
+
+.home-controls-logo--visible {
+  width: 60px;
+  padding: 4px;
+  opacity: 1;
+  transform: scale(1);
 }
 
 .student-filters {
@@ -122,7 +150,13 @@ body {
 
 @media (max-width: 760px) {
   .home-controls {
+    position: static;
     flex-direction: column;
+  }
+
+  .home-controls-logo,
+  .home-controls-logo--visible {
+    display: none;
   }
 
   .student-filters {

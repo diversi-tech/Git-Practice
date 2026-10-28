@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import students from "../students";
 
@@ -11,6 +11,14 @@ export default function HomePage() {
   const [team, setTeam] = useState("");
   const [subteam, setSubteam] = useState("");
   const [name, setName] = useState("");
+  const [showCompactLogo, setShowCompactLogo] = useState(false);
+
+  useEffect(() => {
+    const updateCompactLogo = () => setShowCompactLogo(window.scrollY > 260);
+    updateCompactLogo();
+    window.addEventListener("scroll", updateCompactLogo, { passive: true });
+    return () => window.removeEventListener("scroll", updateCompactLogo);
+  }, []);
 
   const teams = useMemo(
     () => [...new Set(students.map((student) => getTeamName(student.teamName)).filter(Boolean))].sort(),
@@ -40,10 +48,17 @@ export default function HomePage() {
     <div className="home-page">
       <header className="home-header">
         <img src={`${import.meta.env.BASE_URL}diversitech-logo.png`} alt="Diversitech" className="home-logo" />
-        <h1>PRACTICUM - 2026</h1>
+        <h1>פרויקט הבדיחות של פרקטיקום 2026</h1>
+        <p>מתרגלות Git, עבודה בצוות ופתרון קונפליקטים — בדיחה אחת בכל פעם</p>
       </header>
 
       <div className="home-controls">
+        <img
+          src={`${import.meta.env.BASE_URL}diversitech-logo.png`}
+          alt=""
+          aria-hidden="true"
+          className={`home-controls-logo${showCompactLogo ? " home-controls-logo--visible" : ""}`}
+        />
         <section className="student-filters" aria-label="סינון תלמידות">
         <label>
           <span>צוות</span>
