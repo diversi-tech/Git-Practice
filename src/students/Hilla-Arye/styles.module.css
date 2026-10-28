@@ -18,7 +18,7 @@
 .icon,
 .jokeIcon { font-size: 3.25rem; line-height: 1; }
 .title { margin: 0; font-size: clamp(1.25rem, 3vw, 1.55rem); }
-.name { margin: 0; color: #bac2de; font-size: 1rem; }
+.name { margin: 0; color: #bac2de; font-size: .9rem; text-decoration: none; overflow-wrap: anywhere; }
 
 .action,
 .backButton {
