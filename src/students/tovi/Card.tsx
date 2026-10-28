@@ -8,7 +8,9 @@ export default function TovaCard({ student, onClick }: CardProps) {
     <div onClick={onClick} className={`joke-card ${styles.card}`}>
       <span className={styles.icon} aria-hidden="true">{icon}</span>
       <h2 className={styles.title}>{student.jokeTitle}</h2>
-      <p className={styles.name}>{student.name}</p>
+      <a className={styles.name} href="mailto:t0556746399@gmail.com" onClick={(event) => event.stopPropagation()}>
+        {student.name} · t0556746399@gmail.com
+      </a>
       <span className={styles.action}>לבדיחה ←</span>
     </div>
   );
