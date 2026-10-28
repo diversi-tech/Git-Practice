@@ -1,10 +1,10 @@
 import styles from "./styles.module.css";
 import { CardProps } from "../../types";
 
-export default function HillaCard2({ student, onClick }: CardProps) {
+export default function AyalaKleinCard({ student, onClick }: CardProps) {
   return (
     <div className={`joke-card ${styles.card}`}>
-      <span className={styles.icon} aria-hidden="true">🧹</span>
+      <span className={styles.icon} aria-hidden="true">🔁</span>
       <h2 className={styles.title}>{student.jokeTitle}</h2>
       <a className={styles.name} href={`mailto:${student.email}`}>{student.name}</a>
       {student.teamProjectUrl ? (
