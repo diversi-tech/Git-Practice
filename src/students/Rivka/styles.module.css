@@ -1,5 +1,5 @@
 .card {
-  min-height: 230px;
+  min-height: 250px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -17,7 +17,8 @@
 .icon,
 .jokeIcon { font-size: 3.25rem; line-height: 1; }
 .title { margin: 0; font-size: clamp(1.2rem, 3vw, 1.5rem); }
-.name { margin: 0; color: #4b5563; font-size: .9rem; text-decoration: none; overflow-wrap: anywhere; }
+.name { margin: 0; color: #4b5563; font-size: .85rem; text-decoration: none; overflow-wrap: anywhere; }
+.team { color: #4338ca; font-size: .85rem; font-weight: 700; text-decoration: none; }
 .action,
 .backButton { margin-top: .4rem; border: 0; border-radius: 999px; padding: .65rem 1.35rem; background: #4f46e5; color: #fff; font: inherit; font-weight: 700; cursor: pointer; }
 .jokePage { min-height: 100vh; padding: 2rem 1rem; background: linear-gradient(145deg, #f0f4ff, #dbe4ff); color: #1f2937; direction: ltr; }
