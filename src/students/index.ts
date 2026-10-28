@@ -13,7 +13,7 @@ const students: Student[] = [
     name: "הילה אריה",
     jokeTitle: "מנקה יסודי",
     email: "yaeli.rosner@gmail.com",
-    teamName: "Vcomm",
+    teamName: "Vcomm-3",
     teamProjectUrl: "",
     CardComponent: HillaCard2,
     JokePageComponent: HillaJokePage2,
