@@ -1,15 +1,23 @@
 import { Student } from "../types";
 
+import NoaCard from "./noa_gabay/NoaCard";
+import NoaJokePage from "./noa_gabay/NoaJokePage";
 import DanaDuviCard from "./dana-duvi/Card";
 import DanaDuviJokePage from "./dana-duvi/JokePage";
-
 import ChaniChanzinCard from "./chani-chanzin/Card";
 import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
 
-// ⚠️ סדר הרשימה חייב להיות לפי סדר האלף-בית העברי לפי שם המשפחה.
-// כל תלמידה מוסיפה את עצמה במקום הנכון ידנית.
-// אסור להשתמש בפונקציית-sort! 
 const students: Student[] = [
+  {
+    id: "noa-gabay",
+    name: "נועה גבאי",
+    jokeTitle: "בדיחה בינארית",
+    email: "noa94744@gmail.com",
+    teamName: "Vcomm-3",
+    teamProjectUrl: "",
+    CardComponent: NoaCard,
+    JokePageComponent: NoaJokePage,
+  },
   {
     id: "dana-duvi",
     name: "דנה דובי",
