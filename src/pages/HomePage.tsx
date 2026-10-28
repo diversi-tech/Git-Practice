@@ -1,8 +1,51 @@
+import { useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import students from "../students";
 
+function getTeamName(subteamName?: string) {
+  return subteamName?.replace(/[-_]\d+$/, "") ?? "";
+}
+
 export default function HomePage() {
   const navigate = useNavigate();
+  const [team, setTeam] = useState("");
+  const [subteam, setSubteam] = useState("");
+  const [name, setName] = useState("");
+
+  const teams = useMemo(
+    () => [...new Set(students.map((student) => getTeamName(student.teamName)).filter(Boolean))].sort(),
+    [],
+  );
+
+  const subteams = useMemo(
+    () => [
+      ...new Set(
+        students
+          .filter((student) => !team || getTeamName(student.teamName) === team)
+          .map((student) => student.teamName)
+          .filter((value): value is string => Boolean(value)),
+      ),
+    ].sort(),
+    [team],
+  );
+
+  const names = useMemo(
+    () => [
+      ...new Set(
+        students
+          .filter((student) => !team || getTeamName(student.teamName) === team)
+          .filter((student) => !subteam || student.teamName === subteam)
+          .map((student) => student.name),
+      ),
+    ].sort((first, second) => first.localeCompare(second, "he")),
+    [team, subteam],
+  );
+
+  const filteredStudents = students.filter((student) =>
+    (!team || getTeamName(student.teamName) === team) &&
+    (!subteam || student.teamName === subteam) &&
+    (!name || student.name === name),
+  );
 
   return (
     <div className="home-page">
@@ -18,15 +61,59 @@ export default function HomePage() {
           </button>
         </div>
       </header>
-      <main className="cards-grid">
-        {students.map((student) => (
-          <student.CardComponent
-            key={student.id}
-            student={student}
-            onClick={() => navigate(`/joke/${student.id}`)}
-          />
-        ))}
-      </main>
+
+      <section className="student-filters" aria-label="סינון תלמידות">
+        <label>
+          <span>צוות</span>
+          <select
+            value={team}
+            onChange={(event) => {
+              setTeam(event.target.value);
+              setSubteam("");
+              setName("");
+            }}
+          >
+            <option value="">הכול</option>
+            {teams.map((option) => <option key={option} value={option}>{option}</option>)}
+          </select>
+        </label>
+
+        <label>
+          <span>תת-צוות</span>
+          <select
+            value={subteam}
+            onChange={(event) => {
+              setSubteam(event.target.value);
+              setName("");
+            }}
+          >
+            <option value="">הכול</option>
+            {subteams.map((option) => <option key={option} value={option}>{option}</option>)}
+          </select>
+        </label>
+
+        <label>
+          <span>שם</span>
+          <select value={name} onChange={(event) => setName(event.target.value)}>
+            <option value="">הכול</option>
+            {names.map((option) => <option key={option} value={option}>{option}</option>)}
+          </select>
+        </label>
+      </section>
+
+      {filteredStudents.length > 0 ? (
+        <main className="cards-grid">
+          {filteredStudents.map((student) => (
+            <student.CardComponent
+              key={student.id}
+              student={student}
+              onClick={() => navigate(`/joke/${student.id}`)}
+            />
+          ))}
+        </main>
+      ) : (
+        <p className="student-filters-empty">לא נמצאו בדיחות מתאימות.</p>
+      )}
     </div>
   );
 }
