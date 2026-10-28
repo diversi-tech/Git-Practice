@@ -2,25 +2,27 @@ import { Student } from "../types";
 
 import HillaCard from "./Hilla-Arye/Card";
 import HillaJokePage from "./Hilla-Arye/JokePage";
-
+import MaayanCard from "./maayan/Card";
+import MaayanJokePage from "./maayan/JokePage";
 import DanaDuviCard from "./dana-duvi/Card";
 import DanaDuviJokePage from "./dana-duvi/JokePage";
-
 import ChaniChanzinCard from "./chani-chanzin/Card";
 import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
-import MaayanJokePage from "./maayan/JokePage";
-import MaayanCard from "./maayan/Card";
 
-// ⚠️ סדר הרשימה חייב להיות לפי סדר האלף-בית העברי לפי שם המשפחה.
-// כל תלמידה מוסיפה את עצמה במקום הנכון ידנית.
-// אסור להשתמש בפונקציית-sort! 
 const students: Student[] = [
   {
-    id: "Hilla-Arye",
+    id: "hilla-arye",
     name: "הילה אריה",
-    jokeTitle: "בית ספר ואצטרובל",
+    jokeTitle: "Dark Mode",
     CardComponent: HillaCard,
     JokePageComponent: HillaJokePage,
+  },
+  {
+    id: "Maayan-Bukrits",
+    name: "מעיין בוקריץ",
+    jokeTitle: "מתכנתים",
+    CardComponent: MaayanCard,
+    JokePageComponent: MaayanJokePage,
   },
   {
     id: "dana-duvi",
@@ -35,13 +37,6 @@ const students: Student[] = [
     jokeTitle: "התנין והתנינה",
     CardComponent: ChaniChanzinCard,
     JokePageComponent: ChaniChanzinJokePage,
-  },
-    {
-    id: "Maayan-Bukrits",
-    name: "מעיין בוקריץ",
-    jokeTitle: "מתכנתים",
-    CardComponent: MaayanCard,
-    JokePageComponent: MaayanJokePage,
   },
 ];
 
