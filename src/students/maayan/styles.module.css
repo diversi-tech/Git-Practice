@@ -1,13 +1,19 @@
 /* --- כרטיס הבדיחה הראשי --- */
 
 .card {
+  min-height: 250px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background: #111; /* רקע שחור עמוק */
   border-radius: 20px;
   padding: 1.8rem;
   border: 2px solid #0ff; /* מסגרת ניאון טורקיז */
   box-shadow: 0 0 15px rgba(0, 255, 255, 0.4), inset 0 0 10px rgba(0, 255, 255, 0.2);
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* אפקט קפיצי */
-  cursor: pointer;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  cursor: default;
   position: relative;
   overflow: hidden;
 }
@@ -22,12 +28,12 @@
   background: radial-gradient(circle, rgba(0, 255, 255, 0.2) 0%, rgba(17, 17, 17, 0) 70%);
   opacity: 0;
   transition: opacity 0.3s ease;
+  pointer-events: none;
 }
 
 .card:hover {
-  transform: translateY(-10px) rotate(2deg); /* קפיצה וסיבוב פאנקי */
   box-shadow: 0 15px 35px rgba(0, 255, 255, 0.7), inset 0 0 20px rgba(0, 255, 255, 0.4);
-  border-color: #ff00ff; /* שינוי מסגרת לניאון מג'נטה */
+  border-color: #ff00ff;
 }
 
 .card:hover::before {
@@ -55,11 +61,25 @@
 }
 
 .name {
+  position: relative;
+  z-index: 1;
   font-size: 1rem;
-  color: #888; /* אפור בינוני */
-  margin-bottom: 1.2rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  color: #aaa;
+  margin-bottom: 0.4rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.name:hover {
+  text-decoration: underline;
+}
+
+.team {
+  color: #0ff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  text-decoration: none;
 }
 
 .badge {
@@ -72,7 +92,9 @@
   font-weight: bold;
   letter-spacing: 1px;
   box-shadow: 0 0 10px rgba(255, 0, 255, 0.6);
-  transform: rotate(-3deg); /* זווית פאנקי */
+  transform: rotate(-3deg);
+  border: 0;
+  cursor: pointer;
 }
 
 /* --- דף הבדיחה המלא --- */
