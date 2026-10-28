@@ -23,13 +23,13 @@ import ChaniChanzinCard from "./chani-chanzin/Card";
 import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
 
 const students: Student[] = [
+  { id: "hilla-arye", name: "הילה אריה", jokeTitle: "Dark Mode", email: "hilaarye@gmail.com", teamName: "Vcomm-3", teamProjectUrl: "", CardComponent: HillaCard, JokePageComponent: HillaJokePage },
   { id: "noa-gabay", name: "נועה גבאי", jokeTitle: "בדיחה בינארית", email: "noa94744@gmail.com", teamName: "Vcomm-3", teamProjectUrl: "", CardComponent: NoaCard, JokePageComponent: NoaJokePage },
   { id: "yael-malka", name: "יעל מלכא", jokeTitle: "מורה ותלמיד", email: "329467211@zzv.org.il", teamName: "Vcomm-2", teamProjectUrl: "", CardComponent: YaelCard, JokePageComponent: YaelJokePage },
   { id: "eti-orenbach", name: "אתי אורנבך", jokeTitle: "חליפה למחפשי עבודה", email: "eti7671@gmail.com", teamName: "Vcomm-2", teamProjectUrl: "", CardComponent: EtiCard, JokePageComponent: EtiJokePage },
   { id: "hadar", name: "הדר ג'ראפי", jokeTitle: "אם יש ביצים", email: "Hadar0583229585@gmail.com", teamName: "Vcomm-2", teamProjectUrl: "", CardComponent: HadarCard, JokePageComponent: HadarJokePage },
-  { id: "tovi", name: "טובה", jokeTitle: "אופניים עייפים", email: "t0556746399@gmail.com", teamName: "Vcomm-1", teamProjectUrl: "", CardComponent: TovaCard, JokePageComponent: TovaJokePage },
-  { id: "rivka-barashi", name: "Rivka Barashi", jokeTitle: "Computer Doctor", email: "rb0583252581@gmail.com", teamName: "Vcomm-1", teamProjectUrl: "", CardComponent: RivkaCard, JokePageComponent: RivkaJokePage },
-  { id: "hilla-arye", name: "הילה אריה", jokeTitle: "Dark Mode", email: "hilaarye@gmail.com", teamName: "Vcomm-3", teamProjectUrl: "", CardComponent: HillaCard, JokePageComponent: HillaJokePage },
+  { id: "tovi", name: "טובי גרינגרד", jokeTitle: "אופניים עייפים", email: "t0556746399@gmail.com", teamName: "Vcomm-1", teamProjectUrl: "", CardComponent: TovaCard, JokePageComponent: TovaJokePage },
+  { id: "rivka-barashi", name: "רבקה בראשי", jokeTitle: "Computer Doctor", email: "rb0583252581@gmail.com", teamName: "Vcomm-1", teamProjectUrl: "", CardComponent: RivkaCard, JokePageComponent: RivkaJokePage },
   { id: "tamar-levi", name: "תמר לוי", jokeTitle: "דיאטת Cookies", email: "tamarl5949@gmail.com", teamName: "Vcomm-1", teamProjectUrl: "", CardComponent: TamarCard, JokePageComponent: TamarJokePage },
   { id: "Maayan-Bukrits", name: "מעיין בוקריץ", jokeTitle: "מתכנתים", email: "215746686@zzv.org.il", teamName: "Vcomm-1", teamProjectUrl: "", CardComponent: MaayanCard, JokePageComponent: MaayanJokePage },
   { id: "dana-duvi", name: "דנה דובי", jokeTitle: "הדוב הפחדן", CardComponent: DanaDuviCard, JokePageComponent: DanaDuviJokePage },
