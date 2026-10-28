@@ -12,8 +12,8 @@
   padding: 1.8rem;
   border: 2px solid #0ff; /* מסגרת ניאון טורקיז */
   box-shadow: 0 0 15px rgba(0, 255, 255, 0.4), inset 0 0 10px rgba(0, 255, 255, 0.2);
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* אפקט קפיצי */
-  cursor: pointer;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  cursor: default;
   position: relative;
   overflow: hidden;
 }
@@ -32,9 +32,8 @@
 }
 
 .card:hover {
-  transform: translateY(-10px) rotate(2deg); /* קפיצה וסיבוב פאנקי */
   box-shadow: 0 15px 35px rgba(0, 255, 255, 0.7), inset 0 0 20px rgba(0, 255, 255, 0.4);
-  border-color: #ff00ff; /* שינוי מסגרת לניאון מג'נטה */
+  border-color: #ff00ff;
 }
 
 .card:hover::before {
@@ -93,7 +92,9 @@
   font-weight: bold;
   letter-spacing: 1px;
   box-shadow: 0 0 10px rgba(255, 0, 255, 0.6);
-  transform: rotate(-3deg); /* זווית פאנקי */
+  transform: rotate(-3deg);
+  border: 0;
+  cursor: pointer;
 }
 
 /* --- דף הבדיחה המלא --- */
