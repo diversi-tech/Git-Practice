@@ -1,67 +1,13 @@
-.card {
-  min-height: 190px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.65rem;
-  background-color: #fef9c3;
-  border: 1px solid rgba(146, 64, 14, 0.14);
-  border-radius: 16px;
-  padding: 1.8rem 1.4rem;
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  box-shadow: 0 8px 20px rgba(120, 53, 15, 0.14);
-}
-
-.card:hover {
-  transform: scale(1.05);
-}
-
-.title {
-  font-size: clamp(1.15rem, 3vw, 1.45rem);
-  font-weight: 700;
-  color: #92400e;
-  margin: 0;
-}
-
-.name {
-  font-size: 1rem;
-  color: #78716c;
-  margin: 0;
-}
-
-.jokePage {
-  padding: 40px;
-  text-align: center;
-  background-color: #fef9c3;
-  border-radius: 16px;
-  margin: 20px;
-}
-
-.jokeTitle {
-  font-size: 1.5rem;
-  color: #92400e;
-  margin-bottom: 16px;
-}
-
-.jokeAnswer {
-  font-size: 1.2rem;
-  color: #78716c;
-  margin-bottom: 24px;
-}
-
-.backButton {
-  padding: 10px 20px;
-  background-color: #f59e0b;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 1rem;
-  color: white;
-}
-
-.backButton:hover {
-  background-color: #d97706;
-}
+.card { min-height: 230px; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .65rem; padding: 1.8rem 1.4rem; background: linear-gradient(145deg,#fef9c3,#fde68a); border: 1px solid rgba(146,64,14,.16); border-radius: 20px; box-shadow: 0 10px 25px rgba(120,53,15,.16); color: #78350f; text-align: center; }
+.icon,
+.jokeIcon { font-size: 3.25rem; line-height: 1; }
+.title { margin: 0; font-size: clamp(1.15rem,3vw,1.45rem); }
+.name { margin: 0; color: #92400e; font-size: 1rem; }
+.action,
+.backButton { margin-top: .4rem; border: 0; border-radius: 999px; padding: .65rem 1.35rem; background: #d97706; color: #fff; font: inherit; font-weight: 700; cursor: pointer; }
+.jokePage { min-height: 100vh; padding: 2rem 1rem; background: linear-gradient(145deg,#fef9c3,#fde68a); color: #78350f; }
+.jokePanel { width: min(100%,560px); display: flex; flex-direction: column; align-items: center; gap: 1rem; padding: clamp(1.5rem,5vw,3rem); background: rgba(255,255,255,.78); border: 1px solid rgba(146,64,14,.14); border-radius: 24px; box-shadow: 0 22px 55px rgba(120,53,15,.18); text-align: center; }
+.jokeTitle { margin: 0; font-size: clamp(1.5rem,5vw,2.1rem); }
+.jokeText,
+.punchline { margin: 0; font-size: clamp(1.15rem,3.5vw,1.4rem); line-height: 1.6; }
+.punchline { color: #92400e; font-weight: 700; }
