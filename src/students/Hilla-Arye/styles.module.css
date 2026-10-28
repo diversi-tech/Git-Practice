@@ -1,36 +1,42 @@
 .card {
-  min-height: 190px;
+  min-height: 230px;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 0.65rem;
-  background: linear-gradient(145deg, #25253a, #171725);
-  color: #cdd6f4;
-  border: 1px solid rgba(205, 214, 244, 0.18);
-  border-radius: 16px;
   padding: 1.8rem 1.4rem;
-  box-shadow: 0 10px 24px rgba(17, 17, 27, 0.28);
-  cursor: pointer;
+  background: linear-gradient(145deg, #313244, #1e1e2e);
+  border: 1px solid rgba(137, 220, 235, 0.22);
+  border-radius: 20px;
+  box-shadow: 0 12px 28px rgba(17, 17, 27, 0.34);
+  color: #cdd6f4;
+  text-align: center;
 }
 
-.title {
-  font-size: clamp(1.2rem, 3vw, 1.5rem);
+.icon,
+.jokeIcon { font-size: 3.25rem; line-height: 1; }
+.title { margin: 0; font-size: clamp(1.25rem, 3vw, 1.55rem); }
+.name { margin: 0; color: #bac2de; font-size: 1rem; }
+
+.action,
+.backButton {
+  margin-top: 0.4rem;
+  border: 1px solid #89dceb;
+  border-radius: 999px;
+  padding: 0.65rem 1.35rem;
+  background: #89dceb;
+  color: #11111b;
+  font: inherit;
   font-weight: 700;
-  margin: 0;
-}
-
-.name {
-  font-size: 1rem;
-  color: #a6adc8;
-  margin: 0;
+  cursor: pointer;
 }
 
 .jokePage {
   min-height: 100vh;
   padding: 2rem 1rem;
-  background: linear-gradient(135deg, #1e1e2e, #313244);
+  background: linear-gradient(145deg, #313244, #1e1e2e);
   color: #cdd6f4;
   direction: rtl;
 }
@@ -40,39 +46,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.25rem;
+  gap: 1rem;
   padding: clamp(1.5rem, 5vw, 3rem);
-  background: rgba(17, 17, 27, 0.86);
-  border: 1px solid rgba(205, 214, 244, 0.2);
+  background: rgba(17, 17, 27, 0.82);
+  border: 1px solid rgba(137, 220, 235, 0.22);
   border-radius: 24px;
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.38);
   text-align: center;
 }
 
-.setup {
-  font-size: clamp(1.25rem, 4vw, 1.75rem);
-  line-height: 1.5;
-}
-
-.punchline {
-  font-size: clamp(1.15rem, 3.5vw, 1.5rem);
-  color: #89dceb;
-  font-weight: 700;
-}
-
-.backButton {
-  border: 1px solid #89dceb;
-  border-radius: 999px;
-  padding: 0.7rem 1.5rem;
-  background: transparent;
-  color: #89dceb;
-  font: inherit;
-  font-weight: 700;
-  cursor: pointer;
-  transition: background 0.2s ease, color 0.2s ease;
-}
-
-.backButton:hover {
-  background: #89dceb;
-  color: #11111b;
-}
+.jokeTitle { margin: 0; font-size: clamp(1.6rem, 5vw, 2.2rem); }
+.jokeText,
+.punchline { margin: 0; font-size: clamp(1.15rem, 3.5vw, 1.4rem); line-height: 1.6; }
+.punchline { color: #89dceb; font-weight: 700; }
