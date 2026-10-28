@@ -6,7 +6,9 @@ export default function TamarCard({ student, onClick }: CardProps) {
     <div onClick={onClick} className={`joke-card ${styles.card}`}>
       <span className={styles.icon} aria-hidden="true">🍪</span>
       <h2 className={styles.title}>{student.jokeTitle}</h2>
-      <p className={styles.name}>{student.name}</p>
+      <a className={styles.name} href="mailto:tamarl5949@gmail.com" onClick={(event) => event.stopPropagation()}>
+        {student.name} · tamarl5949@gmail.com
+      </a>
       <span className={styles.action}>לבדיחה ←</span>
     </div>
   );

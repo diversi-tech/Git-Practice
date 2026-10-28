@@ -30,7 +30,9 @@
 .name {
   margin: 0;
   color: #7a4800;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  text-decoration: none;
+  overflow-wrap: anywhere;
 }
 
 .action,
