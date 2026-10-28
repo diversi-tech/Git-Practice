@@ -3,13 +3,20 @@
    =================================================== */
 
 .card {
-  background: #ffffff !important; /* מחזיר את הצבע הלבן הנקי לכרטיס */
-  padding: 2.5rem 2rem;
+  min-height: 190px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  background: #ffffff;
+  padding: 1.8rem 1.4rem;
   border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06); /* צל עדין ומודרני */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   text-align: center;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   position: relative;
   overflow: hidden;
   border: 1px solid rgba(0, 0, 0, 0.05);
@@ -23,16 +30,17 @@
 
 /* עיצוב הטקסטים בתוך הכרטיס בדף הבית */
 .title {
-  font-size: 1.8rem;
+  font-size: clamp(1.25rem, 3vw, 1.6rem);
   font-weight: 800;
   color: #2d3748;
-  margin-bottom: 0.5rem;
+  margin: 0;
 }
 
 .name {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #718096;
   font-weight: 500;
+  margin: 0;
 }
 
 
