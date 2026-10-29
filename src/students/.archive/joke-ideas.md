@@ -7,9 +7,3 @@ These jokes are not registered in the application. They may be adapted for a fut
 **Setup:** Why did the scarecrow win an award?
 
 **Punchline:** Because he was outstanding in his field!
-
-## דיאטת Cookies
-
-**Setup:** מה מתכנת עושה כשהוא רוצה להרזות?
-
-**Punchline:** מוחק את ה-Cookies בדפדפן! 💻🍪
