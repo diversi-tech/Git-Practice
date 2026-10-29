@@ -1,8 +1,13 @@
-import createSolaCard from "../createSolaCard";
+import styles from "./styles.module.css";
+import { CardProps } from "../../../types";
 
-export default createSolaCard({
-  icon: "🌿",
-  background: "linear-gradient(145deg, #f3e8ff, #c084fc)",
-  foreground: "#3b0764",
-  accent: "#7e22ce",
-});
+export default function ShiraCarmiCard({ student, onClick }: CardProps) {
+  return (
+    <div className={`joke-card ${styles.card}`}>
+      <h2 className={styles.title}>{student.jokeTitle}</h2>
+      <a className={`${styles.name} student-card-name`} href={`mailto:${student.email}`}>{student.name}</a>
+      <span className="student-card-team">צוות {student.teamName}</span>
+      <button className="student-card-action" type="button" onClick={onClick}>לבדיחה ←</button>
+    </div>
+  );
+}

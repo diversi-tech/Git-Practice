@@ -1,8 +1,21 @@
-import createSolaCard from "../createSolaCard";
+import styles from "./styles.module.css";
+import { CardProps } from "../../../types";
 
-export default createSolaCard({
-  icon: "🍲",
-  background: "linear-gradient(145deg, #ffedd5, #fdba74)",
-  foreground: "#431407",
-  accent: "#c2410c",
-});
+export default function yaeliCard({ student, onClick }: CardProps) {
+  return (
+    <div className={`${styles.card} joke-card`}>
+      {/* אזור האנימציה של המסעדה */}
+      <div className={styles.restaurantScene}>
+        {/* שימוש באימוג'ים אמיתיים במקום טקסט עם נקודתיים */}
+        <span className={`${styles.actor} ${styles.waiter}`}>🤵</span>
+        <span className={`${styles.actor} ${styles.soup}`}>🍲</span>
+        <span className={`${styles.actor} ${styles.customer}`}>🙋‍♂️</span>
+      </div>
+
+      <h2 className={styles.title}>{student.jokeTitle}</h2>
+      <a className={`${styles.name} student-card-name`} href={`mailto:${student.email}`}>{student.name}</a>
+      <span className="student-card-team">צוות {student.teamName}</span>
+      <button className="student-card-action" type="button" onClick={onClick}>לבדיחה ←</button>
+    </div>
+  );
+}
