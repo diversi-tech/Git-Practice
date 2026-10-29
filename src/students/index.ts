@@ -1,4 +1,6 @@
 import { Student } from "../types";
+import ShiraShemeshCard from "./shira-shemesh/Card";
+import ShiraShemeshJokePage from "./shira-shemesh/JokePage";
 import HadasKohaviCard from "./hadas-kohavi/Card";
 import HadasKohaviJokePage from "./hadas-kohavi/JokePage";
 import TovaCard from "./tovi/Card";
@@ -15,6 +17,7 @@ import ChaniChanzinCard from "./chani-chanzin/Card";
 import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
 
 const students: Student[] = [
+  { id: "shira-shemesh", name: "שירה שמש", jokeTitle: "בננה נחמדת", email: "sh6706410@gmail.com", teamName: "Vcomm-1", teamProjectUrl: "", CardComponent: ShiraShemeshCard, JokePageComponent: ShiraShemeshJokePage },
   { id: "hadas-kohavi", name: "הדס כוכבי", jokeTitle: "כוס קפה", email: "hadas.kohavi@gmail.com", teamName: "Vcomm-1", teamProjectUrl: "", CardComponent: HadasKohaviCard, JokePageComponent: HadasKohaviJokePage },
   { id: "tovi", name: "טובי גרינגרד", jokeTitle: "אופניים עייפים", email: "t0556746399@gmail.com", teamName: "Vcomm-1", teamProjectUrl: "", CardComponent: TovaCard, JokePageComponent: TovaJokePage },
   { id: "rivka-barashi", name: "רבקה בראשי", jokeTitle: "Computer Doctor", email: "rb0583252581@gmail.com", teamName: "Vcomm-1", teamProjectUrl: "", CardComponent: RivkaCard, JokePageComponent: RivkaJokePage },
