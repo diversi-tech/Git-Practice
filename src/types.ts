@@ -4,6 +4,9 @@ export interface Student {
   id: string;
   name: string;
   jokeTitle: string;
+  email?: string;
+  teamName?: string;
+  teamProjectUrl?: string;
   CardComponent: ComponentType<CardProps>;
   JokePageComponent: ComponentType<PageProps>;
 }
