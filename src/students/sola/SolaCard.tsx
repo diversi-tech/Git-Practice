@@ -20,7 +20,7 @@ export default function SolaCard({ student, onClick }: CardProps) {
   } as ThemeProperties;
 
   return (
-    <article className={`joke-card ${styles.card}`} style={theme}>
+    <article className={`joke-card ${styles.card} ${styles[profile.pattern]}`} style={theme}>
       <div className={styles.icon} aria-hidden="true">{profile.icon}</div>
       {profile.artwork && <div className={styles.artwork} aria-hidden="true">{profile.artwork}</div>}
       <h2 className={styles.title}>{student.jokeTitle}</h2>

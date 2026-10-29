@@ -15,16 +15,64 @@
   isolation: isolate;
 }
 
-.card::before {
+.card::before,
+.jokePanel::after {
   position: absolute;
-  inset: auto -55px -75px auto;
-  z-index: -1;
-  width: 175px;
-  height: 175px;
-  border-radius: 50%;
-  background: var(--sola-accent);
+  inset: 0;
   content: "";
-  opacity: 0.1;
+  pointer-events: none;
+}
+
+.card::before {
+  z-index: -1;
+}
+
+.card.dots::before,
+.jokePanel.dots::after {
+  background-image: radial-gradient(var(--sola-accent) 1.5px, transparent 1.5px);
+  background-size: 19px 19px;
+  opacity: 0.14;
+}
+
+.card.glow::before,
+.jokePanel.glow::after {
+  background-image: radial-gradient(circle at 50% 18%, var(--sola-accent), transparent 58%);
+  opacity: 0.18;
+}
+
+.card.grid::before,
+.jokePanel.grid::after {
+  background-image:
+    linear-gradient(color-mix(in srgb, var(--sola-accent) 28%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in srgb, var(--sola-accent) 28%, transparent) 1px, transparent 1px);
+  background-size: 28px 28px;
+  opacity: 0.22;
+}
+
+.card.stripes::before,
+.jokePanel.stripes::after {
+  background-image: repeating-linear-gradient(
+    125deg,
+    transparent 0 18px,
+    color-mix(in srgb, var(--sola-accent) 25%, transparent) 18px 20px
+  );
+  opacity: 0.2;
+}
+
+.card.rays::before,
+.jokePanel.rays::after {
+  background-image: conic-gradient(
+    from 215deg at 50% 115%,
+    transparent 0 10deg,
+    color-mix(in srgb, var(--sola-accent) 28%, transparent) 10deg 22deg,
+    transparent 22deg 42deg
+  );
+  opacity: 0.22;
+}
+
+.card.clean::before,
+.jokePanel.clean::after {
+  background: linear-gradient(135deg, transparent 45%, color-mix(in srgb, var(--sola-accent) 16%, transparent));
 }
 
 .card:hover {
@@ -117,15 +165,12 @@
 }
 
 .jokePanel::after {
-  position: absolute;
-  inset: -95px -80px auto auto;
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  background: var(--sola-accent);
-  content: "";
-  opacity: 0.1;
-  pointer-events: none;
+  z-index: 0;
+}
+
+.jokePanel > * {
+  position: relative;
+  z-index: 1;
 }
 
 .pageIcon {

@@ -1,7 +1,10 @@
 import { ReactNode } from "react";
 
+export type SolaPattern = "dots" | "glow" | "grid" | "stripes" | "rays" | "clean";
+
 export interface SolaProfile {
   icon: string;
+  pattern: SolaPattern;
   background: string;
   foreground: string;
   muted: string;
@@ -12,6 +15,7 @@ export interface SolaProfile {
 
 export const solaProfiles: Record<string, SolaProfile> = {
   "yehudit-birman": {
+    pattern: "dots",
     icon: "🐧",
     background: "radial-gradient(circle at 18% 12%, #e0f2fe 0 2px, transparent 3px), linear-gradient(145deg, #f8fdff, #dff5ff)",
     foreground: "#172554",
@@ -28,6 +32,7 @@ export const solaProfiles: Record<string, SolaProfile> = {
     ),
   },
   "yael-hain": {
+    pattern: "glow",
     icon: "🐛",
     background: "linear-gradient(145deg, #111827, #1e293b)",
     foreground: "#f8fafc",
@@ -41,6 +46,7 @@ export const solaProfiles: Record<string, SolaProfile> = {
     ),
   },
   "sara-levin": {
+    pattern: "grid",
     icon: "🥚",
     background: "linear-gradient(145deg, #18181b, #09090b)",
     foreground: "#fafafa",
@@ -55,6 +61,7 @@ export const solaProfiles: Record<string, SolaProfile> = {
     ),
   },
   "efrat-madmon": {
+    pattern: "stripes",
     icon: "🚌",
     background: "linear-gradient(145deg, #fffdf5, #f7ead0)",
     foreground: "#422006",
@@ -68,6 +75,7 @@ export const solaProfiles: Record<string, SolaProfile> = {
     ),
   },
   "yaeli-rosner": {
+    pattern: "rays",
     icon: "🍲",
     background: "linear-gradient(145deg, #fff7ed, #fed7aa)",
     foreground: "#7c2d12",
@@ -84,6 +92,7 @@ export const solaProfiles: Record<string, SolaProfile> = {
     ),
   },
   "tamar-damti": {
+    pattern: "clean",
     icon: "🍌",
     background: "linear-gradient(145deg, #fffbea, #fde68a)",
     foreground: "#713f12",
@@ -97,6 +106,7 @@ export const solaProfiles: Record<string, SolaProfile> = {
     ),
   },
   "hadas-homri": {
+    pattern: "glow",
     icon: "🪟",
     background: "linear-gradient(145deg, #fdf2f8, #c7d2fe)",
     foreground: "#312e81",
@@ -110,6 +120,7 @@ export const solaProfiles: Record<string, SolaProfile> = {
     ),
   },
   "tamar-zwiebel": {
+    pattern: "grid",
     icon: "💡",
     background: "linear-gradient(145deg, #1e293b, #334155)",
     foreground: "#f8fafc",
@@ -123,6 +134,7 @@ export const solaProfiles: Record<string, SolaProfile> = {
     ),
   },
   "gili-lev": {
+    pattern: "rays",
     icon: "🏃‍♀️",
     background: "linear-gradient(145deg, #ecfeff, #a5f3fc)",
     foreground: "#164e63",
@@ -137,6 +149,7 @@ export const solaProfiles: Record<string, SolaProfile> = {
     ),
   },
   "yehudit-vogshal": {
+    pattern: "dots",
     icon: "⏰",
     background: "linear-gradient(145deg, #f5f3ff, #ddd6fe)",
     foreground: "#4c1d95",
@@ -150,6 +163,7 @@ export const solaProfiles: Record<string, SolaProfile> = {
     ),
   },
   "shifra-zaafrani": {
+    pattern: "stripes",
     icon: "🪙",
     background: "linear-gradient(145deg, #172033, #27364f)",
     foreground: "#f8fafc",
@@ -164,6 +178,7 @@ export const solaProfiles: Record<string, SolaProfile> = {
     ),
   },
   "ruti-paniri": {
+    pattern: "grid",
     icon: "💻",
     background: "linear-gradient(145deg, #eff6ff, #bfdbfe)",
     foreground: "#1e3a8a",
@@ -177,6 +192,7 @@ export const solaProfiles: Record<string, SolaProfile> = {
     ),
   },
   "sari-yagelnik": {
+    pattern: "rays",
     icon: "🔟",
     background: "linear-gradient(145deg, #ecfccb, #bef264)",
     foreground: "#365314",
@@ -190,6 +206,7 @@ export const solaProfiles: Record<string, SolaProfile> = {
     ),
   },
   "malki-gdelovitz": {
+    pattern: "glow",
     icon: "☕",
     background: "linear-gradient(145deg, #fdf4e7, #d6b48a)",
     foreground: "#422006",
@@ -203,6 +220,7 @@ export const solaProfiles: Record<string, SolaProfile> = {
     ),
   },
   "shira-carmi": {
+    pattern: "dots",
     icon: "🌿",
     background: "linear-gradient(145deg, #ecfdf5, #a7f3d0)",
     foreground: "#064e3b",

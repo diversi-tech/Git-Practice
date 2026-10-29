@@ -23,7 +23,7 @@ export default function SolaJokePage({ student, onBack }: PageProps) {
 
   return (
     <main className={`joke-page ${styles.page}`} style={theme}>
-      <section className={styles.jokePanel}>
+      <section className={`${styles.jokePanel} ${styles[profile.pattern]}`}>
         <div className={styles.pageIcon} aria-hidden="true">{profile.icon}</div>
         {profile.artwork && <div className={styles.pageArtwork} aria-hidden="true">{profile.artwork}</div>}
         <p className={styles.eyebrow}>{student.name} · {student.teamName}</p>
