@@ -2,7 +2,7 @@
    עיצוב כרטיסיית הבדיחה - בדיוק כמו שאר הריבועים
    ======================================================== */
 
-.card, :global(.joke-card) {
+.card {
   background: #ffffff !important;
   border: 3px solid #f5a623 !important; /* המסגרת הכתובה-מוזהבת היפה */
   border-radius: 20px !important;       /* פינות מעוגלות בדיוק באותו קימור */
@@ -22,7 +22,7 @@
 }
 
 /* אפקט הריחוף של הכרטיסייה */
-.card:hover, :global(.joke-card):hover {
+.card:hover {
   transform: translateY(-5px) !important;
   box-shadow: 0 12px 30px rgba(245, 166, 35, 0.4) !important;
 }
@@ -30,7 +30,7 @@
 /* עיצוב הטקסטים בתוך הכרטיסייה */
 
 /* כותרת הבדיחה ("הבננה") */
-.title, :global(.joke-card) h2 {
+.title {
   font-size: 1.4rem !important;
   color: #7a4800 !important; /* צבע חום-אדמדם כהה כמו בריבוע של דנה */
   font-weight: bold !important;
@@ -39,7 +39,7 @@
 }
 
 /* שם הסטודנט/ית ("תמר דמתי") */
-.name, :global(.joke-card) p {
+.name {
   font-size: 1rem !important;
   color: #5a3400 !important;
   margin: 0 !important;
@@ -51,7 +51,7 @@
    עיצוב עמוד הבדיחה המלא 
    ======================================================== */
 
-.jokePage, :global(.joke-page) {
+.jokePage {
   background: linear-gradient(135deg, #fff3cd, #ffd77a) !important;
   min-height: 100vh;
   display: flex;
@@ -63,7 +63,7 @@
 }
 
 /* קופסת הבדיחה הלבנה בפנים */
-.jokePage p:nth-of-type(2), :global(.joke-page) p:nth-of-type(2) {
+.jokePage p:nth-of-type(2) {
   background: #ffffff !important;
   border-radius: 20px !important;
   padding: 2rem 2.5rem !important;
@@ -78,7 +78,7 @@
 }
 
 /* כפתור החזרה */
-.jokePage button, :global(.joke-page) button {
+.jokePage button {
   background: #f5a623 !important;
   color: #ffffff !important;
   border: none !important;
@@ -91,6 +91,6 @@
   transition: background 0.2s !important;
 }
 
-.jokePage button:hover, :global(.joke-page) button:hover {
+.jokePage button:hover {
   background: #d4891a !important;
 }
