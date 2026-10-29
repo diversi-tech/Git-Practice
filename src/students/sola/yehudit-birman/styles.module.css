@@ -1,0 +1,113 @@
+/* ==========================================================================
+   1. עיצוב הכרטיס (סגנון קומיקס חי, בולט ותוסס)
+   ========================================================================== */
+
+.card {
+  background-color: #ffffff;
+  border: 3px solid #1a1a1a; /* מסגרת שחורה עבה בסגנון קומיקס */
+  border-radius: 20px;
+  padding: 24px;
+  margin: 18px;
+  box-shadow: 5px 5px 0px #1a1a1a; /* צל תלת-ממדי קשיח */
+  cursor: pointer;
+  direction: rtl;
+  max-width: 320px;
+  position: relative;
+  background-image: radial-gradient(#e0f2fe 1px, transparent 1px); /* רקע נקודות עדין */
+  background-size: 15px 15px;
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* פתיחה אלסטית ברחיפה */
+}
+
+/* אפקט ריחוף אינטראקטיבי על הכרטיס */
+.card:hover {
+  transform: translate(-4px, -4px); 
+  box-shadow: 9px 9px 0px #00a8ff; /* הצל גדל ומשתנה לכחול בהיר */
+  background-color: #f0f9ff;
+}
+
+/* כותרת הבדיחה בתוך הכרטיס */
+.title {
+  font-size: 1.6rem;
+  color: #1a1a1a;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+}
+
+/* שם הסטודנט בתוך הכרטיס (מעוצב כמו תג/מדבקה) */
+.name {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #1a1a1a; 
+  padding: 6px 14px;
+  border-radius: 50px;
+  display: inline-block;
+  margin: 0;
+}
+
+/* אייקון קטן של ניידת בצד הכרטיס */
+.card::after {
+  content: '🚨';
+  position: absolute;
+  left: 20px;
+  bottom: 18px;
+  font-size: 1.4rem;
+}
+
+/* ==========================================================================
+   2. עיצוב עמוד הבדיחה (סגנון נקי, מודרני, אלגנטי ונוח לקריאה)
+   ========================================================================== */
+
+.jokePage {
+  background-color: #ffffff; /* רקע לבן נקי וחלק */
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 600px;
+  margin: 40px auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06); /* צל רך ואלגנטי */
+  direction: rtl;
+  text-align: right;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* עיצוב מושך לכותרת הבדיחה "הטרמפיסט" בעמוד הראשי */
+.jokePage p:first-child {
+  font-size: 2.1rem;
+  color: #007acc; /* כחול רויאל מושך לעין */
+  font-weight: 800;
+  margin-top: 0;
+  margin-bottom: 25px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #edf2f7; /* קו מפריד עדין מתחת לכותרת */
+}
+
+/* טקסט גוף הבדיחה - קריא, מרווח ושומר על האנטרים של הליטרל */
+.jokeText {
+  font-size: 1.2rem;
+  line-height: 1.75;
+  color: #2d3748; /* צבע אפור כהה שמקל על הקריאה */
+  white-space: pre-line; /* מאפשר ל-`\n` או לאנטרים בקוד לרדת שורה במסך */
+  margin-bottom: 30px;
+}
+
+/* כפתור החזרה הנקי והמעוצב */
+.jokePage button {
+  background-color: #007acc;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* אפקט קטן במעבר עכבר על כפתור החזרה */
+.jokePage button:hover {
+  background-color: #005999;
+  transform: translateY(-1px);
+}

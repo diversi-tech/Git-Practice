@@ -1,0 +1,139 @@
+/* --- עיצוב דף הבדיחה הראשי --- */
+
+.jokePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f7f3e9; /* רקע שמנת-פסטל חמים, שגורם לכרטיס הלבן לבלוט */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  padding: 24px;
+  box-sizing: border-box;
+  direction: rtl;
+}
+
+/* הכרטיס הלבן - שדרוג לעיצוב צף ותלת-ממדי עדין */
+.jokeCard {
+  background: #ffffff;
+  border-radius: 32px; /* פינות מעוגלות מודרניות רחבות */
+  padding: 3.5rem 2.5rem;
+  max-width: 520px;
+  width: 100%;
+  text-align: center;
+  /* שילוב של שני צילים ליצירת עומק רך ומקצועי (Soft Shadow) */
+  box-shadow: 
+    0 4px 6px -1px rgba(0, 0, 0, 0.05),
+    0 20px 40px -5px rgba(139, 122, 101, 0.15);
+  margin-bottom: 2.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+/* כותרת הבדיחה */
+.jokeTitle {
+  font-size: 2rem;
+  color: #2c1a04; /* צבע כמעט שחור עם נגיעת חום עמוק */
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin: 0 0 1rem 0;
+}
+
+/* אלמנט גרפי מעניין - קו מפריד מינימליסטי */
+.divider {
+  width: 40px;
+  height: 4px;
+  background: #f5a623; /* נקודת צבע אסטרטגית שעושה את ההבדל */
+  margin: 0 auto 2rem auto;
+  border-radius: 2px;
+}
+
+/* תוכן הבדיחה */
+.jokeContent {
+  font-size: 1.35rem;
+  color: #4a3b2c;
+  line-height: 1.7;
+  margin: 0 0 1.2rem 0;
+}
+
+.jokeContent:last-child {
+  margin-bottom: 0;
+}
+
+/* הדגשות טקסט פנימיות לעניין ויזואלי */
+.highlight {
+  color: #6e583f;
+  font-style: italic;
+}
+
+.punchline {
+  display: block;
+  font-size: 1.45rem;
+  color: #1a0f02;
+  font-weight: 700;
+  margin-top: 1.5rem;
+}
+
+/* כפתור חזרה מעוצב ארגונומית */
+.backBtn {
+  background: #2c1a04; /* ניגודיות מושלמת לכרטיס הלבן */
+  color: #ffffff;
+  border: none;
+  border-radius: 100px;
+  padding: 0.8rem 2.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(44, 26, 4, 0.2);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backBtn:hover {
+  background: #f5a623; /* משתנה בצורה חלקה ב-Hover */
+  box-shadow: 0 6px 20px rgba(245, 166, 35, 0.3);
+  transform: translateY(-2px);
+}
+
+/* --- עיצוב כרטיס ברשימה --- */
+
+.card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 2rem;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.03);
+  transition: all 0.25s ease;
+  border: 1px solid #eae5da;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(139, 122, 101, 0.12);
+  border-color: #f5a623;
+}
+
+.title {
+  font-size: 1.4rem;
+  color: #2c1a04;
+  margin: 0 0 0.8rem 0;
+  font-weight: 700;
+}
+
+.cardLine {
+  width: 25px;
+  height: 2px;
+  background: #f5a623;
+  margin: 0 auto 1rem auto;
+  transition: width 0.25s ease;
+}
+
+.card:hover .cardLine {
+  width: 50px; /* אפקט אינטראקטיבי כשהעכבר מעל הכרטיס */
+}
+
+.name {
+  font-size: 1rem;
+  color: #8c7d70;
+  margin: 0;
+  font-weight: 500;
+}

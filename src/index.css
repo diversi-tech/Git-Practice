@@ -178,9 +178,49 @@ body {
 .joke-card {
   border-radius: 16px;
   padding: 1.8rem 1.4rem;
-  cursor: pointer;
+  cursor: default !important;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   text-align: center;
+}
+
+.joke-card h2 {
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.student-card-name {
+  text-decoration: none;
+}
+
+.student-card-name:hover {
+  text-decoration: underline;
+}
+
+.student-card-team {
+  display: block;
+  margin-top: 0.45rem;
+  color: inherit;
+  font-size: 0.85rem;
+  opacity: 0.78;
+}
+
+.student-card-action {
+  display: block;
+  margin: 0.8rem auto 0;
+  padding: 0.55rem 1.1rem;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.16);
+  color: inherit;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.student-card-action:hover {
+  background: rgba(255, 255, 255, 0.3);
 }
 
 .joke-card:hover {

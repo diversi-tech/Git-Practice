@@ -18,6 +18,7 @@ export interface CardProps {
 
 export interface PageProps {
   onBack: () => void;
+  student?: Student;
 }
 
 // Branch graph types

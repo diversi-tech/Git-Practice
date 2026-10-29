@@ -1,0 +1,81 @@
+/* עיצוב לעמוד הבדיחה הראשי */
+.jokePage {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(18, 22, 45, 0.12);
+    max-width: 550px;
+    margin: 40px auto;
+    text-align: center;
+    border: 1px solid rgba(99, 102, 241, 0.1);
+}
+
+/* עיצוב לשאלה של הבדיחה */
+.jokeQuestion {
+    font-size: 20px;
+    font-weight: 600;
+    color: #0b1220;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+/* עיצוב לתשובה (הפאנץ') */
+.jokeAnswer {
+    font-size: 18px;
+    font-weight: 600;
+    color: #4f46e5; /* צבע סגול יפה */
+    background: rgba(99, 102, 241, 0.06);
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+
+/* כפתור חזרה */
+.backBtn {
+    background: #374151;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+.backBtn:hover {
+    background: #111827;
+}
+/* עיצוב הכרטיסייה שלה בדף הראשי */
+.card {
+    background: linear-gradient(180deg, #ffffff 0%, #fbfbfe 100%);
+    border: 1px solid rgba(20, 24, 40, 0.06);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(18, 22, 45, 0.06);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: transform 200ms ease, box-shadow 200ms ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(18, 22, 45, 0.12);
+}
+
+/* עיצוב כותרת הבדיחה בכרטיסייה */
+.title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0b1220;
+    margin: 0;
+}
+
+/* עיצוב השם שלה בתחתית הכרטיסייה */
+.name {
+    font-size: 14px;
+    color: #7b61ff;
+    font-weight: 600;
+    margin: 0;
+    margin-top: auto; /* דוחף את השם לתחתית */
+}
