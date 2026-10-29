@@ -18,11 +18,14 @@ Open <http://localhost:5173>.
 ```text
 src/
 ├── students/
-│   ├── index.ts               # Student registry; newest entries first
-│   ├── [student-name]/
-│   │   ├── Card.tsx           # Homepage card
-│   │   ├── JokePage.tsx       # Full joke page
-│   │   └── styles.module.css  # Student-specific CSS Module
+│   ├── index.ts               # Combines the team registries
+│   ├── [team-name]/
+│   │   ├── index.ts           # Team registry; newest entries first
+│   │   ├── [student-name]/
+│   │   │   ├── Card.tsx
+│   │   │   ├── JokePage.tsx
+│   │   │   └── styles.module.css
+│   │   └── ...
 │   └── ...
 ├── pages/
 │   ├── HomePage.tsx
@@ -73,7 +76,7 @@ git checkout -b [personal-branch]
 ### 2. Create the student files
 
 ```text
-src/students/[your-name-in-english]/
+src/students/[team-name]/[your-name-in-english]/
 ├── Card.tsx
 ├── JokePage.tsx
 └── styles.module.css
@@ -95,7 +98,7 @@ The card itself must not be clickable because it would intercept the email link.
 
 ```tsx
 import styles from "./styles.module.css";
-import { CardProps } from "../../types";
+import { CardProps } from "../../../types";
 
 export default function YourNameCard({ student, onClick }: CardProps) {
   return (
@@ -148,7 +151,7 @@ The joke page must display the complete joke, including its setup and punchline.
 
 ```tsx
 import styles from "./styles.module.css";
-import { PageProps } from "../../types";
+import { PageProps } from "../../../types";
 
 export default function YourNameJokePage({ onBack }: PageProps) {
   return (
@@ -163,7 +166,7 @@ export default function YourNameJokePage({ onBack }: PageProps) {
 
 ### 5. Register the student
 
-Import the card and joke-page components in `src/students/index.ts`, then add the new object at the beginning of the `students` array. Entries stay in newest-first order.
+Import the card and joke-page components in `src/students/[team-name]/index.ts`, then add the new object at the beginning of that team's array. Entries stay in newest-first order. Students on the same team deliberately share this registry so they can practice resolving merge conflicts.
 
 ```ts
 {
@@ -184,7 +187,7 @@ Keep `teamProjectUrl: ""` until a project URL exists. The card renders plain tea
 
 ```bash
 npm run build
-git add src/students/[your-name-in-english]/ src/students/index.ts
+git add src/students/[team-name]/[your-name-in-english]/ src/students/[team-name]/index.ts
 git commit -m "add: [your name] joke"
 git push -u origin [personal-branch]
 ```
@@ -207,7 +210,7 @@ The preview URL follows this format:
 https://diversi-tech.github.io/Git-Practice/pr-preview/pr-[PR-number]/
 ```
 
-If one PR is merged while other PRs target the same branch, synchronize each remaining source branch with the updated target, resolve `src/students/index.ts` in newest-first order, run the build, push, and review the regenerated preview. Do not rely on a preview created against an outdated target branch.
+If one PR is merged while other PRs target the same branch, synchronize each remaining source branch with the updated target, resolve `src/students/[team-name]/index.ts` in newest-first order, run the build, push, and review the regenerated preview. Do not rely on a preview created against an outdated target branch.
 
 The same rule applies when promoting subteams into a team: merge and verify one PR at a time, then update the next PR before approving it.
 

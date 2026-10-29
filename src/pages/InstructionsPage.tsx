@@ -57,8 +57,8 @@ git pull origin [בראנץ'-תת-הצוות]
 git checkout -b [הבראנץ'-האישי]`}</pre>
             </li>
             <li>
-              <strong>צרי תיקייה אישית</strong> בנתיב:
-              <pre>{`src/students/[השם-שלך-באנגלית]/`}</pre>
+              <strong>צרי תיקייה אישית</strong> בתוך התיקייה של הצוות שלך:
+              <pre>{`src/students/[שם-הצוות]/[השם-שלך-באנגלית]/`}</pre>
             </li>
             <li>
               <strong>צרי שלושה קבצים:</strong>
@@ -80,7 +80,7 @@ git checkout -b [הבראנץ'-האישי]`}</pre>
             <li>
               <strong>בני את הכרטיס</strong> עם אייקון או תמונה, כותרת קצרה בשורה אחת, שם, תת-צוות וכפתור נפרד לבדיחה:
               <pre>{`import styles from "./styles.module.css";
-import { CardProps } from "../../types";
+import { CardProps } from "../../../types";
 
 export default function YourNameCard({ student, onClick }: CardProps) {
   return (
@@ -124,7 +124,7 @@ export default function YourNameCard({ student, onClick }: CardProps) {
             <li>
               <strong>בני את עמוד הבדיחה</strong> כך שיציג את כל הבדיחה, כולל הפתיח והתשובה. השתמשי באותם צבעים של הכרטיס:
               <pre>{`import styles from "./styles.module.css";
-import { PageProps } from "../../types";
+import { PageProps } from "../../../types";
 
 export default function YourNameJokePage({ onBack }: PageProps) {
   return (
@@ -137,7 +137,7 @@ export default function YourNameJokePage({ onBack }: PageProps) {
 }`}</pre>
             </li>
             <li>
-              <strong>רשמי את עצמך</strong> בתחילת המערך בקובץ <code>src/students/index.ts</code>. הרשומות מסודרות מהחדשה לישנה:
+              <strong>רשמי את עצמך</strong> בתחילת המערך בקובץ <code>src/students/[שם-הצוות]/index.ts</code>. כל הצוות משתף את אותו קובץ כדי לתרגל פתרון קונפליקטים, והרשומות מסודרות מהחדשה לישנה:
               <pre>{`{
   id: "[השם-שלך-באנגלית]",
   name: "[השם-המלא]",
@@ -155,7 +155,7 @@ export default function YourNameJokePage({ onBack }: PageProps) {
             <li>
               <strong>בדקי, שמרי ודחפי:</strong>
               <pre>{`npm run build
-git add src/students/[השם-שלך-באנגלית]/ src/students/index.ts
+git add src/students/[שם-הצוות]/[השם-שלך-באנגלית]/ src/students/[שם-הצוות]/index.ts
 git commit -m "add: [השם-שלך] joke"
 git push -u origin [הבראנץ'-האישי]`}</pre>
             </li>
@@ -173,7 +173,7 @@ git push -u origin [הבראנץ'-האישי]`}</pre>
             <li>מחקי את בראנץ' המקור רק אחרי ש-GitHub מאשר שהמיזוג הסתיים.</li>
           </ol>
           <div className="branch-rule">
-            <strong>💡 אחרי כל מיזוג:</strong> אם יש PR נוסף לאותו יעד, עדכני אותו מבראנץ' היעד החדש, פתרי את <code>src/students/index.ts</code> בסדר חדש-לישן, הריצי build ובדקי Preview חדש. אין לאשר Preview שנוצר מול יעד ישן.
+            <strong>💡 אחרי כל מיזוג:</strong> אם יש PR נוסף לאותו יעד, עדכני אותו מבראנץ' היעד החדש, פתרי את <code>src/students/[שם-הצוות]/index.ts</code> בסדר חדש-לישן, הריצי build ובדקי Preview חדש. אין לאשר Preview שנוצר מול יעד ישן.
           </div>
         </section>
 
