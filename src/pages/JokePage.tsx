@@ -27,6 +27,7 @@ export default function JokePage() {
 
   return (
     <student.JokePageComponent
+      student={student}
       onBack={() => navigate(-1)}
     />
   );

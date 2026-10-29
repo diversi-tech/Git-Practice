@@ -1,0 +1,202 @@
+.card {
+  position: relative;
+  display: flex;
+  min-height: 290px;
+  padding: 2rem 1.5rem;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  border: 1px solid color-mix(in srgb, var(--sola-accent) 45%, transparent);
+  background: var(--sola-background);
+  color: var(--sola-foreground);
+  box-shadow: 0 16px 35px color-mix(in srgb, var(--sola-accent) 18%, transparent);
+  isolation: isolate;
+}
+
+.card::before {
+  position: absolute;
+  inset: auto -55px -75px auto;
+  z-index: -1;
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+  background: var(--sola-accent);
+  content: "";
+  opacity: 0.1;
+}
+
+.card:hover {
+  border-color: var(--sola-accent);
+  box-shadow: 0 20px 42px color-mix(in srgb, var(--sola-accent) 28%, transparent);
+}
+
+.icon {
+  font-size: 2.7rem;
+  line-height: 1;
+  filter: drop-shadow(0 5px 8px rgba(0, 0, 0, 0.14));
+}
+
+.artwork {
+  color: var(--sola-muted);
+  font-size: 1.15rem;
+  line-height: 1;
+}
+
+.title {
+  width: 100%;
+  margin: 0.4rem 0 0;
+  color: var(--sola-foreground);
+  font-size: 1.45rem;
+  font-weight: 850;
+  line-height: 1.25;
+}
+
+.name {
+  color: var(--sola-muted);
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.name:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.team {
+  color: var(--sola-foreground);
+  font-size: 0.87rem;
+  font-weight: 750;
+  opacity: 0.82;
+}
+
+.action,
+.backButton {
+  border: 0;
+  border-radius: 999px;
+  background: var(--sola-accent);
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 800;
+  transition: transform 160ms ease, filter 160ms ease;
+}
+
+.action {
+  margin-top: 0.65rem;
+  padding: 0.65rem 1.3rem;
+}
+
+.action:hover,
+.backButton:hover {
+  filter: brightness(1.08);
+  transform: translateY(-2px);
+}
+
+.page {
+  display: grid;
+  min-height: 100vh;
+  padding: clamp(1rem, 4vw, 3rem);
+  place-items: center;
+  background: var(--sola-background);
+  color: var(--sola-foreground);
+  direction: rtl;
+}
+
+.jokePanel {
+  position: relative;
+  width: min(680px, 100%);
+  padding: clamp(1.5rem, 5vw, 3.5rem);
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--sola-accent) 42%, transparent);
+  border-radius: 28px;
+  background: color-mix(in srgb, var(--sola-background) 82%, white 18%);
+  box-shadow: 0 24px 70px color-mix(in srgb, var(--sola-accent) 25%, transparent);
+  text-align: center;
+}
+
+.jokePanel::after {
+  position: absolute;
+  inset: -95px -80px auto auto;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: var(--sola-accent);
+  content: "";
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.pageIcon {
+  font-size: 4rem;
+  line-height: 1;
+}
+
+.pageArtwork {
+  margin-top: 0.8rem;
+  color: var(--sola-muted);
+  font-size: 1.5rem;
+}
+
+.eyebrow {
+  margin: 1.25rem 0 0.35rem;
+  color: var(--sola-muted);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.pageTitle {
+  margin: 0;
+  color: var(--sola-foreground);
+  font-size: clamp(1.8rem, 6vw, 2.8rem);
+  line-height: 1.15;
+}
+
+.jokeContent {
+  margin: 1.8rem auto 0;
+  color: var(--sola-foreground);
+  font-size: clamp(1.05rem, 2.5vw, 1.25rem);
+  line-height: 1.8;
+}
+
+.jokeContent p {
+  margin: 0.7rem 0;
+}
+
+.jokeContent strong {
+  color: var(--sola-accent);
+}
+
+.jokeContent a {
+  color: var(--sola-accent);
+}
+
+.jokeContent details {
+  margin: 1.25rem auto;
+  padding: 0.8rem 1rem;
+  border: 1px solid color-mix(in srgb, var(--sola-accent) 35%, transparent);
+  border-radius: 14px;
+  text-align: right;
+}
+
+.jokeContent summary {
+  color: var(--sola-accent);
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.backButton {
+  margin-top: 1.6rem;
+  padding: 0.8rem 1.5rem;
+}
+
+@media (max-width: 560px) {
+  .card {
+    min-height: 260px;
+  }
+
+  .jokePanel {
+    border-radius: 22px;
+  }
+}
