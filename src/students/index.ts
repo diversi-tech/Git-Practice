@@ -13,7 +13,7 @@ import ChaniChanzinCard from "./chani-chanzin/Card";
 import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
 
 const students: Student[] = [
-  { id: "hilla-arye", name: "הילה אריה", jokeTitle: "Dark Mode", email: "hillaarye@gmail.com", teamName: "Vcomm-3", teamProjectUrl: "", CardComponent: HillaCard, JokePageComponent: HillaJokePage },
+  { id: "hilla-arye", name: "הילה אריה", jokeTitle: "מנקה יסודי", email: "hillaarye@gmail.com", teamName: "Vcomm-3", teamProjectUrl: "", CardComponent: HillaCard, JokePageComponent: HillaJokePage },
   { id: "shira-gidi", name: "שירה יהודית גידי", jokeTitle: "בדיחת מתכנתים", email: "shiragidi12@gmail.com", teamName: "Vcomm-3", teamProjectUrl: "", CardComponent: ShiraGidiCard, JokePageComponent: ShiraGidiJokePage },
   { id: "ayala-klein", name: "אילה קליין", jokeTitle: "לולאה שלא עוצרת", email: "ayalakl5335@gmail.com", teamName: "Vcomm-3", teamProjectUrl: "", CardComponent: AyalaKleinCard, JokePageComponent: AyalaKleinJokePage },
   { id: "noa-gabay", name: "נועה גבאי", jokeTitle: "בדיחה בינארית", email: "noa94744@gmail.com", teamName: "Vcomm-3", teamProjectUrl: "", CardComponent: NoaCard, JokePageComponent: NoaJokePage },
