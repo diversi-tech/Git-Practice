@@ -1,0 +1,197 @@
+@import url('https://googleapis.com');
+
+/* ── עיצוב אזור האימוג'י ── */
+.emojiContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 1rem;
+  z-index: 2;
+  background: #ffffff;
+  border: 4px solid #7c4dff;
+  border-radius: 50%;
+  box-shadow: 6px 6px 0 rgba(124, 77, 255, 0.15);
+}
+
+.mainEmoji {
+  font-size: 4rem;
+}
+
+.sparkleEmoji {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 1.8rem;
+  animation: floatUp 3s infinite ease-in-out alternate;
+}
+
+.emojiContainerSmall {
+  font-size: 2.2rem;
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+/* ── רקע אדמה לכרטיס ── */
+.scene {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: auto;
+}
+
+.ground {
+  width: 100%;
+  height: 4px;
+  background: #7c4dff;
+  margin-top: 8px;
+  border-radius: 2px;
+}
+
+/* ── כרטיס ראשי (Card) ── */
+.card {
+  background: #f4f0ff;
+  border: 3px solid #7c4dff;
+  border-radius: 12px;
+  box-shadow: 6px 6px 0 #7c4dff;
+  color: #2a085c;
+  font-family: 'Rubik Mono One', sans-serif;
+  padding: 1.2rem;
+  direction: rtl;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 200px;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.card:hover {
+  transform: translate(-2px, -2px);
+}
+
+.scoreBar {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.55rem;
+  margin-bottom: 0.8rem;
+  color: #7c4dff;
+}
+
+.name {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.title {
+  line-height: 1.4;
+  font-size: 2rem;
+  margin: 0.2rem 0;
+  color: #ff4081;
+  text-align: center;
+}
+
+/* ── דף הבדיחה (Joke Page) ── */
+.jokePage {
+  background: #eef2f7;
+  color: #2a085c;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.jokeBox {
+  background: rgba(255, 255, 255, 0.96);
+  border: 3px solid #7c4dff;
+  box-shadow: 6px 6px 0 #7c4dff;
+  padding: 2rem;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  border-radius: 12px;
+  z-index: 2;
+}
+
+.jokeSetup {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #2a085c;
+}
+
+.jokePunchline {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  border-top: 3px dashed #00e5ff;
+  padding-top: 1.2rem;
+  color: #ff4081;
+}
+
+.backBtn {
+  background: #7c4dff;
+  color: #ffffff;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 0.75rem;
+  cursor: pointer;
+  box-shadow: 4px 4px 0 #2a085c;
+  transition: all 0.1s ease;
+  margin-top: 1.5rem;
+}
+
+.backBtn:hover {
+  background: #ff4081;
+  box-shadow: 2px 2px 0 #2a085c;
+  transform: translate(2px, 2px);
+}
+
+/* ── בועות סבון מרחפות ── */
+.bubble {
+  position: absolute;
+  bottom: -40px;
+  background: rgba(0, 229, 255, 0.15);
+  border: 2px solid rgba(255, 64, 129, 0.3);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: floatUpGlobal 8s infinite linear;
+}
+
+.bubble:nth-child(1) { left: 10%; width: 40px; height: 40px; animation-duration: 7s; animation-delay: 0s; }
+.bubble:nth-child(2) { left: 25%; width: 20px; height: 20px; animation-duration: 9s; animation-delay: 2s; }
+.bubble:nth-child(3) { left: 45%; width: 55px; height: 55px; animation-duration: 11s; animation-delay: 1s; }
+.bubble:nth-child(4) { left: 65%; width: 30px; height: 30px; animation-duration: 6s; animation-delay: 4s; }
+.bubble:nth-child(5) { left: 80%; width: 45px; height: 45px; animation-duration: 10s; animation-delay: 3s; }
+.bubble:nth-child(6) { left: 92%; width: 25px; height: 25px; animation-duration: 8s; animation-delay: 5s; }
+
+@keyframes floatUpGlobal {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 0;
+  }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% {
+    transform: translateY(-110vh) translateX(50px);
+    opacity: 0;
+  }
+}
