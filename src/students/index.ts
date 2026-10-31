@@ -3,6 +3,8 @@ import EfratGibraltarCard from "./efrat-gibraltar/Card";
 import EfratGibraltarJokePage from "./efrat-gibraltar/JokePage";
 import DanaDuviCard from "./dana-duvi/Card";
 import DanaDuviJokePage from "./dana-duvi/JokePage";
+import TehilaCard from "./Tehila/Card";
+import TehilaJokePage from "./Tehila/JokePage";
 
 
 import ChaniChanzinCard from "./chani-chanzin/Card";
@@ -48,6 +50,15 @@ const students: Student[] = [
     CardComponent: DanaDuviCard,
     JokePageComponent: DanaDuviJokePage,
   },
+
+     {
+    id: "Tehila",
+    name: "תהילה חדד",
+    jokeTitle: "Merge ",
+    CardComponent: TehilaCard,
+    JokePageComponent: TehilaJokePage,
+  },
+
   {
     id: "chani-chanzin",
     name: "חני חנזין",
@@ -55,6 +66,9 @@ const students: Student[] = [
     CardComponent: ChaniChanzinCard,
     JokePageComponent: ChaniChanzinJokePage,
   },
+
+
+
   {
     id: "shira-chassida",
     name: "שירה חסידה",
@@ -76,6 +90,8 @@ const students: Student[] = [
   CardComponent: AdiCard,
   JokePageComponent: AdiJokePage,
 },
+
+
 
 ];
 
