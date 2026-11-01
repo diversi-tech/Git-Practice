@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import students from "../students";
 
 function getTeamName(subteamName?: string) {
-  return subteamName?.replace(/[-_]\d+$/, "") ?? "";
+  return subteamName?.replace(/[-_](?:\d+|Discovery|Events|Tracking)$/i, "") ?? "";
 }
 
 export default function HomePage() {

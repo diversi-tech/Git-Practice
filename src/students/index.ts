@@ -1,4 +1,5 @@
 import { Student } from "../types";
+import catalystIqStudents from "./catalystiq";
 import solaStudents from "./sola";
 import vcommStudents from "./vcomm";
 import DanaDuviCard from "./dana-duvi/Card";
@@ -7,6 +8,7 @@ import ChaniChanzinCard from "./chani-chanzin/Card";
 import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
 
 const students: Student[] = [
+  ...catalystIqStudents,
   ...solaStudents,
   ...vcommStudents,
   { id: "dana-duvi", name: "דנה דובי", jokeTitle: "הדוב הפחדן", CardComponent: DanaDuviCard, JokePageComponent: DanaDuviJokePage },
