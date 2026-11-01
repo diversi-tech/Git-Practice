@@ -1,0 +1,20 @@
+.card {
+  padding: 20px;
+  border-radius: 16px;
+  background: #fff3e0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.title {
+  margin: 0 0 8px;
+}
+
+.name {
+  margin: 0;
+}
+
+.jokePage {
+  padding: 24px;
+  text-align: center;
+}
