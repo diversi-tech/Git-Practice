@@ -21,6 +21,8 @@ import SaritCard from "./sarit-cohen/Card";
 
 import AdiCard from "./adi-tamir/Card";
 import AdiJokePage from "./adi-tamir/JokePage";
+import TamarBarCard from "./tamar-bar/Card";
+import TamarBarJokePage from "./tamar-bar/JokePage";
 
 // ⚠️ סדר הרשימה חייב להיות לפי סדר האלף-בית העברי לפי שם המשפחה.
 // כל תלמידה מוסיפה את עצמה במקום הנכון ידנית.
@@ -34,6 +36,13 @@ const students: Student[] = [
   CardComponent: MichaleCard,
   JokePageComponent: michaleJokePage,
 },
+{
+    id: "tamar-bar",
+    name: "תמר בר",
+    jokeTitle: "המחשב החולה",
+    CardComponent: TamarBarCard,
+    JokePageComponent: TamarBarJokePage,
+  },
 
     {
     id: "efrat-gibraltar",
