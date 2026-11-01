@@ -32,16 +32,16 @@ export const solaProfiles: Record<string, SolaProfile> = {
     ),
   },
   "yael-hain": {
-    pattern: "glow",
-    icon: "🐛",
-    background: "linear-gradient(145deg, #111827, #1e293b)",
-    foreground: "#f8fafc",
-    muted: "#a5b4fc",
-    accent: "#a3e635",
+    pattern: "stripes",
+    icon: "🌾",
+    background: "linear-gradient(145deg, #fefce8, #d9f99d)",
+    foreground: "#365314",
+    muted: "#4d7c0f",
+    accent: "#65a30d",
     joke: (
       <>
-        <p>למה מתכנתים אוהבים להשתמש במצב לילה (Dark Mode)?</p>
-        <p><strong>כי אור מושך באגים. 😉</strong></p>
+        <p>למה הדחליל זכה בפרס?</p>
+        <p><strong>כי הוא היה יוצא מן הכלל בשדה שלו! 🌾</strong></p>
       </>
     ),
   },

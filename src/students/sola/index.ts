@@ -4,7 +4,7 @@ import SolaJokePage from "./SolaJokePage";
 
 const solaStudents: Student[] = [
   { id: "yehudit-birman", name: "יהודית בירמן", jokeTitle: "לאן הגיע הפינגווין?", email: "yb3215224@gmail.com", teamName: "Sola-5", teamProjectUrl: "", CardComponent: SolaCard, JokePageComponent: SolaJokePage },
-  { id: "yael-hain", name: "יעל היין", jokeTitle: "באגים", email: "yh21661355@gmail.com", teamName: "Sola-3", teamProjectUrl: "", CardComponent: SolaCard, JokePageComponent: SolaJokePage },
+  { id: "yael-hain", name: "יעל היין", jokeTitle: "הדחליל המצטיין", email: "yh21661355@gmail.com", teamName: "Sola-3", teamProjectUrl: "", CardComponent: SolaCard, JokePageComponent: SolaJokePage },
   { id: "sara-levin", name: "שרה לוין", jokeTitle: "אמא של מתכנתים", email: "saralev45@gmail.com", teamName: "Sola-3", teamProjectUrl: "", CardComponent: SolaCard, JokePageComponent: SolaJokePage },
   { id: "efrat-madmon", name: "אפרת מדמון", jokeTitle: "עשרה שקלים", email: "hodaya8884@gmail.com", teamName: "Sola-3", teamProjectUrl: "", CardComponent: SolaCard, JokePageComponent: SolaJokePage },
   { id: "yaeli-rosner", name: "יעלי רוזנר", jokeTitle: "מה קרה למרק?", email: "yaeli.rosner@gmail.com", teamName: "Sola-3", teamProjectUrl: "", CardComponent: SolaCard, JokePageComponent: SolaJokePage },
