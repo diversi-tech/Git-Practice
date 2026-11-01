@@ -1,22 +1,23 @@
-import { CSSProperties } from "react";
-import { CardProps } from "../../types";
-import { solaProfiles } from "./solaProfiles";
-import styles from "./sola.module.css";
+import type { CSSProperties } from "react";
+import type { CardProps } from "../types";
+import styles from "./studentProfile.module.css";
 
 type ThemeProperties = CSSProperties & {
-  "--sola-background": string;
-  "--sola-foreground": string;
-  "--sola-muted": string;
-  "--sola-accent": string;
+  "--student-background": string;
+  "--student-foreground": string;
+  "--student-muted": string;
+  "--student-accent": string;
 };
 
-export default function SolaCard({ student, onClick }: CardProps) {
-  const profile = solaProfiles[student.id];
+export default function StudentCard({ student, onClick }: CardProps) {
+  const profile = student.profile;
+  if (!profile) return null;
+
   const theme = {
-    "--sola-background": profile.background,
-    "--sola-foreground": profile.foreground,
-    "--sola-muted": profile.muted,
-    "--sola-accent": profile.accent,
+    "--student-background": profile.background,
+    "--student-foreground": profile.foreground,
+    "--student-muted": profile.muted,
+    "--student-accent": profile.accent,
   } as ThemeProperties;
 
   return (

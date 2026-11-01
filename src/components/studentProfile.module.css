@@ -8,11 +8,11 @@
   align-items: center;
   justify-content: center;
   gap: 0.55rem;
-  border: 1px solid color-mix(in srgb, var(--sola-accent) 45%, transparent);
-  background: var(--sola-background);
-  color: var(--sola-foreground);
+  border: 1px solid color-mix(in srgb, var(--student-accent) 45%, transparent);
+  background: var(--student-background);
+  color: var(--student-foreground);
   cursor: default;
-  box-shadow: 0 16px 35px color-mix(in srgb, var(--sola-accent) 18%, transparent);
+  box-shadow: 0 16px 35px color-mix(in srgb, var(--student-accent) 18%, transparent);
   isolation: isolate;
 }
 
@@ -30,22 +30,22 @@
 
 .card.dots::before,
 .jokePanel.dots::after {
-  background-image: radial-gradient(var(--sola-accent) 1.5px, transparent 1.5px);
+  background-image: radial-gradient(var(--student-accent) 1.5px, transparent 1.5px);
   background-size: 19px 19px;
   opacity: 0.14;
 }
 
 .card.glow::before,
 .jokePanel.glow::after {
-  background-image: radial-gradient(circle at 50% 18%, var(--sola-accent), transparent 58%);
+  background-image: radial-gradient(circle at 50% 18%, var(--student-accent), transparent 58%);
   opacity: 0.18;
 }
 
 .card.grid::before,
 .jokePanel.grid::after {
   background-image:
-    linear-gradient(color-mix(in srgb, var(--sola-accent) 28%, transparent) 1px, transparent 1px),
-    linear-gradient(90deg, color-mix(in srgb, var(--sola-accent) 28%, transparent) 1px, transparent 1px);
+    linear-gradient(color-mix(in srgb, var(--student-accent) 28%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in srgb, var(--student-accent) 28%, transparent) 1px, transparent 1px);
   background-size: 28px 28px;
   opacity: 0.22;
 }
@@ -55,7 +55,7 @@
   background-image: repeating-linear-gradient(
     125deg,
     transparent 0 18px,
-    color-mix(in srgb, var(--sola-accent) 25%, transparent) 18px 20px
+    color-mix(in srgb, var(--student-accent) 25%, transparent) 18px 20px
   );
   opacity: 0.2;
 }
@@ -65,7 +65,7 @@
   background-image: conic-gradient(
     from 215deg at 50% 115%,
     transparent 0 10deg,
-    color-mix(in srgb, var(--sola-accent) 28%, transparent) 10deg 22deg,
+    color-mix(in srgb, var(--student-accent) 28%, transparent) 10deg 22deg,
     transparent 22deg 42deg
   );
   opacity: 0.22;
@@ -73,12 +73,12 @@
 
 .card.clean::before,
 .jokePanel.clean::after {
-  background: linear-gradient(135deg, transparent 45%, color-mix(in srgb, var(--sola-accent) 16%, transparent));
+  background: linear-gradient(135deg, transparent 45%, color-mix(in srgb, var(--student-accent) 16%, transparent));
 }
 
 .card:hover {
-  border-color: var(--sola-accent);
-  box-shadow: 0 20px 42px color-mix(in srgb, var(--sola-accent) 28%, transparent);
+  border-color: var(--student-accent);
+  box-shadow: 0 20px 42px color-mix(in srgb, var(--student-accent) 28%, transparent);
 }
 
 .icon {
@@ -88,7 +88,7 @@
 }
 
 .artwork {
-  color: var(--sola-muted);
+  color: var(--student-muted);
   font-size: 1.15rem;
   line-height: 1;
 }
@@ -96,7 +96,7 @@
 .title {
   width: 100%;
   margin: 0.4rem 0 0;
-  color: var(--sola-foreground);
+  color: var(--student-foreground);
   font-size: 1.45rem;
   font-weight: 850;
   line-height: 1.25;
@@ -106,7 +106,7 @@
 }
 
 .name {
-  color: var(--sola-muted);
+  color: var(--student-muted);
   font-size: 1rem;
   text-decoration: none;
 }
@@ -117,7 +117,7 @@
 }
 
 .team {
-  color: var(--sola-foreground);
+  color: var(--student-foreground);
   font-size: 0.87rem;
   font-weight: 750;
   opacity: 0.82;
@@ -127,7 +127,7 @@
 .backButton {
   border: 0;
   border-radius: 999px;
-  background: var(--sola-accent);
+  background: var(--student-accent);
   color: #fff;
   cursor: pointer;
   font: inherit;
@@ -151,8 +151,8 @@
   min-height: 100vh;
   padding: clamp(1rem, 4vw, 3rem);
   place-items: center;
-  background: var(--sola-background);
-  color: var(--sola-foreground);
+  background: var(--student-background);
+  color: var(--student-foreground);
   direction: rtl;
 }
 
@@ -161,10 +161,10 @@
   width: min(680px, 100%);
   padding: clamp(1.5rem, 5vw, 3.5rem);
   overflow: hidden;
-  border: 1px solid color-mix(in srgb, var(--sola-accent) 42%, transparent);
+  border: 1px solid color-mix(in srgb, var(--student-accent) 42%, transparent);
   border-radius: 28px;
-  background: color-mix(in srgb, var(--sola-background) 82%, white 18%);
-  box-shadow: 0 24px 70px color-mix(in srgb, var(--sola-accent) 25%, transparent);
+  background: color-mix(in srgb, var(--student-background) 82%, white 18%);
+  box-shadow: 0 24px 70px color-mix(in srgb, var(--student-accent) 25%, transparent);
   text-align: center;
 }
 
@@ -184,27 +184,27 @@
 
 .pageArtwork {
   margin-top: 0.8rem;
-  color: var(--sola-muted);
+  color: var(--student-muted);
   font-size: 1.5rem;
 }
 
 .eyebrow {
   margin: 1.25rem 0 0.35rem;
-  color: var(--sola-muted);
+  color: var(--student-muted);
   font-size: 0.9rem;
   font-weight: 800;
 }
 
 .pageTitle {
   margin: 0;
-  color: var(--sola-foreground);
+  color: var(--student-foreground);
   font-size: clamp(1.8rem, 6vw, 2.8rem);
   line-height: 1.15;
 }
 
 .jokeContent {
   margin: 1.8rem auto 0;
-  color: var(--sola-foreground);
+  color: var(--student-foreground);
   font-size: clamp(1.05rem, 2.5vw, 1.25rem);
   line-height: 1.8;
 }
@@ -214,23 +214,23 @@
 }
 
 .jokeContent strong {
-  color: var(--sola-accent);
+  color: var(--student-accent);
 }
 
 .jokeContent a {
-  color: var(--sola-accent);
+  color: var(--student-accent);
 }
 
 .jokeContent details {
   margin: 1.25rem auto;
   padding: 0.8rem 1rem;
-  border: 1px solid color-mix(in srgb, var(--sola-accent) 35%, transparent);
+  border: 1px solid color-mix(in srgb, var(--student-accent) 35%, transparent);
   border-radius: 14px;
   text-align: right;
 }
 
 .jokeContent summary {
-  color: var(--sola-accent);
+  color: var(--student-accent);
   cursor: pointer;
   font-weight: 800;
 }

@@ -1,6 +1,6 @@
-import type { SolaProfile } from "../profileTypes";
+import type { StudentProfile } from "../../types";
 
-const profile: SolaProfile = {
+const profile: StudentProfile = {
   pattern: "stripes",
   icon: "🌾",
   background: "linear-gradient(145deg, #fefce8, #d9f99d)",

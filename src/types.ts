@@ -1,4 +1,17 @@
-import { ComponentType } from "react";
+import type { ComponentType, ReactNode } from "react";
+
+export type StudentProfilePattern = "dots" | "glow" | "grid" | "stripes" | "rays" | "clean";
+
+export interface StudentProfile {
+  icon: string;
+  pattern: StudentProfilePattern;
+  background: string;
+  foreground: string;
+  muted: string;
+  accent: string;
+  artwork?: ReactNode;
+  joke: ReactNode;
+}
 
 export interface Student {
   id: string;
@@ -7,6 +20,7 @@ export interface Student {
   email?: string;
   teamName?: string;
   teamProjectUrl?: string;
+  profile?: StudentProfile;
   CardComponent: ComponentType<CardProps>;
   JokePageComponent: ComponentType<PageProps>;
 }

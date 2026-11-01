@@ -1,24 +1,23 @@
-import { CSSProperties } from "react";
-import { PageProps } from "../../types";
-import { solaProfiles } from "./solaProfiles";
-import styles from "./sola.module.css";
+import type { CSSProperties } from "react";
+import type { PageProps } from "../types";
+import styles from "./studentProfile.module.css";
 
 type ThemeProperties = CSSProperties & {
-  "--sola-background": string;
-  "--sola-foreground": string;
-  "--sola-muted": string;
-  "--sola-accent": string;
+  "--student-background": string;
+  "--student-foreground": string;
+  "--student-muted": string;
+  "--student-accent": string;
 };
 
-export default function SolaJokePage({ student, onBack }: PageProps) {
-  if (!student) return null;
+export default function StudentJokePage({ student, onBack }: PageProps) {
+  const profile = student?.profile;
+  if (!student || !profile) return null;
 
-  const profile = solaProfiles[student.id];
   const theme = {
-    "--sola-background": profile.background,
-    "--sola-foreground": profile.foreground,
-    "--sola-muted": profile.muted,
-    "--sola-accent": profile.accent,
+    "--student-background": profile.background,
+    "--student-foreground": profile.foreground,
+    "--student-muted": profile.muted,
+    "--student-accent": profile.accent,
   } as ThemeProperties;
 
   return (
