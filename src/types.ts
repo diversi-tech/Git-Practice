@@ -1,6 +1,18 @@
 import type { ComponentType, ReactNode } from "react";
 
-export type StudentProfilePattern = "dots" | "glow" | "grid" | "stripes" | "rays" | "clean";
+export type StudentProfilePattern =
+  | "clean"
+  | "dots"
+  | "grid"
+  | "stripes"
+  | "rays"
+  | "glow"
+  | "aurora"
+  | "checker"
+  | "confetti"
+  | "waves"
+  | "circuit"
+  | "spotlight";
 
 export interface StudentProfile {
   icon: string;

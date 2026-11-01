@@ -71,6 +71,63 @@
   opacity: 0.22;
 }
 
+.card.aurora::before,
+.jokePanel.aurora::after {
+  background-image:
+    radial-gradient(circle at 15% 20%, color-mix(in srgb, var(--student-accent) 42%, transparent), transparent 35%),
+    radial-gradient(circle at 85% 70%, color-mix(in srgb, var(--student-muted) 38%, transparent), transparent 38%);
+  opacity: 0.55;
+}
+
+.card.checker::before,
+.jokePanel.checker::after {
+  background-image: conic-gradient(
+    color-mix(in srgb, var(--student-accent) 18%, transparent) 25%,
+    transparent 0 50%,
+    color-mix(in srgb, var(--student-accent) 18%, transparent) 0 75%,
+    transparent 0
+  );
+  background-size: 30px 30px;
+  opacity: 0.45;
+}
+
+.card.confetti::before,
+.jokePanel.confetti::after {
+  background-image:
+    radial-gradient(circle, var(--student-accent) 0 2px, transparent 3px),
+    radial-gradient(circle, var(--student-muted) 0 2px, transparent 3px);
+  background-position: 0 0, 13px 17px;
+  background-size: 35px 39px;
+  opacity: 0.22;
+}
+
+.card.waves::before,
+.jokePanel.waves::after {
+  background-image: repeating-radial-gradient(
+    ellipse at 50% 115%,
+    transparent 0 17px,
+    color-mix(in srgb, var(--student-accent) 28%, transparent) 18px 20px
+  );
+  opacity: 0.42;
+}
+
+.card.circuit::before,
+.jokePanel.circuit::after {
+  background-image:
+    radial-gradient(circle, var(--student-accent) 0 2px, transparent 2.5px),
+    linear-gradient(color-mix(in srgb, var(--student-accent) 24%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in srgb, var(--student-accent) 24%, transparent) 1px, transparent 1px);
+  background-position: 0 0, 7px 7px, 7px 7px;
+  background-size: 28px 28px;
+  opacity: 0.28;
+}
+
+.card.spotlight::before,
+.jokePanel.spotlight::after {
+  background-image: radial-gradient(ellipse at 50% -10%, color-mix(in srgb, var(--student-accent) 55%, transparent), transparent 62%);
+  opacity: 0.48;
+}
+
 .card.clean::before,
 .jokePanel.clean::after {
   background: linear-gradient(135deg, transparent 45%, color-mix(in srgb, var(--student-accent) 16%, transparent));
