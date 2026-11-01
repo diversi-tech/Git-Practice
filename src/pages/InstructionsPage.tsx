@@ -12,130 +12,179 @@ export default function InstructionsPage() {
       <div className="instructions-container">
         <h1 className="instructions-title">📋 הוראות הפרויקט</h1>
 
-        {/* Branch hierarchy */}
         <section className="instructions-section">
           <h2>🌿 היררכיית הבראנצ'ים</h2>
           <p className="instructions-intro">
-            כל עבודה נעשית בבראנץ' נפרד. המיזוגים עוברים לפי הסדר הבא, מלמטה למעלה:
+            כל שינוי מתקדם מלמטה למעלה. פותחים PR רק אל הבראנץ' הבא בהיררכיה.
           </p>
           <div className="branch-tree">
             <div className="branch-level branch-main">
               <span className="branch-icon">🌳</span>
-              <code>main</code>
-              <span className="branch-desc">הבראנץ' הראשי — הגרסה הסופית</span>
+              <code>master</code>
+              <span className="branch-desc">הגרסה הסופית</span>
             </div>
             <div className="branch-connector">↑ merge</div>
             <div className="branch-level branch-team">
               <span className="branch-icon">👥</span>
-              <code>[שם-צוות]</code>
-              <span className="branch-desc">בראנץ' צוות</span>
+              <code>[צוות]</code>
+              <span className="branch-desc">לדוגמה: Vcomm</span>
             </div>
             <div className="branch-connector">↑ merge</div>
             <div className="branch-level branch-subteam">
               <span className="branch-icon">🤝</span>
-              <code>[שם-צוות]-[שם-תת-צוות]</code>
-              <span className="branch-desc">בראנץ' תת-צוות</span>
+              <code>[תת-צוות]</code>
+              <span className="branch-desc">לדוגמה: Vcomm_1</span>
             </div>
             <div className="branch-connector">↑ merge</div>
             <div className="branch-level branch-student">
               <span className="branch-icon">🙋</span>
-              <code>[שם-צוות]-[שם-תת-צוות]-[שם-שלי]</code>
-              <span className="branch-desc">הבראנץ' האישי שלך</span>
+              <code>[בראנץ' אישי]</code>
+              <span className="branch-desc">העבודה האישית שלך</span>
             </div>
           </div>
           <div className="branch-rule">
-            <strong>⚠️ חוק ברזל:</strong> יוצרים בראנץ' חדש תמיד מהבראנץ' שמעליך בהיררכיה, לא מ-main ישירות.
+            <strong>⚠️ חוק ברזל:</strong> צרי את הבראנץ' האישי מהבראנץ' המעודכן של תת-הצוות שלך. אל תפתחי PR אישי ישירות לצוות או ל-<code>master</code>.
           </div>
         </section>
 
-        {/* Steps */}
         <section className="instructions-section">
-          <h2>🚀 שלבי הוספת הבדיחה שלך</h2>
+          <h2>🚀 הוספת בדיחה</h2>
           <ol className="instructions-steps">
             <li>
-              <strong>צרי בראנץ' אישי</strong> מהבראנץ' של התת-צוות שלך:
-              <pre>{`git checkout [שם-צוות]-[שם-תת-צוות]\ngit pull\ngit checkout -b [שם-צוות]-[שם-תת-צוות]-[שם-שלי]`}</pre>
+              <strong>צרי בראנץ' אישי</strong> מתת-הצוות שלך:
+              <pre>{`git checkout [בראנץ'-תת-הצוות]
+git pull origin [בראנץ'-תת-הצוות]
+git checkout -b [הבראנץ'-האישי]`}</pre>
             </li>
             <li>
-              <strong>צרי תיקייה אישית</strong> בנתיב:
-              <pre>{`src/students/[שם-שלי-באנגלית]/`}</pre>
+              <strong>צרי תיקייה אישית</strong> בתוך התיקייה של הצוות שלך:
+              <pre>{`src/students/[שם-הצוות]/[השם-שלך-באנגלית]/`}</pre>
             </li>
             <li>
-              <strong>צרי 3 קבצים</strong> בתוך התיקייה:
+              <strong>צרי שלושה קבצים:</strong>
               <div className="file-list">
                 <div className="file-item">
                   <code>Card.tsx</code>
-                  <span>כרטיסיית הבדיחה שמופיעה בדף הבית</span>
+                  <span>כרטיס שמופיע בדף הבית</span>
                 </div>
                 <div className="file-item">
                   <code>JokePage.tsx</code>
-                  <span>עמוד הבדיחה המלא</span>
+                  <span>עמוד שמציג את הבדיחה המלאה</span>
                 </div>
                 <div className="file-item">
                   <code>styles.module.css</code>
-                  <span>עיצוב אישי</span>
+                  <span>עיצוב הכרטיס ועמוד הבדיחה</span>
                 </div>
               </div>
             </li>
             <li>
-              <strong>Card.tsx</strong> — מבנה בסיסי:
+              <strong>בני את הכרטיס</strong> עם אייקון או תמונה, כותרת קצרה בשורה אחת, שם, תת-צוות וכפתור נפרד לבדיחה:
               <pre>{`import styles from "./styles.module.css";
-import { CardProps } from "../../types";
+import { CardProps } from "../../../types";
 
-export default function [שמך]Card({ student, onClick }: CardProps) {
+export default function YourNameCard({ student, onClick }: CardProps) {
   return (
-    <div onClick={onClick} className={\`joke-card \${styles.card}\`}>
+    <div className={\`joke-card \${styles.card}\`}>
+      <span className={styles.icon} aria-hidden="true">😄</span>
       <h2 className={styles.title}>{student.jokeTitle}</h2>
-      <p className={styles.name}>{student.name}</p>
+      <a className={styles.name} href={\`mailto:\${student.email}\`}>
+        {student.name}
+      </a>
+      {student.teamProjectUrl ? (
+        <a className={styles.team} href={student.teamProjectUrl}>
+          צוות {student.teamName}
+        </a>
+      ) : (
+        <span className={styles.team}>צוות {student.teamName}</span>
+      )}
+      <button className={styles.action} type="button" onClick={onClick}>
+        לבדיחה ←
+      </button>
     </div>
   );
 }`}</pre>
+              <p>
+                כתובת האימייל מוסתרת: מציגים רק את השם, והשם הוא קישור <code>mailto:</code>. הכרטיס כולו אינו לחיץ כדי שלא יחסום את קישור האימייל.
+              </p>
             </li>
             <li>
-              <strong>JokePage.tsx</strong> — מבנה בסיסי:
-              <pre>{`import styles from "./styles.module.css";
-import { PageProps } from "../../types";
+              <strong>הוסיפי את כללי העיצוב החשובים:</strong>
+              <pre>{`.card { cursor: default; }
 
-export default function [שמך]JokePage({ onBack }: PageProps) {
+.title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.name { text-decoration: none; }
+.name:hover { text-decoration: underline; }`}</pre>
+              <p>השם מקבל קו תחתון רק במעבר עכבר, והכותרת אינה שוברת את מבנה הכרטיס.</p>
+            </li>
+            <li>
+              <strong>בני את עמוד הבדיחה</strong> כך שיציג את כל הבדיחה, כולל הפתיח והתשובה. השתמשי באותם צבעים של הכרטיס:
+              <pre>{`import styles from "./styles.module.css";
+import { PageProps } from "../../../types";
+
+export default function YourNameJokePage({ onBack }: PageProps) {
   return (
     <div className={\`joke-page \${styles.jokePage}\`}>
-      <p>כותרת הבדיחה</p>
+      <p>פתיח הבדיחה</p>
       <p>תשובת הבדיחה</p>
-      <button onClick={onBack}>← חזרה</button>
+      <button type="button" onClick={onBack}>← חזרה</button>
     </div>
   );
 }`}</pre>
             </li>
             <li>
-              <strong>הוסיפי את עצמך</strong> לקובץ <code>src/students/index.ts</code> — <strong>לפי סדר האלף-בית העברי של שם המשפחה, ידנית, ללא sort!</strong>
+              <strong>רשמי את עצמך</strong> בתחילת המערך בקובץ <code>src/students/[שם-הצוות]/index.ts</code>. כל הצוות משתף את אותו קובץ כדי לתרגל פתרון קונפליקטים, והרשומות מסודרות מהחדשה לישנה:
               <pre>{`{
-  id: "[שם-שלי-באנגלית]",
-  name: "[שם מלא בעברית]",
-  jokeTitle: "[כותרת קצרה לטאב]",
-  CardComponent: [שמך]Card,
-  JokePageComponent: [שמך]JokePage,
+  id: "[השם-שלך-באנגלית]",
+  name: "[השם-המלא]",
+  jokeTitle: "[כותרת קצרה בשורה אחת]",
+  email: "[כתובת אימייל]",
+  teamName: "[השם המדויק של תת-הצוות]",
+  teamProjectUrl: "",
+  CardComponent: YourNameCard,
+  JokePageComponent: YourNameJokePage,
 },`}</pre>
+              <p>
+                השאירי <code>teamProjectUrl: ""</code> עד שיהיה קישור לפרויקט הצוות. בינתיים שם הצוות יוצג כטקסט רגיל.
+              </p>
             </li>
             <li>
-              <strong>Commit ו-Push</strong> לבראנץ' האישי:
-              <pre>{`git add src/students/[שם-שלי-באנגלית]/\ngit add src/students/index.ts\ngit commit -m "add: [שמך] joke"\ngit push -u origin [שם-הבראנץ'-שלך]`}</pre>
+              <strong>בדקי, שמרי ודחפי:</strong>
+              <pre>{`npm run build
+git add src/students/[שם-הצוות]/[השם-שלך-באנגלית]/ src/students/[שם-הצוות]/index.ts
+git commit -m "add: [השם-שלך] joke"
+git push -u origin [הבראנץ'-האישי]`}</pre>
             </li>
           </ol>
         </section>
 
-        {/* Merge flow */}
         <section className="instructions-section">
-          <h2>🔀 סדר המיזוגים</h2>
+          <h2>🔍 Preview, אישור ומיזוג</h2>
           <ol className="merge-steps">
-            <li>כל תלמידה פותחת <strong>Pull Request</strong> מהבראנץ' שלה אל בראנץ' התת-צוות</li>
-            <li>פותרים קונפליקטים — <strong>הסדר ב-index.ts חייב להישמר לפי א"ב!</strong></li>
-            <li>תת-הצוות פותחת PR מהבראנץ' שלה אל בראנץ' הצוות</li>
-            <li>פותרים קונפליקטים שוב</li>
-            <li>הצוות פותח PR מהבראנץ' שלו אל <code>main</code></li>
+            <li>פתחי PR מהבראנץ' האישי אל תת-הצוות שהוקצה לך.</li>
+            <li>המתיני עד ש-<strong>Pull Request Preview</strong> יעבור בהצלחה.</li>
+            <li>פתחי את קישור ה-GitHub Pages שהבוט מוסיף ל-PR.</li>
+            <li>בדקי את הכרטיס, קישור האימייל, שם תת-הצוות, כפתור הבדיחה, עמוד הבדיחה המלא, הצבעים והכותרת.</li>
+            <li>מזגי רק אחרי אישור מפורש.</li>
+            <li>מחקי את בראנץ' המקור רק אחרי ש-GitHub מאשר שהמיזוג הסתיים.</li>
           </ol>
           <div className="branch-rule">
-            <strong>💡 טיפ חשוב:</strong> לפני כל PR — עשו <code>git pull</code> מבראנץ' היעד כדי להביא שינויים חדשים ולפתור קונפליקטים מקומית לפני ה-push.
+            <strong>💡 אחרי כל מיזוג:</strong> אם יש PR נוסף לאותו יעד, עדכני אותו מבראנץ' היעד החדש, פתרי את <code>src/students/[שם-הצוות]/index.ts</code> בסדר חדש-לישן, הריצי build ובדקי Preview חדש. אין לאשר Preview שנוצר מול יעד ישן.
           </div>
+        </section>
+
+        <section className="instructions-section">
+          <h2>🔀 קידום בין הרמות</h2>
+          <ol className="merge-steps">
+            <li>ממזגים כל תלמידה לתת-הצוות, PR אחד בכל פעם.</li>
+            <li>פותחים PR מכל תת-צוות אל בראנץ' הצוות, ומעדכנים את ה-PR הבא אחרי כל מיזוג.</li>
+            <li>לאחר שכל תתי-הצוות מוזגו, פותחים PR אחד מהצוות אל <code>master</code>.</li>
+            <li>בכל רמה נדרשים build תקין, Preview מעודכן ואישור מפורש לפני המיזוג.</li>
+          </ol>
         </section>
       </div>
     </div>

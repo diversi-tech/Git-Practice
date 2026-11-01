@@ -45,8 +45,98 @@ body {
 }
 
 .home-header p {
+  max-width: 680px;
+  margin: 0 auto;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.home-controls {
+  position: sticky;
+  top: 0.75rem;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: 1100px;
+  margin: 0 auto 2rem;
+}
+
+.home-controls-logo {
+  width: 0;
+  height: 60px;
+  padding: 0;
+  flex: 0 0 auto;
+  object-fit: contain;
+  background: whitesmoke;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(0.75);
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.25));
+  transition: width 0.2s ease, padding 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
+  pointer-events: none;
+}
+
+.home-controls-logo--visible {
+  width: 60px;
+  padding: 4px;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.student-filters {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  flex: 1;
+  margin: 0;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 16px;
+  backdrop-filter: blur(6px);
+}
+
+.student-filters label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.student-filters select,
+.student-filters input {
+  width: 100%;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 9px;
+  background: #fff;
+  color: #2b2358;
+  font: inherit;
+}
+
+.student-filters select {
+  appearance: none;
+  padding-left: 2.75rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='8' viewBox='0 0 14 8'%3E%3Cpath d='m1 1 6 6 6-6' fill='none' stroke='%232b2358' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: left 1rem center;
+  background-size: 0.75rem;
+  cursor: pointer;
+}
+
+.student-filters select:focus-visible,
+.student-filters input:focus-visible {
+  outline: 3px solid rgba(255, 255, 255, 0.55);
+  outline-offset: 2px;
+}
+
+.student-filters-empty {
+  color: #fff;
+  text-align: center;
   font-size: 1.1rem;
-  opacity: 0.85;
 }
 
 .cards-grid {
@@ -56,6 +146,32 @@ body {
   max-width: 1100px;
   margin: 0 auto;
   padding: 5px;
+}
+
+@media (max-width: 760px) {
+  .home-controls {
+    position: static;
+    flex-direction: column;
+  }
+
+  .home-controls-logo,
+  .home-controls-logo--visible {
+    display: none;
+  }
+
+  .student-filters {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+
+  .home-controls .home-header-btns {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .home-controls .instructions-btn {
+    flex: 1;
+  }
 }
 
 /* ─── Shared card base ─────────────────────────────────────── */
@@ -97,19 +213,19 @@ body {
 /* ─── Homepage header buttons ──────────────────────────────── */
 .home-header-btns {
   display: flex;
-  gap: 0.8rem;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 1rem;
+  flex-direction: column;
+  gap: 0.55rem;
+  flex-shrink: 0;
 }
 
 .instructions-btn {
   background: rgba(255, 255, 255, 0.15);
   color: #fff;
-  border: 2px solid rgba(255, 255, 255, 0.6);
-  border-radius: 30px;
-  padding: 0.6rem 1.6rem;
-  font-size: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  padding: 0.45rem 0.9rem;
+  font-size: 0.82rem;
+  white-space: nowrap;
   font-family: inherit;
   cursor: pointer;
   backdrop-filter: blur(4px);

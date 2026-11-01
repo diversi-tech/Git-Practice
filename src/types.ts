@@ -1,9 +1,38 @@
-import { ComponentType } from "react";
+import type { ComponentType, ReactNode } from "react";
+
+export type StudentProfilePattern =
+  | "clean"
+  | "dots"
+  | "grid"
+  | "stripes"
+  | "rays"
+  | "glow"
+  | "aurora"
+  | "checker"
+  | "confetti"
+  | "waves"
+  | "circuit"
+  | "spotlight";
+
+export interface StudentProfile {
+  icon: string;
+  pattern: StudentProfilePattern;
+  background: string;
+  foreground: string;
+  muted: string;
+  accent: string;
+  artwork?: ReactNode;
+  joke: ReactNode;
+}
 
 export interface Student {
   id: string;
   name: string;
   jokeTitle: string;
+  email?: string;
+  teamName?: string;
+  teamProjectUrl?: string;
+  profile?: StudentProfile;
   CardComponent: ComponentType<CardProps>;
   JokePageComponent: ComponentType<PageProps>;
 }
@@ -15,6 +44,7 @@ export interface CardProps {
 
 export interface PageProps {
   onBack: () => void;
+  student?: Student;
 }
 
 // Branch graph types
