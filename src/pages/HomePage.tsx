@@ -6,6 +6,10 @@ function getTeamName(subteamName?: string) {
   return subteamName?.replace(/[-_]\d+$/, "") ?? "";
 }
 
+function getSubteamNumber(subteamName?: string) {
+  return subteamName?.match(/[-_](\d+)$/)?.[1] ?? "";
+}
+
 export default function HomePage() {
   const navigate = useNavigate();
   const [team, setTeam] = useState("");
@@ -30,8 +34,8 @@ export default function HomePage() {
       ...new Set(
         students
           .filter((student) => !team || getTeamName(student.teamName) === team)
-          .map((student) => student.teamName)
-          .filter((value): value is string => Boolean(value)),
+          .map((student) => getSubteamNumber(student.teamName))
+          .filter(Boolean),
       ),
     ].sort(),
     [team],
@@ -40,7 +44,7 @@ export default function HomePage() {
   const normalizedName = name.trim().toLocaleLowerCase("he");
   const filteredStudents = students.filter((student) =>
     (!team || getTeamName(student.teamName) === team) &&
-    (!subteam || student.teamName === subteam) &&
+    (!subteam || getSubteamNumber(student.teamName) === subteam) &&
     (!normalizedName || student.name.toLocaleLowerCase("he").includes(normalizedName)),
   );
 
