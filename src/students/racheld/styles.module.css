@@ -1,0 +1,119 @@
+/* כרטיס הטרמינל הכללי */
+.card {
+  background-color: #0c1017;
+  border: 2px solid #2ea043;
+  border-radius: 12px;
+  padding: 20px;
+  min-height: 180px;
+  font-family: 'Courier New', Courier, monospace;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* אפקט ריחוף זז ומאיר */
+.card:hover {
+  animation: floatCard 2s ease-in-out infinite alternate;
+  border-color: #39ff14; /* הדגשת המסגרת בירוק זוהר בריחוף */
+  box-shadow: 0 12px 28px rgba(57, 255, 20, 0.25);
+}
+
+/* נקודות של חלון מערכת הפעלה */
+.card::before {
+  content: "● ● ●";
+  position: absolute;
+  top: 8px;
+  left: 15px;
+  color: #ff5f56;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+/* כותרת הבדיחה - טקסט ירוק מטריקס */
+.title {
+  color: #39ff14;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  text-align: right;
+  direction: rtl;
+}
+
+/* אריזת השם כדי לאפשר אנימציית כתיבה */
+.name {
+  color: #8b949e;
+  font-size: 0.9rem;
+  text-align: right;
+  direction: rtl;
+  margin: 0;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  border-left: 2px solid #39ff14; /* הסמן המהבהב */
+  animation: 
+    typing 3s steps(15, end) infinite alternate,
+    blink 0.75s step-end infinite;
+}
+
+/* סימן ה- $ המקדים בטרמינל */
+.name::before {
+  content: "$ ";
+  color: #58a6ff;
+}
+
+/* --- הגדרת האנימציות (Keyframes) --- */
+
+/* 1. אנימציית כתיבה (מרוקן את הטקסט וממלא אותו מחדש) */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* 2. אנימציית הבהוב של הסמן */
+@keyframes blink {
+  from, to { border-color: transparent; }
+  50% { border-color: #39ff14; }
+}
+
+/* 3. אנימציית תנועה עדינה למעלה ולמטה בריחוף */
+@keyframes floatCard {
+  from { transform: translateY(0); }
+  to { transform: translateY(-6px); }
+}
+
+/* עיצוב עמוד הבדיחה הפנימי */
+.jokePage {
+  max-width: 650px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #0c1017;
+  border: 2px solid #58a6ff;
+  border-radius: 12px;
+  color: #ffffff;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.jokePage button {
+  background-color: #21262d;
+  color: #c9d1d9;
+  border: 1px solid #30363d;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 25px;
+  transition: 0.2s;
+}
+
+.jokePage button:hover {
+  background-color: #30363d;
+  border-color: #8b949e;
+}
