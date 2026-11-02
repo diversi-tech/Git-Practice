@@ -1,5 +1,6 @@
 import { Student } from "../types";
 import catalystIqStudents from "./catalystiq";
+import johnnyUpdateStudents from "./johnny-update";
 import kyatraStudents from "./kyatra";
 import solaStudents from "./sola";
 import vcommStudents from "./vcomm";
@@ -9,6 +10,7 @@ import ChaniChanzinCard from "./chani-chanzin/Card";
 import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
 
 const students: Student[] = [
+  ...johnnyUpdateStudents,
   ...kyatraStudents,
   ...catalystIqStudents,
   ...solaStudents,

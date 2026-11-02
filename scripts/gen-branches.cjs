@@ -10,9 +10,7 @@ const OUT_FILE = path.join(ROOT, 'src', 'generated', 'branches.ts');
 
 function exec(cmd) {
   try {
-    // Capture stdout while silencing stderr so git warnings/errors don't
-    // flood the dev console when running on machines without all refs.
-    return execSync(cmd, { cwd: ROOT, encoding: 'utf8', stdio: ['pipe', 'pipe', 'ignore'] }).trim();
+    return execSync(cmd, { cwd: ROOT, encoding: 'utf8' }).trim();
   } catch {
     return '';
   }
@@ -34,31 +32,12 @@ function getCurrentBranch() {
   return exec('git rev-parse --abbrev-ref HEAD');
 }
 
-function resolveRef(branch) {
-  const localRef = `refs/heads/${branch}`;
-  const remoteRef = `refs/remotes/origin/${branch}`;
-
-  if (exec(`git rev-parse --verify --quiet ${localRef}`)) {
-    return localRef;
-  }
-
-  if (exec(`git rev-parse --verify --quiet ${remoteRef}`)) {
-    return remoteRef;
-  }
-
-  return "";
-}
-
 function getTip(branch) {
-  const ref = resolveRef(branch);
-  return ref ? exec(`git rev-parse ${ref}`) : "";
+  return exec(`git rev-parse ${branch}`);
 }
 
 function getMergeBase(a, b) {
-  const aRef = resolveRef(a);
-  const bRef = resolveRef(b);
-  if (!aRef || !bRef) return "";
-  return exec(`git merge-base ${aRef} ${bRef}`);
+  return exec(`git merge-base ${a} ${b}`);
 }
 
 function getCommitTimestamp(hash) {
@@ -67,13 +46,11 @@ function getCommitTimestamp(hash) {
 }
 
 function getShortHash(branch) {
-  const ref = resolveRef(branch);
-  return ref ? exec(`git rev-parse --short ${ref}`) : "";
+  return exec(`git rev-parse --short ${branch}`);
 }
 
 function getLastCommitMessage(branch) {
-  const ref = resolveRef(branch);
-  return ref ? exec(`git log -1 --format=%s ${ref}`) : "";
+  return exec(`git log -1 --format=%s ${branch}`);
 }
 
 // ── Parent detection ─────────────────────────────────────────
