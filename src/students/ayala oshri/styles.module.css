@@ -1,0 +1,411 @@
+/* ================================================
+   🛁  BATH TIME KITSCH THEME
+   Bright, bubbly, playful – because code needs baths too
+   ================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Varela+Round&display=swap');
+
+/* ── CSS Variables ─────────────────────────── */
+:root {
+  --bath-blue: #b3e5fc;
+  --bath-teal: #4dd0e1;
+  --bath-sky: #e1f5fe;
+  --foam-white: #ffffff;
+  --duck-yellow: #fff176;
+  --duck-orange: #ffb300;
+  --bubble-pink: #f8bbd0;
+  --bubble-lavender: #e1bee7;
+  --soft-mint: #c8e6c9;
+  --text-deep: #1a3a4a;
+  --text-mid: #2d6a8a;
+  --shadow-blue: rgba(77, 208, 225, 0.35);
+  --radius-card: 28px;
+  --radius-pill: 50px;
+}
+
+/* ── CARD ──────────────────────────────────── */
+.card {
+  position: relative;
+  overflow: hidden;
+  direction: rtl;
+  font-family: 'Fredoka One', 'Varela Round', sans-serif;
+
+  /* Bath-tile checkerboard feel via gradient mesh */
+  background:
+    radial-gradient(ellipse at 20% 20%, #e0f7fa 0%, transparent 55%),
+    radial-gradient(ellipse at 80% 80%, #fce4ec 0%, transparent 55%),
+    radial-gradient(ellipse at 80% 20%, #f3e5f5 0%, transparent 50%),
+    radial-gradient(ellipse at 20% 80%, #e8f5e9 0%, transparent 50%),
+    #dff6fd;
+
+  border: 3px solid var(--bath-teal);
+  border-radius: var(--radius-card);
+  padding: 32px 28px 24px;
+  min-width: 240px;
+  max-width: 320px;
+  cursor: pointer;
+  box-shadow:
+    0 8px 32px var(--shadow-blue),
+    0 2px 8px rgba(0,0,0,0.08),
+    inset 0 1px 0 rgba(255,255,255,0.9);
+
+  transition: transform 0.22s cubic-bezier(.34,1.56,.64,1),
+              box-shadow 0.22s ease;
+}
+
+/* Wet-glass shimmer overlay */
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(255,255,255,0.55) 0%,
+    rgba(255,255,255,0.05) 50%,
+    rgba(180,230,250,0.15) 100%
+  );
+  pointer-events: none;
+  border-radius: var(--radius-card);
+}
+
+/* Wavy bottom border */
+.card::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 48px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 48'%3E%3Cpath d='M0 24 Q50 0 100 24 T200 24 T300 24 T400 24 V48 H0Z' fill='%234dd0e1' opacity='0.18'/%3E%3C/svg%3E") repeat-x bottom;
+  pointer-events: none;
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow:
+    0 18px 48px var(--shadow-blue),
+    0 4px 12px rgba(0,0,0,0.1),
+    inset 0 1px 0 rgba(255,255,255,0.9);
+}
+
+.card:active {
+  transform: translateY(-2px) scale(0.99);
+}
+
+/* ── Duck icon ─────────────────────────────── */
+.duckIcon {
+  font-size: 2.6rem;
+  text-align: center;
+  margin-bottom: 10px;
+  filter: drop-shadow(0 3px 6px rgba(0,0,0,0.12));
+  animation: wobble 2.8s ease-in-out infinite;
+}
+
+@keyframes wobble {
+  0%, 100% { transform: rotate(-5deg) scale(1); }
+  50%       { transform: rotate(5deg) scale(1.07); }
+}
+
+/* ── Card Title ────────────────────────────── */
+.title {
+  font-family: 'Fredoka One', sans-serif;
+  font-size: 1.4rem;
+  color: var(--text-deep);
+  text-align: center;
+  margin: 0 0 10px;
+  line-height: 1.3;
+  text-shadow: 0 2px 0 rgba(255,255,255,0.8);
+  letter-spacing: 0.02em;
+}
+
+/* ── Student Name ──────────────────────────── */
+.name {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 0.95rem;
+  color: var(--text-mid);
+  text-align: center;
+  margin: 0;
+  background: rgba(255,255,255,0.65);
+  padding: 4px 16px;
+  border-radius: var(--radius-pill);
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  backdrop-filter: blur(4px);
+}
+
+/* ── Card footer ───────────────────────────── */
+.cardFooter {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.clickHint {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 0.8rem;
+  color: var(--bath-teal);
+  background: rgba(255,255,255,0.7);
+  padding: 3px 14px;
+  border-radius: var(--radius-pill);
+  border: 1.5px dashed var(--bath-teal);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.55; }
+}
+
+/* ── Bubble decorations on card ────────────── */
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, rgba(255,255,255,0.85), rgba(180,235,255,0.3));
+  border: 1.5px solid rgba(100,210,240,0.5);
+  pointer-events: none;
+  animation: floatBubble 3.5s ease-in-out infinite alternate;
+}
+
+@keyframes floatBubble {
+  0%   { transform: translateY(0) scale(1); opacity: 0.7; }
+  100% { transform: translateY(-6px) scale(1.1); opacity: 1; }
+}
+
+
+/* ════════════════════════════════════════════
+   🛁  JOKE PAGE
+   ════════════════════════════════════════════ */
+
+.jokePage {
+  position: relative;
+  direction: rtl;
+  font-family: 'Fredoka One', 'Varela Round', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 20px;
+  overflow: hidden;
+
+  /* Sky-blue + foam gradient background */
+  background:
+    radial-gradient(ellipse at 15% 15%, #fff9c4 0%, transparent 40%),
+    radial-gradient(ellipse at 85% 85%, #f8bbd0 0%, transparent 40%),
+    radial-gradient(ellipse at 85% 15%, #b3e5fc 0%, transparent 45%),
+    radial-gradient(ellipse at 15% 85%, #c8e6c9 0%, transparent 45%),
+    linear-gradient(160deg, #e1f5fe 0%, #fce4ec 50%, #e8f5e9 100%);
+}
+
+/* ── Floating animated bubbles bg ─────────── */
+.bubblesContainer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.floatingBubble {
+  position: absolute;
+  bottom: -40px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, rgba(255,255,255,0.9), rgba(180,235,255,0.25));
+  border: 1.5px solid rgba(120,210,240,0.45);
+  animation: rise linear infinite;
+}
+
+@keyframes rise {
+  0%   { transform: translateY(0) scale(0.8); opacity: 0; }
+  10%  { opacity: 0.7; }
+  90%  { opacity: 0.5; }
+  100% { transform: translateY(-110vh) scale(1.15); opacity: 0; }
+}
+
+/* ── Top decorative emoji row ──────────────── */
+.topDecor {
+  display: flex;
+  gap: 18px;
+  font-size: 1.8rem;
+  margin-bottom: 28px;
+  position: relative;
+  z-index: 2;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.12));
+}
+
+.topDecor span {
+  animation: bounce 1.8s ease-in-out infinite;
+}
+.topDecor span:nth-child(2) { animation-delay: 0.2s; }
+.topDecor span:nth-child(3) { animation-delay: 0.4s; }
+.topDecor span:nth-child(4) { animation-delay: 0.6s; }
+.topDecor span:nth-child(5) { animation-delay: 0.8s; }
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0);   }
+  50%       { transform: translateY(-8px); }
+}
+
+/* ── Main Joke Card ────────────────────────── */
+.jokeCard {
+  position: relative;
+  z-index: 2;
+  background:
+    radial-gradient(ellipse at 10% 10%, rgba(255,255,255,0.9) 0%, transparent 60%),
+    rgba(255,255,255,0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 3px solid var(--bath-teal);
+  border-radius: 36px;
+  padding: 36px 40px;
+  max-width: 480px;
+  width: 100%;
+  box-shadow:
+    0 16px 48px rgba(77,208,225,0.28),
+    0 4px 16px rgba(0,0,0,0.08),
+    inset 0 2px 0 rgba(255,255,255,0.95);
+
+  /* Entrance animation */
+  animation: slideUp 0.55s cubic-bezier(.34,1.56,.64,1) both;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(40px) scale(0.95); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* Wavy top ribbon */
+.jokeCard::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 54px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 54'%3E%3Cpath d='M0 32 Q60 8 120 32 T240 32 T360 32 T480 32 V0 H0Z' fill='%234dd0e1' opacity='0.22'/%3E%3C/svg%3E") no-repeat top;
+  border-radius: 36px 36px 0 0;
+  pointer-events: none;
+}
+
+/* ── Joke header ───────────────────────────── */
+.jokeHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.questionMark {
+  width: 38px;
+  height: 38px;
+  background: linear-gradient(135deg, var(--duck-yellow), var(--duck-orange));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #5d4000;
+  box-shadow: 0 3px 10px rgba(255,179,0,0.35);
+  line-height: 38px;
+  text-align: center;
+}
+
+.jokeLabel {
+  font-family: 'Fredoka One', sans-serif;
+  font-size: 1.2rem;
+  color: var(--text-mid);
+  margin: 0;
+  letter-spacing: 0.04em;
+}
+
+/* ── Question block ────────────────────────── */
+.questionBlock {
+  background: linear-gradient(135deg, #e3f7ff, #f0fbff);
+  border-radius: 20px;
+  padding: 20px 24px;
+  border: 2px solid rgba(77,208,225,0.4);
+  margin-bottom: 18px;
+}
+
+.jokeQuestion {
+  font-family: 'Fredoka One', sans-serif;
+  font-size: 1.25rem;
+  color: var(--text-deep);
+  text-align: center;
+  margin: 0;
+  line-height: 1.55;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+}
+
+/* ── Divider ───────────────────────────────── */
+.dividerRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 6px 0 18px;
+}
+
+.dividerLine {
+  flex: 1;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--bath-teal), transparent);
+  border-radius: 2px;
+}
+
+.dividerEmoji {
+  font-size: 1.1rem;
+}
+
+/* ── Answer block ──────────────────────────── */
+.answerBlock {
+  background: linear-gradient(135deg, #fff8e1, #fffde7);
+  border-radius: 20px;
+  padding: 20px 24px;
+  border: 2px solid rgba(255,202,40,0.45);
+}
+
+.jokeAnswer {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 1.1rem;
+  color: var(--text-deep);
+  text-align: center;
+  margin: 0;
+  line-height: 1.7;
+}
+
+.jokeAnswer strong {
+  font-family: 'Fredoka One', sans-serif;
+  font-size: 1.15rem;
+  color: #b45309;
+  display: block;
+  margin-top: 6px;
+}
+
+/* ── Back button ───────────────────────────── */
+.backButton {
+  position: relative;
+  z-index: 2;
+  margin-top: 28px;
+  padding: 12px 36px;
+  font-family: 'Fredoka One', sans-serif;
+  font-size: 1.05rem;
+  color: var(--foam-white);
+  background: linear-gradient(135deg, var(--bath-teal) 0%, #26c6da 100%);
+  border: none;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  box-shadow:
+    0 6px 20px rgba(77,208,225,0.45),
+    0 2px 6px rgba(0,0,0,0.1);
+  letter-spacing: 0.04em;
+  transition: transform 0.18s cubic-bezier(.34,1.56,.64,1),
+              box-shadow 0.18s ease;
+}
+
+.backButton:hover {
+  transform: translateY(-3px) scale(1.04);
+  box-shadow:
+    0 12px 28px rgba(77,208,225,0.5),
+    0 4px 10px rgba(0,0,0,0.1);
+}
+
+.backButton:active {
+  transform: scale(0.97);
+}
