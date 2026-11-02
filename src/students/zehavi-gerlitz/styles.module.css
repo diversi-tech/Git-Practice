@@ -1,0 +1,106 @@
+/* --- עיצוב כרטיס הבייגלה (כרטיס גדול, פרטים קטנים) --- */
+.card {
+  background: linear-gradient(135deg, #fff7e6 0%, #fff1d6 100%);
+  border: 3px solid #6c584c;
+  border-radius: 28px;
+  padding: 30px 24px;         /* החזרת המרווח הפנימי המלא */
+  max-width: 340px;          /* החזרת הרוחב המלא של הכרטיס המקורי */
+  min-height: 240px;         /* החזרת הגובה המלא של הכרטיס המקורי */
+  box-shadow: 0 8px 24px rgba(108, 88, 76, 0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  direction: rtl;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(108, 88, 76, 0.22);
+}
+
+/* אמוג'י עליון בגודל המלא */
+.emojiContainer {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+
+/* כותרת הבדיחה בגודל המלא והבולט */
+.title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #432818;
+  margin: 0 0 6px 0;
+  line-height: 1.3;
+}
+
+/* שם השולח - נשאר קטן ועדין לבקשתך */
+.name {
+  font-size: 0.85rem;        /* גודל קטן ומעודן */
+  color: #6c584c;
+  margin: 0 0 20px 0;
+  font-weight: normal;       /* ללא הדגשה מוגזמת */
+}
+
+/* כפתור "לחצי לצחוק" - נשאר בגודל קטן, נורמלי ופרופורציונלי לבקשתך */
+.button {
+  background-color: #588157;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 18px;         /* רווח פנימי קטן המונע כפתור ענק */
+  font-size: 0.9rem;         /* גופן קטן ונורמלי */
+  font-weight: 600;
+  pointer-events: none;
+  box-shadow: 0 2px 6px rgba(88, 129, 87, 0.15);
+}
+/* --- עיצוב עמוד הבדיחה הפנימי (נקי, מעודן ולא משתלט) --- */
+.jokePage {
+  background-color: #ffffff;    /* רקע לבן נקי לחלוטין */
+  border: 1px solid #e2e8f0;    /* מסגרת אפורה דקה ועדינה מאוד */
+  border-radius: 16px;          /* פינות עגולות סטנדרטיות */
+  padding: 32px 24px;           /* מרווח פנימי פרופורציונלי */
+  max-width: 450px;             /* רוחב מיושר ונורמלי */
+  margin: 30px auto;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04); /* צללית קלילה כמעט בלתי מורגשת */
+  direction: rtl;
+}
+
+/* כותרת הבדיחה (השאלה) בעמוד הפנימי */
+.pageTitle {
+  font-size: 1.4rem;            /* הקטנת גודל הגופן למראה מעודן */
+  color: #1e293b;               /* צבע כהה קלאסי ורגיל */
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+/* תשובת הבדיחה */
+.jokeAnswer {
+  font-size: 1.6rem;            /* הקטנה משמעותית מגודל ענק לגודל קריא ונורמלי */
+  font-weight: 700;
+  color: #4f46e5;               /* צבע אינדיגו/כחול קלאסי ורגוע יותר מהזהב */
+  margin-bottom: 28px;
+}
+
+/* כפתור החזרה */
+.backButton {
+  background-color: #64748b;    /* צבע אפור-סלייט ניטרלי ומקצועי */
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;           /* פינות עגולות עדינות */
+  padding: 8px 20px;            /* גודל כפתור סטנדרטי לחלוטין */
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.backButton:hover {
+  background-color: #475569;    /* כהות עדינה בריחוף */
+}
