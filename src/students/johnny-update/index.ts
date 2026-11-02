@@ -39,7 +39,7 @@ const johnnyUpdateStudents: Student[] = [
   createStudent({ id: "lital-shamanov", name: "ליטל שמנוב", jokeTitle: "באגים בטבע", email: "lital122105@gmail.com", teamName: "Johnny Update-2", teamProjectUrl: "" }, litalShamanov),
   createStudent({ id: "chaviva-seiff", name: "חביבה סייף", jokeTitle: "באגים מחוץ למערכת", email: "chavivarocks@gmail.com", teamName: "Johnny Update-2", teamProjectUrl: "" }, chavivaSeiff),
   createStudent({ id: "maayan-shoukron", name: "מעיין שוקרון", jokeTitle: "החלב הצוחק", email: "mayan.shou@gmail.com", teamName: "Johnny Update-2", teamProjectUrl: "" }, maayanShoukron),
-  createStudent({ id: "sara-rafalowitz", name: "שרה רפאלוביץ׳", jokeTitle: "השניצל והחומוס", email: "s0533132366@gmail.com", teamName: "Johnny Update-2", teamProjectUrl: "" }, saraRafalowitz),
+  createStudent({ id: "sara-rafalowitz", name: "שרה רפאלוביץ׳", jokeTitle: "הטיסה והחומוס", email: "s0533132366@gmail.com", teamName: "Johnny Update-2", teamProjectUrl: "" }, saraRafalowitz),
   createStudent({ id: "zehavi-gerlitz", name: "זהבי גרליץ", jokeTitle: "כעכים או כאחים?", email: "chanigerlitz@gmail.com", teamName: "Johnny Update-3", teamProjectUrl: "" }, zehaviGerlitz),
   createStudent({ id: "eti-munk", name: "אתי מונק", jokeTitle: "לאכול עם כף", email: "eti43357@gmail.com", teamName: "Johnny Update-3", teamProjectUrl: "" }, etiMunk),
 ];
