@@ -6,43 +6,39 @@ import DanaDuviJokePage from "./dana-duvi/JokePage";
 import TehilaCard from "./Tehila/Card";
 import TehilaJokePage from "./Tehila/JokePage";
 
-
 import ChaniChanzinCard from "./chani-chanzin/Card";
 import ChaniChanzinJokePage from "./chani-chanzin/JokePage";
 
 import ShiraChassidaCard from "./shira-chassida/Card";
 import ShiraChassidaJokePage from "./shira-chassida/JokePage";
 
+import ShirazekriCard from "./shira-zekri/Card";
+import ShirazekriJokePage from "./shira-zekri/JokePage";
+
+import SaritCard from "./sarit-cohen/Card";
 import SaritJokePage from "./sarit-cohen/JokePage";
 
 import MichaleCard from "./michale/Card";
 import michaleJokePage from "./michale/JokePage";
-import SaritCard from "./sarit-cohen/Card";
 
 import AdiCard from "./adi-tamir/Card";
 import AdiJokePage from "./adi-tamir/JokePage";
 
-// ⚠️ סדר הרשימה חייב להיות לפי סדר האלף-בית העברי לפי שם המשפחה.
-// כל תלמידה מוסיפה את עצמה במקום הנכון ידנית.
-// אסור להשתמש בפונקציית-sort! 
 const students: Student[] = [
-
-{
-  id: "michale",
-  name: "מיכל אילוז",
-  jokeTitle: "בדיחת קרש",
-  CardComponent: MichaleCard,
-  JokePageComponent: michaleJokePage,
-},
-
-    {
+  {
+    id: "michale",
+    name: "מיכל אילוז",
+    jokeTitle: "בדיחת קרש",
+    CardComponent: MichaleCard,
+    JokePageComponent: michaleJokePage,
+  },
+  {
     id: "efrat-gibraltar",
     name: "אפרת גיברלטר",
     jokeTitle: "חדשות רעות",
     CardComponent: EfratGibraltarCard,
     JokePageComponent: EfratGibraltarJokePage,
   },
-
   {
     id: "dana-duvi",
     name: "דנה דובי",
@@ -50,15 +46,13 @@ const students: Student[] = [
     CardComponent: DanaDuviCard,
     JokePageComponent: DanaDuviJokePage,
   },
-
-     {
+  {
     id: "Tehila",
     name: "תהילה חדד",
-    jokeTitle: "Merge ",
+    jokeTitle: "Merge",
     CardComponent: TehilaCard,
     JokePageComponent: TehilaJokePage,
   },
-
   {
     id: "chani-chanzin",
     name: "חני חנזין",
@@ -66,9 +60,6 @@ const students: Student[] = [
     CardComponent: ChaniChanzinCard,
     JokePageComponent: ChaniChanzinJokePage,
   },
-
-
-
   {
     id: "shira-chassida",
     name: "שירה חסידה",
@@ -76,23 +67,27 @@ const students: Student[] = [
     CardComponent: ShiraChassidaCard,
     JokePageComponent: ShiraChassidaJokePage,
   },
-   {
-    id: "Sarit=Cohen",
+  {
+    id: "shira-zekri",
+    name: "שירה זכרי",
+    jokeTitle: "הדג",
+    CardComponent: ShirazekriCard,
+    JokePageComponent: ShirazekriJokePage,
+  },
+  {
+    id: "sarit-cohen",
     name: "שרית כהן",
     jokeTitle: "אופרת סבון",
     CardComponent: SaritCard,
     JokePageComponent: SaritJokePage,
   },
-{
-  id: "adi-tamir",
-  name: "עדי תמיר",
-  jokeTitle: " דג שותק ",
-  CardComponent: AdiCard,
-  JokePageComponent: AdiJokePage,
-},
-
-
-
+  {
+    id: "adi-tamir",
+    name: "עדי תמיר",
+    jokeTitle: "דג שותק",
+    CardComponent: AdiCard,
+    JokePageComponent: AdiJokePage,
+  },
 ];
 
 export default students;
